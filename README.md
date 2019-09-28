@@ -17,9 +17,7 @@
 * [Designing Square Cash or PayPal Money Transfer System](./en/167-designing-paypal-money-transfer.md)
 * [Designing payment webhook](./en/166-designing-payment-webhook.md)
 * [Designing a metric system](./en/168-designing-a-metric-system.md)
-
-* [3 Programming Paradigms](./en/11-three-programming-paradigms.md)
-* [SOLID Design Principles](./en/12-solid-design-principles.md)
+* [Designing a recommendation system](./en/140-designing-a-recommendation-system.md)
 
 ## System Design Theories
 
@@ -43,3 +41,5 @@
 * [iOS Architecture Patterns Revisited](./en/123-ios-architecture-patterns-revisited.md)
 * [What can we communicate in soft skills interview?](./en/63-soft-skills-interview.md)
 * [Experience Deep Dive](./en/2018-07-20-experience-deep-dive.md)
+* [3 Programming Paradigms](./en/11-three-programming-paradigms.md)
+* [SOLID Design Principles](./en/12-solid-design-principles.md)
