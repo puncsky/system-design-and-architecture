@@ -21,7 +21,7 @@
 * [Designing a metric system](./en/168-designing-a-metric-system.md)
 * [Designing a recommendation system](./en/140-designing-a-recommendation-system.md)
 
-### System Design Theories
+### Theories
 
 * [Introduction to Architecture](./en/145-introduction-to-architecture.md)
 * [How to scale a web service?](./en/41-how-to-scale-a-web-service.md)
@@ -46,19 +46,18 @@
 * [3 Programming Paradigms](./en/11-three-programming-paradigms.md)
 * [SOLID Design Principles](./en/12-solid-design-principles.md)
 
-## 中文版
+## 系统设计与构架 - 中文版
 
-### 系统设计实践
+### 实践
 
+* [设计一个短网址系统](./zh-CN/89-designing-a-url-shortener.md)
+* [设计优步打车服务](./zh-CN/135-designing-uber.md)
 * [Facebook如何存储大规模社交图谱(graph)？TAO](./zh-CN/52-facebook-tao.md)
 * [什么是 Apache Kafka?](./zh-CN/62-what-is-apache-kafka.md)
-* [设计一个短网址系统](./zh-CN/89-designing-a-url-shortener.md)
 * [设计Facebook图片存储系统](./zh-CN/125-designing-facebook-photo-storage.md)
 * [如何使用HTTP协议向移动设备传输视频? HTTP Live Streaming (HLS)](./zh-CN/126-how-to-stream-video-over-http.md)
-* [设计优步打车服务](./zh-CN/135-designing-uber.md)
 
-
-### 系统设计理论
+### 理论
 
 * [构架入门](./zh-CN/151-introduction-to-architecture.md)
 * [软技能面试可以谈点什么？](./zh-CN/18-soft-skills-interview.md)
