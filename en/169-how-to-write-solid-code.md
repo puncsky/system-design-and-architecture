@@ -11,8 +11,8 @@ language: en
 
 1. empathy / perspective-taking is the most important.
     1. realize that code is written for human to read first and then for machines to execute.
-    2. software is so "soft" and there are many ways to achieve one thing. It's all about making the proper trade-offs to
-       fulfill the requirements.
+    2. software is so "soft" and there are many ways to achieve one thing. It's all about making the proper trade-offs to fulfill the requirements.
+    3. Invent and Simplify: Apple Pay RFID vs. Wechat Scan QR Code.
 
 2. choose a sustainable architecture to reduce human resources costs per feature.
 
