@@ -20,6 +20,19 @@
 * [Designing payment webhook](./en/166-designing-payment-webhook.md)
 * [Designing a metric system](./en/168-designing-a-metric-system.md)
 * [Designing a recommendation system](./en/140-designing-a-recommendation-system.md)
+* TODO
+    * Designing typeahead search
+    * Designing instagram or newsfeed APIs
+    * Designing Yelp / Finding nearest K POIs
+    * Designing trending topics / top K exceptions in the system
+    * Designing Leetcode
+    * Designing distributed web crawler
+    * Designing i18n service
+    * Designing ads bidding system
+    * Designing a dropbox or a file-sharing system
+    * Designing a calendar system
+    * Designing an instant chat system / Facebook Messenger / WeChat
+
 
 ### Theories
 
