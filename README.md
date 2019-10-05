@@ -1,5 +1,7 @@
 # System Design and Architecture
 
+[English](#english-version) | [中文版](#系统设计与构架---中文版)
+
 ## English Version
 
 ### System Design in Practice
