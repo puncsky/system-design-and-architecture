@@ -88,6 +88,13 @@
 * [再窥iOS架构模式](./zh-CN/127-ios-architecture-patterns-revisited.md)
 * [流处理和批处理框架](./zh-CN/138-stream-and-batch-processing.md)
 
+## Discussion Groups
+
+* [Telegram](https://t.me/system_design_and_archiecture)
+* Wechat 
+
+![](http://res.cloudinary.com/dohtidfqh/image/upload/c_scale,h_400/v1570260088/web-guiguio/system-design-and-architecture.jpg)
+
 ## License
 
 GPL v3
