@@ -13,15 +13,15 @@ references:
 
 ## Requirements
 * for guests
- * search rooms by locations, dates, number of rooms, and number of guests
- * get room details (like picture, name, review, address, etc.) and prices
- * pay and book room from inventory by date and room id
-  * checkout as a guest 
-  * user is logged in already
- * notification via Email and mobile push notification
+    * search rooms by locations, dates, number of rooms, and number of guests
+    * get room details (like picture, name, review, address, etc.) and prices
+    * pay and book room from inventory by date and room id
+        * checkout as a guest 
+        * user is logged in already
+    * notification via Email and mobile push notification
 * for hotel or rental administrators (suppliers/hosts)
- * administrators (receptionist/manager/rental owner): manage room inventory and help the guest to check-in and check out
- * housekeeper: clean up rooms routinely
+    * administrators (receptionist/manager/rental owner): manage room inventory and help the guest to check-in and check out
+    * housekeeper: clean up rooms routinely
 
 ## Architecture
 
