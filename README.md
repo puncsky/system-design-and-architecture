@@ -23,6 +23,7 @@
 * [Designing a metric system](./en/168-designing-a-metric-system.md)
 * [Designing a recommendation system](./en/140-designing-a-recommendation-system.md)
 * [Designing Airbnb or a hotel booking system](./en/177-designing-Airbnb-or-a-hotel-booking-system.md)
+* [Lyft's Marketing Automation Platform -- Symphony](./en/178-lyft-marketing-automation-symphony.md)
 * TODO
     * Designing typeahead search
     * Designing instagram or newsfeed APIs
@@ -72,6 +73,7 @@
 * [什么是 Apache Kafka?](./zh-CN/62-what-is-apache-kafka.md)
 * [设计Facebook图片存储系统](./zh-CN/125-designing-facebook-photo-storage.md)
 * [如何使用HTTP协议向移动设备传输视频? HTTP Live Streaming (HLS)](./zh-CN/126-how-to-stream-video-over-http.md)
+* [Lyft 的营销自动化平台 Symphony](./zh-CN/176-lyft-marketing-automation-symphony.md)
 
 ### 理论
 
