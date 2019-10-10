@@ -94,9 +94,7 @@
 ## Discussion Groups
 
 * [Telegram](https://t.me/system_design_and_archiecture)
-* Wechat 
-
-![](http://res.cloudinary.com/dohtidfqh/image/upload/c_scale,h_400/v1570260088/web-guiguio/system-design-and-architecture.jpg)
+* Wechat: 加 WeChat ID: onetptp 微信好友，我会拉你入群
 
 ## License
 
