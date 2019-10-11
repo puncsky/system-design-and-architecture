@@ -24,8 +24,8 @@
 * [Designing a recommendation system](./en/140-designing-a-recommendation-system.md)
 * [Designing Airbnb or a hotel booking system](./en/177-designing-Airbnb-or-a-hotel-booking-system.md)
 * [Lyft's Marketing Automation Platform -- Symphony](./en/178-lyft-marketing-automation-symphony.md)
+* [Designing typeahead search](./en/179-designing-typeahead-search-or-autocomplete.md)
 * TODO
-    * Designing typeahead search
     * Designing instagram or newsfeed APIs
     * Designing Yelp / Finding nearest K POIs
     * Designing trending topics / top K exceptions in the system
