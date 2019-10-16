@@ -46,6 +46,7 @@
 * [Data Partition and Routing](./en/2018-07-21-data-partition-and-routing.md)
 * [Replica, Consistency, and CAP theorem](./en/2018-07-24-replica-and-consistency.md)
 * [Load Balancer Types](./en/2018-07-23-load-balancer-types.md)
+* [Concurrency Model](./en/181-concurrency-models.md)
 * [Improving availability with failover](./en/85-improving-availability-with-failover.md)
 * [Bloom Filter](./en/68-bloom-filter.md)
 * [Skiplist](./en/69-skiplist.md)
