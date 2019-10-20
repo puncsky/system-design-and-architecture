@@ -25,6 +25,7 @@
 * [Designing Airbnb or a hotel booking system](./en/177-designing-Airbnb-or-a-hotel-booking-system.md)
 * [Lyft's Marketing Automation Platform -- Symphony](./en/178-lyft-marketing-automation-symphony.md)
 * [Designing typeahead search](./en/179-designing-typeahead-search-or-autocomplete.md)
+* [Designing a Load Balancer or Dropbox Bandaid](./en/182-designing-l7-load-balancer.md)
 * TODO
     * Designing instagram or newsfeed APIs
     * Designing Yelp / Finding nearest K POIs
@@ -75,6 +76,7 @@
 * [设计Facebook图片存储系统](./zh-CN/125-designing-facebook-photo-storage.md)
 * [如何使用HTTP协议向移动设备传输视频? HTTP Live Streaming (HLS)](./zh-CN/126-how-to-stream-video-over-http.md)
 * [Lyft 的营销自动化平台 Symphony](./zh-CN/176-lyft-marketing-automation-symphony.md)
+* [设计负载均衡器](./zh-CN/183-designing-l7-load-balancer.md)
 
 ### 理论
 
