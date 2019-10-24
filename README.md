@@ -24,7 +24,7 @@
 * [Designing a recommendation system](./en/140-designing-a-recommendation-system.md)
 * [Designing Airbnb or a hotel booking system](./en/177-designing-Airbnb-or-a-hotel-booking-system.md)
 * [Lyft's Marketing Automation Platform -- Symphony](./en/178-lyft-marketing-automation-symphony.md)
-* [Designing typeahead search](./en/179-designing-typeahead-search-or-autocomplete.md)
+* [Designing typeahead search or autocomplete](./en/179-designing-typeahead-search-or-autocomplete.md)
 * [Designing a Load Balancer or Dropbox Bandaid](./en/182-designing-l7-load-balancer.md)
 * TODO
     * Designing instagram or newsfeed APIs
