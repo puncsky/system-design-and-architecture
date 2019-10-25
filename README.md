@@ -2,6 +2,8 @@
 
 [English](#english-version) | [中文版](#系统设计与构架---中文版)
 
+[Telegram: 86 members](https://t.me/system_design_and_archiecture) | Wechat 181 members: friend wechat id: onetptp
+
 ## English Version
 
 ### System Design in Practice
@@ -94,10 +96,10 @@
 * [再窥iOS架构模式](./zh-CN/127-ios-architecture-patterns-revisited.md)
 * [流处理和批处理框架](./zh-CN/138-stream-and-batch-processing.md)
 
-## Discussion Groups
+## Join us for further discussion!
 
-* [Telegram](https://t.me/system_design_and_archiecture)
-* Wechat: 加 WeChat ID: onetptp 微信好友，我会拉你入群
+* [Telegram: 86 members](https://t.me/system_design_and_archiecture)
+* Wechat: 181 members: 加 WeChat ID: onetptp 微信好友，我会拉你入群
 
 ## License
 
