@@ -2,7 +2,7 @@
 
 [English](#english-version) | [中文版](#系统设计与构架---中文版)
 
-[Telegram: 86 members](https://t.me/system_design_and_archiecture) | Wechat 181 members: friend wechat id: onetptp
+[Telegram: 92 members](https://t.me/system_design_and_archiecture) | Wechat 186 members: friend wechat id: onetptp (plz specify which group to join)
 
 ## English Version
 
@@ -79,6 +79,7 @@
 * [如何使用HTTP协议向移动设备传输视频? HTTP Live Streaming (HLS)](./zh-CN/126-how-to-stream-video-over-http.md)
 * [Lyft 的营销自动化平台 Symphony](./zh-CN/176-lyft-marketing-automation-symphony.md)
 * [设计负载均衡器](./zh-CN/183-designing-l7-load-balancer.md)
+* [设计以人为本的国际化（i18n） 工程方案](./zh-CN/184-designing-i18n-solutions.md)
 
 ### 理论
 
@@ -98,8 +99,8 @@
 
 ## Join us for further discussion!
 
-* [Telegram: 86 members](https://t.me/system_design_and_archiecture)
-* Wechat: 181 members: 加 WeChat ID: onetptp 微信好友，我会拉你入群
+* [Telegram: 92 members](https://t.me/system_design_and_archiecture)
+* Wechat: 186 members: 加 WeChat ID: onetptp 微信好友，我会拉你入群
 
 ## License
 
