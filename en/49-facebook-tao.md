@@ -3,7 +3,7 @@ layout: post
 title: "How Facebook Scale its Social Graph Store? TAO"
 date: 2018-09-18 22:50
 comments: true
-categories: architecture
+categories: system design
 language: en
 references:
   - http://www.cs.cornell.edu/courses/cs6410/2015fa/slides/tao_atc.pptx

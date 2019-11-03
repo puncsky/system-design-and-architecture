@@ -3,7 +3,7 @@ layout: post
 title: "Public API Choices"
 date: 2018-10-04 01:38
 comments: true
-categories: architecture
+categories: system design
 language: en
 ---
 

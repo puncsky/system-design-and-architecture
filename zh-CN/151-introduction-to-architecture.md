@@ -3,8 +3,9 @@ layout: post
 title: "构架入门"
 date: 2019-06-11 22:06
 comments: true
-categories: architecture
+categories: architecture, system design
 language: zh-CN
+abstract: 架构服务于软件系统的整个生命周期，使软件系统易于理解，开发，测试，部署和操作，其目标是最小化每个业务用例的人力资源成本。O’Reilly出版的《软件架构》介绍了五种基本架构：分层架构；事件驱动架构；微核架构；微服务架构；基于空间的架构。
 references:
   - https://puncsky.com/notes/10-thinking-software-architecture-as-physical-buildings
   - https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/ch01.html

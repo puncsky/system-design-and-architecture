@@ -3,7 +3,7 @@ layout: post
 title: "What can we communicate in soft skills interview?"
 date: 2018-10-01 08:56
 comments: true
-categories: interview
+categories: system design
 language: en
 references:
   - https://www.jianshu.com/p/73b1d5682fd3

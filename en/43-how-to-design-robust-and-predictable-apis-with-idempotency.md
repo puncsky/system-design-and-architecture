@@ -3,7 +3,7 @@ layout: post
 title: "How to design robust and predictable APIs with idempotency?"
 date: 2018-09-12 12:55
 comments: true
-categories: architecture
+categories: system design
 language: en
 references:
   - https://stripe.com/blog/idempotency

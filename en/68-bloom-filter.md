@@ -3,7 +3,7 @@ layout: post
 title: "Bloom Filter"
 date: 2018-10-09 12:39
 comments: true
-categories: data structures
+categories: system design, data structures
 language: en
 references:
   - https://en.wikipedia.org/wiki/Bloom_filter

@@ -3,7 +3,7 @@ layout: post
 title: "Cloud Design Patterns"
 date: 2018-07-10 11:16
 comments: true
-categories: design_patterns
+categories: design patterns, system design
 language: en
 references:
   - https://www.slideshare.net/Leananalytics/lean-analytics-for-startups-and-enterprises

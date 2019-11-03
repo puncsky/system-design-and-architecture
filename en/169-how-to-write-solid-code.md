@@ -3,7 +3,7 @@ layout: post
 title: "How to write solid code?"
 date: 2019-09-25 02:29
 comments: true
-categories: categories
+categories: system design
 language: en
 ---
 

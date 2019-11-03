@@ -3,7 +3,7 @@ layout: post
 title: "Replica, Consistency, and CAP theorem"
 date: 2018-07-24 11:54
 comments: true
-categories: system_design_and_architecture
+categories: system design
 language: en
 references:
     - https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed

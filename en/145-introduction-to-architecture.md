@@ -3,7 +3,7 @@ layout: post
 title: "Introduction to Architecture"
 date: 2019-05-11 15:52
 comments: true
-categories: architecture
+categories: system design
 language: en
 references:
   - https://puncsky.com/notes/10-thinking-software-architecture-as-physical-buildings

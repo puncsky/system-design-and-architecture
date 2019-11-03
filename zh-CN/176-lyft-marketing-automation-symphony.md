@@ -3,9 +3,10 @@ layout: post
 title: "Lyft 的营销自动化平台 Symphony"
 date: 2019-10-02 20:53
 comments: true
-categories: marketing, architecture
+categories: marketing, architecture, system design
 language: zh-CN
 slides: false
+abstract: 广告投放如何花更少的钱用更少的人得到更高回报？Lyft 的答案是自动化，包括LTV 预测模块 、预算分配模块、投放模块。当人从繁琐的投放任务解放出来，专注于理解用户、理解渠道、理解自身要传达给受众的信息之后，就能够获得更好的投放效果
 references:
   - https://eng.lyft.com/lyft-marketing-automation-b43b7b7537cc
 ---

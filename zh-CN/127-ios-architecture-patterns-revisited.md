@@ -3,7 +3,7 @@ layout: post
 title: "再窥iOS架构模式"
 date: 2019-01-17 03:07
 comments: true
-categories: architecture, mobile
+categories: architecture, mobile, system design
 language: zh-cn
 references:
   - https://medium.com/ios-os-x-development/ios-architecture-patterns-ecba4c38de52

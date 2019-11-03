@@ -3,7 +3,7 @@ layout: post
 title: "Stream and Batch Processing Frameworks"
 date: 2019-02-16 22:13
 comments: true
-categories: architecture
+categories: system design
 language: en
 references:
   - https://storage.googleapis.com/pub-tools-public-publication-data/pdf/43864.pdf

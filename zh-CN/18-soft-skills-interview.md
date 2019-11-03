@@ -3,8 +3,9 @@ layout: post
 title: "软技能面试可以谈点什么？"
 date: 2018-08-21 16:43
 comments: true
-categories: interview
+categories: system design
 language: zh-cn
+abstract: 同等级技能下，不会表达自己，工作机会也会被抢走。面试的本质是三个问题：想干不能干；想干不想干；合拍不合拍。面试的五个谈话点：逆境；影响力；技术水平；合拍；成就。如何准备这五个谈话点：多与人交往，多尝试累积经验，多学技术，善于调研。
 references:
   - https://www.jianshu.com/p/73b1d5682fd3
   - https://www.amazon.com/dp/B01NAI5Q6H/

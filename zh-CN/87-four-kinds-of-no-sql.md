@@ -3,8 +3,9 @@ layout: post
 title: "4种非关系型数据库（No-SQL）"
 date: 2018-10-27 01:02
 comments: true
-categories: architecture
+categories: architecture, system design
 language: zh-cn
+abstract: 为了优化读取性能，通过添加冗余数据或分组数据引入了“去正规化”。这里提供了四种非关系型数据库帮助优化：键值存储；文档存储；面向列存储；图数据库
 references:
   - https://www.puncsky.com/blog/2016-02-13-crack-the-system-design-interview
 ---

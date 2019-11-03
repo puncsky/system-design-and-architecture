@@ -3,8 +3,9 @@ layout: post
 title: "键值缓存有哪些用法？"
 date: 2018-09-06 21:32
 comments: true
-categories: interview
+categories: system design
 language: zh-cn
+abstract: Key Value Cache的本质是为了减少访问数据的延迟。Cache设计的常见策略有read-through/write-through和cache aside.具体的策略要根据你的业务需求具体选择。
 references:
   - https://www.usenix.org/system/files/conference/nsdi13/nsdi13-final170_update.pdf
   - https://coolshell.cn/articles/17416.html

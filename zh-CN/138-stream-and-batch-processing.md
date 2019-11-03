@@ -3,7 +3,7 @@ layout: post
 title: "流处理和批处理框架"
 date: 2019-02-27 02:20
 comments: true
-categories: architecture
+categories: architecture, system design
 language: zh-cn
 references:
   - https://storage.googleapis.com/pub-tools-public-publication-data/pdf/43864.pdf

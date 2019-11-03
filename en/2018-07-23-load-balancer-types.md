@@ -3,7 +3,7 @@ layout: post
 title: "Load Balancer Types"
 date: 2018-07-23 11:54
 comments: true
-categories: system_design_and_architecture
+categories: system design
 language: en
 references:
     - https://www.amazon.com/Practice-Cloud-System-Administration-Practices/dp/032194318X

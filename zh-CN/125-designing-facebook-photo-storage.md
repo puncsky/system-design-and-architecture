@@ -3,8 +3,9 @@ layout: post
 title: "设计Facebook图片存储系统"
 date: 2019-01-14 18:09
 comments: true
-categories: categories
+categories: system design
 language: zh-cn
+abstract: Facebook做图片存储的原因有两个：PB级别的Blob数据量；传统的基于NFS的设计都存在元数据瓶颈，庞大的元数据严重限制了它的命中率。解决方案是把数以十万计的图像聚集到单个Haystack存储文件中，从而消除了元数据负荷。
 references:
   - https://www.usenix.org/conference/osdi10/finding-needle-haystack-facebooks-photo-storage
   - https://www.facebook.com/notes/facebook-engineering/needle-in-a-haystack-efficient-storage-of-billions-of-photos/76191543919

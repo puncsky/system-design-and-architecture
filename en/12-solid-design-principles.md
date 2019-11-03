@@ -3,7 +3,7 @@ layout: post
 title: "SOLID Design Principles"
 date: 2018-08-13 18:07
 comments: true
-categories: architecture
+categories: system design
 language: en
 references:
   - https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164

@@ -3,8 +3,9 @@ layout: post
 title: "如何使用幂等性设计出高可靠的API？"
 date: 2018-09-12 12:55
 comments: true
-categories: architecture
+categories: system design
 language: zh-cn
+abstract: 为什么API会不可靠？网络会出错，服务器会出错。解决这个问题的三个原则：客户端用“重试”来保证状态的一致性；重试的请求里要有幂等的唯一性ID；重试要负责任，比如遵循指数退避算法，因为不希望一大波客户端同时重试。 
 references:
   - https://stripe.com/blog/idempotency
 ---

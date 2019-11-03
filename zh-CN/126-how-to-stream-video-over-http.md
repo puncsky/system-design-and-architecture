@@ -3,8 +3,9 @@ layout: post
 title: "如何使用HTTP协议向移动设备传输视频? HTTP Live Streaming (HLS)"
 date: 2019-01-14 18:58
 comments: true
-categories: interview
+categories: interview, system design
 language: zh-cn
+abstract: 使用HTTP直播流的移动视频播放服务有以下两个问题：手机的内存和外存有限;受制于不稳定的网络连接以及不同的带宽，需要在传输过程中动态调整传输视频的质量。我们可以通过服务器层面和客户端两个层面解决。
 references:
   - https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/StreamingMediaGuide/HTTPStreamingArchitecture/HTTPStreamingArchitecture.html#//apple_ref/doc/uid/TP40008332-CH101-SW2
 ---

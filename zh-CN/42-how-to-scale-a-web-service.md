@@ -3,8 +3,9 @@ layout: post
 title: "如何构建大规模的网站服务?"
 date: 2018-09-11 21:32
 comments: true
-categories: architecture
+categories: system design
 language: zh-cn
+abstract: 如何构建大规模的网站服务？一个字：拆。AKF扩展立方告诉了我们”拆”的三个纬度：水平扩展；业务拆分；数据分割。
 references:
   - https://akfpartners.com/growth-blog/scale-cube
   - https://akfpartners.com/growth-blog/akf-scale-cube-ze-case-for-z-axis

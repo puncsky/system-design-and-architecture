@@ -3,7 +3,7 @@ layout: post
 title: "Lyft's Marketing Automation Platform -- Symphony"
 date: 2019-10-09 23:30
 comments: true
-categories: marketing, architecture
+categories: marketing, system design
 language: en
 slides: false
 references:

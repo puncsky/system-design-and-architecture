@@ -3,7 +3,7 @@ layout: post
 title: "What is Apache Kafka?"
 date: 2018-09-27 04:06
 comments: true
-categories: architecture
+categories: system design
 language: en
 references:
   - https://kafka.apache.org/intro

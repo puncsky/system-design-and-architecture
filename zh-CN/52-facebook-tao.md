@@ -3,8 +3,9 @@ layout: post
 title: "Facebook如何存储大规模社交图谱(graph)？TAO"
 date: 2018-09-18 22:50
 comments: true
-categories: architecture
+categories: system design
 language: zh-cn
+abstract: 在Memcached中更新社交图谱的边列表操作效率太低， 客户端管理缓存的逻辑很复杂，很难维持数据库读在写之后这种一致性。如何解决这三个问题：加快读操作，高效处理大规模的读；及时完成写操作；提高读操作的可用性。
 references:
   - http://www.cs.cornell.edu/courses/cs6410/2015fa/slides/tao_atc.pptx
   - https://cs.stanford.edu/~matei/courses/2015/6.S897/slides/tao.pdf

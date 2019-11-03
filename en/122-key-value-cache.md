@@ -4,6 +4,7 @@ title: "Key value cache"
 date: 2019-01-06 23:24
 comments: true
 language: en
+categories: system design
 ---
 
 KV cache is like a giant hash map and used to reduce the latency of data access, typically by

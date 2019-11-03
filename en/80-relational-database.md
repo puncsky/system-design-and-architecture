@@ -3,7 +3,7 @@ layout: post
 title: "Intro to Relational Database"
 date: 2018-10-18 23:19
 comments: true
-categories: architecture
+categories: system design
 language: en
 references:
   - https://www.puncsky.com/blog/2016-02-13-crack-the-system-design-interview

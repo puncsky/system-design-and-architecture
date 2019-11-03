@@ -3,8 +3,9 @@ layout: post
 title: "什么是 Apache Kafka?"
 date: 2018-09-27 04:06
 comments: true
-categories: architecture
+categories: system design
 language: zh-cn
+abstract: Apache Kafka是一个分布式流平台。它的特点包括分布式发布-订阅(pub-sub)消息传递系统，可将N ^ 2的关系简化成N，发布者和订阅者可以按自己的速率运行；超快速的零复制(zero-copy)技术；支持可容错的数据持久化。
 references:
   - https://kafka.apache.org/intro
   - http://www.michael-noll.com/blog/2014/08/18/apache-kafka-training-deck-and-tutorial/

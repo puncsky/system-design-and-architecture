@@ -3,7 +3,7 @@ layout: post
 title: "过往工作经验面试"
 date: 2018-10-02 19:42
 comments: true
-categories: interview
+categories: system design
 language: zh-cn
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "4 Kinds of No-SQL"
 date: 2018-10-17 00:49
 comments: true
-categories: architecture
+categories: system design
 language: en
 references:
   - https://www.puncsky.com/blog/2016-02-13-crack-the-system-design-interview

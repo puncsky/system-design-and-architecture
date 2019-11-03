@@ -4,6 +4,7 @@ title: "设计优步打车服务"
 date: 2019-02-08 22:18
 comments: true
 categories: system design
+abstract: 优步打车设计的要求：为全球的交通运输市场提供服务；大规模的实时调度；后端设计；优步打车设计流程：架构；微服务；调度服务；支付服务；用户档案服务和行程记录服务、通知推送服务。
 language: zh-cn
 references:
    - https://medium.com/yalantis-mobile/uber-underlying-technologies-and-how-it-actually-works-526f55b37c6f

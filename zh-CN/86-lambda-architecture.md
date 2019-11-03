@@ -3,8 +3,9 @@ layout: post
 title: "Lambda 架构"
 date: 2018-10-23 10:30
 comments: true
-categories: architecture
+categories: architecture, system design
 language: zh-cn
+abstract: 使用Lambda可以解决大数据所带来的三个问题：准确性（好）；延迟（快）；吞吐量（多）。lambda 架构可以指导我们如何为一个数据系统实现扩展。
 references:
   - https://www.amazon.com/Big-Data-Principles-practices-scalable/dp/1617290343
 ---

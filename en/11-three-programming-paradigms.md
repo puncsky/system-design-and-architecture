@@ -3,7 +3,7 @@ layout: post
 title: "3 Programming Paradigms"
 date: 2018-08-12 02:31
 comments: true
-categories: architecture
+categories: system design
 language: en
 references:
   - https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164

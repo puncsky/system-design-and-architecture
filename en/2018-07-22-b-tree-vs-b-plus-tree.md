@@ -3,7 +3,7 @@ layout: post
 title: "B tree vs. B+ tree"
 date: 2018-07-22 11:54
 comments: true
-categories: system_design_and_architecture
+categories: system design
 language: en
 references:
     - https://stackoverflow.com/questions/870218/differences-between-b-trees-and-b-trees

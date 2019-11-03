@@ -3,7 +3,7 @@ layout: post
 title: "Data Partition and Routing"
 date: 2018-07-20 11:54
 comments: true
-categories: system_design_and_architecture
+categories: system design
 language: en
 ---
 

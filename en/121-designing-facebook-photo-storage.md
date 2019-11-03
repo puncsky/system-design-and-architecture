@@ -3,7 +3,7 @@ layout: post
 title: "Designing Facebook photo storage"
 date: 2019-01-04 12:11
 comments: true
-categories: categories
+categories: system design
 language: en
 references:
   - https://www.usenix.org/conference/osdi10/finding-needle-haystack-facebooks-photo-storage

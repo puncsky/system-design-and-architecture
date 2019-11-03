@@ -3,8 +3,9 @@ layout: post
 title: "布隆过滤器"
 date: 2018-10-09 12:39
 comments: true
-categories: data structures
+categories: data structures, system design
 language: zh-cn
+abstract: 布隆过滤器是一种数据结构，用于以远高于其他一般算法的空间和时间效率来检索一个元素是否在一个集合中。使用布隆过滤器获得的结果，可能为假阳性匹配，但不可能为假阴性匹配。元素可以添到集合中，但不能删除；添到集合中的元素越多，误报的可能性越大。
 references:
   - https://en.wikipedia.org/wiki/Bloom_filter
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Crack the System Design Interview"
 date: 2016-2-14 01:27
 comments: true
-categories: big_data
+categories: system design
 language: en
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "Lambda Architecture"
 date: 2018-10-23 10:30
 comments: true
-categories: architecture
+categories: system design
 language: en
 references:
   - https://www.amazon.com/Big-Data-Principles-practices-scalable/dp/1617290343

@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "设计负载均衡器"
@@ -6,6 +5,7 @@ date: 2019-10-19 15:21
 comments: true
 categories: system design
 language: zh-CN
+abstract: 互联网服务往往要处理来自全世界的流量，但是，一个服务器只能够同时服务有限数量的请求。因此，通常我们会有一个服务器集群来共同处理这些流量。那么问题来了，怎样才能够让这些流量均匀地分布到不同的服务器上呢？
 slides: false
 references:
   - https://blogs.dropbox.com/tech/2019/09/enhancing-bandaid-load-balancing-at-dropbox-by-leveraging-real-time-backend-server-load-information/
