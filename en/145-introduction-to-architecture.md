@@ -19,7 +19,7 @@ Architecture is the shape of the software system. Thinking it as a big picture o
 * design principles are rooms.
 * components are buildings.
 
-Together they serve a specific purpose like a hospital is for curing patents and a school is for educating students.
+Together they serve a specific purpose like a hospital is for curing patients and a school is for educating students.
 
 
 ## Why do we need architecture?
