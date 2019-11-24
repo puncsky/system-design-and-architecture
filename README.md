@@ -96,6 +96,7 @@
 * [通过失效转移提高系统可用性](./zh-CN/88-improving-availability-with-failover.md)
 * [再窥iOS架构模式](./zh-CN/127-ios-architecture-patterns-revisited.md)
 * [流处理和批处理框架](./zh-CN/138-stream-and-batch-processing.md)
+* [谷歌的软件工程：软件开发](./zh-CN/192-google-software-engineering.md)
 
 ## Join us for further discussion!
 
