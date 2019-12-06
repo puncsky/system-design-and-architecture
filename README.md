@@ -2,7 +2,7 @@
 
 [English](#english-version) | [中文版](#系统设计与构架---中文版)
 
-[Telegram: 206 members](https://t.me/system_design_and_archiecture) | [Wechat 245 members: 加 onetptp 好友注明加系统设计群](https://tianpan.co/group/system-design-and-architecture)
+[Telegram: 206 members](https://t.me/system_design_and_archiecture) | [Wechat 245 members](https://tianpan.co/group/system-design-and-architecture)
 
 ## English Version
 
