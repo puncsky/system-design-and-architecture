@@ -6,6 +6,7 @@ comments: true
 categories: system design
 language: en
 slides: false
+abstract: How to design a realtime typeahead autocomplete service? Linkedin's Cleo lib answers with a multi-layer architecture (browser cache / web tier / result aggregator / various typeahead backend) and 4 elements (inverted / forward index, bloom filter, scorer).
 references:
   - https://engineering.linkedin.com/open-source/cleo-open-source-technology-behind-linkedins-typeahead-search
   - http://sna-projects.com/cleo/

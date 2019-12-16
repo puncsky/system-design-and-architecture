@@ -6,6 +6,7 @@ comments: true
 categories: marketing, system design
 language: en
 slides: false
+abstract: "To achieve a higher ROI in advertising, Lyft launched a marketing automation platform, which consists of three main components: lifetime value forecaster, budget allocator, and bidders."
 references:
   - https://eng.lyft.com/lyft-marketing-automation-b43b7b7537cc
 ---

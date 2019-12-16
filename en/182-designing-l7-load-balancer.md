@@ -6,6 +6,7 @@ comments: true
 categories: system design
 language: en
 slides: false
+abstract: Large-scale web services deal with high-volume traffic, but one host could only serve a limited amount of requests. There is usually a server farm to take the traffic altogether. How to route them so that each host could evenly receive the request?
 references:
   - https://blogs.dropbox.com/tech/2019/09/enhancing-bandaid-load-balancing-at-dropbox-by-leveraging-real-time-backend-server-load-information/
   - https://medium.com/netflix-techblog/netflix-edge-load-balancing-695308b5548c
