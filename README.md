@@ -17,6 +17,7 @@
 * [What is Apache Kafka?](./en/61-what-is-apache-kafka.md)
 * [Designing a URL shortener](./en/84-designing-a-url-shortener.md)
 * [Designing a KV store with external storage](./en/97-designing-a-kv-store-with-external-storage.md)
+* [Designing a distributed in-memory KV store or Memcached](./en/174-designing-memcached.md)
 * [Designing Facebook photo storage](./en/121-designing-facebook-photo-storage.md)
 * [Designing Stock Exchange](./en/161-designing-stock-exchange.md)
 * [Designing Smart Notification of Stock Price Changes](./en/162-designing-smart-notification-of-stock-price-changes.md)
