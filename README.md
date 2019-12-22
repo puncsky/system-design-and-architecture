@@ -32,6 +32,7 @@
 * [Lyft's Marketing Automation Platform -- Symphony](./en/178-lyft-marketing-automation-symphony.md)
 * [Designing typeahead search or autocomplete](./en/179-designing-typeahead-search-or-autocomplete.md)
 * [Designing a Load Balancer or Dropbox Bandaid](./en/182-designing-l7-load-balancer.md)
+* [Fraud Detection with Semi-supervised Learning](./en/136-fraud-detection-with-semi-supervised-learning.md)
 * TODO
     * Designing instagram or newsfeed APIs
     * Designing Yelp / Finding nearest K POIs
