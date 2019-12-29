@@ -4,7 +4,7 @@
 | --- | --- | --- |
 | Communities | [Telegram: 206 members](https://t.me/system_design_and_archiecture) | [微信群250人](https://tianpan.co/group/system-design-and-architecture)
 | Websites | [English Website](https://tianpan.co/notes/2016-02-13-crack-the-system-design-interview) | [中文网站](https://guigu.io/notes/151-introduction-to-architecture) |
-| Mobile Apps | [Android](https://play.google.com/store/apps/details?id=co.tianpan.mobile) | [iOS](https://apps.apple.com/app/apple-store/id1487436041) / [Android](https://play.google.com/store/apps/details?id=io.guigu.mobile) / [APK](https://github.com/puncsky/mobile-guiguio-release/releases) | 
+| Mobile Apps | WIP | [iOS](https://apps.apple.com/app/apple-store/id1487436041) / [Android](https://play.google.com/store/apps/details?id=io.guigu.mobile) / [APK](https://github.com/puncsky/mobile-guiguio-release/releases) | 
 
 
 ## English Version
