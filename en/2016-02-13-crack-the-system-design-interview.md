@@ -5,6 +5,7 @@ date: 2016-2-14 01:27
 comments: true
 categories: system design
 language: en
+abstract: "Step 1. clarify the requirements and specs. Step 2. Sketch out high-level design. 3. Discuss individual components and how they interact in detail. Step 4. Back-of-the-envelope calculation. And finally, three common topics to discuss."
 ---
 
 Update 2019-09-25: ==Welcome to join us for discussion: <a target="_blank" href="https://t.me/system_design_and_archiecture">https://t.me/system_design_and_archiecture</a>==
@@ -53,8 +54,8 @@ Generally speaking, load balancers fall into three categories:
 - DNS Round Robin (rarely used): clients get a randomly-ordered list of IP addresses.
     - pros: easy to implement and free
     - cons: hard to control and not responsive, since DNS cache needs time to expire
-- L3/L4 Load Balancer: traffic is routed by IP address and port. L3 is network layer (IP). L4 is session layer (TCP).
-    - pros: better granularity, simple, responsive
+- L3/L4 Load Balancer: traffic is routed by IP address and port. L3 is network layer (IP). L4 is transport layer (TCP).
+    - pros: better granularity, simple, responsive.
 - L7 Load Balancer: traffic is routed by what is inside the HTTP protocol. L7 is application layer (HTTP).
 
 It is good enough to talk in this level of detail on this topic, but in case the interviewer wants more, we can suggest exact algorithms like round robin, weighted round robin, least loaded, least loaded with slow start, utilization limit, latency, cascade, etc.
@@ -134,9 +135,9 @@ How do different components interact with each other? -- communication protocols
 
 Here is a simple comparison of those protocols.
 
--  UDP and TCP are both transport layer protocols. TCP is reliable and connection-based. UDP is connectionless and unreliable.
+- UDP and TCP are both transport layer protocols. TCP is reliable and connection-based. UDP is connectionless and unreliable.
 - HTTP is in the application layer and normally TCP based, since HTTP assumes a reliable transport.
-- RPC, an application layer protocol, is an inter-process communication that allows a computer program to cause a subroutine or procedure to execute in another address space (commonly on another computer on a shared network), without the programmer explicitly coding the details for this remote interaction. That is, the programmer writes essentially the same code whether the subroutine is local to the executing program, or remote. In an Object-Oriented Programming context, RPC is also called remote invocation or remote method invocation (RMI).
+- RPC, a session layer (or application layer in TCP/IP layer model) protocol, is an inter-process communication that allows a computer program to cause a subroutine or procedure to execute in another address space (commonly on another computer on a shared network), without the programmer explicitly coding the details for this remote interaction. That is, the programmer writes essentially the same code whether the subroutine is local to the executing program, or remote. In an Object-Oriented Programming context, RPC is also called remote invocation or remote method invocation (RMI).
 
 ##### Further discussions
 
