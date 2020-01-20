@@ -6,7 +6,7 @@ comments: true
 categories: design patterns, system design
 language: en
 references:
-  - https://www.slideshare.net/Leananalytics/lean-analytics-for-startups-and-enterprises
+  - https://docs.microsoft.com/en-us/azure/architecture/patterns/
 ---
 
 ## Availability patterns
