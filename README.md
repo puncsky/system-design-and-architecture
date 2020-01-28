@@ -113,4 +113,9 @@
 
 GPL v3
 
+---
+## Contribute
 
+Contributions welcome!
+
+If you found this resource helpful, give it a 🌟 otherwise contribute to it and give it a ⭐️.
