@@ -49,8 +49,8 @@ Cache 不支持 read-through 和 write-through/write-behind 的时候用 Cache a
 
 ## 缓存大小不够用的话怎么办？缓存回收策略(cache replacement policies)
 
-- LRU 只保留使用次数最多的，回收使用次数最少的
-- LFU 只保留最近时间使用的，回收最近时间没使用的
+- LRU - least-recently used 看时间，只保留最近时间使用的，回收最近时间没使用的
+- LFU - least-frequently used 看次数，只保留使用次数最多的，回收使用次数最少的
 - ARC 性能比LRU好，大致做法是既保持 RU，又保持 FU，还记录了最近回收的历史。
 
 ## 缓存用起来谁家强？
