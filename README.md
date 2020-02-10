@@ -1,10 +1,18 @@
-# System Design and Architecture
+<h1 align="center">System Design and Architecture</h1>
+
+<h3 align="center">
+  Grow your design skills with best practices 🚀 and a diverse community 👫
+</h3>
+
+
 
 | Languages | [English](#english-version) | [中文版](#系统设计与构架---中文版)| 
 | --- | --- | --- |
-| Communities | [Telegram: 324 members](https://t.me/system_design_and_architecture) | [微信群262人](https://tianpan.co/group/system-design-and-architecture)
-| Websites | [English Website](https://tianpan.co/notes/2016-02-13-crack-the-system-design-interview) | [中文网站](https://guigu.io/notes/151-introduction-to-architecture) |
-| Mobile Apps | [iOS](https://apps.apple.com/us/app/tianpan-co/id1492596286) / [Android](https://play.google.com/store/apps/details?id=co.tianpan.mobile) / [APK](https://github.com/puncsky/android-tianpanco-release/releases) | [iOS](https://apps.apple.com/app/apple-store/id1487436041) / [Android](https://play.google.com/store/apps/details?id=io.guigu.mobile) / [APK](https://github.com/puncsky/mobile-guiguio-release/releases) | 
+| Communities | [Telegram: 324 members](https://t.me/system_design_and_architecture) | [微信群256人](https://tianpan.co/group/system-design-and-architecture)
+| Websites | [TianPan.co (English)](https://tianpan.co/notes/2016-02-13-crack-the-system-design-interview) | [硅谷io (中文)](https://guigu.io/notes/151-introduction-to-architecture) |
+| Mobile Apps | <img src="https://tianpan.co/download-tianpanco-app.png"/> <br/>[iOS](https://apps.apple.com/us/app/tianpan-co/id1492596286) / [Android](https://play.google.com/store/apps/details?id=co.tianpan.mobile) / [APK](https://github.com/puncsky/android-tianpanco-release/releases) | <img src="https://guigu.io/download-guiguio-app.png"/><br/>[iOS](https://apps.apple.com/app/apple-store/id1487436041) / [Android](https://play.google.com/store/apps/details?id=io.guigu.mobile) / [APK](https://github.com/puncsky/mobile-guiguio-release/releases) | 
+
+
 
 
 ## English Version
