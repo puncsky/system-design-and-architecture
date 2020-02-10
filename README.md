@@ -2,7 +2,7 @@
 
 | Languages | [English](#english-version) | [中文版](#系统设计与构架---中文版)| 
 | --- | --- | --- |
-| Communities | [Telegram: 258 members](https://t.me/system_design_and_archiecture) | [微信群251人](https://tianpan.co/group/system-design-and-architecture)
+| Communities | [Telegram: 324 members](https://t.me/system_design_and_architecture) | [微信群262人](https://tianpan.co/group/system-design-and-architecture)
 | Websites | [English Website](https://tianpan.co/notes/2016-02-13-crack-the-system-design-interview) | [中文网站](https://guigu.io/notes/151-introduction-to-architecture) |
 | Mobile Apps | [iOS](https://apps.apple.com/us/app/tianpan-co/id1492596286) / [Android](https://play.google.com/store/apps/details?id=co.tianpan.mobile) / [APK](https://github.com/puncsky/android-tianpanco-release/releases) | [iOS](https://apps.apple.com/app/apple-store/id1487436041) / [Android](https://play.google.com/store/apps/details?id=io.guigu.mobile) / [APK](https://github.com/puncsky/mobile-guiguio-release/releases) | 
 
@@ -106,8 +106,8 @@
 
 ## Join us for further discussion!
 
-* [Telegram: 206 members](https://t.me/system_design_and_archiecture)
-* [Wechat 245 members: 加 onetptp 好友注明加系统设计群](https://tianpan.co/group/system-design-and-architecture)
+* [Telegram: 324 members](https://t.me/system_design_and_architecture)
+* [Wechat 262 members: 加 onetptp 好友注明加系统设计群](https://tianpan.co/group/system-design-and-architecture)
 
 ## License
 
