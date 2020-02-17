@@ -90,6 +90,7 @@ Transaction table, balance sheet, etc. are similar to the transaction discussed 
 * two ways to check if the PENDING orders are filled or failed.
     1. `poll`: cronjobs (SWF, Airflow, Cadence, etc.) to poll the status for PENDING orders. 
     2. `callback`: provide a callback API for the external vendors. 
+* Graceful shutdown. The bank gateway calls may take tens of seconds to finish, and restarting the servers may resume unfinished transactions from the database. The process may create too many connections. To reduce connections, before the shutdown, stop accepting new requests and wait for the existing outgoing ones to wrap up. 
 
 ### Deduplication
 
