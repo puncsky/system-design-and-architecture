@@ -119,6 +119,7 @@
 
 * [Telegram: 324 members](https://t.me/system_design_and_architecture)
 * [Wechat 262 members: 加 onetptp 好友注明加系统设计群](https://tianpan.co/group/system-design-and-architecture)
+* [中文电报群](https://t.me/system_design_cn)
 
 ## License
 
