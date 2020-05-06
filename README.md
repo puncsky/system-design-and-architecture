@@ -96,6 +96,7 @@
 * [Lyft 的营销自动化平台 Symphony](./zh-CN/176-lyft-marketing-automation-symphony.md)
 * [设计负载均衡器](./zh-CN/183-designing-l7-load-balancer.md)
 * [设计以人为本的国际化（i18n） 工程方案](./zh-CN/184-designing-i18n-solutions.md)
+* [如何设计区块链服务端的架构？](https://guigu.io/notes/235-designing-blockchain-server)
 
 ### 理论
 
