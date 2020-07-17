@@ -42,13 +42,13 @@
 | <img src="https://res.cloudinary.com/dohtidfqh/image/upload/v1580709990/web-guiguio/linkedin.png" width="52" />| [Designing typeahead search or autocomplete](./en/179-designing-typeahead-search-or-autocomplete.md) |
 | <img src="https://res.cloudinary.com/dohtidfqh/image/upload/v1580710529/web-guiguio/nginx.jpg" width="52" />| [Designing a Load Balancer or Dropbox Bandaid](./en/182-designing-l7-load-balancer.md) |
 | <img src="https://res.cloudinary.com/dohtidfqh/image/upload/v1580708917/web-guiguio/uber.png" width="52" />| [Fraud Detection with Semi-supervised Learning](./en/136-fraud-detection-with-semi-supervised-learning.md) |
+| <img src="https://res.cloudinary.com/dohtidfqh/image/upload/v1595029150/web-guiguio/favicon-32x32.png" width="52" />| [Designing Online Judge or Leetcode](https://tianpan.co/notes/243-designing-online-judge-or-leetcode) |
 
 
 * TODO
     * Designing instagram or newsfeed APIs
     * Designing Yelp / Finding nearest K POIs
     * Designing trending topics / top K exceptions in the system
-    * Designing Leetcode
     * Designing distributed web crawler
     * Designing i18n service
     * Designing ads bidding system
