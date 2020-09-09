@@ -64,6 +64,8 @@ It is good enough to talk in this level of detail on this topic, but in case the
 
 Reverse proxy, like varnish, centralizes internal services and provides unified interfaces to the public. For example, www.example.com/index and www.example.com/sports appear to come from the same domain, but in fact they are from different micro services behind the reverse proxy. Reverse proxy could also help with caching and load balancing.
 
+![reverse proxy](https://res.cloudinary.com/dohtidfqh/image/upload/v1599623753/web-guiguio/Reverse_Proxy_Example.png)
+
 #### 1.3.3 (Frontend) Web Tier
 
 This is where web pages are served, and usually combined with the service / backend tier in the very early stage of a web service.
