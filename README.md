@@ -44,17 +44,19 @@
 | <img src="https://res.cloudinary.com/dohtidfqh/image/upload/v1580708917/web-guiguio/uber.png" width="52" />| [Fraud Detection with Semi-supervised Learning](./en/136-fraud-detection-with-semi-supervised-learning.md) |
 | <img src="https://res.cloudinary.com/dohtidfqh/image/upload/v1595029150/web-guiguio/favicon-32x32.png" width="52" />| [Designing Online Judge or Leetcode](https://tianpan.co/notes/243-designing-online-judge-or-leetcode) |
 
+#### TODO
 
-* TODO
-    * Designing instagram or newsfeed APIs
-    * Designing Yelp / Finding nearest K POIs
-    * Designing trending topics / top K exceptions in the system
-    * Designing distributed web crawler
-    * Designing i18n service
-    * Designing ads bidding system
-    * Designing a dropbox or a file-sharing system
-    * Designing a calendar system
-    * Designing an instant chat system / Facebook Messenger / WeChat
+* Designing instagram or newsfeed APIs
+* Designing Yelp / Finding nearest K POIs
+* Designing trending topics / top K exceptions in the system
+* Designing distributed web crawler
+* Designing i18n service
+* Designing ads bidding system
+* Designing a dropbox or a file-sharing system
+* Designing a calendar system
+* Designing an instant chat system / Facebook Messenger / WeChat
+* Designing a ticketing system or Ticketmaster
+* Designing a voice assistant or Siri
 
 
 ### Theories
