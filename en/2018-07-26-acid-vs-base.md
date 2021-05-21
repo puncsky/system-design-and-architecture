@@ -12,7 +12,7 @@ references:
 ACID (Consistency over Availability)
 
 - Atomicity ensures transaction succeeds completely or fails completely.
-- Consistency: In ACID, the C means that a transaction pre-serves all the database rules, such as unique keys, triggers, cascades. In contrast, the C in CAP refers only to single copy consistency, a strict subset of ACID consistency.
+- Consistency: In ACID, the C means that a transaction preserves all the database rules, such as unique keys, triggers, cascades. In contrast, the C in CAP refers only to single copy consistency, a strict subset of ACID consistency.
 - Isolation ensures that concurrent execution of transactions leaves the database in the same state that would have been obtained if the transactions were executed sequentially.
 - Durability ensures that once a transaction has been committed, it will remain committed even in the case of a system failure (e.g. power outage or crash).
 
