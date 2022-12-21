@@ -7,7 +7,7 @@ The book *System Design and Architecture* has helped millions of software engine
 1. 🌎 Real-world engineering. It comes from real-world examples of FANNG and many other silicon valley companies. And it outlines how to build real-world Internet products and services.
 2. 🍕 Easy to digest. System design at the right level of abstraction is like a map to route you to your destination with the shortest cut. There are charts, diagrams, and step-by-step guides - all for you to acquire the minimum actionable knowledge to excel system design interviews and get started building.
 3. 🤲 Full-coverage. It strives to be "the book" for you to master most of the system design use-cases, from backend to frontend and from zero to hero.
-4. 🚶‍♀️ 4-step framework. 1) Clarify requirements 2) Sketch out the high-level design 3) Discuss individual components and how they interact with each other 4) Wrap up with blindspots or bottlenecks.
+4. 🚶‍♀️ 4-step framework. This book approaches and solve problems in a systematic and repeatable way: 1) Clarify requirements 2) Sketch out the high-level design 3) Discuss individual components and how they interact with each other 4) Wrap up with blind spots or bottlenecks.
 
 What's different in the 2nd Edition? From 2015 to 2022, we saw mobile ate the world, cloud-native computing came across Kubernetes, and web3 went through ups and downs. There are always new companies at different stages of their lifecycles taking the lead in the Internet industry. I am interested in how they work, aren't you? So in the 2nd Edition, I will
 
@@ -49,21 +49,6 @@ What's different in the 2nd Edition? From 2015 to 2022, we saw mobile ate the wo
 | <img src="https://res.cloudinary.com/dohtidfqh/image/upload/v1580710529/web-guiguio/nginx.jpg" width="52" />| [Designing a Load Balancer or Dropbox Bandaid](./en/182-designing-l7-load-balancer.md) |
 | <img src="https://res.cloudinary.com/dohtidfqh/image/upload/v1580708917/web-guiguio/uber.png" width="52" />| [Fraud Detection with Semi-supervised Learning](./en/136-fraud-detection-with-semi-supervised-learning.md) |
 | <img src="https://res.cloudinary.com/dohtidfqh/image/upload/v1595029150/web-guiguio/favicon-32x32.png" width="52" />| [Designing Online Judge or Leetcode](https://tianpan.co/notes/243-designing-online-judge-or-leetcode) |
-
-#### TODO
-
-* Designing instagram or newsfeed APIs
-* Designing Yelp / Finding nearest K POIs
-* Designing trending topics / top K exceptions in the system
-* Designing distributed web crawler
-* Designing i18n service
-* Designing ads bidding system
-* Designing a dropbox or a file-sharing system
-* Designing a calendar system
-* Designing an instant chat system / Facebook Messenger / WeChat
-* Designing a ticketing system or Ticketmaster
-* Designing a voice assistant or Siri
-
 
 ### System Design Theories
 
@@ -107,21 +92,12 @@ What's different in the 2nd Edition? From 2015 to 2022, we saw mobile ate the wo
 
 ## Who's Tian Pan?
 
-TODO
-
-
+Tian Pan has been a high-performing software engineer and engineering manager working in the San Francisco Bay Area for 10 years, previously at Uber, Oracle, IoTeX, and Microsoft.
 
 ## Join us for further discussion!
 
-* [Telegram: 1.8k members](https://t.me/system_design_and_architecture)
-* [Wechat Groups: 加 onetptp 好友注明加系统设计群](https://tianpan.co/group/system-design-and-architecture)
-* [中文电报群](https://t.me/system_design_cn)
-
-| Languages | [English](#english-version) | [中文版](#系统设计与构架---中文版)| 
-| --- | --- | --- |
-| Communities | [Telegram: 1.8k members](https://t.me/system_design_and_architecture) | 多个微信群 (ID: onetptp) [电报群](https://t.me/system_design_cn)
-| Websites | [TianPan.co (English)](https://tianpan.co/notes/2016-02-13-crack-the-system-design-interview) | [硅谷io (中文)](https://guigu.io/notes/151-introduction-to-architecture) |
-| Mobile Apps | <img src="https://tianpan.co/download-tianpanco-app.png"/> <br/>[iOS](https://apps.apple.com/us/app/tianpan-co/id1492596286) / [Android](https://play.google.com/store/apps/details?id=co.tianpan.mobile) / [APK](https://github.com/puncsky/android-tianpanco-release/releases) | <img src="https://guigu.io/download-guiguio-app.png"/><br/>[iOS](https://apps.apple.com/app/apple-store/id1487436041) / [Android](https://play.google.com/store/apps/details?id=io.guigu.mobile) / [APK](https://github.com/puncsky/mobile-guiguio-release/releases) |
+* [Telegram](https://t.me/system_design_and_architecture)
+* [Discord](https://discord.gg/Pb5YbK3ykN)
 
 ---
 ## License
