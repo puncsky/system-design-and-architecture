@@ -8,10 +8,6 @@ language: en
 abstract: "Step 1. clarify the requirements and specs. Step 2. Sketch out high-level design. 3. Discuss individual components and how they interact in detail. Step 4. Back-of-the-envelope calculation. And finally, three common topics to discuss."
 ---
 
-Update 2019-09-25: ==Welcome to join us for discussion: <a target="_blank" href="https://t.me/system_design_and_archiecture">https://t.me/system_design_and_archiecture</a>==
-
-Update 2018/10/18: This article is collected in the topic <a target="_blank" href="https://puncsky.com/hacking-the-software-engineer-interview/?isAdmin=true">hacking the software engineer interview</a>
-
 Building applications is not a rocket science, but having the vision of the overall architecture really makes a difference. We have to crack the system interview sooner or later in our career as a software engineer or engineering manager.
 
 Interviewers are looking for future teammates that they like to work with. The future teammates are expected to be, at least, capable of solving problems independently. There are so many solutions to any given problem, but not all of them are suited given the context. So the interviewee has to specify different choices and their tradeoffs. To summarize, **system design interview is a happy show-off of our knowledge on technologies and their tradeoffs. Ideally, keep talking what the interviewer expect throughout the interview, before they even have to ask.**

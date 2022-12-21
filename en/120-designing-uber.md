@@ -13,8 +13,6 @@ references:
    - https://www.youtube.com/watch?v=kb-m2fasdDY&vl=en
 ---
 
-Disclaimer: All things below are collected from public sources or purely original. No Uber-confidential stuff here.
-
 ## Requirements
 
 * ride hailing service targeting the transportation markets around the world
