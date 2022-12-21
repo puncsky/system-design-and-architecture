@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "Crack the System Design Interview"
+title: "Design Instagram"
 date: 2016-2-14 01:27
 comments: true
 categories: system design
+updateDate: 2020-09-08 20:51
 language: en
 abstract: "Step 1. clarify the requirements and specs. Step 2. Sketch out high-level design. 3. Discuss individual components and how they interact in detail. Step 4. Back-of-the-envelope calculation. And finally, three common topics to discuss."
 ---
@@ -34,9 +35,7 @@ Pinterest is a highly scalable photo-sharing service:
 OK, let us sketch out the following diagram without concerning too much about the implementation detail of these components.
 
 
-
-<p align="middle"><img src="http://puncsky.github.io/images/crack-the-system-design-interview/pinterest-arch-overview.png" alt="pinterest architecture"></p>
-
+<iframe style="border:none" width="800" height="450" src="https://whimsical.com/embed/5JeJxJuxbWf3p97DaYttgH"></iframe>
 
 So far so good! To some extent, congrats, we have solved the problem!
 ### 1.3 Step 3. Discuss individual components and how they interact in detail
@@ -142,7 +141,7 @@ Here is a simple comparison of those protocols.
 Since RPC is super useful, some interviewers may ask how RPC works. The following picture is a brief answer.
 
 
-<p align="middle"><img src="http://puncsky.github.io/images/crack-the-system-design-interview/rpc.png" alt="RPC"></p>
+<p align="middle"><img src="https://puncsky.github.io/images/crack-the-system-design-interview/rpc.png" alt="RPC"></p>
 
 
 *Stub procedure: a local procedure that marshals the procedure identifier and the arguments into a request message, and then to send via its communication module to the server. When the reply message arrives, it unmarshals the results.
@@ -249,5 +248,3 @@ Just as everything else, preparation and practice makes perfect. Here are more r
 
 - [Hacking the software engineer interview](https://puncsky.com/hacking-the-software-engineer-interview/?isAdmin=true)
 - [Tian's notes on big data from a programmer's perspective](https://docs.google.com/document/d/1dNKjHICogW5f94MKoBr8wDA3TASbhP0nrcy4eKiuA8Q/edit?usp=sharing)
-
-EOF
