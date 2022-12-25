@@ -1,4 +1,4 @@
-<h1 align="center">System Design and Architecture - 2nd Edition</h1>
+<h1 align="center">System Design and Architecture</h1>
 
 > ⚠️ The 2nd Edition is still a work in progress.
 
@@ -15,6 +15,12 @@ What's different in the 2nd Edition? From 2015 to 2022, we saw mobile ate the wo
 * rewrite existing content with new trends in the industry.
 * add more charts and diagrams with step-by-step guides.
 * add a PDF edition of the book.
+* deduplicate repetitive content so that each design takes its unique abstraction.
+
+What is out of this book's scope?
+
+* API design for specific domains. Please go to [Google's API design guide](https://cloud.google.com/apis/design).
+* Object-oriented design. Its importance is quite overestimated by mediocre engineers.
 
 ## How to use this book?
 
@@ -92,7 +98,7 @@ What's different in the 2nd Edition? From 2015 to 2022, we saw mobile ate the wo
 
 ## Who's Tian Pan?
 
-Tian Pan has been a high-performing software engineer and engineering manager working in the San Francisco Bay Area for 10 years, previously at Uber, Oracle, IoTeX, and Microsoft.
+Tian Pan has been a high-performing software engineer and engineering manager working in the San Francisco Bay Area for 10 years, previously worked at Uber, Oracle, IoTeX, and Microsoft.
 
 ## Join us for further discussion!
 
@@ -103,9 +109,5 @@ Tian Pan has been a high-performing software engineer and engineering manager wo
 ## License
 
 GPL v3
-
-## Contribute
-
-Contributions welcome!
 
 If you found this resource helpful, give it a 🌟 otherwise contribute to it and give it a ⭐️.

@@ -4,7 +4,7 @@
 
 ### System Design in Practice
 
-* [Design Instagram](./en/2016-02-13-crack-the-system-design-interview.md)
+* [Design Pinterest](./en/2016-02-13-crack-the-system-design-interview.md)
 * [Design Uber](./en/120-designing-uber.md)
 * [Design Facebook Social Graph Store](./en/49-facebook-tao.md)
 * [Design Netflix Viewing Data](./en/45-how-to-design-netflix-view-state-service.md)
