@@ -21,7 +21,7 @@ Structured programming vs. OO programming vs. Functional programming
 2. OO programming is discipline imposed upon indirect transfer of control.
 	1. Capsulation, inheritance, polymorphism(pointers to functions) are not unique to OO.
 	2. But OO makes polymorphism safe and convenient to use. And then enable the powerful ==plugin architecture== with dependency inversion
-		1. Source code denpendencies and flow of control are typically the same. However, if we make them both depend on interfaces, dependency is inverted.
+		1. Source code dependencies and flow of control are typically the same. However, if we make them both depend on interfaces, dependency is inverted.
 		2. Interfaces empower independent deployability. e.g. when deploying Solidity smart contracts, importing and using interfaces consume much less gases than doing so for the entire implementation.
 
 
