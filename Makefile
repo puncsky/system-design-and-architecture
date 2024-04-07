@@ -1,6 +1,6 @@
 .PHONY: install
 install:
-	npm install gitbook-cli -g
+	nvm use v10 && npm install gitbook-cli -g
 
 .PHONY: dev
 dev:
