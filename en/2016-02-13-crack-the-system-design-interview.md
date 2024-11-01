@@ -117,8 +117,8 @@ Clients talk to the servers via public APIs. Nowadays, people often serve RESTfu
 
 1. by using more efficient software, e.g. using frameworks with [async and non-blocking reactor pattern](http://www.puncsky.com/blog/2015/01/13/understanding-reactor-pattern-for-highly-scalable-i-o-bound-web-server/), or
 2. by using more hardware, like
-1. scaling up, aka vertical scaling: using more powerful machines like supercomputers or mainframes, or
-2. scaling out, aka horizontal scaling: using a more significant number of less-expensive machines.
+    1. scaling up, aka vertical scaling: using more powerful machines like supercomputers or mainframes, or
+    2. scaling out, aka horizontal scaling: using a more significant number of less-expensive machines.
 
 Internet companies prefer scaling out, since
 
