@@ -1,4 +1,6 @@
 ---
+slug: 120-designing-uber
+id: 120-designing-uber
 layout: post
 title: "Designing Uber"
 date: 2019-01-03 18:39
@@ -9,9 +11,10 @@ references:
    - https://medium.com/yalantis-mobile/uber-underlying-technologies-and-how-it-actually-works-526f55b37c6f
    - https://www.youtube.com/watch?t=116&v=vujVmugFsKc
    - http://www.infoq.com/news/2015/03/uber-realtime-market-platform
-   - https://www.evernote.com/shard/s75/res/3915a501-e697-430b-877a-b5a06a167abc
    - https://www.youtube.com/watch?v=kb-m2fasdDY&vl=en
 ---
+
+Disclaimer: All things below are collected from public sources or purely original. No Uber-confidential stuff here.
 
 ## Requirements
 

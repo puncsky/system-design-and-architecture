@@ -1,10 +1,13 @@
 ---
+slug: 83-lambda-architecture
+id: 83-lambda-architecture
 layout: post
-title: "Lambda Architecture vs Kappa Architecture"
+title: "Lambda Architecture"
 date: 2018-10-23 10:30
 comments: true
 categories: system design
 language: en
+abstract: Lambda architecture = CQRS (batch layer + serving layer) + speed layer. It solves accuracy, latency, throughput problems of big data.
 references:
   - https://www.amazon.com/Big-Data-Principles-practices-scalable/dp/1617290343
   - https://mapr.com/resources/stream-processing-mapr/
@@ -14,9 +17,9 @@ references:
 
 To solve three problems introduced by big data
 
-1. Accuracy
-2. Latency
-3. Throughput
+1. Accuracy  (好)
+2. Latency (快)
+3. Throughput (多)
 
 
 e.g. problems with scaling a pageview service in a traditional way
@@ -27,7 +30,7 @@ e.g. problems with scaling a pageview service in a traditional way
 4. Fault-tolerance issues begin
 5. Data corruption happens
 
-The key point is that ==X-axis dimension alone of the [AKF scale cube](/notes/41-how-to-scale-a-web-service) is not good enough. We should introduce Y-axis / functional decomposition as well. Lambda architecture tells us how to do it for a data system.==
+The key point is that ==X-axis dimension alone of the [AKF scale cube](41-how-to-scale-a-web-service) is not good enough. We should introduce Y-axis / functional decomposition as well. Lambda architecture tells us how to do it for a data system.==
 
 
 
@@ -56,8 +59,3 @@ query = function(batch view. realtime view)
 
 
 ![Lambda Architecture for big data systems](https://res.cloudinary.com/dohtidfqh/image/upload/v1548840018/web-guiguio/lambda-architecture-for-big-data-systems.png)
-
-
-## Kappa Architecture
-
-TODO(tian)

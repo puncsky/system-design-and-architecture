@@ -1,4 +1,6 @@
 ---
+slug: 2016-02-13-crack-the-system-design-interview
+id: 2016-02-13-crack-the-system-design-interview
 layout: post
 title: "Design Pinterest"
 date: 2016-2-14 01:27
@@ -6,6 +8,7 @@ comments: true
 categories: system design
 updateDate: 2022-12-25 13:24
 language: en
+abstract: ""
 ---
 
 System design interviews are for people to find teammates capable of independently designing and implementing Internet services. An interview is a great chance to show your "engineering muscles" - you have to combine your knowledge with your decision-making skills to design the right system for the right scenario.
@@ -60,7 +63,7 @@ Here is the high-level architecture, in which arrows indicate dependencies. (Som
 
 ## Step 3. Dive into individual components and how they interact with each other
 
-Once the archiecture is there, we could confirm with the interviewer if they want to go through each component with you. Sometimes, the interviewer may want to zoom into an unexpected domain problem like [designing a photo store](./121-designing-facebook-photo-storage) (that's why I am always saying there is no one-size-fits-all system design solution. Keep learning...). However, here, let's still assume that we are building the core abstraction: upload a photo and then publish to followers.
+Once the archiecture is there, we could confirm with the interviewer if they want to go through each component with you. Sometimes, the interviewer may want to zoom into an unexpected domain problem like [designing a photo store](121-designing-facebook-photo-storage.md) (that's why I am always saying there is no one-size-fits-all system design solution. Keep learning...). However, here, let's still assume that we are building the core abstraction: upload a photo and then publish to followers.
 
 > Again, I will explain as much as possible in a top-down order because this is our first design example. In the real world, you don't have to go through each component in such a level of detail literally; instead, you should focus on the core abstraction first.
 
@@ -76,7 +79,7 @@ Load balancers distribute incoming network traffic to a group of backend servers
 - L3/L4 Network-layer Load Balancer: traffic is routed by IP address and port. L3 is the network layer (IP). L4 is the transport layer (TCP).
   - pros: better granularity, simple, responsive. e.g. forward traffic based on the ports.
   - cons: content-agnostic: cannot route traffic by the content of the data.
-- L7 Application-layer Load Balancer: traffic is routed by what is inside the HTTP protocol. L7 is the application layer (HTTP). In case the interviewer wants more, we can suggest exact algorithms like round robin, weighted round robin, least loaded, least loaded with slow start, utilization limit, latency, cascade, etc. Check [design L7 load balancer to learn more](./182-designing-l7-load-balancer.md).
+- L7 Application-layer Load Balancer: traffic is routed by what is inside the HTTP protocol. L7 is the application layer (HTTP). In case the interviewer wants more, we can suggest exact algorithms like round robin, weighted round robin, least loaded, least loaded with slow start, utilization limit, latency, cascade, etc. Check [design L7 load balancer to learn more](182-designing-l7-load-balancer.md).
 
 A load balancer could exist in many other places as long as there is a need for balancing traffic.
 
@@ -100,7 +103,7 @@ This is where we serve web pages. In the early days, web service usually combine
 
 ### Mobile App
 
-Most backend engineers are not familiar with mobile design patterns, go to [iOS Architecture Patterns](./123-ios-architecture-patterns-revisited.md) for more.
+Most backend engineers are not familiar with mobile design patterns, go to [iOS Architecture Patterns](123-ios-architecture-patterns-revisited.md) for more.
 
 A dedicated frontend web project is very similar to a standalone mobile app - they are both clients of the servers. Some people would call them "holistic frontend", when engineers can build user experiences on both platforms simultaneously, like react for web and react-native for mobile.
 
@@ -114,8 +117,8 @@ Clients talk to the servers via public APIs. Nowadays, people often serve RESTfu
 
 1. by using more efficient software, e.g. using frameworks with [async and non-blocking reactor pattern](http://www.puncsky.com/blog/2015/01/13/understanding-reactor-pattern-for-highly-scalable-i-o-bound-web-server/), or
 2. by using more hardware, like
-  1. scaling up, aka vertical scaling: using more powerful machines like supercomputers or mainframes, or
-  2. scaling out, aka horizontal scaling: using a more significant number of less-expensive machines.
+    1. scaling up, aka vertical scaling: using more powerful machines like supercomputers or mainframes, or
+    2. scaling out, aka horizontal scaling: using a more significant number of less-expensive machines.
 
 Internet companies prefer scaling out, since
 
@@ -124,14 +127,14 @@ Internet companies prefer scaling out, since
 
 To scale out, we'd better keep services stateless, meaning they don't hold states in local memory or storage, so we could kill them unexpectedly or restart them anytime for any reason.
 
-Learn more about scaling in [how to scale a web service.](./41-how-to-scale-a-web-service.md)
+Learn more about scaling in [how to scale a web service.](41-how-to-scale-a-web-service.md)
 
 ### Service Tier
 
 **The single responsibility principle** advocates small and autonomous services that work together so that
 Each service can "do one thing and do it well", and grow  independently.
 Small teams owning small services can plan much more aggressively for hyper-growth.
-Learn more about Micro Services vs. Monolithic Services in [Designing Uber](./120-designing-uber)
+Learn more about Micro Services vs. Monolithic Services in [Designing Uber](120-designing-uber.md)
 
 ### Service Discovery
 
@@ -183,7 +186,7 @@ The search service connects to all the possible data sources and index them so t
 
 ### Spam Service
 
-The spam service uses machine learning techniques like supervised and unsupervised learning to mark and delete profanity content and fake accounts. Learn more in [Fraud Detection with Semi-supervised Learning](./136-fraud-detection-with-semi-supervised-learning.md).
+The spam service uses machine learning techniques like supervised and unsupervised learning to mark and delete profanity content and fake accounts. Learn more in [Fraud Detection with Semi-supervised Learning](136-fraud-detection-with-semi-supervised-learning.md).
 
 ## Step 4. Wrap up with blindspots or bottlenecks.
 
@@ -212,6 +215,6 @@ When we rely on external blob storage and CDN, bandwidth is unlikely to be a pro
 
 We can see that *Row E* is a calculated result of the formula. After applying this estimation method to each one of those microservices and storages, we will better understand the entire system.
 
-Real-world capacity planning is not a one-time deal. Provisioning too many machines will waste money, and preparing too few ones will cause outages. We usually do it with a few cycles of estimation and experimentation to find the right answer; or use autoscaling if the system supports this and budges are not a problem.
+Real-world capacity planning is not a one-time deal. Provisioning too many machines will waste money, and preparing too few ones will cause outages. We usually do it with a few cycles of estimation and experimentation to find the right answer; or use autoscaling if the system supports this and budgets are not a problem.
 
 Big corp engineers are often indulged with abundant computing and storage resources. However, great engineers will think about costs and benefits. I would sometimes experiment with different tiers of machines and add rows for their monthly expenses for estimation.

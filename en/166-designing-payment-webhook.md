@@ -1,4 +1,6 @@
 ---
+slug: 166-designing-payment-webhook
+id: 166-designing-payment-webhook
 layout: post
 title: "Designing payment webhook"
 date: 2019-08-19 21:15

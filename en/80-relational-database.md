@@ -1,15 +1,18 @@
 ---
+slug: 80-relational-database
+id: 80-relational-database
 layout: post
 title: "Intro to Relational Database"
 date: 2018-10-18 23:19
 comments: true
 categories: system design
 language: en
+abstract: The relational database is the default choice for most storage use cases, by reason of atomicity, consistency, isolation, and durability. How is consistency here different from the one in CAP theorem? Why do we need 3NF and DB proxy?
 references:
   - https://www.puncsky.com/blog/2016-02-13-crack-the-system-design-interview
 ---
 
-Relational database is the default choice for most storage use cases, by reason of ACID (atomicity, consistency, isolation, and durability). One tricky thing is "consistency" -- it means that any transaction will bring database from one valid state to another, which is different from Consistency in [CAP theorem](/notes/2018-07-24-replica-and-consistency).
+Relational database is the default choice for most storage use cases, by reason of ACID (atomicity, consistency, isolation, and durability). One tricky thing is "consistency" -- it means that any transaction will bring database from one valid state to another, which is different from Consistency in [CAP theorem](2018-07-24-replica-and-consistency).
 
 ## Schema Design and 3rd Normal Form (3NF)
 

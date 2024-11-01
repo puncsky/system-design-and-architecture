@@ -1,10 +1,13 @@
 ---
+slug: 145-introduction-to-architecture
+id: 145-introduction-to-architecture
 layout: post
 title: "Introduction to Architecture"
 date: 2019-05-11 15:52
 comments: true
 categories: system design
 language: en
+abstract: Architecture serves the full lifecycle of the software system to make it easy to understand, develop, test, deploy and operate. The O’Reilly book Software Architecture Patterns gives a simple but effective introduction to five fundamental architectures.
 references:
   - https://puncsky.com/notes/10-thinking-software-architecture-as-physical-buildings
   - https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/ch01.html
@@ -48,7 +51,7 @@ The O’Reilly book Software Architecture Patterns by Mark Richards is a simple 
 
 The layered architecture is the most common in adoption, well-known among developers, and hence the de facto standard for applications. If you do not know what architecture to use, use it.
 
-[comment]: <> (https://www.draw.io/#G1ldM5O9Y62Upqg_t5rcTNHIRseP-7fqQT)
+[comment]: \<\> (https://www.draw.io/#G1ldM5O9Y62Upqg_t5rcTNHIRseP-7fqQT)
 
 ![](https://res.cloudinary.com/dohtidfqh/image/upload/v1557614663/web-guiguio/Software_Architecture_101.png)
 

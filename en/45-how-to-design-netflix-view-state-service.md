@@ -1,4 +1,6 @@
 ---
+slug: 45-how-to-design-netflix-view-state-service
+id: 45-how-to-design-netflix-view-state-service
 layout: post
 title: "How Netflix Serves Viewing Data?"
 date: 2018-09-13 20:39
@@ -33,7 +35,7 @@ The viewing service has two tiers:
     - How to scale out?
         - partitioned into N stateful nodes by `account_id mod N`
             - One problem is that load is not evenly distributed and hence the system is subject to hot spots
-        - CP over AP in <a target="_blank" href="/notes/2018-07-24-replica-and-consistency">CAP theorem</a>, and there is no replica of active states.
+        - CP over AP in <a target="_blank" href="2018-07-24-replica-and-consistency">CAP theorem</a>, and there is no replica of active states.
             - One failed node will impact `1/nth` of the members. So they use stale data to degrade gracefully.
 
 

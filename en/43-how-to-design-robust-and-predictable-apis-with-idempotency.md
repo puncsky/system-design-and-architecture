@@ -1,9 +1,12 @@
 ---
+slug: 43-how-to-design-robust-and-predictable-apis-with-idempotency
+id: 43-how-to-design-robust-and-predictable-apis-with-idempotency
 layout: post
 title: "How to design robust and predictable APIs with idempotency?"
 date: 2018-09-12 12:55
 comments: true
 categories: system design
+abstract: "APIs can be un-robust and un-predictable. To solve the problem, three principles should be observed. The client retries to ensure consistency. Retry with idempotency, exponential backoff, and random jitter."
 language: en
 references:
   - https://stripe.com/blog/idempotency

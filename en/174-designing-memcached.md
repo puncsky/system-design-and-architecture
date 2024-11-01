@@ -1,4 +1,6 @@
 ---
+slug: 174-designing-memcached
+id: 174-designing-memcached
 layout: post
 title: "Designing Memcached or an in-memory KV store"
 date: 2019-10-03 22:04
@@ -16,15 +18,21 @@ references:
 
 1. High-performance, distributed key-value store
  * Why distributed? 
-   * Answer: to hold a larger size of data 
- <img style="width: 200px;" src="https://res.cloudinary.com/dohtidfqh/image/upload/v1569196539/web-guiguio/memcached2.png"/>
+   * Answer: to hold a larger size of data
+     <img
+     style={{ width: 200 }}
+     src="https://res.cloudinary.com/dohtidfqh/image/upload/v1569196539/web-guiguio/memcached2.png"
+     />
 2. For in-memory storage of small data objects
 3. Simple server (pushing complexity to the client) and hence reliable and easy to deploy
 
 ## Architecture
 Big Picture: Client-server
 
-<img style="width: 256px;" src="https://res.cloudinary.com/dohtidfqh/image/upload/v1569196539/web-guiguio/memcached1.png"/>
+<img
+style={{ width: 256 }}
+src="https://res.cloudinary.com/dohtidfqh/image/upload/v1569196539/web-guiguio/memcached1.png"
+/>
 
 * client
  * given a list of Memcached servers

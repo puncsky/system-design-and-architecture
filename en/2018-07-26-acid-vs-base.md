@@ -1,10 +1,13 @@
 ---
+slug: 2018-07-26-acid-vs-base
+id: 2018-07-26-acid-vs-base
 layout: post
 title: "ACID vs BASE"
 date: 2018-07-26 11:54
 comments: true
 categories: system design
 language: en
+abstract: "ACID and BASE indicate different designing philosophy. ACID focuses on consistency over availability. In ACID, the C means that a transaction pre-serves all the database rules. Meanwhile, BASE focuses more on availability indicating the system is guaranteed to be available."
 references:
     - https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed
 ---
@@ -12,7 +15,7 @@ references:
 ACID (Consistency over Availability)
 
 - Atomicity ensures transaction succeeds completely or fails completely.
-- Consistency: In ACID, the C means that a transaction preserves all the database rules, such as unique keys, triggers, cascades. In contrast, the C in CAP refers only to single copy consistency, a strict subset of ACID consistency.
+- Consistency: In ACID, the C means that a transaction pre-serves all the database rules, such as unique keys, triggers, cascades. In contrast, the C in CAP refers only to single copy consistency, a strict subset of ACID consistency.
 - Isolation ensures that concurrent execution of transactions leaves the database in the same state that would have been obtained if the transactions were executed sequentially.
 - Durability ensures that once a transaction has been committed, it will remain committed even in the case of a system failure (e.g. power outage or crash).
 

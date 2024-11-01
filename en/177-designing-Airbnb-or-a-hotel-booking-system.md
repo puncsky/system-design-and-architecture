@@ -1,4 +1,6 @@
 ---
+slug: 177-designing-Airbnb-or-a-hotel-booking-system
+id: 177-designing-Airbnb-or-a-hotel-booking-system
 layout: post
 title: "Designing Airbnb or a hotel booking system"
 date: 2019-10-06 01:39
@@ -29,7 +31,7 @@ references:
 
 ## Components
 
-### Inventory <> Bookings <> Users (guests and hosts)
+### Inventory \<\> Bookings \<\> Users (guests and hosts)
 
 Suppliers provide their room details in the inventory. And users can search, get, and reserve rooms accordingly. After reserving the room, the user's payment will change the `status` of the `reserved_room` as well. You could check the data model in [this post](https://www.vertabelo.com/blog/designing-a-data-model-for-a-hotel-room-booking-system/).
 
