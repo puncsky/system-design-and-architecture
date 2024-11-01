@@ -7,7 +7,7 @@ date: 2018-09-27 04:06
 comments: true
 categories: system design
 language: en
-abstract: "Apache Kafka is a distributed streaming platform, which can be used for logging by topics, messaging system geo-replication or stream processing. It is much faster than other platforms due to its zero-copy technology."
+description: "Apache Kafka is a distributed streaming platform, which can be used for logging by topics, messaging system geo-replication or stream processing. It is much faster than other platforms due to its zero-copy technology."
 references:
   - https://kafka.apache.org/intro
   - http://www.michael-noll.com/blog/2014/08/18/apache-kafka-training-deck-and-tutorial/

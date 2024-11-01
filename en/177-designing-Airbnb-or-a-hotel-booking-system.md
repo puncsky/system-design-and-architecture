@@ -8,7 +8,7 @@ comments: true
 slides: false
 categories: system design
 language: en
-abstract: For guests and hosts, we store data with a relational database and build indexes to search by location, metadata, and availability. We can use external vendors for payment and remind the reservations with a priority queue.
+description: For guests and hosts, we store data with a relational database and build indexes to search by location, metadata, and availability. We can use external vendors for payment and remind the reservations with a priority queue.
 references:
   - https://www.vertabelo.com/blog/designing-a-data-model-for-a-hotel-room-booking-system/
 ---

@@ -6,7 +6,7 @@ title: "Key value cache"
 date: 2019-01-06 23:24
 comments: true
 language: en
-abstract: "The key-value cache is used to reduce the latency of data access. What are read-through, write-through, write-behind, write-back, write-behind, and cache-aside patterns?"
+description: "The key-value cache is used to reduce the latency of data access. What are read-through, write-through, write-behind, write-back, write-behind, and cache-aside patterns?"
 categories: system design
 ---
 

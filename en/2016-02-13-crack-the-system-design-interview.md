@@ -8,7 +8,7 @@ comments: true
 categories: system design
 updateDate: 2022-12-25 13:24
 language: en
-abstract: ""
+description: ""
 ---
 
 System design interviews are for people to find teammates capable of independently designing and implementing Internet services. An interview is a great chance to show your "engineering muscles" - you have to combine your knowledge with your decision-making skills to design the right system for the right scenario.

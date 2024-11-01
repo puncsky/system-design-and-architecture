@@ -7,7 +7,7 @@ date: 2018-08-13 18:07
 comments: true
 categories: 系统设计
 language: cn
-abstract: SOLID 是一组设计原则的首字母缩写，帮助软件工程师编写稳健的代码。S 代表单一职责原则，O 代表开放/封闭原则，L 代表里氏替换原则，I 代表接口隔离原则，D 代表依赖倒置原则。
+description: SOLID 是一组设计原则的首字母缩写，帮助软件工程师编写稳健的代码。S 代表单一职责原则，O 代表开放/封闭原则，L 代表里氏替换原则，I 代表接口隔离原则，D 代表依赖倒置原则。
 references:
   - https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164
 ---

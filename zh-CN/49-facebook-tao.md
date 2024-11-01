@@ -7,7 +7,7 @@ date: 2018-09-18 22:50
 comments: true
 categories: system design
 language: cn
-abstract: "在 TAO 之前，Facebook 使用缓存旁路模式来扩展其社交图谱存储。存在三个问题：列表更新操作效率低；客户端必须管理缓存，且很难提供读后写一致性。通过 TAO，这些问题得以解决。"
+description: "在 TAO 之前，Facebook 使用缓存旁路模式来扩展其社交图谱存储。存在三个问题：列表更新操作效率低；客户端必须管理缓存，且很难提供读后写一致性。通过 TAO，这些问题得以解决。"
 references:
   - http://www.cs.cornell.edu/courses/cs6410/2015fa/slides/tao_atc.pptx
   - https://cs.stanford.edu/~matei/courses/2015/6.S897/slides/tao.pdf

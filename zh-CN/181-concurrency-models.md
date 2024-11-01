@@ -6,7 +6,7 @@ title: "并发模型"
 date: 2019-10-16 14:04
 comments: true
 categories: 系统设计
-abstract: "您可能想了解的五种并发模型：单线程；多处理和基于锁的并发；通信顺序进程 (CSP)；演员模型 (AM)；软件事务内存 (STM)。"
+description: "您可能想了解的五种并发模型：单线程；多处理和基于锁的并发；通信顺序进程 (CSP)；演员模型 (AM)；软件事务内存 (STM)。"
 language: cn
 ---
 

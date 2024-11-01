@@ -6,7 +6,7 @@ title: "Designing a URL shortener"
 date: 2018-10-25 14:32
 comments: true
 categories: system design
-abstract: If you are asked to design a system to take user-provided URLs and transform them to shortened URLs, what would you do? How would you allocate the shorthand URLs? How would you implement the redirect servers? How would you store the click stats?
+description: If you are asked to design a system to take user-provided URLs and transform them to shortened URLs, what would you do? How would you allocate the shorthand URLs? How would you implement the redirect servers? How would you store the click stats?
 language: en
 ---
 

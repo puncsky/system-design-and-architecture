@@ -7,7 +7,7 @@ date: 2018-07-10 11:16
 comments: true
 categories: design patterns, system design
 language: en
-abstract: "There are three types of cloud design patterns. Availability patterns have health endpoint monitoring and throttling. Data management patterns have cache-aside and static content hosting. Security patterns have federated identity."
+description: "There are three types of cloud design patterns. Availability patterns have health endpoint monitoring and throttling. Data management patterns have cache-aside and static content hosting. Security patterns have federated identity."
 references:
   - https://docs.microsoft.com/en-us/azure/architecture/patterns/
 ---

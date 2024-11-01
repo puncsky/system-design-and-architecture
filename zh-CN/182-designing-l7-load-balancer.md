@@ -8,7 +8,7 @@ comments: true
 categories: 系统设计
 language: zh
 slides: false
-abstract: 大规模的网络服务处理来自全球的高流量，但单个主机只能处理有限数量的请求。通常会有一个服务器集群来处理所有流量。如何路由这些请求，以便每个主机能够均匀地接收请求？
+description: 大规模的网络服务处理来自全球的高流量，但单个主机只能处理有限数量的请求。通常会有一个服务器集群来处理所有流量。如何路由这些请求，以便每个主机能够均匀地接收请求？
 references:
   - https://blogs.dropbox.com/tech/2019/09/enhancing-bandaid-load-balancing-at-dropbox-by-leveraging-real-time-backend-server-load-information/
   - https://medium.com/netflix-techblog/netflix-edge-load-balancing-695308b5548c

@@ -9,7 +9,7 @@ comments: true
 categories: 系统设计
 language: cn
 slides: false
-abstract: 设计一个 webhook，当支付成功时通知商家。我们需要汇总指标（例如，成功与失败）并在仪表板上显示。
+description: 设计一个 webhook，当支付成功时通知商家。我们需要汇总指标（例如，成功与失败）并在仪表板上显示。
 references:
   - https://commerce.coinbase.com/docs/#webhooks
   - https://bitworking.org/news/2017/03/prometheus

@@ -8,7 +8,7 @@ comments: true
 categories: marketing, system design
 language: cn
 slides: false
-abstract: "为了在广告中实现更高的投资回报率，Lyft推出了一款营销自动化平台，该平台由三个主要组件组成：生命周期价值预测器、预算分配器和竞标者。"
+description: "为了在广告中实现更高的投资回报率，Lyft推出了一款营销自动化平台，该平台由三个主要组件组成：生命周期价值预测器、预算分配器和竞标者。"
 references:
   - https://eng.lyft.com/lyft-marketing-automation-b43b7b7537cc
 ---

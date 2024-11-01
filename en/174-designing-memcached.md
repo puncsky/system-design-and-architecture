@@ -7,7 +7,7 @@ date: 2019-10-03 22:04
 comments: true
 categories: system design
 language: en
-abstract: Memcached = rich client + distributed servers + hash table + LRU. It features a simple server and pushes complexity to the client) and hence reliable and easy to deploy.
+description: Memcached = rich client + distributed servers + hash table + LRU. It features a simple server and pushes complexity to the client) and hence reliable and easy to deploy.
 references:
   - https://github.com/memcached/memcached/wiki/Overview
   - https://people.cs.uchicago.edu/~junchenj/34702/slides/34702-MemCache.pdf

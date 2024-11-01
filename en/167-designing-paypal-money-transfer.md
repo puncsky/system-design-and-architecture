@@ -8,7 +8,7 @@ comments: true
 categories: system design
 language: en
 slides: false
-abstract: Design a money-transfer backend system that can receive, send, and payout. It should cover issues like scaling, internationalization, Deduplication, single-point failure, strong consistency.
+description: Design a money-transfer backend system that can receive, send, and payout. It should cover issues like scaling, internationalization, Deduplication, single-point failure, strong consistency.
 references:
   - https://medium.com/airbnb-engineering/scaling-airbnbs-payment-platform-43ebfc99b324
   - https://beancount.io

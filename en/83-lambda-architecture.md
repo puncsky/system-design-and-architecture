@@ -7,7 +7,7 @@ date: 2018-10-23 10:30
 comments: true
 categories: system design
 language: en
-abstract: Lambda architecture = CQRS (batch layer + serving layer) + speed layer. It solves accuracy, latency, throughput problems of big data.
+description: Lambda architecture = CQRS (batch layer + serving layer) + speed layer. It solves accuracy, latency, throughput problems of big data.
 references:
   - https://www.amazon.com/Big-Data-Principles-practices-scalable/dp/1617290343
   - https://mapr.com/resources/stream-processing-mapr/

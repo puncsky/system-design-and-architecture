@@ -7,7 +7,7 @@ date: 2019-01-04 12:11
 comments: true
 categories: system design
 language: en
-abstract: "Traditional NFS based design has metadata bottleneck: large metadata size limits the metadata hit ratio. Facebook photo storage eliminates the metadata by aggregating hundreds of thousands of images in a single haystack store file."
+description: "Traditional NFS based design has metadata bottleneck: large metadata size limits the metadata hit ratio. Facebook photo storage eliminates the metadata by aggregating hundreds of thousands of images in a single haystack store file."
 references:
   - https://www.usenix.org/conference/osdi10/finding-needle-haystack-facebooks-photo-storage
   - https://www.facebook.com/notes/facebook-engineering/needle-in-a-haystack-efficient-storage-of-billions-of-photos/76191543919

@@ -8,7 +8,7 @@ comments: true
 categories: 系统设计
 language: cn
 slides: false
-abstract: 设计一个可以接收、发送和支付的转账后端系统。它应涵盖扩展性、国际化、去重、单点故障、强一致性等问题。
+description: 设计一个可以接收、发送和支付的转账后端系统。它应涵盖扩展性、国际化、去重、单点故障、强一致性等问题。
 references:
   - https://medium.com/airbnb-engineering/scaling-airbnbs-payment-platform-43ebfc99b324
   - https://beancount.io

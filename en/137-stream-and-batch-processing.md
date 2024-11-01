@@ -7,7 +7,7 @@ date: 2019-02-16 22:13
 comments: true
 categories: system design
 language: en
-abstract: "Stream and Batch processing frameworks can process high throughput at low latency. Why is Flink gaining popularity? And how to make an architectural choice among Storm, Storm-trident, Spark, and Flink?"
+description: "Stream and Batch processing frameworks can process high throughput at low latency. Why is Flink gaining popularity? And how to make an architectural choice among Storm, Storm-trident, Spark, and Flink?"
 references:
   - https://storage.googleapis.com/pub-tools-public-publication-data/pdf/43864.pdf
   - https://cs.stanford.edu/~matei/papers/2018/sigmod_structured_streaming.pdf

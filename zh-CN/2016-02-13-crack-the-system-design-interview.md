@@ -8,7 +8,7 @@ comments: true
 categories: 系统设计
 updateDate: 2022-12-25 13:24
 language: cn
-abstract: ""
+description: ""
 ---
 
 系统设计面试是为了让人们找到能够独立设计和实施互联网服务的团队成员。面试是展示你“工程能力”的绝佳机会——你必须将你的知识与决策能力结合起来，为正确的场景设计合适的系统。

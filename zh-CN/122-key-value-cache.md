@@ -6,7 +6,7 @@ title: "键值缓存"
 date: 2019-01-06 23:24
 comments: true
 language: cn
-abstract: "键值缓存用于减少数据访问的延迟。什么是读穿、写穿、写后、写回、写后和旁路缓存模式？"
+description: "键值缓存用于减少数据访问的延迟。什么是读穿、写穿、写后、写回、写后和旁路缓存模式？"
 categories: 系统设计
 ---
 

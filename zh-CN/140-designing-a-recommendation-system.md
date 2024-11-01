@@ -7,7 +7,7 @@ date: 2019-02-19 01:33
 comments: true
 categories: 系统设计
 language: cn
-abstract: 为了评估用户满意度，实施了机器学习模型。这些模型通过特征工程观察和测量现实，并通过召回策略进一步减少延迟。
+description: 为了评估用户满意度，实施了机器学习模型。这些模型通过特征工程观察和测量现实，并通过召回策略进一步减少延迟。
 references:
   - https://medium.com/@impxia/newsfeed-system-behind-toutiao-2c2454a6d23d
   - https://36kr.com/p/5114077

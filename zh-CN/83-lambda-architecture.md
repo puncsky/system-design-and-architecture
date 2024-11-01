@@ -7,7 +7,7 @@ date: 2018-10-23 10:30
 comments: true
 categories: 系统设计
 language: cn
-abstract: Lambda 架构 = CQRS（批处理层 + 服务层） + 快速层。它解决了大数据的准确性、延迟和吞吐量问题。
+description: Lambda 架构 = CQRS（批处理层 + 服务层） + 快速层。它解决了大数据的准确性、延迟和吞吐量问题。
 references:
   - https://www.amazon.com/Big-Data-Principles-practices-scalable/dp/1617290343
   - https://mapr.com/resources/stream-processing-mapr/

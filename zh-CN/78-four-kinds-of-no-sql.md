@@ -6,7 +6,7 @@ title: "四种 No-SQL"
 date: 2018-10-17 00:49
 comments: true
 categories: "系统设计"
-abstract: "从硬盘读取数据时，数据库连接操作耗时，99% 的时间花费在磁盘寻址上。为了优化读取性能，引入了非规范化，并且四种 NoSQL 类型可以帮助解决这个问题。"
+description: "从硬盘读取数据时，数据库连接操作耗时，99% 的时间花费在磁盘寻址上。为了优化读取性能，引入了非规范化，并且四种 NoSQL 类型可以帮助解决这个问题。"
 language: cn
 references:
   - https://www.puncsky.com/blog/2016-02-13-crack-the-system-design-interview

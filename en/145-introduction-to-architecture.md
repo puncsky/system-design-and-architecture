@@ -7,7 +7,7 @@ date: 2019-05-11 15:52
 comments: true
 categories: system design
 language: en
-abstract: Architecture serves the full lifecycle of the software system to make it easy to understand, develop, test, deploy and operate. The O’Reilly book Software Architecture Patterns gives a simple but effective introduction to five fundamental architectures.
+description: Architecture serves the full lifecycle of the software system to make it easy to understand, develop, test, deploy and operate. The O’Reilly book Software Architecture Patterns gives a simple but effective introduction to five fundamental architectures.
 references:
   - https://puncsky.com/notes/10-thinking-software-architecture-as-physical-buildings
   - https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/ch01.html

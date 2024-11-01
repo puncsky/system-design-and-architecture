@@ -9,7 +9,7 @@ comments: true
 categories: system design
 language: en
 slides: false
-abstract: Design a webhook that notifies the merchant when the payment succeeds. We need to aggregate the metrics (e.g., success vs. failure) and display it on the dashboard.
+description: Design a webhook that notifies the merchant when the payment succeeds. We need to aggregate the metrics (e.g., success vs. failure) and display it on the dashboard.
 references:
   - https://commerce.coinbase.com/docs/#webhooks
   - https://bitworking.org/news/2017/03/prometheus

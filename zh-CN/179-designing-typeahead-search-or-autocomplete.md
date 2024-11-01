@@ -8,7 +8,7 @@ comments: true
 categories: 系统设计
 language: cn
 slides: false
-abstract: 如何设计一个实时的联想自动完成服务？Linkedin 的 Cleo 库通过多层架构（浏览器缓存 / 网络层 / 结果聚合器 / 各种联想后端）和 4 个元素（倒排索引 / 正向索引，布隆过滤器，评分器）来回答这个问题。
+description: 如何设计一个实时的联想自动完成服务？Linkedin 的 Cleo 库通过多层架构（浏览器缓存 / 网络层 / 结果聚合器 / 各种联想后端）和 4 个元素（倒排索引 / 正向索引，布隆过滤器，评分器）来回答这个问题。
 references:
   - https://engineering.linkedin.com/open-source/cleo-open-source-technology-behind-linkedins-typeahead-search
   - http://sna-projects.com/cleo/

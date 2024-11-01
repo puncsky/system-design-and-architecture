@@ -7,7 +7,7 @@ date: 2018-07-22 11:54
 comments: true
 categories: 系统设计
 language: cn
-abstract: "B+ 树可以被视为 B 树，其中每个节点仅包含键。B+ 树的优点可以总结为更少的缓存未命中。在 B 树中，数据与每个键相关联，可以更快地访问。"
+description: "B+ 树可以被视为 B 树，其中每个节点仅包含键。B+ 树的优点可以总结为更少的缓存未命中。在 B 树中，数据与每个键相关联，可以更快地访问。"
 references:
     - https://stackoverflow.com/questions/870218/differences-between-b-trees-and-b-trees
 ---
