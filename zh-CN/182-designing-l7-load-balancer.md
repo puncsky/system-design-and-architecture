@@ -1,7 +1,6 @@
 ---
 slug: 182-designing-l7-load-balancer
 id: 182-designing-l7-load-balancer
-layout: post
 title: "设计负载均衡器或 Dropbox 修补程序"
 date: 2019-10-19 15:21
 comments: true

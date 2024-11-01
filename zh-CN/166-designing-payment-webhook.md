@@ -1,7 +1,6 @@
 ---
 slug: 166-designing-payment-webhook
 id: 166-designing-payment-webhook
-layout: post
 title: "设计支付 webhook"
 date: 2019-08-19 21:15
 updateDate: 2024-04-06 17:29

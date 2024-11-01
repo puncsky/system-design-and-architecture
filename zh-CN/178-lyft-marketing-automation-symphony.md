@@ -1,7 +1,6 @@
 ---
 slug: 178-lyft-marketing-automation-symphony
 id: 178-lyft-marketing-automation-symphony
-layout: post
 title: "Lyft 的营销自动化平台 -- Symphony"
 date: 2019-10-09 23:30
 comments: true

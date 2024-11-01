@@ -1,7 +1,6 @@
 ---
 slug: 122-key-value-cache
 id: 122-key-value-cache
-layout: post
 title: "键值缓存"
 date: 2019-01-06 23:24
 comments: true

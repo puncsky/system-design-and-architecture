@@ -1,7 +1,6 @@
 ---
 slug: 2018-07-21-data-partition-and-routing
 id: 2018-07-21-data-partition-and-routing
-layout: post
 title: "Data Partition and Routing"
 date: 2018-07-20 11:54
 comments: true

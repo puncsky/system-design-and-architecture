@@ -1,7 +1,6 @@
 ---
 slug: 121-designing-facebook-photo-storage
 id: 121-designing-facebook-photo-storage
-layout: post
 title: "Designing Facebook photo storage"
 date: 2019-01-04 12:11
 comments: true

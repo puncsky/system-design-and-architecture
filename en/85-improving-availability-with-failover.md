@@ -1,7 +1,6 @@
 ---
 slug: 85-improving-availability-with-failover
 id: 85-improving-availability-with-failover
-layout: post
 title: "Improving availability with failover"
 date: 2018-10-26 12:02
 comments: true

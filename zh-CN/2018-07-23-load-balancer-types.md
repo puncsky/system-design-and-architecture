@@ -1,7 +1,6 @@
 ---
 slug: 2018-07-23-load-balancer-types
 id: 2018-07-23-load-balancer-types
-layout: post
 title: "负载均衡器类型"
 date: 2018-07-23 11:54
 comments: true

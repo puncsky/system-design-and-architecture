@@ -1,7 +1,6 @@
 ---
 slug: 174-designing-memcached
 id: 174-designing-memcached
-layout: post
 title: "设计 Memcached 或内存中的 KV 存储"
 date: 2019-10-03 22:04
 comments: true

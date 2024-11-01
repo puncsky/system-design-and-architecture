@@ -1,7 +1,6 @@
 ---
 slug: 78-four-kinds-of-no-sql
 id: 78-four-kinds-of-no-sql
-layout: post
 title: "4 Kinds of No-SQL"
 date: 2018-10-17 00:49
 comments: true

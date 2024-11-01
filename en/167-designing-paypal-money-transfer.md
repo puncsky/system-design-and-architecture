@@ -1,7 +1,6 @@
 ---
 slug: 167-designing-paypal-money-transfer
 id: 167-designing-paypal-money-transfer
-layout: post
 title: Designing Square Cash or PayPal Money Transfer System
 date: 2019-08-23 17:02
 comments: true

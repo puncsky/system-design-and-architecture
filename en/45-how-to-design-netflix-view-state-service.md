@@ -1,7 +1,6 @@
 ---
 slug: 45-how-to-design-netflix-view-state-service
 id: 45-how-to-design-netflix-view-state-service
-layout: post
 title: "How Netflix Serves Viewing Data?"
 date: 2018-09-13 20:39
 comments: true

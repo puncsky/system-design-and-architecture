@@ -1,7 +1,6 @@
 ---
 slug: 80-relational-database
 id: 80-relational-database
-layout: post
 title: "关系数据库简介"
 date: 2018-10-18 23:19
 comments: true

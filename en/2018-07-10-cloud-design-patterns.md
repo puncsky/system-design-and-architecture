@@ -1,7 +1,6 @@
 ---
 slug: 2018-07-10-cloud-design-patterns
 id: 2018-07-10-cloud-design-patterns
-layout: post
 title: "Cloud Design Patterns"
 date: 2018-07-10 11:16
 comments: true

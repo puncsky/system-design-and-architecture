@@ -1,7 +1,6 @@
 ---
 slug: 2016-02-13-crack-the-system-design-interview
 id: 2016-02-13-crack-the-system-design-interview
-layout: post
 title: "Design Pinterest"
 date: 2016-2-14 01:27
 comments: true

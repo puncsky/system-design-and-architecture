@@ -1,7 +1,6 @@
 ---
 slug: 80-relational-database
 id: 80-relational-database
-layout: post
 title: "Intro to Relational Database"
 date: 2018-10-18 23:19
 comments: true

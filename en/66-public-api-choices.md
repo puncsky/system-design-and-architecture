@@ -1,7 +1,6 @@
 ---
 slug: 66-public-api-choices
 id: 66-public-api-choices
-layout: post
 title: "Public API Choices"
 date: 2018-10-04 01:38
 comments: true

@@ -1,7 +1,6 @@
 ---
 slug: 161-designing-stock-exchange
 id: 161-designing-stock-exchange
-layout: post
 title: "设计股票交易所"
 date: 2019-08-12 09:50
 comments: true

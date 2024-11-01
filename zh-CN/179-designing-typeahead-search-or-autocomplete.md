@@ -1,7 +1,6 @@
 ---
 slug: 179-designing-typeahead-search-or-autocomplete
 id: 179-designing-typeahead-search-or-autocomplete
-layout: post
 title: "设计实时联想搜索或自动完成功能"
 date: 2019-10-10 18:33
 comments: true

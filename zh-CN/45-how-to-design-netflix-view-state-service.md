@@ -1,7 +1,6 @@
 ---
 slug: 45-how-to-design-netflix-view-state-service
 id: 45-how-to-design-netflix-view-state-service
-layout: post
 title: "Netflix 如何提供观看数据？"
 date: 2018-09-13 20:39
 comments: true

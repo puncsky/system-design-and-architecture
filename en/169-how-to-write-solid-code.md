@@ -1,7 +1,6 @@
 ---
 slug: 169-how-to-write-solid-code
 id: 169-how-to-write-solid-code
-layout: post
 title: "How to write solid code?"
 date: 2019-09-25 02:29
 comments: true

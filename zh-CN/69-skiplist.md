@@ -1,7 +1,6 @@
 ---
 slug: 69-skiplist
 id: 69-skiplist
-layout: post
 title: "跳表"
 date: 2018-10-09 12:39
 comments: true

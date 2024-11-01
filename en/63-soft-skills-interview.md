@@ -1,7 +1,6 @@
 ---
 slug: 63-soft-skills-interview
 id: 63-soft-skills-interview
-layout: post
 title: "What can we communicate in soft skills interview?"
 date: 2018-10-01 08:56
 comments: true

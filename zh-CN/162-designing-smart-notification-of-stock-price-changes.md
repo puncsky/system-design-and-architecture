@@ -1,7 +1,6 @@
 ---
 slug: 162-designing-smart-notification-of-stock-price-changes
 id: 162-designing-smart-notification-of-stock-price-changes
-layout: post
 title: "设计股票价格变动的智能通知"
 date: 2019-08-13 12:21
 comments: true

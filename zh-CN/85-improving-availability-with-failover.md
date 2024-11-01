@@ -1,7 +1,6 @@
 ---
 slug: 85-improving-availability-with-failover
 id: 85-improving-availability-with-failover
-layout: post
 title: "通过故障转移提高可用性"
 date: 2018-10-26 12:02
 comments: true

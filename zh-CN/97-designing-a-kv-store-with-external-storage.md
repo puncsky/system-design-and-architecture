@@ -1,7 +1,6 @@
 ---
 slug: 97-designing-a-kv-store-with-external-storage
 id: 97-designing-a-kv-store-with-external-storage
-layout: post
 title: "设计一个带外部存储的 KV 存储"
 date: 2018-11-10 12:39
 comments: true

@@ -1,7 +1,6 @@
 ---
 slug: 137-stream-and-batch-processing
 id: 137-stream-and-batch-processing
-layout: post
 title: "Stream and Batch Processing Frameworks"
 date: 2019-02-16 22:13
 comments: true

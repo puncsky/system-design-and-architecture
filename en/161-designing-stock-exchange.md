@@ -1,7 +1,6 @@
 ---
 slug: 161-designing-stock-exchange
 id: 161-designing-stock-exchange
-layout: post
 title: "Designing Stock Exchange"
 date: 2019-08-12 09:50
 comments: true

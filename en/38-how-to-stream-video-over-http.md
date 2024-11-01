@@ -1,7 +1,6 @@
 ---
 slug: 38-how-to-stream-video-over-http
 id: 38-how-to-stream-video-over-http
-layout: post
 title: "How to stream video over HTTP for mobile devices? HTTP Live Streaming (HLS)"
 date: 2018-09-07 21:32
 comments: true

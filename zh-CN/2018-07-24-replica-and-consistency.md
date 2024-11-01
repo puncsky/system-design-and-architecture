@@ -1,7 +1,6 @@
 ---
 slug: 2018-07-24-replica-and-consistency
 id: 2018-07-24-replica-and-consistency
-layout: post
 title: "副本、一致性与CAP定理"
 date: 2018-07-24 11:54
 comments: true

@@ -1,7 +1,6 @@
 ---
 slug: 12-solid-design-principles
 id: 12-solid-design-principles
-layout: post
 title: "SOLID 设计原则"
 date: 2018-08-13 18:07
 comments: true

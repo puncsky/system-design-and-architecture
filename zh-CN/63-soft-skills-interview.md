@@ -1,7 +1,6 @@
 ---
 slug: 63-soft-skills-interview
 id: 63-soft-skills-interview
-layout: post
 title: "在软技能面试中我们可以沟通什么？"
 date: 2018-10-01 08:56
 comments: true

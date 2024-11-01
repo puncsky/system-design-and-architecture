@@ -1,7 +1,6 @@
 ---
 slug: 145-introduction-to-architecture
 id: 145-introduction-to-architecture
-layout: post
 title: "建筑导论"
 date: 2019-05-11 15:52
 comments: true

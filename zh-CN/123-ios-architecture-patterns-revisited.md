@@ -1,7 +1,6 @@
 ---
 slug: 123-ios-architecture-patterns-revisited
 id: 123-ios-architecture-patterns-revisited
-layout: post
 title: "iOS 架构模式再探"
 date: 2019-01-10 02:26
 comments: true

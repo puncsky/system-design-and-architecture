@@ -1,7 +1,6 @@
 ---
 slug: 2018-07-26-acid-vs-base
 id: 2018-07-26-acid-vs-base
-layout: post
 title: "ACID vs BASE"
 date: 2018-07-26 11:54
 comments: true

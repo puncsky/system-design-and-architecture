@@ -1,7 +1,6 @@
 ---
 slug: 168-designing-a-metric-system
 id: 168-designing-a-metric-system
-layout: post
 title: "设计度量系统"
 date: 2019-08-26 11:58
 comments: true

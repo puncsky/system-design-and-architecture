@@ -1,7 +1,6 @@
 ---
 slug: 83-lambda-architecture
 id: 83-lambda-architecture
-layout: post
 title: "Lambda Architecture"
 date: 2018-10-23 10:30
 comments: true

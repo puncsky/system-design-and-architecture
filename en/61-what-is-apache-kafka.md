@@ -1,7 +1,6 @@
 ---
 slug: 61-what-is-apache-kafka
 id: 61-what-is-apache-kafka
-layout: post
 title: "What is Apache Kafka?"
 date: 2018-09-27 04:06
 comments: true

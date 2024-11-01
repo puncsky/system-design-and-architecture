@@ -1,7 +1,6 @@
 ---
 slug: 68-bloom-filter
 id: 68-bloom-filter
-layout: post
 title: "布隆过滤器"
 date: 2018-10-09 12:39
 comments: true

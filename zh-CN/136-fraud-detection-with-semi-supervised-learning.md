@@ -1,7 +1,6 @@
 ---
 slug: 136-fraud-detection-with-semi-supervised-learning
 id: 136-fraud-detection-with-semi-supervised-learning
-layout: post
 title: "使用半监督学习进行欺诈检测"
 date: 2019-02-13 23:57
 comments: true

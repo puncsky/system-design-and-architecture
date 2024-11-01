@@ -1,7 +1,6 @@
 ---
 slug: 177-designing-Airbnb-or-a-hotel-booking-system
 id: 177-designing-Airbnb-or-a-hotel-booking-system
-layout: post
 title: "Designing Airbnb or a hotel booking system"
 date: 2019-10-06 01:39
 comments: true

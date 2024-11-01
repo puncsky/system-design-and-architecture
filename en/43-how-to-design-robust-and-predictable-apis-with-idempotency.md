@@ -1,7 +1,6 @@
 ---
 slug: 43-how-to-design-robust-and-predictable-apis-with-idempotency
 id: 43-how-to-design-robust-and-predictable-apis-with-idempotency
-layout: post
 title: "How to design robust and predictable APIs with idempotency?"
 date: 2018-09-12 12:55
 comments: true

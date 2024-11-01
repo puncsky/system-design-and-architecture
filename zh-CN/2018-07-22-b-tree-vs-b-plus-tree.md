@@ -1,7 +1,6 @@
 ---
 slug: 2018-07-22-b-tree-vs-b-plus-tree
 id: 2018-07-22-b-tree-vs-b-plus-tree
-layout: post
 title: "B 树与 B+ 树"
 date: 2018-07-22 11:54
 comments: true

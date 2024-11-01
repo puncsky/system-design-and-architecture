@@ -1,7 +1,6 @@
 ---
 slug: 49-facebook-tao
 id: 49-facebook-tao
-layout: post
 title: "How Facebook Scale its Social Graph Store? TAO"
 date: 2018-09-18 22:50
 comments: true

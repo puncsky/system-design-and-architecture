@@ -1,7 +1,6 @@
 ---
 slug: 140-designing-a-recommendation-system
 id: 140-designing-a-recommendation-system
-layout: post
 title: "今日头条推荐系统：P1 概述"
 date: 2019-02-19 01:33
 comments: true

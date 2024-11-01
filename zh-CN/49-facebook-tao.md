@@ -1,7 +1,6 @@
 ---
 slug: 49-facebook-tao
 id: 49-facebook-tao
-layout: post
 title: "Facebook 如何扩展其社交图谱存储？TAO"
 date: 2018-09-18 22:50
 comments: true

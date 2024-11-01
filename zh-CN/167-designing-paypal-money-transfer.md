@@ -1,7 +1,6 @@
 ---
 slug: 167-designing-paypal-money-transfer
 id: 167-designing-paypal-money-transfer
-layout: post
 title: 设计 Square Cash 或 PayPal 转账系统
 date: 2019-08-23 17:02
 comments: true

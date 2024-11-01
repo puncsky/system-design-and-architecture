@@ -1,7 +1,6 @@
 ---
 slug: 169-how-to-write-solid-code
 id: 169-how-to-write-solid-code
-layout: post
 title: "如何编写稳健的代码？"
 date: 2019-09-25 02:29
 comments: true

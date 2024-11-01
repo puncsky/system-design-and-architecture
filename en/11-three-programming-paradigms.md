@@ -1,7 +1,6 @@
 ---
 slug: 11-three-programming-paradigms
 id: 11-three-programming-paradigms
-layout: post
 title: "3 Programming Paradigms"
 date: 2018-08-12 02:31
 comments: true

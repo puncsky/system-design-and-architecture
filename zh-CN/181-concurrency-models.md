@@ -1,7 +1,6 @@
 ---
 slug: 181-concurrency-models
 id: 181-concurrency-models
-layout: post
 title: "并发模型"
 date: 2019-10-16 14:04
 comments: true

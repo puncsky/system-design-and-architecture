@@ -1,7 +1,6 @@
 ---
 slug: 84-designing-a-url-shortener
 id: 84-designing-a-url-shortener
-layout: post
 title: "设计一个网址缩短器"
 date: 2018-10-25 14:32
 comments: true

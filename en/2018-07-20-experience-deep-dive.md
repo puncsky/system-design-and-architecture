@@ -1,7 +1,6 @@
 ---
 slug: 2018-07-20-experience-deep-dive
 id: 2018-07-20-experience-deep-dive
-layout: post
 title: "Experience Deep Dive"
 date: 2018-07-20 11:54
 comments: true

@@ -1,7 +1,6 @@
 ---
 slug: 136-fraud-detection-with-semi-supervised-learning
 id: 136-fraud-detection-with-semi-supervised-learning
-layout: post
 title: "Fraud Detection with Semi-supervised Learning"
 date: 2019-02-13 23:57
 comments: true

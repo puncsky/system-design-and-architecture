@@ -1,7 +1,6 @@
 ---
 slug: 43-how-to-design-robust-and-predictable-apis-with-idempotency
 id: 43-how-to-design-robust-and-predictable-apis-with-idempotency
-layout: post
 title: "如何设计健壮且可预测的 API 以实现幂等性？"
 date: 2018-09-12 12:55
 comments: true

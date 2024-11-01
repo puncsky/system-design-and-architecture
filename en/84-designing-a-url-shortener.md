@@ -1,7 +1,6 @@
 ---
 slug: 84-designing-a-url-shortener
 id: 84-designing-a-url-shortener
-layout: post
 title: "Designing a URL shortener"
 date: 2018-10-25 14:32
 comments: true

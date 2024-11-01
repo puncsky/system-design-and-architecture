@@ -1,7 +1,6 @@
 ---
 slug: 41-how-to-scale-a-web-service
 id: 41-how-to-scale-a-web-service
-layout: post
 title: "如何扩展网络服务？"
 date: 2018-09-11 21:32
 comments: true

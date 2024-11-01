@@ -1,7 +1,6 @@
 ---
 slug: 38-how-to-stream-video-over-http
 id: 38-how-to-stream-video-over-http
-layout: post
 title: "如何通过 HTTP 为移动设备流式传输视频？HTTP 实时流媒体 (HLS)"
 date: 2018-09-07 21:32
 comments: true

@@ -1,7 +1,6 @@
 ---
 slug: 120-designing-uber
 id: 120-designing-uber
-layout: post
 title: "Designing Uber"
 date: 2019-01-03 18:39
 comments: true

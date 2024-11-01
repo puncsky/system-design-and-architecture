@@ -1,7 +1,6 @@
 ---
 slug: 140-designing-a-recommendation-system
 id: 140-designing-a-recommendation-system
-layout: post
 title: "Toutiao Recommendation System: P1 Overview"
 date: 2019-02-19 01:33
 comments: true
