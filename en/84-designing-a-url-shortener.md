@@ -20,6 +20,9 @@ Assumptions: I generally don't include these assumptions in the initial problem 
 - Remind candidates that those are average numbers - during peak traffic (either driven by time, such as 'as people come home from work' or by outside events, such as 'during the Superbowl') they may be much higher.
 - Recent stats (within the current day) should be aggregated and available with a 5 minute lag time
 - Long look-back stats can be computed daily
+- Targeted use cases: The shortened URLs are to be copied-and-pasted only.
+  - The URLs won't be typed in via a keyboard. Therefore, don't worry about distinguishing between `0` and `o`, `l` and `1`, etc.
+  - The URLs won't be spelled out verbally. Therefore, there's no need to make the shortened URLs phonetic.
 
 ## Assumptions
 
