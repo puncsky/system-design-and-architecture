@@ -1,10 +1,13 @@
 ---
+slug: 2018-07-24-replica-and-consistency
+id: 2018-07-24-replica-and-consistency
 layout: post
 title: "Replica, Consistency, and CAP theorem"
 date: 2018-07-24 11:54
 comments: true
 categories: system design
 language: en
+abstract: "Any networked system has three desirable properties: consistency, availability and partition tolerance. Systems can have only two of those three. For example, RDBMS prefers consistency and partition tolerance and becomes an ACID system."
 references:
     - https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed
 ---

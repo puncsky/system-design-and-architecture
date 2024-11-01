@@ -1,10 +1,13 @@
 ---
+slug: 137-stream-and-batch-processing
+id: 137-stream-and-batch-processing
 layout: post
 title: "Stream and Batch Processing Frameworks"
 date: 2019-02-16 22:13
 comments: true
 categories: system design
 language: en
+abstract: "Stream and Batch processing frameworks can process high throughput at low latency. Why is Flink gaining popularity? And how to make an architectural choice among Storm, Storm-trident, Spark, and Flink?"
 references:
   - https://storage.googleapis.com/pub-tools-public-publication-data/pdf/43864.pdf
   - https://cs.stanford.edu/~matei/papers/2018/sigmod_structured_streaming.pdf
@@ -35,7 +38,7 @@ references:
 
 
 
-## How? 
+## How?
 
 ### Architectural Choices
 
@@ -49,7 +52,7 @@ To serve requirements above with commodity machines, the steaming framework use 
 
 1. DAG Topology for Iterative Processing. e.g. GraphX in Spark, topologies in Apache Storm, DataStream API in Flink.
 2. Delivery Guarantees. How guaranteed to deliver data from nodes to nodes? at-least once / at-most once / exactly once.
-3. Fault-tolerance. Using [cold/warm/hot standby, checkpointing, or active-active](/notes/85-improving-availability-with-failover).
+3. Fault-tolerance. Using [cold/warm/hot standby, checkpointing, or active-active](85-improving-availability-with-failover).
 4. Windowing API for unbounded data set. e.g. Stream Windows in Apache Flink. Spark Window Functions. Windowing in Apache Beam.
 
 

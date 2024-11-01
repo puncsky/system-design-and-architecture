@@ -1,9 +1,12 @@
 ---
+slug: 2018-07-20-experience-deep-dive
+id: 2018-07-20-experience-deep-dive
 layout: post
 title: "Experience Deep Dive"
 date: 2018-07-20 11:54
 comments: true
 categories: system design
+abstract: "For those who had little experience in leadership positions, we have some tips for interviews. It is necessary to describe your previous projects including challenges or improvements. Also, remember to demonstrate your communication skills."
 language: en
 ---
 

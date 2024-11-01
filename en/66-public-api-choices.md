@@ -1,9 +1,12 @@
 ---
+slug: 66-public-api-choices
+id: 66-public-api-choices
 layout: post
 title: "Public API Choices"
 date: 2018-10-04 01:38
 comments: true
 categories: system design
+abstract: There are several tools for the public API, API gateway or Backend for Frontend gateway. GraphQL distinguishes itself from others for its features like tailing results, batching nested queries, performance tracing, and explicit caching.
 language: en
 ---
 

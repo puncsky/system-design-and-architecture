@@ -1,9 +1,12 @@
 ---
+slug: 122-key-value-cache
+id: 122-key-value-cache
 layout: post
 title: "Key value cache"
 date: 2019-01-06 23:24
 comments: true
 language: en
+abstract: "The key-value cache is used to reduce the latency of data access. What are read-through, write-through, write-behind, write-back, write-behind, and cache-aside patterns?"
 categories: system design
 ---
 
@@ -53,8 +56,8 @@ When a cache does not support native read-through and write-through operations, 
 
 
 ## What if data volume reaches the cache capacity? Use cache replacement policies
-* LRU(Least Recently Used): evict the most recently used entries and keep the most recently used ones.
-* LFU(Least Frequently Used): evict the most frequently used entries and keep the most frequently used ones.
+* LRU(Least Recently Used): check time, and evict the most recently used entries and keep the most recently used ones.
+* LFU(Least Frequently Used): check frequency, and evict the most frequently used entries and keep the most frequently used ones.
 * ARC(Adaptive replacement cache): it has a better performance than LRU. It is achieved by keeping both the most frequently and frequently used entries, as well as a history for eviction. (Keeping MRU+MFU+eviction history.)
 
 

@@ -1,10 +1,13 @@
 ---
+slug: 49-facebook-tao
+id: 49-facebook-tao
 layout: post
 title: "How Facebook Scale its Social Graph Store? TAO"
 date: 2018-09-18 22:50
 comments: true
 categories: system design
 language: en
+abstract: "Before Tao, Facebook used the cache-aside pattern to scale its social graph store. There were three problems: list update operation is inefficient; clients have to manage cache and hard to offer read-after-write consistency. With Tao, these problems are solved. "
 references:
   - http://www.cs.cornell.edu/courses/cs6410/2015fa/slides/tao_atc.pptx
   - https://cs.stanford.edu/~matei/courses/2015/6.S897/slides/tao.pdf
@@ -49,8 +52,8 @@ To solve those problems, we have 3 goals:
 
 1. Efficiency at scale and reduce read latency
 	- graph-specific caching
-	- a standalone cache layer between the stateless service layer and the DB layer (aka [Functional Decomposition](/notes/41-how-to-scale-a-web-service))
-	- subdivide data centers (aka [Horizontal Data Partitioning](/notes/41-how-to-scale-a-web-service))
+	- a standalone cache layer between the stateless service layer and the DB layer (aka [Functional Decomposition](41-how-to-scale-a-web-service))
+	- subdivide data centers (aka [Horizontal Data Partitioning](41-how-to-scale-a-web-service))
 
 
 2. Write timeliness

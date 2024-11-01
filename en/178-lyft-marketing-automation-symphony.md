@@ -1,4 +1,6 @@
 ---
+slug: 178-lyft-marketing-automation-symphony
+id: 178-lyft-marketing-automation-symphony
 layout: post
 title: "Lyft's Marketing Automation Platform -- Symphony"
 date: 2019-10-09 23:30

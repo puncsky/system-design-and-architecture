@@ -1,4 +1,6 @@
 ---
+slug: 181-concurrency-models
+id: 181-concurrency-models
 layout: post
 title: "Concurrency Models"
 date: 2019-10-16 14:04

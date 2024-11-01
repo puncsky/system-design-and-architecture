@@ -1,9 +1,12 @@
 ---
+slug: 169-how-to-write-solid-code
+id: 169-how-to-write-solid-code
 layout: post
 title: "How to write solid code?"
 date: 2019-09-25 02:29
 comments: true
 categories: system design
+abstract: Empathy plays the most important role in writing solid code. Besides, you need to choose a sustainable architecture to decrease human resource costs in total as the project scales. Then, adopt patterns and best practices; avoid anti-patterns. Finally, refactor if necessary.
 language: en
 ---
 
@@ -16,8 +19,8 @@ language: en
 
 2. choose a sustainable architecture to reduce human resources costs per feature.
 
-<script src="/notes/11-three-programming-paradigms/js"></script>
-<script src="/notes/12-solid-design-principles/js"></script>
+<script src="11-three-programming-paradigms/js"></script>
+<script src="12-solid-design-principles/js"></script>
 
 3. adopt patterns and best practices.
 

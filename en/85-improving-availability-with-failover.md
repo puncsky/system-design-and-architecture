@@ -1,10 +1,13 @@
 ---
+slug: 85-improving-availability-with-failover
+id: 85-improving-availability-with-failover
 layout: post
 title: "Improving availability with failover"
 date: 2018-10-26 12:02
 comments: true
 categories: system design
 language: en
+abstract: To improve availability with failover, there are serval ways to achieve the goal such as cold standby, hot standby, warm standby, checkpointing and all active.
 references:
   - https://www.ibm.com/developerworks/community/blogs/RohitShetty/entry/high_availability_cold_warm_hot
 ---

@@ -1,10 +1,13 @@
 ---
+slug: 140-designing-a-recommendation-system
+id: 140-designing-a-recommendation-system
 layout: post
 title: "Toutiao Recommendation System: P1 Overview"
 date: 2019-02-19 01:33
 comments: true
 categories: system design
 language: en
+abstract: In order to evaluate user satisfaction, machine learning models are implemented. These models observe and measure the reality by feature engineering and further reduce latencies by recall strategy.
 references:
   - https://medium.com/@impxia/newsfeed-system-behind-toutiao-2c2454a6d23d
   - https://36kr.com/p/5114077

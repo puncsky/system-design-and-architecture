@@ -1,4 +1,6 @@
 ---
+slug: 179-designing-typeahead-search-or-autocomplete
+id: 179-designing-typeahead-search-or-autocomplete
 layout: post
 title: "Designing typeahead search or autocomplete"
 date: 2019-10-10 18:33
@@ -46,6 +48,6 @@ The abstraction of this problem is to find documents by prefixes and terms in a 
 
 ## Performance
 
-* generic typeahead: latency <= 1 ms within a cluster
-* network typeahead (very-large dataset over 1st and 2nd degree network):  latency <= 15 ms 
-* aggregator: latency <= 25 ms
+* generic typeahead: latency \< \= 1 ms within a cluster
+* network typeahead (very-large dataset over 1st and 2nd degree network):  latency \< \= 15 ms 
+* aggregator: latency \< \= 25 ms

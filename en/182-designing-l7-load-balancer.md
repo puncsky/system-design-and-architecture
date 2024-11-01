@@ -1,4 +1,6 @@
 ---
+slug: 182-designing-l7-load-balancer
+id: 182-designing-l7-load-balancer
 layout: post
 title: "Designing a Load Balancer or Dropbox Bandaid"
 date: 2019-10-19 15:21
@@ -16,13 +18,13 @@ references:
 ## Requirements
 
 
-Internet-scale web services deal with high-volume traffic from the whole world. However, one server could only serve a limited amount of requests at the same time. Consequently, there is usually a server farm or a large cluster of servers to undertake the traffic altogether. Here comes the question: how to route them so that each host could evenly receive and process the request? 
+Internet-scale web services deal with high-volume traffic from the whole world. However, one server could only serve a limited amount of requests at the same time. Consequently, there is usually a server farm or a large cluster of servers to undertake the traffic altogether. Here comes the question: how to route them so that each host could evenly receive and process the request?
 
 ![](https://res.cloudinary.com/dohtidfqh/image/upload/v1571516030/web-guiguio/01-s_71d9a66b3d35f2559b6febf625b03c50d20a1b0c11818ddb19fbbadeafbd11d5_1567646267795_image.png)
 
 Since there are many hops and layers of load balancers from the user to the server, specifically speaking, this time our design requirements are
 
-* [designing an L7 Load Balancer inside a data center](https://guigu.io/notes/2018-07-23-load-balancer-types)
+* [designing an L7 Load Balancer inside a data center](2018-07-23-load-balancer-types)
 * leveraging real-time load information from the backend
 * serving 10 m RPS, 10 T traffic per sec
 
@@ -34,7 +36,7 @@ Why is it hard to balance loads? The answer is that it is hard to collect accura
 
 ### Distributing-by-requests ≠ distributing-by-load
 
-Random and round-robin distribute the traffic by requests. However, the actual load is not per request - some are heavy in CPU or thread utilization, while some are lightweight. 
+Random and round-robin distribute the traffic by requests. However, the actual load is not per request - some are heavy in CPU or thread utilization, while some are lightweight.
 
 ![](https://res.cloudinary.com/dohtidfqh/image/upload/v1571519977/web-guiguio/round-robin_power-of-two-choices.png)
 
@@ -63,15 +65,15 @@ Local LB is unaware of global downstream and upstream states, including
 * upstream service may be super large, and thus it is hard to pick the right subset to cover with the load balancer
 * downstream service loads
 * the processing time of various requests are hard to predict
-    
+
 ## Solutions
 There are three options to collect load the stats accurately and then act accordingly:
 
-* centralized & dynamic controller 
+* centralized & dynamic controller
 * distributed but with shared states
 * piggybacking server-side information in response messages or active probing
 
-Dropbox Bandaid team chose the third option because it fits into their existing *random N choices* approach well. 
+Dropbox Bandaid team chose the third option because it fits into their existing *random N choices* approach well.
 
 ![](https://res.cloudinary.com/dohtidfqh/image/upload/v1571519434/web-guiguio/03-s_36fd13246bc17faff0558a94f22b02b1467d2b44c17456e7ff5ae7d2f7c84c87_1567054697304_microservice2.png)
 
@@ -83,7 +85,7 @@ However, instead of using local states, like the original *random N choices* do,
 
 There are two problems to consider:
 
-1. **Handling HTTP errors**: If a server fast fails requests, it attracts more traffic and fails more. 
+1. **Handling HTTP errors**: If a server fast fails requests, it attracts more traffic and fails more.
 2. **Stats decay**: If a server’s load is too high, no requests will be distributed there and hence the server gets stuck. They use a decay function of the inverted sigmoid curve to solve the problem.
 
 ## Results: requests are more balanced

@@ -1,9 +1,12 @@
 ---
+slug: 78-four-kinds-of-no-sql
+id: 78-four-kinds-of-no-sql
 layout: post
 title: "4 Kinds of No-SQL"
 date: 2018-10-17 00:49
 comments: true
-categories: system design
+categories: "system design"
+abstract: "When reading data from a hard disk, a database join operation is time-consuming and 99% of the time is spent on disk seek. To optimize read performance, denormalization is introduced and four categories of NoSQL are here to help."
 language: en
 references:
   - https://www.puncsky.com/blog/2016-02-13-crack-the-system-design-interview
@@ -42,7 +45,7 @@ Out-of-box choices: MongoDB, CouchDB, Terrastore, OrientDB, RavenDB, etc.
 
 ## Column-oriented Store
 
-The abstraction of a column-oriented store is like a giant nested map: ColumnFamily<RowKey, Columns<Name, Value, Timestamp>>.
+The abstraction of a column-oriented store is like a giant nested map: `ColumnFamily<RowKey, Columns<Name, Value, Timestamp>>`.
 
 The main reason we want to use a column-oriented store is that it is distributed, highly-available, and optimized for write.
 
