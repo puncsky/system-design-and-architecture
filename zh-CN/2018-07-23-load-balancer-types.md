@@ -6,7 +6,6 @@ title: "负载均衡器类型"
 date: 2018-07-23 11:54
 comments: true
 categories: 系统设计
-language: cn
 description: "通常，负载均衡器分为三类：DNS 轮询、网络负载均衡器和应用负载均衡器。DNS 轮询很少使用，因为它难以控制且响应不佳。网络负载均衡器具有更好的粒度，简单且响应迅速。"
 references:
     - https://www.amazon.com/Practice-Cloud-System-Administration-Practices/dp/032194318X

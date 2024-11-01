@@ -6,7 +6,6 @@ title: "如何扩展网络服务？"
 date: 2018-09-11 21:32
 comments: true
 categories: 系统设计
-language: cn
 references:
   - https://akfpartners.com/growth-blog/scale-cube
   - https://akfpartners.com/growth-blog/akf-scale-cube-ze-case-for-z-axis

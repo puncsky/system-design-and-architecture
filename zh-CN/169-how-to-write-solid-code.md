@@ -7,7 +7,6 @@ date: 2019-09-25 02:29
 comments: true
 categories: 系统设计
 description: 同理心在编写稳健代码中扮演着最重要的角色。此外，您需要选择一个可持续的架构，以减少项目扩展时的人力资源成本。然后，采用模式和最佳实践；避免反模式。最后，必要时进行重构。
-language: cn
 ---
 
 ![他喜欢它](https://res.cloudinary.com/dohtidfqh/image/upload/v1557957637/web-guiguio/he-likes-it.jpg)

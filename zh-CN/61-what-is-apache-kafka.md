@@ -6,7 +6,6 @@ title: "什么是 Apache Kafka？"
 date: 2018-09-27 04:06
 comments: true
 categories: 系统设计
-language: cn
 description: "Apache Kafka 是一个分布式流处理平台，可用于按主题进行日志记录、消息系统的地理复制或流处理。由于其零拷贝技术，它比其他平台快得多。"
 references:
   - https://kafka.apache.org/intro

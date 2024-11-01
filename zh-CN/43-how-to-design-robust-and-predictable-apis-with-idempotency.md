@@ -7,7 +7,6 @@ date: 2018-09-12 12:55
 comments: true
 categories: 系统设计
 description: "API 可能不够健壮且不可预测。为了解决这个问题，应遵循三个原则。客户端重试以确保一致性。使用幂等性、指数退避和随机抖动进行重试。"
-language: cn
 references:
   - https://stripe.com/blog/idempotency
 ---

@@ -7,7 +7,6 @@ date: 2018-10-17 00:49
 comments: true
 categories: "system design"
 description: "When reading data from a hard disk, a database join operation is time-consuming and 99% of the time is spent on disk seek. To optimize read performance, denormalization is introduced and four categories of NoSQL are here to help."
-language: en
 references:
   - https://www.puncsky.com/blog/2016-02-13-crack-the-system-design-interview
 ---

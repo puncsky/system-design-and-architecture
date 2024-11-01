@@ -6,7 +6,6 @@ title: "设计度量系统"
 date: 2019-08-26 11:58
 comments: true
 categories: 系统设计
-language: cn
 slides: false
 references:
   - https://github.com/prometheus/prometheus/blob/master/README.md

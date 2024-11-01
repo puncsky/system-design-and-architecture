@@ -6,7 +6,6 @@ title: "Lyft's Marketing Automation Platform -- Symphony"
 date: 2019-10-09 23:30
 comments: true
 categories: marketing, system design
-language: en
 slides: false
 description: "To achieve a higher ROI in advertising, Lyft launched a marketing automation platform, which consists of three main components: lifetime value forecaster, budget allocator, and bidders."
 references:

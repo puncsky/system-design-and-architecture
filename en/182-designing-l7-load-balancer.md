@@ -6,7 +6,6 @@ title: "Designing a Load Balancer or Dropbox Bandaid"
 date: 2019-10-19 15:21
 comments: true
 categories: system design
-language: en
 slides: false
 description: Large-scale web services deal with high-volume traffic, but one host could only serve a limited amount of requests. There is usually a server farm to take the traffic altogether. How to route them so that each host could evenly receive the request?
 references:

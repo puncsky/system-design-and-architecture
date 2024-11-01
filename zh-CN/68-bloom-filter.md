@@ -6,7 +6,6 @@ title: "布隆过滤器"
 date: 2018-10-09 12:39
 comments: true
 categories: 系统设计, 数据结构
-language: cn
 description: 布隆过滤器是一种数据结构，用于以时间和空间高效的方式检测一个元素是否在一个集合中。查询返回“可能在集合中”或“绝对不在集合中”。
 references:
   - https://zh.wikipedia.org/wiki/%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8

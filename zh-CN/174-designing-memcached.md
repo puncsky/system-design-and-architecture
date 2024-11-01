@@ -6,7 +6,6 @@ title: "设计 Memcached 或内存中的 KV 存储"
 date: 2019-10-03 22:04
 comments: true
 categories: 系统设计
-language: cn
 description: Memcached = 丰富的客户端 + 分布式服务器 + 哈希表 + LRU。它具有简单的服务器，将复杂性推给客户端，因此可靠且易于部署。
 references:
   - https://github.com/memcached/memcached/wiki/Overview

@@ -6,7 +6,6 @@ title: "设计 Uber"
 date: 2019-01-03 18:39
 comments: true
 categories: 系统设计
-language: cn
 references:
    - https://medium.com/yalantis-mobile/uber-underlying-technologies-and-how-it-actually-works-526f55b37c6f
    - https://www.youtube.com/watch?t=116&v=vujVmugFsKc

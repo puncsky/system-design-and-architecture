@@ -6,7 +6,6 @@ title: "流处理与批处理框架"
 date: 2019-02-16 22:13
 comments: true
 categories: 系统设计
-language: zh
 description: "流处理和批处理框架可以以低延迟处理高吞吐量。为什么 Flink 正在获得越来越多的关注？如何在 Storm、Storm-trident、Spark 和 Flink 之间做出架构选择？"
 references:
   - https://storage.googleapis.com/pub-tools-public-publication-data/pdf/43864.pdf

@@ -7,7 +7,6 @@ date: 2019-10-06 01:39
 comments: true
 slides: false
 categories: 系统设计
-language: cn
 description: 对于客人和房东，我们使用关系数据库存储数据，并建立索引以按位置、元数据和可用性进行搜索。我们可以使用外部供应商进行支付，并通过优先队列提醒预订。
 references:
   - https://www.vertabelo.com/blog/designing-a-data-model-for-a-hotel-room-booking-system/

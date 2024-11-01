@@ -6,7 +6,6 @@ title: "Bloom Filter"
 date: 2018-10-09 12:39
 comments: true
 categories: system design, data structures
-language: en
 description: A bloom filter is a data structure used to detect whether an element is in a set in a time and space efficient way. A query returns either "possibly in set" or "definitely not in set".
 references:
   - https://en.wikipedia.org/wiki/Bloom_filter

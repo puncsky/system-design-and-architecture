@@ -6,7 +6,6 @@ title: "副本、一致性与CAP定理"
 date: 2018-07-24 11:54
 comments: true
 categories: 系统设计
-language: cn
 description: "任何网络系统都有三种理想属性：一致性、可用性和分区容忍性。系统只能拥有这三者中的两者。例如，关系数据库管理系统（RDBMS）更倾向于一致性和分区容忍性，因此成为ACID系统。"
 references:
     - https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed

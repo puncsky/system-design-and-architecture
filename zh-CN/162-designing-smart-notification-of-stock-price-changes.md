@@ -6,7 +6,6 @@ title: "设计股票价格变动的智能通知"
 date: 2019-08-13 12:21
 comments: true
 categories: system design
-language: cn
 slides: false
 ---
 

@@ -6,7 +6,6 @@ title: "Intro to Relational Database"
 date: 2018-10-18 23:19
 comments: true
 categories: system design
-language: en
 description: The relational database is the default choice for most storage use cases, by reason of atomicity, consistency, isolation, and durability. How is consistency here different from the one in CAP theorem? Why do we need 3NF and DB proxy?
 references:
   - https://www.puncsky.com/blog/2016-02-13-crack-the-system-design-interview

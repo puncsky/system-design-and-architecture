@@ -7,7 +7,6 @@ date: 2018-10-25 14:32
 comments: true
 categories: system design
 description: If you are asked to design a system to take user-provided URLs and transform them to shortened URLs, what would you do? How would you allocate the shorthand URLs? How would you implement the redirect servers? How would you store the click stats?
-language: en
 ---
 
 Design a system to take user-provided URLs and transform them to a shortened URLs that redirect back to the original. Describe how the system works. How would you allocate the shorthand URLs? How would you store the shorthand to original URL mapping? How would you implement the redirect servers? How would you store the click stats?

@@ -6,7 +6,6 @@ title: "在软技能面试中我们可以沟通什么？"
 date: 2018-10-01 08:56
 comments: true
 categories: 系统设计
-language: cn
 description: "面试是员工寻找未来同事的过程。候选人将根据对三个关键问题的回答进行评估：能力、意愿和文化契合。 
            以上任何问题都无法在没有良好沟通的情况下回答。"
 references:

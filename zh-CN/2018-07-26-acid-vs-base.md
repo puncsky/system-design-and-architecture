@@ -6,7 +6,6 @@ title: "ACID vs BASE"
 date: 2018-07-26 11:54
 comments: true
 categories: system design
-language: zh
 description: "ACID 和 BASE 代表了不同的设计理念。ACID 更注重一致性而非可用性。在 ACID 中，C 表示事务保留所有数据库规则。而 BASE 更侧重于可用性，表示系统确保可用。"
 references:
     - https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed

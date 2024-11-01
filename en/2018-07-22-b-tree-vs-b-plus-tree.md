@@ -6,7 +6,6 @@ title: "B tree vs. B+ tree"
 date: 2018-07-22 11:54
 comments: true
 categories: system design
-language: en
 description: "A B+ tree can be seen as B tree in which each node contains only keys. Pros of B+ tree can be summarized as fewer cache misses. In B tree, the data is associated with each key and can be accessed more quickly."
 references:
     - https://stackoverflow.com/questions/870218/differences-between-b-trees-and-b-trees

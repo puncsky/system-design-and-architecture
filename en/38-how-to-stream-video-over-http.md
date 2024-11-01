@@ -6,7 +6,6 @@ title: "How to stream video over HTTP for mobile devices? HTTP Live Streaming (H
 date: 2018-09-07 21:32
 comments: true
 categories: system design
-language: en
 description: "Video service over Http for mobile devices has two problems: limited memory or storage and unstable network connection and variable bandwidth. HTTP live streaming solve this with separation of concerns, file segmentation, and indexing."
 references:
   - https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/StreamingMediaGuide/HTTPStreamingArchitecture/HTTPStreamingArchitecture.html#//apple_ref/doc/uid/TP40008332-CH101-SW2

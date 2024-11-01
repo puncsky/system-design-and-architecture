@@ -7,7 +7,6 @@ date: 2019-10-16 14:04
 comments: true
 categories: 系统设计
 description: "您可能想了解的五种并发模型：单线程；多处理和基于锁的并发；通信顺序进程 (CSP)；演员模型 (AM)；软件事务内存 (STM)。"
-language: cn
 ---
 
 ![](https://res.cloudinary.com/dohtidfqh/image/upload/v1571262011/web-guiguio/Concurrency_Models_1.png)

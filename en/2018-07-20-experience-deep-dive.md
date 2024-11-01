@@ -7,7 +7,6 @@ date: 2018-07-20 11:54
 comments: true
 categories: system design
 description: "For those who had little experience in leadership positions, we have some tips for interviews. It is necessary to describe your previous projects including challenges or improvements. Also, remember to demonstrate your communication skills."
-language: en
 ---
 
 ## Intended Audience

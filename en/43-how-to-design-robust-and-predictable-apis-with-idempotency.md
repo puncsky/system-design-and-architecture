@@ -7,7 +7,6 @@ date: 2018-09-12 12:55
 comments: true
 categories: system design
 description: "APIs can be un-robust and un-predictable. To solve the problem, three principles should be observed. The client retries to ensure consistency. Retry with idempotency, exponential backoff, and random jitter."
-language: en
 references:
   - https://stripe.com/blog/idempotency
 ---

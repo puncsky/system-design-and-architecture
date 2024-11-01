@@ -6,7 +6,6 @@ title: "3 Programming Paradigms"
 date: 2018-08-12 02:31
 comments: true
 categories: system design
-language: en
 description: "Structured programming is a discipline imposed upon the direct transfer of control. OO programming is a discipline imposed upon the indirect transfer of control. Functional programming is discipline imposed upon variable assignment."
 references:
   - https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164

@@ -6,7 +6,6 @@ title: "Netflix 如何提供观看数据？"
 date: 2018-09-13 20:39
 comments: true
 categories: system design
-language: cn
 references:
   - http://techblog.netflix.com/2015/01/netflixs-viewing-data-how-we-know-where.html
 ---

@@ -6,7 +6,6 @@ title: "What can we communicate in soft skills interview?"
 date: 2018-10-01 08:56
 comments: true
 categories: system design
-language: en
 description: "An interview is a process for workers to find future co-workers. The candidate will be evaluated based on answers to three key questions: capability, willingness, and culture-fit. 
            Any question above can not be answered without good communication."
 references:

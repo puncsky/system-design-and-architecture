@@ -7,7 +7,6 @@ date: 2018-07-20 11:54
 comments: true
 categories: system design
 description: "The advantages of implementing data partition and routing are availability and read efficiency while consistency is the weakness. The routing abstract model is essentially two maps: key-partition map and partition-machine map."
-language: en
 ---
 
 ## Why data partition and routing?

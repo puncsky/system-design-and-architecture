@@ -6,7 +6,6 @@ title: "设计实时联想搜索或自动完成功能"
 date: 2019-10-10 18:33
 comments: true
 categories: 系统设计
-language: cn
 slides: false
 description: 如何设计一个实时的联想自动完成服务？Linkedin 的 Cleo 库通过多层架构（浏览器缓存 / 网络层 / 结果聚合器 / 各种联想后端）和 4 个元素（倒排索引 / 正向索引，布隆过滤器，评分器）来回答这个问题。
 references:

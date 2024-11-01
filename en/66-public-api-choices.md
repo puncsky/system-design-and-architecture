@@ -7,7 +7,6 @@ date: 2018-10-04 01:38
 comments: true
 categories: system design
 description: There are several tools for the public API, API gateway or Backend for Frontend gateway. GraphQL distinguishes itself from others for its features like tailing results, batching nested queries, performance tracing, and explicit caching.
-language: en
 ---
 
 In summary, to choose a tool for the public API, API gateway, or BFF (Backend For Frontend) gateway, I prefer GraphQL for its features like tailing results, batching nested queries, performance tracing, and explicit caching.

@@ -7,7 +7,6 @@ date: 2019-08-19 21:15
 updateDate: 2024-04-06 17:29
 comments: true
 categories: system design
-language: en
 slides: false
 description: Design a webhook that notifies the merchant when the payment succeeds. We need to aggregate the metrics (e.g., success vs. failure) and display it on the dashboard.
 references:

@@ -6,7 +6,6 @@ title: "设计一个带外部存储的 KV 存储"
 date: 2018-11-10 12:39
 comments: true
 categories: 系统设计
-language: cn
 references:
   - http://basho.com/wp-content/uploads/2015/05/bitcask-intro.pdf
 ---

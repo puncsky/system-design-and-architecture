@@ -6,7 +6,6 @@ title: "Load Balancer Types"
 date: 2018-07-23 11:54
 comments: true
 categories: system design
-language: en
 description: "Usually, load balancers have three categories: DNS Round Robin, Network Load balancer and Application Load balancer. DNS Round Robin is rarely used as it is hard to control and not responsive. The network Load balancer has better granularity and is simple and responsive."
 references:
     - https://www.amazon.com/Practice-Cloud-System-Administration-Practices/dp/032194318X
