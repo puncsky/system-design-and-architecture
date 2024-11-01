@@ -5,7 +5,7 @@ layout: post
 title: "SOLID Design Principles"
 date: 2018-08-13 18:07
 comments: true
-categories: system design
+tags: [system design]
 description: SOLID is an acronym of design principles that help software engineers write solid code. S is for single responsibility principle, O for open/closed principle, L for Liskov’s substitution principle, I for interface segregation principle and D for dependency inversion principle.
 references:
   - https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164

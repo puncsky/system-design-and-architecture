@@ -5,7 +5,7 @@ layout: post
 title: "Concurrency Models"
 date: 2019-10-16 14:04
 comments: true
-categories: system design
+tags: [system design]
 description: "Five concurrency models you may want to know: Single-threaded; Multiprocessing and lock-based concurrency; Communicating Sequential Processes (CSP); Actor Model (AM); Software Transactional Memory (STM)."
 ---
 

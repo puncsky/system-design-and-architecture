@@ -5,7 +5,7 @@ layout: post
 title: "如何通过 HTTP 为移动设备流式传输视频？HTTP 实时流媒体 (HLS)"
 date: 2018-09-07 21:32
 comments: true
-categories: 系统设计
+tags: [系统设计]
 description: "移动设备上的 HTTP 视频服务面临两个问题：有限的内存或存储和不稳定的网络连接以及可变的带宽。HTTP 实时流媒体通过关注点分离、文件分段和索引来解决这些问题。"
 references:
   - https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/StreamingMediaGuide/HTTPStreamingArchitecture/HTTPStreamingArchitecture.html#//apple_ref/doc/uid/TP40008332-CH101-SW2

@@ -5,7 +5,7 @@ layout: post
 title: "公共 API 选择"
 date: 2018-10-04 01:38
 comments: true
-categories: 系统设计
+tags: [系统设计]
 description: 有几种工具可用于公共 API、API 网关或前端后端网关。GraphQL 以其诸如尾随结果、批处理嵌套查询、性能追踪和显式缓存等功能而脱颖而出。
 ---
 

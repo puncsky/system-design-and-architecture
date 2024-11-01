@@ -6,7 +6,7 @@ title: "设计支付 webhook"
 date: 2019-08-19 21:15
 updateDate: 2024-04-06 17:29
 comments: true
-categories: 系统设计
+tags: [系统设计]
 slides: false
 description: 设计一个 webhook，当支付成功时通知商家。我们需要汇总指标（例如，成功与失败）并在仪表板上显示。
 references:

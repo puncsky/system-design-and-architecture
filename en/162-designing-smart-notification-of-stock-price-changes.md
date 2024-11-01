@@ -5,7 +5,7 @@ layout: post
 title: "Designing Smart Notification of Stock Price Changes"
 date: 2019-08-13 12:21
 comments: true
-categories: system design
+tags: [system design]
 slides: false
 ---
 

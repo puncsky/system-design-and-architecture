@@ -5,7 +5,7 @@ layout: post
 title: "设计负载均衡器或 Dropbox 修补程序"
 date: 2019-10-19 15:21
 comments: true
-categories: 系统设计
+tags: [系统设计]
 slides: false
 description: 大规模的网络服务处理来自全球的高流量，但单个主机只能处理有限数量的请求。通常会有一个服务器集群来处理所有流量。如何路由这些请求，以便每个主机能够均匀地接收请求？
 references:

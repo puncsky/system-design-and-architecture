@@ -5,7 +5,7 @@ layout: post
 title: "Designing a KV store with external storage"
 date: 2018-11-10 12:39
 comments: true
-categories: system design
+tags: [system design]
 references:
   - http://basho.com/wp-content/uploads/2015/05/bitcask-intro.pdf
 ---

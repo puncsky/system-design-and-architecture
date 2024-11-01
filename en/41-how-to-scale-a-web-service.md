@@ -5,7 +5,7 @@ layout: post
 title: "How to scale a web service?"
 date: 2018-09-11 21:32
 comments: true
-categories: system design
+tags: [system design]
 references:
   - https://akfpartners.com/growth-blog/scale-cube
   - https://akfpartners.com/growth-blog/akf-scale-cube-ze-case-for-z-axis

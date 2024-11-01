@@ -5,7 +5,7 @@ layout: post
 title: "通过故障转移提高可用性"
 date: 2018-10-26 12:02
 comments: true
-categories: 系统设计
+tags: [系统设计]
 description: 为了通过故障转移提高可用性，有几种方法可以实现这一目标，例如冷备份、热备份、温备份、检查点和全活动。
 references:
   - https://www.ibm.com/developerworks/community/blogs/RohitShetty/entry/high_availability_cold_warm_hot

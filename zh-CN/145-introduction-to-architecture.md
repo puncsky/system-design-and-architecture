@@ -5,7 +5,7 @@ layout: post
 title: "建筑导论"
 date: 2019-05-11 15:52
 comments: true
-categories: 系统设计
+tags: [系统设计]
 description: 建筑为软件系统的整个生命周期提供服务，使其易于理解、开发、测试、部署和操作。O’Reilly的书《软件架构模式》对五种基本架构进行了简单而有效的介绍。
 references:
   - https://puncsky.com/notes/10-thinking-software-architecture-as-physical-buildings

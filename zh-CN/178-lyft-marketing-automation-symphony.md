@@ -5,7 +5,7 @@ layout: post
 title: "Lyft 的营销自动化平台 -- Symphony"
 date: 2019-10-09 23:30
 comments: true
-categories: marketing, system design
+tags: [marketing, system design]
 slides: false
 description: "为了在广告中实现更高的投资回报率，Lyft推出了一款营销自动化平台，该平台由三个主要组件组成：生命周期价值预测器、预算分配器和竞标者。"
 references:

@@ -5,7 +5,7 @@ layout: post
 title: "How Facebook Scale its Social Graph Store? TAO"
 date: 2018-09-18 22:50
 comments: true
-categories: system design
+tags: [system design]
 description: "Before Tao, Facebook used the cache-aside pattern to scale its social graph store. There were three problems: list update operation is inefficient; clients have to manage cache and hard to offer read-after-write consistency. With Tao, these problems are solved. "
 references:
   - http://www.cs.cornell.edu/courses/cs6410/2015fa/slides/tao_atc.pptx

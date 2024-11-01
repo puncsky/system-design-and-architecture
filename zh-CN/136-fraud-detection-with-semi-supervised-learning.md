@@ -5,7 +5,7 @@ layout: post
 title: "使用半监督学习进行欺诈检测"
 date: 2019-02-13 23:57
 comments: true
-categories: architecture, system design
+tags: [architecture, system design]
 description: 欺诈检测旨在防止登录时的账户接管和僵尸网络攻击。半监督学习的学习准确性优于无监督学习，并且所需时间和成本低于监督学习。
 references:
   - https://www.slideshare.net/Hadoop_Summit/semisupervised-learning-in-an-adversarial-environment

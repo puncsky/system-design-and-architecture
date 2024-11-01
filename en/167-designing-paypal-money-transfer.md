@@ -5,7 +5,7 @@ layout: post
 title: Designing Square Cash or PayPal Money Transfer System
 date: 2019-08-23 17:02
 comments: true
-categories: system design
+tags: [system design]
 slides: false
 description: Design a money-transfer backend system that can receive, send, and payout. It should cover issues like scaling, internationalization, Deduplication, single-point failure, strong consistency.
 references:

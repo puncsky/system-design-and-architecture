@@ -5,7 +5,7 @@ layout: post
 title: "What is Apache Kafka?"
 date: 2018-09-27 04:06
 comments: true
-categories: system design
+tags: [system design]
 description: "Apache Kafka is a distributed streaming platform, which can be used for logging by topics, messaging system geo-replication or stream processing. It is much faster than other platforms due to its zero-copy technology."
 references:
   - https://kafka.apache.org/intro

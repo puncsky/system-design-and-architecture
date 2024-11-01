@@ -5,7 +5,7 @@ layout: post
 title: "iOS Architecture Patterns Revisited"
 date: 2019-01-10 02:26
 comments: true
-categories: architecture, mobile, system design
+tags: [architecture, mobile, system design]
 description: "Architecture can directly impact costs per feature. Let's compare Tight-coupling MVC, Cocoa MVC, MVP, MVVM, and VIPER in three dimensions: balanced distribution of responsibility among feature actors, testability and ease of use and maintainability."
 references:
   - https://medium.com/ios-os-x-development/ios-architecture-patterns-ecba4c38de52

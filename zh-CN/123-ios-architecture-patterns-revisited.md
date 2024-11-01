@@ -5,7 +5,7 @@ layout: post
 title: "iOS 架构模式再探"
 date: 2019-01-10 02:26
 comments: true
-categories: architecture, mobile, system design
+tags: [architecture, mobile, system design]
 description: "架构可以直接影响每个功能的成本。让我们在三个维度上比较紧耦合 MVC、Cocoa MVC、MVP、MVVM 和 VIPER：功能参与者之间责任的平衡分配、可测试性以及易用性和可维护性。"
 references:
   - https://medium.com/ios-os-x-development/ios-architecture-patterns-ecba4c38de52

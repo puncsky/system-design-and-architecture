@@ -5,7 +5,7 @@ layout: post
 title: "Designing Memcached or an in-memory KV store"
 date: 2019-10-03 22:04
 comments: true
-categories: system design
+tags: [system design]
 description: Memcached = rich client + distributed servers + hash table + LRU. It features a simple server and pushes complexity to the client) and hence reliable and easy to deploy.
 references:
   - https://github.com/memcached/memcached/wiki/Overview

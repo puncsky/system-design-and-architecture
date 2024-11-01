@@ -5,7 +5,7 @@ layout: post
 title: "Designing a metric system"
 date: 2019-08-26 11:58
 comments: true
-categories: system design
+tags: [system design]
 slides: false
 references:
   - https://github.com/prometheus/prometheus/blob/master/README.md

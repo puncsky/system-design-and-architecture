@@ -5,7 +5,7 @@ layout: post
 title: "Fraud Detection with Semi-supervised Learning"
 date: 2019-02-13 23:57
 comments: true
-categories: architecture, system design
+tags: [architecture, system design]
 description: Fraud Detection fights against account takeovers and Botnet attacks during login. Semi-supervised learning has better learning accuracy than unsupervised learning and less time and costs than supervised learning.
 references:
   - https://www.slideshare.net/Hadoop_Summit/semisupervised-learning-in-an-adversarial-environment

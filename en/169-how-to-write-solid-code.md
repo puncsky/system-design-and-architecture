@@ -5,7 +5,7 @@ layout: post
 title: "How to write solid code?"
 date: 2019-09-25 02:29
 comments: true
-categories: system design
+tags: [system design]
 description: Empathy plays the most important role in writing solid code. Besides, you need to choose a sustainable architecture to decrease human resource costs in total as the project scales. Then, adopt patterns and best practices; avoid anti-patterns. Finally, refactor if necessary.
 ---
 

@@ -5,7 +5,7 @@ layout: post
 title: "设计 Facebook 照片存储"
 date: 2019-01-04 12:11
 comments: true
-categories: 系统设计
+tags: [系统设计]
 description: "传统的基于 NFS 的设计存在元数据瓶颈：大的元数据大小限制了元数据命中率。Facebook 照片存储通过将数十万张图像聚合在一个单一的 haystack 存储文件中，消除了元数据。"
 references:
   - https://www.usenix.org/conference/osdi10/finding-needle-haystack-facebooks-photo-storage

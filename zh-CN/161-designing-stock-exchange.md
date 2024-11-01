@@ -5,7 +5,7 @@ layout: post
 title: "设计股票交易所"
 date: 2019-08-12 09:50
 comments: true
-categories: 系统设计
+tags: [系统设计]
 slides: false
 ---
 

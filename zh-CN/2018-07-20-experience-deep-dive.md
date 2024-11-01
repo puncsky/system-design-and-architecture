@@ -5,7 +5,7 @@ layout: post
 title: "深入体验"
 date: 2018-07-20 11:54
 comments: true
-categories: 系统设计
+tags: [系统设计]
 description: "对于那些在领导职位上经验较少的人，我们提供一些面试建议。需要描述您之前的项目，包括挑战或改进。同时，记得展示您的沟通技巧。"
 ---
 

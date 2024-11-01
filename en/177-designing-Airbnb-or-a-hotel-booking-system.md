@@ -6,7 +6,7 @@ title: "Designing Airbnb or a hotel booking system"
 date: 2019-10-06 01:39
 comments: true
 slides: false
-categories: system design
+tags: [system design]
 description: For guests and hosts, we store data with a relational database and build indexes to search by location, metadata, and availability. We can use external vendors for payment and remind the reservations with a priority queue.
 references:
   - https://www.vertabelo.com/blog/designing-a-data-model-for-a-hotel-room-booking-system/
