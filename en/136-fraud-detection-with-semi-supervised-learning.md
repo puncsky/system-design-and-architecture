@@ -12,8 +12,6 @@ image: https://web-dash-v2.onrender.com/api/og-tianpan-co?title=Fraud%20Detectio
 
 ---
 
-![](https://web-dash-v2.onrender.com/api/og-tianpan-co?title=Fraud%20Detection%20with%20Semi-supervised%20Learning)
-
 ## Clarify Requirements
 
 Calculate risk probability scores in realtime and make decisions along with a rule engine to prevent ATO (account takeovers) and Botnet attacks.
@@ -34,7 +32,7 @@ Realtime scoring and rule-based decision
 ATOs ranking from easy to hard to detect
 
 1. from single IP
-2. from IPs on the same device 
+2. from IPs on the same device
 3. from IPs across the world
 4. from 100k IPs
 5. attacks on specific accounts
@@ -53,7 +51,7 @@ Challenges
 
 ## Core Components and Workflows
 
-Semi-supervised learning = unlabeled data + small amount of labeled data 
+Semi-supervised learning = unlabeled data + small amount of labeled data
 
 Why? better learning accuracy than unsupervised learning + less time and costs than supervised learning
 

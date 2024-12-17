@@ -1,105 +1,148 @@
 ---
 slug: 136-fraud-detection-with-semi-supervised-learning
 id: 136-fraud-detection-with-semi-supervised-learning
-title: "Fraud Detection with Semi-supervised Learning"
+title: "使用半监督学习进行欺诈检测"
 date: 2019-02-13 23:57
 comments: true
 tags: [architecture, system design]
-description: Fraud Detection fights against account takeovers and Botnet attacks during login. Semi-supervised learning has better learning accuracy than unsupervised learning and less time and costs than supervised learning.
+description: 欺诈检测在登录过程中对抗账户接管和僵尸网络攻击。半监督学习比无监督学习具有更好的学习准确性，比监督学习花费更少的时间和成本。
 references:
   - https://www.slideshare.net/Hadoop_Summit/semisupervised-learning-in-an-adversarial-environment
-image: https://web-dash-v2.onrender.com/api/og-tianpan-co?title=Fraud%20Detection%20with%20Semi-supervised%20Learning
-
+image: https://web-dash-v2.onrender.com/api/og-tianpan-co?title=%E4%BD%BF%E7%94%A8%E5%8D%8A%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0%E8%BF%9B%E8%A1%8C%E6%AC%BA%E8%AF%88%E6%A3%80%E6%B5%8B
 ---
 
-![](https://web-dash-v2.onrender.com/api/og-tianpan-co?title=Fraud%20Detection%20with%20Semi-supervised%20Learning)
+## 明确需求
 
-## Clarify Requirements
+实时计算风险概率分数，并结合规则引擎做出决策，以防止账户接管 (ATO) 和僵尸网络攻击。
 
-Calculate risk probability scores in realtime and make decisions along with a rule engine to prevent ATO (account takeovers) and Botnet attacks.
+通过在线和离线管道训练聚类特征
 
-Train clustering fatures with online and offline pipelines
+1. 来源于网站日志、认证日志、用户行为、交易、监控列表中的高风险账户
 
-1. Source from website logs, auth logs, user actions, transactions, high-risk accounts in watch list
-2. track event data in kakfa topics
-3. Process events and prepare clustering features
+2. 在 Kafka 主题中跟踪事件数据
 
-Realtime scoring and rule-based decision
+3. 处理事件并准备聚类特征
 
-4. assess a risk score comprehensively for online services
+实时评分和基于规则的决策
 
-5. Maintain flexibility with manually configuration in a rule engine
-6. share, or use the insights in online services
+4. 综合评估在线服务的风险评分
 
-ATOs ranking from easy to hard to detect
+5. 在规则引擎中手动配置以保持灵活性
 
-1. from single IP
-2. from IPs on the same device 
-3. from IPs across the world
-4. from 100k IPs
-5. attacks on specific accounts
-6. phishing and malware
+6. 在在线服务中共享或使用洞察
 
-Challenges
+从易到难检测的账户接管
 
-* Manual feature selection
-* Feature evolution in adversarial environment
-* Scalability
-* No online DBSCAN
+1. 来自单个 IP
 
-## **High-level Architecture**
+2. 来自同一设备的 IP
+
+3. 来自全球的 IP
+
+4. 来自 100k 个 IP
+
+5. 针对特定账户的攻击
+
+6. 网络钓鱼和恶意软件
+
+挑战
+
+* 手动特征选择
+
+* 对抗环境中的特征演变
+
+* 可扩展性
+
+* 无在线 DBSCAN
+
+## **高级架构**
 
 ![](https://tp-misc.b-cdn.net/SDA/136-fraud-detection-with-semi-supervised-learning-1.png)
 
-## Core Components and Workflows
+## 核心组件和工作流程
 
-Semi-supervised learning = unlabeled data + small amount of labeled data 
+半监督学习 = 未标记数据 + 少量标记数据
 
-Why? better learning accuracy than unsupervised learning + less time and costs than supervised learning
+为什么？比无监督学习具有更好的学习准确性 + 比监督学习花费更少的时间和成本
 
-### Training: To prepare clustering features in database
+### 训练：在数据库中准备聚类特征
 
-- **Streaming Pipeline on Spark:**
-  - Runs continuously in real-time.
-  - Performs feature normalization and categorical transformation on the fly.
-    - **Feature Normalization**: Scale your numeric features (e.g., age, income) so that they are between 0 and 1.
-    - **Categorical Feature Transformation**: Apply one-hot encoding or another transformation to convert categorical features into a numeric format suitable for the machine learning model.
-  - Uses **Spark MLlib’s K-means** to cluster streaming data into groups.
-    - After running k-means and forming clusters, you might find that certain clusters have more instances of fraud.
-    - Once you’ve labeled a cluster as fraudulent based on historical data or expert knowledge, you can use that cluster assignment during inference. Any new data point assigned to that fraudulent cluster can be flagged as suspicious.
-- **Hourly Cronjob Pipeline:**
-  - Runs periodically every hour (batch processing).
-  - Applies **thresholding** to identify anomalies based on results from the clustering model.
-  - **Tunes parameters** of the **DBSCAN algorithm** to improve clustering and anomaly detection.
-  - Uses **DBSCAN** from **scikit-learn** to find clusters and detect outliers in batch data.
-    - DBSCAN, which can detect outliers, might identify clusters of regular transactions and separate them from **noise**, which could be unusual, potentially fraudulent transactions.
-    - Transactions in the noisy or outlier regions (points that don’t belong to any dense cluster) can be flagged as suspicious.
-    - After identifying a cluster as fraudulent, DBSCAN helps detect patterns of fraud even in irregularly shaped transaction distributions.
+- **Spark 上的流处理管道：**
 
-## Serving
+  - 实时连续运行。
 
-The serving layer is where the rubber meets the road - where we turn our machine learning models and business rules into actual fraud prevention decisions. Here's how it works:
+  - 动态执行特征归一化和类别转换。
 
-- Fraud Detection Scoring Service:
-  - Takes real-time features extracted from incoming requests
-  - Applies both clustering models (K-means from streaming and DBSCAN from batch)
-  - Combines scores with streaming counters (like login attempts per IP)
-  - Outputs a unified risk score between 0 and 1
-- Rule Engine:
-  - Acts as the "brain" of the system
-  - Combines ML scores with configurable business rules
-  - Examples of rules:
-    - If risk score > 0.8 AND user is accessing from new IP → require 2FA
-    - If risk score > 0.9 AND account is high-value → block transaction
-  - Rules are stored in a database and can be updated without code changes
-  - Provides an admin portal for security teams to adjust rules
-- Integration with Other Services:
-  - Exposes REST APIs for real-time scoring
-  - Publishes results to streaming counters for monitoring
-  - Feeds decisions back to the training pipeline to improve model accuracy
-- Observability:
-  - Tracks key metrics like false positive/negative rates
-  - Monitors model drift and feature distribution changes
-  - Provides dashboards for security analysts to investigate patterns
-  - Logs detailed information for post-incident analysis
+    - **特征归一化**：将数值特征（如年龄、收入）缩放到 0 和 1 之间。
 
+    - **类别特征转换**：应用独热编码或其他转换，将类别特征转换为适合机器学习模型的数值格式。
+
+  - 使用 **Spark MLlib 的 K-means** 将流数据聚类成组。
+
+    - 运行 k-means 并形成聚类后，可能会发现某些聚类中有更多的欺诈实例。
+
+    - 一旦根据历史数据或专家知识将某个聚类标记为欺诈，就可以在推断过程中使用该聚类分配。任何分配到该欺诈聚类的新数据点都可以标记为可疑。
+
+- **每小时定时任务管道：**
+
+  - 每小时定期运行（批处理）。
+
+  - 应用 **阈值** 来根据聚类模型的结果识别异常。
+
+  - 调整 **DBSCAN 算法** 的参数以改善聚类和异常检测。
+
+  - 使用 **scikit-learn 的 DBSCAN** 在批量数据中寻找聚类并检测异常值。
+
+    - DBSCAN 可以检测异常值，可能会识别出常规交易的聚类，并将其与可能不寻常、潜在欺诈的交易分开。
+
+    - 在噪声或异常区域（不属于任何密集聚类的点）中的交易可以标记为可疑。
+
+    - 在识别出某个聚类为欺诈后，DBSCAN 有助于即使在不规则形状的交易分布中也能检测到欺诈模式。
+
+## 服务
+
+服务层是将机器学习模型和业务规则转化为实际欺诈预防决策的地方。其工作原理如下：
+
+- 欺诈检测评分服务：
+
+  - 提取来自传入请求的实时特征
+
+  - 应用两种聚类模型（流处理中的 K-means 和批处理中的 DBSCAN）
+
+  - 将分数与流计数器（如每个 IP 的登录尝试次数）结合
+
+  - 输出 0 到 1 之间的统一风险评分
+
+- 规则引擎：
+
+  - 作为系统的“头脑”
+
+  - 将 ML 分数与可配置的业务规则结合
+
+  - 规则示例：
+
+    - 如果风险评分 > 0.8 且用户从新 IP 访问 → 需要 2FA
+
+    - 如果风险评分 > 0.9 且账户为高价值 → 阻止交易
+
+  - 规则存储在数据库中，可以无需代码更改进行更新
+
+  - 为安全团队提供调整规则的管理门户
+
+- 与其他服务的集成：
+
+  - 暴露用于实时评分的 REST API
+
+  - 将结果发布到流计数器以进行监控
+
+  - 将决策反馈到训练管道以提高模型准确性
+
+- 可观察性：
+
+  - 跟踪关键指标，如误报/漏报率
+
+  - 监控模型漂移和特征分布变化
+
+  - 为安全分析师提供调查模式的仪表板
+
+  - 记录详细信息以进行事后分析
