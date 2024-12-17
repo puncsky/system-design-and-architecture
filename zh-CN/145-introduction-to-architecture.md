@@ -1,11 +1,11 @@
 ---
 slug: 145-introduction-to-architecture
 id: 145-introduction-to-architecture
-title: "建筑导论"
+title: "架构导论"
 date: 2019-05-11 15:52
 comments: true
 tags: [系统设计]
-description: 建筑为软件系统的整个生命周期提供服务，使其易于理解、开发、测试、部署和操作。O’Reilly的书《软件架构模式》对五种基本架构进行了简单而有效的介绍。
+description: 架构为软件系统的整个生命周期提供服务，使其易于理解、开发、测试、部署和操作。O’Reilly的书《软件架构模式》对五种基本架构进行了简单而有效的介绍。
 references:
   - https://puncsky.com/notes/10-thinking-software-architecture-as-physical-buildings
   - https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/ch01.html
@@ -14,11 +14,11 @@ references:
 
 ## 什么是架构？
 
-架构是软件系统的形状。将其视为物理建筑的全景。
+架构是软件系统的形状。就好像是一个物理世界的建筑的全景：
 
 * 范式是砖块。
 * 设计原则是房间。
-* 组件是建筑。
+* 组件是一幢建筑。
 
 它们共同服务于特定的目的，例如医院是为治愈病人而设，学校是为教育学生而设。
 
