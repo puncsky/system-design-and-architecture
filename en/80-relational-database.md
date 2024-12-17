@@ -10,7 +10,7 @@ references:
   - https://www.puncsky.com/blog/2016-02-13-crack-the-system-design-interview
 ---
 
-Relational database is the default choice for most storage use cases, by reason of ACID (atomicity, consistency, isolation, and durability). One tricky thing is "consistency" -- it means that any transaction will bring database from one valid state to another, which is different from Consistency in [CAP theorem](2018-07-24-replica-and-consistency).
+Relational database is the default choice for most storage use cases, by reason of ACID (atomicity, consistency, isolation, and durability). One tricky thing is "consistency" -- it means that any transaction will bring database from one valid state to another, which is different from Consistency in [CAP theorem](https://tianpan.co/notes/2018-07-24-replica-and-consistency).
 
 ## Schema Design and 3rd Normal Form (3NF)
 

@@ -89,7 +89,7 @@ style={{ width: "100%", maxWidth: 300 }}
 3. ==If a follower replica fails, it will be dropped out of the ISR and the leader then continues to commit new messages with fewer replicas in the ISR. Notice that now, the system is running in an under replicated mode.== If a leader fails, an ISR is picked to be a new leader.
 4. Out-of-sync replica keeps pulling message from the leader. Once catches up with the leader, it will be added back to the ISR.
 
-## Is Kafka an AP or CP system in [CAP theorem](2018-07-24-replica-and-consistency)?
+## Is Kafka an AP or CP system in [CAP theorem](https://tianpan.co/notes/2018-07-24-replica-and-consistency)?
 
 Jun Rao says it is CA, because "Our goal was to support replication in a Kafka cluster within a single datacenter, where network partitioning is rare, so our design focuses on maintaining highly available and strongly consistent replicas."
 

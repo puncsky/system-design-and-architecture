@@ -20,4 +20,4 @@ AKF scale cube visualizes the scaling process into three dimensions…
 2. ==Functional Decomposition== and Segmentation - Microservices  (Y-Axis). e.g. auth service, user profile service, photo service, etc
 3. ==Horizontal Data Partitioning== - Shards (Z-Axis).  Replicate the whole stack to different “pods”.  Each pod can target a specific large group of users. For example, Uber had China and US data centers. Each datacenter might have different “pods” for different regions.
 
-Want an example? Go to see [how Facebook scale its social graph data store](49-facebook-tao).
+Want an example? Go to see [how Facebook scale its social graph data store](https://tianpan.co/notes/49-facebook-tao).

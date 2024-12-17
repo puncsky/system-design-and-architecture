@@ -1894,7 +1894,7 @@ Transaction table, balance sheet, etc. are similar to the transaction discussed 
 
 ### How to sync across the transaction table and external banks and vendors?
 
-* [retry with idempotency to improve the success rate of the external calls and ensure no duplicate orders](43-how-to-design-robust-and-predictable-apis-with-idempotency).
+* [retry with idempotency to improve the success rate of the external calls and ensure no duplicate orders](https://tianpan.co/notes/43-how-to-design-robust-and-predictable-apis-with-idempotency).
 * two ways to check if the PENDING orders are filled or failed.
     1. `poll`: cronjobs (SWF, Airflow, Cadence, etc.) to poll the status for PENDING orders.
     2. `callback`: provide a callback API for the external vendors.
@@ -1916,12 +1916,12 @@ For the `callback` case, we can ensure we implement with idempotent APIs, and we
 #### Event queue may be at-least-once
 
 * For the even queue, we can use an exactly-once Kafka with the producer throughput declines only by 3%.
-* In the database layer, we can use [idempotency key or deduplication key](43-how-to-design-robust-and-predictable-apis-with-idempotency).
+* In the database layer, we can use [idempotency key or deduplication key](https://tianpan.co/notes/43-how-to-design-robust-and-predictable-apis-with-idempotency).
 * In the service layer, we can use Redis key-value store.
 
 ### Availability and Scalability
 
-* Overall failover strategies: [Improving availability with failover](85-improving-availability-with-failover): Cold Standby, Hot Standby, Warm Standby, Active-active.
-* Service layer scaling: [AKF Scale Cube](41-how-to-scale-a-web-service)
+* Overall failover strategies: [Improving availability with failover](https://tianpan.co/notes/85-improving-availability-with-failover): Cold Standby, Hot Standby, Warm Standby, Active-active.
+* Service layer scaling: [AKF Scale Cube](https://tianpan.co/notes/41-how-to-scale-a-web-service)
 * Data layer scaling: CQRS Pattern
-* Needing a speed layer? [Lambda Architecture](83-lambda-architecture)
+* Needing a speed layer? [Lambda Architecture](https://tianpan.co/notes/83-lambda-architecture)

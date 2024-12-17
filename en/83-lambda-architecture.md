@@ -28,7 +28,7 @@ e.g. problems with scaling a pageview service in a traditional way
 4. Fault-tolerance issues begin
 5. Data corruption happens
 
-The key point is that ==X-axis dimension alone of the [AKF scale cube](41-how-to-scale-a-web-service) is not good enough. We should introduce Y-axis / functional decomposition as well. Lambda architecture tells us how to do it for a data system.==
+The key point is that ==X-axis dimension alone of the [AKF scale cube](https://tianpan.co/notes/41-how-to-scale-a-web-service) is not good enough. We should introduce Y-axis / functional decomposition as well. Lambda architecture tells us how to do it for a data system.==
 
 
 

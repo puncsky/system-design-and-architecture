@@ -50,7 +50,7 @@ To serve requirements above with commodity machines, the steaming framework use 
 
 1. DAG Topology for Iterative Processing. e.g. GraphX in Spark, topologies in Apache Storm, DataStream API in Flink.
 2. Delivery Guarantees. How guaranteed to deliver data from nodes to nodes? at-least once / at-most once / exactly once.
-3. Fault-tolerance. Using [cold/warm/hot standby, checkpointing, or active-active](85-improving-availability-with-failover).
+3. Fault-tolerance. Using [cold/warm/hot standby, checkpointing, or active-active](https://tianpan.co/notes/85-improving-availability-with-failover).
 4. Windowing API for unbounded data set. e.g. Stream Windows in Apache Flink. Spark Window Functions. Windowing in Apache Beam.
 
 

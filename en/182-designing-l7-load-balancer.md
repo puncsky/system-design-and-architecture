@@ -22,7 +22,7 @@ Internet-scale web services deal with high-volume traffic from the whole world. 
 
 Since there are many hops and layers of load balancers from the user to the server, specifically speaking, this time our design requirements are
 
-* [designing an L7 Load Balancer inside a data center](2018-07-23-load-balancer-types)
+* [designing an L7 Load Balancer inside a data center](https://tianpan.co/notes/2018-07-23-load-balancer-types)
 * leveraging real-time load information from the backend
 * serving 10 m RPS, 10 T traffic per sec
 

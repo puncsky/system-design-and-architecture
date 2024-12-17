@@ -50,8 +50,8 @@ To solve those problems, we have 3 goals:
 
 1. Efficiency at scale and reduce read latency
 	- graph-specific caching
-	- a standalone cache layer between the stateless service layer and the DB layer (aka [Functional Decomposition](41-how-to-scale-a-web-service))
-	- subdivide data centers (aka [Horizontal Data Partitioning](41-how-to-scale-a-web-service))
+	- a standalone cache layer between the stateless service layer and the DB layer (aka [Functional Decomposition](https://tianpan.co/notes/41-how-to-scale-a-web-service))
+	- subdivide data centers (aka [Horizontal Data Partitioning](https://tianpan.co/notes/41-how-to-scale-a-web-service))
 
 
 2. Write timeliness
