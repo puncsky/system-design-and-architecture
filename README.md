@@ -82,6 +82,7 @@ What is out of this book's scope?
 * [Experience Deep Dive](./en/2018-07-20-experience-deep-dive.md)
 * [3 Programming Paradigms](./en/11-three-programming-paradigms.md)
 * [SOLID Design Principles](./en/12-solid-design-principles.md)
+* [Agent System Layers and Logical Components](./en/2026-10-22-agent-system-layers-and-logical-components.md)
 * How to do capacity planning?
 
 ### Prepare for an Interview effectively

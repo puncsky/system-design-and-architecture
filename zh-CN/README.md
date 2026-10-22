@@ -55,3 +55,4 @@
 * [Experience Deep Dive](2018-07-20-experience-deep-dive.md)
 * [3 Programming Paradigms](11-three-programming-paradigms.md)
 * [SOLID Design Principles](12-solid-design-principles.md)
+* [Agent System Layers and Logical Components](2026-10-22-agent-system-layers-and-logical-components.md)
