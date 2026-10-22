@@ -30,6 +30,7 @@
 * [Design Online Judge or Leetcode](./en/243-designing-online-judge-or-leetcode.md)
 * [AuthN and AuthZ](./en/253-authn-authz-micro-services.md)
 * [AuthZ 2022](./en/277-enterprise-authorization-2022.md)
+* [Design an Always-on Agent](./en/2026-10-21-designing-always-on-agent.md)
 
 
 ## System Design Theories

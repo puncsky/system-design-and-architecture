@@ -44,5 +44,5 @@ make build     # PDF/EPUB/MOBI into ./_book/ (needs calibre's ebook-convert)
   ```
 
 - Cross-references between chapters inside chapter bodies use absolute URLs `https://tianpan.co/notes/<slug>` (recent commits converted bare relative slugs to this form), not relative paths.
-- Images are hosted externally (mostly `res.cloudinary.com`); there is no local image directory.
+- Images are mostly hosted externally (`res.cloudinary.com`). Local images go in `images/` at the repo root and are referenced from chapters as `../images/<file>`, so the same path works from `en/` and `zh-CN/`.
 - Design chapters generally follow the book's 4-step framework: clarify requirements → high-level design → component deep dive → wrap-up/bottlenecks.

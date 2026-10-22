@@ -28,6 +28,7 @@
 | <img src="https://res.cloudinary.com/dohtidfqh/image/upload/v1580710529/web-guiguio/nginx.jpg" width="52" />| [Designing a Load Balancer or Dropbox Bandaid](182-designing-l7-load-balancer.md) |
 | <img src="https://res.cloudinary.com/dohtidfqh/image/upload/v1580708917/web-guiguio/uber.png" width="52" />| [Fraud Detection with Semi-supervised Learning](136-fraud-detection-with-semi-supervised-learning.md) |
 | <img src="https://res.cloudinary.com/dohtidfqh/image/upload/v1595029150/web-guiguio/favicon-32x32.png" width="52" />| [Designing Online Judge or Leetcode](https://tianpan.co/notes/243-designing-online-judge-or-leetcode) |
+| <img src="https://res.cloudinary.com/dohtidfqh/image/upload/v1595029150/web-guiguio/favicon-32x32.png" width="52" />| [Designing an Always-on Agent](2026-10-21-designing-always-on-agent.md) |
 
 ### System Design Theories
 
