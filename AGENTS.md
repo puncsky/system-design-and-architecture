@@ -46,3 +46,18 @@ make build     # PDF/EPUB/MOBI into ./_book/ (needs calibre's ebook-convert)
 - Cross-references between chapters inside chapter bodies use absolute URLs `https://tianpan.co/notes/<slug>` (recent commits converted bare relative slugs to this form), not relative paths.
 - Images are mostly hosted externally (`res.cloudinary.com`). Local images go in `images/` at the repo root and are referenced from chapters as `../images/<file>`, so the same path works from `en/` and `zh-CN/`.
 - Design chapters generally follow the book's 4-step framework: clarify requirements → high-level design → component deep dive → wrap-up/bottlenecks.
+
+## Agent skills and the `.pm` board
+
+Development workflows live in `.agents/skills/<name>/SKILL.md` (read by Codex); Claude Code reads the same files through the relative symlink `.claude/skills -> ../.agents/skills`. Edit the canonical files and keep the link relative. Ported from the `beancount-io` repo and adapted to this book.
+
+| Skill | Purpose |
+| ----- | ------- |
+| `pm` | Maintain the public `.pm/` board (pillars B1 content quality, B2 bilingual parity, B3 reach/build health); the only writer of `.pm/`. |
+| `pm-brainstorm` | Propose milestones/tasks as text for `/pm` to materialize. |
+| `loopx` | Drain a workstream (`/loopx w1`): triage, write, ship, close, block, or drop each item. |
+| `ship` | Rebase, commit, and push. |
+| `mermaid` | Draw and syntax-check Mermaid diagrams (`npx @mermaid-js/mermaid-cli`); GitBook needs a rendered image or plugin. |
+| `dont-code-but-answer` | Read-only Q&A: answer without editing files. |
+
+Board hard constraints are in `.pm/DO_NOT_DO.md`. Scratch files go in `.agents/tmp/` (gitignored).
