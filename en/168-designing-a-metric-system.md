@@ -21,7 +21,6 @@ We are assuming that this system’s purpose is to serve metrics - namely, count
 3. data visualization
 4. Scalability and Availability
 
-
 ## Architecture
 
 Two ways to build the system:
@@ -38,11 +37,11 @@ version="1.1"
 width="100%"
 viewBox="-0.5 -0.5 361 556"
 content='<mxfile modified="2019-08-26T19:32:27.492Z" host="www.draw.io" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36" etag="slGGjoSwGesaS89Ibu59" pages="1" version="11.2.3" type="google"><diagram id="rrGVAOw1E3pQ3IQIfVm4" name="Page-1">7Vttd6I4FP41fpweIIL6sb7Udrc7225nz3T2y54IETMTiSfGqv31k2BAIanSFoSe0/nQIZcQ4Lkvz72X2AKD+WbM4GL2Fw0QaTlWsGmBYctxOl1P/JWC7U7geUoQMhzsRPZe8ICfkRJaSrrCAVpmJnJKCceLrNCnUYR8npFBxug6O21KSfauCxgiTfDgQ6JLv+OAz3bSrmvt5dcIh7PkzralzsxhMlkJljMY0PWBCIxaYMAo5buj+WaAiMQuwWV33dULZ9MHYyjiRS6Y3Nzjn//DP8ZP4W14/zh+Dn+sv6hVniBZqRdWD8u3CQKMrqIAyUWsFuivZ5ijhwX05dm1ULmQzficiJEtDvWHSu6AGEebA5F6yDGic8TZVkxRZ3sKL2UwDlDj9R5+O8F0dgC9p2RQaTxMV96DIg4ULq/AyGkeRqmVJSC16wYJNBAkOweSWzdIbQ2kB8TECwnZFWRzDTHxojwLy5Iz+gsNKKFMSCIaiZn9KSYkJ4IEh5EY+gI+sT7oS9iwCGuX6sQcB4G8jVEPWU1VoArg6KroGTThVKWJroY1CkTcV0PK+IyGNIJktJfmUNnPuaV0odTzE3G+VSQGV5xmlYc2mD8eHP+QS124ajTcqJXjwTYZROJ1H+OJtpuMdxda6Xh/aTzKXHuHGBaYSSM4rs0lXTEfHcHMVfQLWYj4kXmK4CWgR22DIQI5fsoSbematvXwvWbC5As4G0NL/Awn8QQJ3YLiiMfP5/Zb7vBVbkbgBJE+9H+FsRkl7tpywDT+Z9TMMdPVnC/NgdQTZ9IMk1NKi2p7Gb9M8oHCqlGL30lkDqbQ6XQpbCSvu/QZ3q5OV9MmRwSFDE7r55tOjm86rhbkXFcPcqCqIOdpWN1EU7LaDPsaViI5XchDf0uwAI2dBmyyQ/d2kgpS4/57xcUqqDxk0/QmoQ9Ppw/PQB9uVcjatobgGfnDunDcAwqxjxLI2+N9r+w4ngsWiXK7wKzcZIkd4airyo8otp66/jN6+CYkl3c3H5Yl7Jec7NU08cW6AL0knU94ot10nuhpSh0LjoARrJ0mQL52c3Wa6BqCWbuy+tY6whPW3Wo5E/+pxk4Z3iDi2nIX4uwD5yBoyg2uwWVs7C+FQnAUfosDpTC+cvi6m1WE3TPUh6CiquTPr7Ph5VcIr4fuyhug/67H/pWhG3PH5NIztFrGqoiXaKYqDIFG086R1MnNqKJtSJ3s9jlVoVcNl4sFEXBwTKP3xZBCMJcAaq6R5howNdXcZXQ/jJB69eZMxVOmg5o7W3KfqLeN+dLJ3MuIlcpJDmtt4zz3nSnZuxSqJ06jzULoSDa0ynCQNF8q3xk8A+manKGM2syInd4K9AlGcXJE8IRBdYtGYZjv4nmWDmLnnCDqzQDAAkmUkHGxukdkfJ0Ia/RCeVR6BK/QQDsGbE0GWkZWaMS2V2u0fkuH1M62R091R0uM1t2C0bpdZ7S29exyESeUzaxwCxeuWZW9bMvHClzLUd7WiILWnJC2602fMi0nq5hH5vIn+3we2SnokS/1Ps7jkh3NIw/rvY9QY6Q+mKQEtl5DO6YaultZDd2p00/e9mmv8cRl18tc9eYiH6tyLKxSUKdKk4+YBz13sS5GQtC81DwNYEmQawMtyJk+PwG3KoewNJA+k/P3OkSt/mD4CCW3BmHxZo41xEufCgtuYEsg7xodA/+f1zU+4M6e2lzDbhcli1r7jLZh3xynTO7cbZxDACv7JaN2rnDAB0yevJ6TdQrL6Z1wiyOb3crxFcP2NzPgTq2+ovdEZU15f9tAV+k2LK1yPkvH4v6QFP6n/aFW7nA+84EqdOrVqlN9w8olEZFoDiORE7DmRbp8l8wt+ksEAKqC0NEg/I4mQvDvTUs+yJX4m26YUuN4O5w1iD9TltSeLJVOCpQiZpAr4xMDF0sDHa54A0u5PB27ht9onJeO9f3LoznEDWwQadB5+sfbkqATw/1PBnfflva/uwSj3w==</diagram></mxfile>'
-onclick="(function(svg){var src=window.event.target||window.event.srcElement;while (src!=null&&src.nodeName.toLowerCase()!='a'){src=src.parentNode;}if(src==null){if(svg.wnd!=null&&!svg.wnd.closed){svg.wnd.focus();}else{var r=function(evt){if(evt.data=='ready'&&evt.source==svg.wnd){svg.wnd.postMessage(decodeURIComponent(svg.getAttribute('content')),'*');window.removeEventListener('message',r);}};window.addEventListener('message',r);svg.wnd=window.open('https://www.draw.io/?client=1&lightbox=1&edit=_blank');}}})(this);"
-style={{ cursor: "pointer", maxWidth: "100%", maxHeight: 556 }}
->
-  <defs />
-  <g>
+onclick="(function(svg){var src=window.event.target||window.event.srcElement;while (src!=null&&src.nodeName.toLowerCase()!='a'){src=src.parentNode;}if(src==null){if(svg.wnd!=null&&!svg.wnd.closed){svg.wnd.focus();}else{var r=function(evt){if(evt.data=='ready'&&evt.source==svg.wnd){svg.wnd.postMessage(decodeURIComponent(svg.getAttribute('content')),'\*');window.removeEventListener('message',r);}};window.addEventListener('message',r);svg.wnd=window.open('https://www.draw.io/?client=1&lightbox=1&edit=_blank');}}})(this);"
+style={{ cursor: "pointer", maxWidth: "100%", maxHeight: 556 }}>
+<defs />
+<g>
+
     <rect
       x={0}
       y={40}
@@ -1455,6 +1454,7 @@ style={{ cursor: "pointer", maxWidth: "100%", maxHeight: 556 }}
         </text>
       </switch>
     </g>
+
   </g>
 </svg>
 
@@ -1472,11 +1472,11 @@ Every step has `IMPRESSION` and `POST_VERIFICATION` phases. And emit metrics lik
 
 ```json5
 {
-  "sign_up_session_id": "uuid",
-  "step": "VERIFY_SMS_CODE",
-  "os": "iOS",
-  "phase": "POST_VERIFICATION",
-  "status": "SUCCESS",
+  sign_up_session_id: "uuid",
+  step: "VERIFY_SMS_CODE",
+  os: "iOS",
+  phase: "POST_VERIFICATION",
+  status: "SUCCESS",
   // ... ts, contexts, ...
 }
 ```

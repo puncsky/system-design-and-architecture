@@ -1,13 +1,14 @@
 ---
 slug: 168-designing-a-metric-system
 id: 168-designing-a-metric-system
-title: "设计度量系统"
-date: 2019-08-26 11:58
+title: 设计度量系统
+date: '2019-08-26 11:58'
 comments: true
-tags: [系统设计]
+tags:
+  - system design
 slides: false
 references:
-  - https://github.com/prometheus/prometheus/blob/master/README.md
+  - 'https://github.com/prometheus/prometheus/blob/master/README.md'
 ---
 
 ## 需求
@@ -1489,6 +1490,6 @@ style={{ cursor: "pointer", maxWidth: "100%", maxHeight: 556 }}
 
 ### 数据可视化
 
-Grafana 在数据可视化工作中已经相当成熟。如果您不想暴露整个网站，可以使用 [嵌入面板与 iframe](https://grafana.com/docs/reference/sharing/#embed-panel)。
+Grafana 在数据可视化工作中已经相当成熟。如果你不想暴露整个网站，可以使用 [嵌入面板与 iframe](https://grafana.com/docs/reference/sharing/#embed-panel)。
 
 ```

@@ -8,7 +8,6 @@ tags: [architecture, system design]
 description: 欺诈检测在登录过程中对抗账户接管和僵尸网络攻击。半监督学习比无监督学习具有更好的学习准确性，比监督学习花费更少的时间和成本。
 references:
   - https://www.slideshare.net/Hadoop_Summit/semisupervised-learning-in-an-adversarial-environment
-image: https://web-dash-v2.onrender.com/api/og-tianpan-co?title=%E4%BD%BF%E7%94%A8%E5%8D%8A%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0%E8%BF%9B%E8%A1%8C%E6%AC%BA%E8%AF%88%E6%A3%80%E6%B5%8B
 ---
 
 ## 明确需求

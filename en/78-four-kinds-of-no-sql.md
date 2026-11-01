@@ -14,8 +14,6 @@ In a regular Internet service, the read:write ratio is about 100:1 to 1000:1. Ho
 
 To optimize the read performance, **denormalization** is introduced by adding redundant data or by grouping data. These four categories of NoSQL are here to help.
 
-
-
 ## Key-value Store
 
 The abstraction of a KV store is a giant hashtable/hashmap/dictionary.
@@ -30,7 +28,6 @@ There are three major factors to consider when we design the cache.
 
 Out-of-box choices: Redis/Memcache? Redis supports data persistence while Memcache does not. Riak, Berkeley DB, HamsterDB, Amazon Dynamo, Project Voldemort, etc.
 
-
 ## Document Store
 
 The abstraction of a document store is like a KV store, but documents, like XML, JSON, BSON, and so on, are stored in the value part of the pair.
@@ -39,8 +36,6 @@ The main reason we want to use a document store is for flexibility and performan
 
 Out-of-box choices: MongoDB, CouchDB, Terrastore, OrientDB, RavenDB, etc.
 
-
-
 ## Column-oriented Store
 
 The abstraction of a column-oriented store is like a giant nested map: `ColumnFamily<RowKey, Columns<Name, Value, Timestamp>>`.
@@ -48,8 +43,6 @@ The abstraction of a column-oriented store is like a giant nested map: `ColumnFa
 The main reason we want to use a column-oriented store is that it is distributed, highly-available, and optimized for write.
 
 Out-of-box choices: Cassandra, HBase, Hypertable, Amazon SimpleDB, etc.
-
-
 
 ## Graph Database
 

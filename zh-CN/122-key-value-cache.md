@@ -1,11 +1,12 @@
 ---
 slug: 122-key-value-cache
 id: 122-key-value-cache
-title: "键值缓存"
-date: 2019-01-06 23:24
+title: 键值缓存
+date: '2019-01-06 23:24'
 comments: true
-description: "键值缓存用于减少数据访问的延迟。什么是读穿、写穿、写后、写回、写后和旁路缓存模式？"
-tags: [系统设计]
+description: 键值缓存用于减少数据访问的延迟。什么是读穿、写穿、写后、写回、写后和旁路缓存模式？
+tags:
+  - system design
 ---
 
 KV 缓存就像一个巨大的哈希映射，用于减少数据访问的延迟，通常通过

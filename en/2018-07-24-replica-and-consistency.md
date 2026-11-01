@@ -7,14 +7,12 @@ comments: true
 tags: [system design]
 description: "Any networked system has three desirable properties: consistency, availability and partition tolerance. Systems can have only two of those three. For example, RDBMS prefers consistency and partition tolerance and becomes an ACID system."
 references:
-    - https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed
+  - https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed
 ---
 
 ## Why replica and consistency?
 
 large dataset ⟶ scale out ⟶ data shard / partition ⟶ 1) routing for data access 2) replica for availability ⟶ consistency challenge
-
-
 
 ## Consistency trade-offs for CAP theorem
 
@@ -24,14 +22,10 @@ large dataset ⟶ scale out ⟶ data shard / partition ⟶ 1) routing for data a
 - Availability: a guarantee that every request receives a response about whether it succeeded or failed
 - Partition tolerance: system continues to operate despite arbitrary message loss or failure of part of the system
 
-
-
 Any networked shared-data system can have only two of three desirable properties.
 
 - rDBMS prefer CP ⟶ ACID
 - NoSQL prefer AP ⟶ BASE
-
-
 
 ## "2 of 3" is mis-leading
 
@@ -40,8 +34,6 @@ Any networked shared-data system can have only two of three desirable properties
 1. partitions are rare, there is little reason to forfeit C or A when the system is not partitioned.
 2. choices can be actually applied to multiple places within the same system at very fine granularity.
 3. choices are not binary but with certain degrees.
-
-
 
 Consequently, when there is no partition (nodes are connected correctly), which is often the case, we should have both AC. When there are partitions, deal them with 3 steps:
 

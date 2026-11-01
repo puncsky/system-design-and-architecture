@@ -1,15 +1,15 @@
 ---
 slug: 63-soft-skills-interview
 id: 63-soft-skills-interview
-title: "在软技能面试中我们可以沟通什么？"
-date: 2018-10-01 08:56
+title: 在软技能面试中我们可以沟通什么？
+date: '2018-10-01 08:56'
 comments: true
-tags: [系统设计]
-description: "面试是员工寻找未来同事的过程。候选人将根据对三个关键问题的回答进行评估：能力、意愿和文化契合。 
-           以上任何问题都无法在没有良好沟通的情况下回答。"
+tags:
+  - system design
+description: 面试是员工寻找未来同事的过程。候选人将根据对三个关键问题的回答进行评估：能力、意愿和文化契合。  以上任何问题都无法在没有良好沟通的情况下回答。
 references:
-  - https://www.jianshu.com/p/73b1d5682fd3
-  - https://www.amazon.com/dp/B01NAI5Q6H/
+  - 'https://www.jianshu.com/p/73b1d5682fd3'
+  - 'https://www.amazon.com/dp/B01NAI5Q6H/'
 ---
 
 ## 什么是面试？

@@ -12,19 +12,22 @@ references:
   - https://en.wikipedia.org/wiki/Hash_table
 ---
 
-## Requirements 
+## Requirements
 
 1. High-performance, distributed key-value store
- * Why distributed? 
-   * Answer: to hold a larger size of data
-     <img
-     style={{ width: 200 }}
-     src="https://res.cloudinary.com/dohtidfqh/image/upload/v1569196539/web-guiguio/memcached2.png"
-     />
+
+- Why distributed?
+  - Answer: to hold a larger size of data
+    <img
+    style={{ width: 200 }}
+    src="https://res.cloudinary.com/dohtidfqh/image/upload/v1569196539/web-guiguio/memcached2.png"
+    />
+
 2. For in-memory storage of small data objects
 3. Simple server (pushing complexity to the client) and hence reliable and easy to deploy
 
 ## Architecture
+
 Big Picture: Client-server
 
 <img
@@ -32,13 +35,12 @@ style={{ width: 256 }}
 src="https://res.cloudinary.com/dohtidfqh/image/upload/v1569196539/web-guiguio/memcached1.png"
 />
 
-* client
- * given a list of Memcached servers
- * chooses a server based on the key
-* server
- * store KVs into the internal hash table
- * LRU eviction
-
+- client
+- given a list of Memcached servers
+- chooses a server based on the key
+- server
+- store KVs into the internal hash table
+- LRU eviction
 
 The Key-value server consists of a fixed-size hash table + single-threaded handler + coarse locking
 

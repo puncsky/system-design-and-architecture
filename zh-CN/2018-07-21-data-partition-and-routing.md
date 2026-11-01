@@ -1,11 +1,12 @@
 ---
 slug: 2018-07-21-data-partition-and-routing
 id: 2018-07-21-data-partition-and-routing
-title: "数据分区与路由"
-date: 2018-07-20 11:54
+title: 数据分区与路由
+date: '2018-07-20 11:54'
 comments: true
-tags: [系统设计]
-description: "实施数据分区与路由的优点是可用性和读取效率，而一致性则是其弱点。路由抽象模型本质上是两张地图：键-分区图和分区-机器图。"
+tags:
+  - system design
+description: 实施数据分区与路由的优点是可用性和读取效率，而一致性则是其弱点。路由抽象模型本质上是两张地图：键-分区图和分区-机器图。
 ---
 
 ## 为什么要进行数据分区与路由？

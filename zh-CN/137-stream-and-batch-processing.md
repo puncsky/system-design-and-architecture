@@ -1,16 +1,21 @@
 ---
 slug: 137-stream-and-batch-processing
 id: 137-stream-and-batch-processing
-title: "流处理与批处理框架"
-date: 2019-02-16 22:13
+title: 流处理与批处理框架
+date: '2019-02-16 22:13'
 comments: true
-tags: [系统设计]
-description: "流处理和批处理框架可以以低延迟处理高吞吐量。为什么 Flink 正在获得越来越多的关注？如何在 Storm、Storm-trident、Spark 和 Flink 之间做出架构选择？"
+tags:
+  - system design
+description: >-
+  流处理和批处理框架可以以低延迟处理高吞吐量。为什么 Flink 正在获得越来越多的关注？如何在 Storm、Storm-trident、Spark 和
+  Flink 之间做出架构选择？
 references:
-  - https://storage.googleapis.com/pub-tools-public-publication-data/pdf/43864.pdf
-  - https://cs.stanford.edu/~matei/papers/2018/sigmod_structured_streaming.pdf
-  - https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html
-  - https://stackoverflow.com/questions/28502787/google-dataflow-vs-apache-storm
+  - >-
+    https://storage.googleapis.com/pub-tools-public-publication-data/pdf/43864.pdf
+  - 'https://cs.stanford.edu/~matei/papers/2018/sigmod_structured_streaming.pdf'
+  - >-
+    https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html
+  - 'https://stackoverflow.com/questions/28502787/google-dataflow-vs-apache-storm'
 ---
 
 ## 为什么需要这样的框架？

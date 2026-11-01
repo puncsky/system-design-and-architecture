@@ -1,13 +1,14 @@
 ---
 slug: 78-four-kinds-of-no-sql
 id: 78-four-kinds-of-no-sql
-title: "四种 No-SQL"
-date: 2018-10-17 00:49
+title: 四种 No-SQL
+date: '2018-10-17 00:49'
 comments: true
-tags: ["系统设计"]
-description: "从硬盘读取数据时，数据库连接操作耗时，99% 的时间花费在磁盘寻址上。为了优化读取性能，引入了非规范化，并且四种 NoSQL 类型可以帮助解决这个问题。"
+tags:
+  - system design
+description: 从硬盘读取数据时，数据库连接操作耗时，99% 的时间花费在磁盘寻址上。为了优化读取性能，引入了非规范化，并且四种 NoSQL 类型可以帮助解决这个问题。
 references:
-  - https://www.puncsky.com/blog/2016-02-13-crack-the-system-design-interview
+  - 'https://www.puncsky.com/blog/2016-02-13-crack-the-system-design-interview'
 ---
 
 在一个常规的互联网服务中，读取与写入的比例大约是 100:1 到 1000:1。然而，从硬盘读取时，数据库连接操作耗时，99% 的时间花费在磁盘寻址上。更不用说跨网络的分布式连接操作了。

@@ -1,15 +1,18 @@
 ---
 slug: 145-introduction-to-architecture
 id: 145-introduction-to-architecture
-title: "架构导论"
-date: 2019-05-11 15:52
+title: 架构导论
+date: '2019-05-11 15:52'
 comments: true
-tags: [系统设计]
+tags:
+  - system design
 description: 架构为软件系统的整个生命周期提供服务，使其易于理解、开发、测试、部署和操作。O’Reilly的书《软件架构模式》对五种基本架构进行了简单而有效的介绍。
 references:
-  - https://puncsky.com/notes/10-thinking-software-architecture-as-physical-buildings
-  - https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/ch01.html
-  - http://www.ruanyifeng.com/blog/2016/09/software-architecture.html
+  - >-
+    https://puncsky.com/notes/10-thinking-software-architecture-as-physical-buildings
+  - >-
+    https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/ch01.html
+  - 'http://www.ruanyifeng.com/blog/2016/09/software-architecture.html'
 ---
 
 ## 什么是架构？
@@ -38,7 +41,7 @@ O’Reilly的书《软件架构模式》由Mark Richards撰写，是对这五种
 
 ## 1. 分层架构
 
-分层架构是最常见的架构，开发人员广泛熟知，因此是应用程序的事实标准。如果您不知道使用什么架构，请使用它。
+分层架构是最常见的架构，开发人员广泛熟知，因此是应用程序的事实标准。如果你不知道使用什么架构，请使用它。
 
 [comment]: \<\> (https://www.draw.io/#G1ldM5O9Y62Upqg_t5rcTNHIRseP-7fqQT)
 
@@ -57,7 +60,7 @@ O’Reilly的书《软件架构模式》由Mark Richards撰写，是对这五种
     * 可测试性
 * 缺点
     * 单体
-        * 难以调整、扩展或更新。您必须对所有层进行更改。
+        * 难以调整、扩展或更新。你必须对所有层进行更改。
 
 ## 2. 事件驱动架构
 
@@ -87,7 +90,7 @@ O’Reilly的书《软件架构模式》由Mark Richards撰写，是对这五种
 
 ## 4. 微服务架构
 
-一个庞大的系统被解耦为多个微服务，每个微服务都是一个单独部署的单元，它们通过[RPCs](/blog/2016-02-13-crack-the-system-design-interview#21-communication)相互通信。
+一个庞大的系统被解耦为多个微服务，每个微服务都是一个单独部署的单元，它们通过[RPCs](https://tianpan.co/notes/2016-02-13-crack-the-system-design-interview#21-communication)相互通信。
 
 ![uber architecture](https://res.cloudinary.com/dohtidfqh/image/upload/v1546574738/web-guiguio/uber-architecture_2.jpg)
 

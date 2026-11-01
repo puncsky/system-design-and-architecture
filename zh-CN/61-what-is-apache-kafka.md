@@ -1,16 +1,20 @@
 ---
 slug: 61-what-is-apache-kafka
 id: 61-what-is-apache-kafka
-title: "什么是 Apache Kafka？"
-date: 2018-09-27 04:06
+title: 什么是 Apache Kafka？
+date: '2018-09-27 04:06'
 comments: true
-tags: [系统设计]
-description: "Apache Kafka 是一个分布式流处理平台，可用于按主题进行日志记录、消息系统的地理复制或流处理。由于其零拷贝技术，它比其他平台快得多。"
+tags:
+  - system design
+description: Apache Kafka 是一个分布式流处理平台，可用于按主题进行日志记录、消息系统的地理复制或流处理。由于其零拷贝技术，它比其他平台快得多。
 references:
-  - https://kafka.apache.org/intro
-  - http://www.michael-noll.com/blog/2014/08/18/apache-kafka-training-deck-and-tutorial/
-  - https://stackoverflow.com/questions/48271491/where-is-apache-kafka-placed-in-the-pacelc-theorem
-  - https://engineering.linkedin.com/kafka/intra-cluster-replication-apache-kafka
+  - 'https://kafka.apache.org/intro'
+  - >-
+    http://www.michael-noll.com/blog/2014/08/18/apache-kafka-training-deck-and-tutorial/
+  - >-
+    https://stackoverflow.com/questions/48271491/where-is-apache-kafka-placed-in-the-pacelc-theorem
+  - >-
+    https://engineering.linkedin.com/kafka/intra-cluster-replication-apache-kafka
 ---
 
 Apache Kafka 是一个分布式流处理平台。
@@ -95,6 +99,6 @@ Jun Rao 说它是 CA，因为“我们的目标是在单个数据中心内支持
 
 然而，这实际上取决于配置。
 
-1. 默认配置（min.insync.replicas=1，default.replication.factor=1）开箱即用时，您将获得 AP 系统（至多一次）。
+1. 默认配置（min.insync.replicas=1，default.replication.factor=1）开箱即用时，你将获得 AP 系统（至多一次）。
 
-2. 如果您想实现 CP，您可以将 min.insync.replicas 设置为 2，主题复制因子设置为 3 - 然后使用 acks=all 生产消息将保证 CP 设置（至少一次），但（如预期）在特定主题/分区对可用副本不足（\<2）时将会阻塞。
+2. 如果你想实现 CP，你可以将 min.insync.replicas 设置为 2，主题复制因子设置为 3 - 然后使用 acks=all 生产消息将保证 CP 设置（至少一次），但（如预期）在特定主题/分区对可用副本不足（\&lt;2）时将会阻塞。

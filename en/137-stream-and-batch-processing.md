@@ -15,11 +15,10 @@ references:
 
 ## Why such frameworks?
 
-* process high-throughput in low latency.
-* fault-tolerance in distributed systems.
-* generic abstraction to serve volatile business requirements.
-* for bounded data set (batch processing) and for unbounded data set (stream processing).
-
+- process high-throughput in low latency.
+- fault-tolerance in distributed systems.
+- generic abstraction to serve volatile business requirements.
+- for bounded data set (batch processing) and for unbounded data set (stream processing).
 
 ## Brief history of batch/stream processing
 
@@ -28,13 +27,10 @@ references:
 3. Spark in-memory Computing. Reynold Xin said Spark sorted the same data **3X faster** using **10X fewer machines** compared to Hadoop.
 4. Google Dataflow based on Millwheel and FlumeJava. Google supports both batch and streaming computing with the windowing API.
 
-
 ### Wait... But why is Flink gaining popularity?
 
 1. its fast adoption of ==Google Dataflow==/Beam programming model.
 2. its highly efficient implementation of Chandy-Lamport checkpointing.
-
-
 
 ## How?
 
@@ -42,9 +38,8 @@ references:
 
 To serve requirements above with commodity machines, the steaming framework use distributed systems in these architectures...
 
-* master-slave (centralized): apache storm with zookeeper, apache samza with YARN.
-* P2P (decentralized): apache s4.
-
+- master-slave (centralized): apache storm with zookeeper, apache samza with YARN.
+- P2P (decentralized): apache s4.
 
 ### Features
 
@@ -52,7 +47,6 @@ To serve requirements above with commodity machines, the steaming framework use 
 2. Delivery Guarantees. How guaranteed to deliver data from nodes to nodes? at-least once / at-most once / exactly once.
 3. Fault-tolerance. Using [cold/warm/hot standby, checkpointing, or active-active](https://tianpan.co/notes/85-improving-availability-with-failover).
 4. Windowing API for unbounded data set. e.g. Stream Windows in Apache Flink. Spark Window Functions. Windowing in Apache Beam.
-
 
 ## Comparison
 

@@ -1,14 +1,15 @@
 ---
 slug: 140-designing-a-recommendation-system
 id: 140-designing-a-recommendation-system
-title: "今日头条推荐系统：P1 概述"
-date: 2019-02-19 01:33
+title: 今日头条推荐系统：P1 概述
+date: '2019-02-19 01:33'
 comments: true
-tags: [系统设计]
+tags:
+  - system design
 description: 为了评估用户满意度，实施了机器学习模型。这些模型通过特征工程观察和测量现实，并通过召回策略进一步减少延迟。
 references:
-  - https://medium.com/@impxia/newsfeed-system-behind-toutiao-2c2454a6d23d
-  - https://36kr.com/p/5114077
+  - 'https://medium.com/@impxia/newsfeed-system-behind-toutiao-2c2454a6d23d'
+  - 'https://36kr.com/p/5114077'
 ---
 
 ## 我们优化的目标是什么？用户满意度

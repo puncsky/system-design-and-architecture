@@ -1,10 +1,11 @@
 ---
 slug: 84-designing-a-url-shortener
 id: 84-designing-a-url-shortener
-title: "设计一个网址缩短器"
-date: 2018-10-25 14:32
+title: 设计一个网址缩短器
+date: '2018-10-25 14:32'
 comments: true
-tags: [系统设计]
+tags:
+  - system design
 description: 如果你被要求设计一个系统，将用户提供的网址转换为缩短的网址，你会怎么做？你将如何分配缩短的网址？你将如何实现重定向服务器？你将如何存储点击统计数据？
 ---
 

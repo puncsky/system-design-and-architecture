@@ -15,13 +15,10 @@ references:
 2. Single-host solution. No distributed design.
 3. Optimize for write.
 
-
-
 ## Solution
-* In-memory hashmap index + index hint file + data files
-* Append-only for write optimization. Have only one active data file for write. And compact active data to the older data file(s) for read.
 
-
+- In-memory hashmap index + index hint file + data files
+- Append-only for write optimization. Have only one active data file for write. And compact active data to the older data file(s) for read.
 
 ## Components
 
@@ -36,8 +33,6 @@ references:
 
 3. (index) hint file that the in-memory hashmap can recover from
 
-
-
 ## Operations
 
 Delete: get the location by the in-memory hashmap, if it exists, then go to the location on the disk to set the value to a magic number.
@@ -46,25 +41,22 @@ Get: get the location by the in-memory hashmap, and then go to the location on t
 
 Put: append to the active data file and update the in-memory hash map.
 
-
 Periodical compaction strategies
 
-* Copy latest entries: In-memory hashmap is always up-to-date. Stop and copy into new files. Time complexity is O(n) n is the number of valid entries.
-    * Pros: Efficient for lots of entries out-dated or deleted.
-    * Cons: Consume storage if little entries are out-dated. May double the space. (can be resolved by having a secondary node do the compression work with GET/POST periodically. E.g., Hadoop secondary namenode).
+- Copy latest entries: In-memory hashmap is always up-to-date. Stop and copy into new files. Time complexity is O(n) n is the number of valid entries.
+  - Pros: Efficient for lots of entries out-dated or deleted.
+  - Cons: Consume storage if little entries are out-dated. May double the space. (can be resolved by having a secondary node do the compression work with GET/POST periodically. E.g., Hadoop secondary namenode).
 
-
-* Scan and move: foreach entry, if it is up-to-date, move to the tail of the validated section. Time complexity is O(n) n is the number of all the entries.
-    * Pros:
-        * shrink the size
-        * no extra storage space needed
-    * Cons:
-        * Complex and need to sync hashmap and storage with transactions. May hurt performance.
-
+- Scan and move: foreach entry, if it is up-to-date, move to the tail of the validated section. Time complexity is O(n) n is the number of all the entries.
+  - Pros:
+    - shrink the size
+    - no extra storage space needed
+  - Cons:
+    - Complex and need to sync hashmap and storage with transactions. May hurt performance.
 
 Following up questions
 
-* How to detect records that can be compacted?
-    * Use timestamp.
-* What if one hashmap cannot fit into a single machine’s memory?
-    * Consistent hashing, chord DHT, query time complexity is O(logn) with the finger table, instead of O(1) here with a hashmap.
+- How to detect records that can be compacted?
+  - Use timestamp.
+- What if one hashmap cannot fit into a single machine’s memory?
+  - Consistent hashing, chord DHT, query time complexity is O(logn) with the finger table, instead of O(1) here with a hashmap.

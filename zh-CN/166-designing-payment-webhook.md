@@ -1,18 +1,19 @@
 ---
 slug: 166-designing-payment-webhook
 id: 166-designing-payment-webhook
-title: "设计支付 webhook"
-date: 2019-08-19 21:15
-updateDate: 2024-04-06 17:29
+title: 设计支付 webhook
+date: '2019-08-19 21:15'
+updateDate: '2024-04-06 17:29'
 comments: true
-tags: [系统设计]
+tags:
+  - system design
 slides: false
 description: 设计一个 webhook，当支付成功时通知商家。我们需要汇总指标（例如，成功与失败）并在仪表板上显示。
 references:
-  - https://commerce.coinbase.com/docs/#webhooks
-  - https://bitworking.org/news/2017/03/prometheus
-  - https://workos.com/blog/building-webhooks-into-your-application-guidelines-and-best-practices
-
+  - 'https://commerce.coinbase.com/docs/#webhooks'
+  - 'https://bitworking.org/news/2017/03/prometheus'
+  - >-
+    https://workos.com/blog/building-webhooks-into-your-application-guidelines-and-best-practices
 ---
 
 ## 1. 澄清需求
@@ -51,7 +52,7 @@ references:
 
   * 所有来自用户设置的 webhook 必须使用 HTTPS。
 
-  * 如果负载很大，预期延迟很高，并且我们希望确保目标接收器是活跃的，我们可以通过携带挑战的 ping 验证其存在。例如，[Dropbox 通过发送带有“challenge”参数（一个随机字符串）的 GET 请求来验证 webhook 端点](https://www.dropbox.com/developers/reference/webhooks#documentation)，您的端点需要将其回显作为响应。
+  * 如果负载很大，预期延迟很高，并且我们希望确保目标接收器是活跃的，我们可以通过携带挑战的 ping 验证其存在。例如，[Dropbox 通过发送带有“challenge”参数（一个随机字符串）的 GET 请求来验证 webhook 端点](https://www.dropbox.com/developers/reference/webhooks#documentation)，你的端点需要将其回显作为响应。
   * 所有回调请求都带有头部 `x-webhook-signature`。这样接收者可以验证请求。
     * 对于对称签名，我们可以使用 HMAC/SHA256 签名。其值为 `HMAC(webhook secret, raw request payload);` Telegram 使用此方法。
     * 对于非对称签名，我们可以使用 RSA/SHA256 签名。其值为 `RSA(webhook private key, raw request payload);` Stripe 使用此方法。
@@ -107,4 +108,4 @@ Webhook 调用者服务将状态发射到时序数据库以获取指标。
 * InfluxDB：应用程序将数据推送到 InfluxDB。它有一个用于指标和索引的单体数据库。
 * Prometheus：Prometheus 服务器定期从运行的应用程序中拉取指标值。它使用 LevelDB 进行索引，但每个指标存储在自己的文件中。
 
-或者如果您有宽裕的预算，可以使用昂贵的 DataDog 或其他 APM 服务。
+或者如果你有宽裕的预算，可以使用昂贵的 DataDog 或其他 APM 服务。

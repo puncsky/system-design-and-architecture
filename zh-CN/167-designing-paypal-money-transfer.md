@@ -2,14 +2,16 @@
 slug: 167-designing-paypal-money-transfer
 id: 167-designing-paypal-money-transfer
 title: 设计 Square Cash 或 PayPal 转账系统
-date: 2019-08-23 17:02
+date: '2019-08-23 17:02'
 comments: true
-tags: [系统设计]
+tags:
+  - system design
 slides: false
 description: 设计一个可以接收、发送和支付的转账后端系统。它应涵盖扩展性、国际化、去重、单点故障、强一致性等问题。
 references:
-  - https://medium.com/airbnb-engineering/scaling-airbnbs-payment-platform-43ebfc99b324
-  - https://beancount.io
+  - >-
+    https://medium.com/airbnb-engineering/scaling-airbnbs-payment-platform-43ebfc99b324
+  - 'https://beancount.io'
 ---
 
 ## 澄清需求

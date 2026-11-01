@@ -1,15 +1,17 @@
 ---
 slug: 120-designing-uber
 id: 120-designing-uber
-title: "设计 Uber"
-date: 2019-01-03 18:39
+title: 设计 Uber
+date: '2019-01-03 18:39'
 comments: true
-tags: [系统设计]
+tags:
+  - system design
 references:
-   - https://medium.com/yalantis-mobile/uber-underlying-technologies-and-how-it-actually-works-526f55b37c6f
-   - https://www.youtube.com/watch?t=116&v=vujVmugFsKc
-   - http://www.infoq.com/news/2015/03/uber-realtime-market-platform
-   - https://www.youtube.com/watch?v=kb-m2fasdDY&vl=en
+  - >-
+    https://medium.com/yalantis-mobile/uber-underlying-technologies-and-how-it-actually-works-526f55b37c6f
+  - 'https://www.youtube.com/watch?t=116&v=vujVmugFsKc'
+  - 'http://www.infoq.com/news/2015/03/uber-realtime-market-platform'
+  - 'https://www.youtube.com/watch?v=kb-m2fasdDY&vl=en'
 ---
 
 免责声明：以下所有内容均来自公共来源或纯原创。这里没有 Uber 机密信息。

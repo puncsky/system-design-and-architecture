@@ -1,16 +1,20 @@
 ---
 slug: 182-designing-l7-load-balancer
 id: 182-designing-l7-load-balancer
-title: "设计负载均衡器或 Dropbox 修补程序"
-date: 2019-10-19 15:21
+title: 设计负载均衡器或 Dropbox 修补程序
+date: '2019-10-19 15:21'
 comments: true
-tags: [系统设计]
+tags:
+  - system design
 slides: false
-description: 大规模的网络服务处理来自全球的高流量，但单个主机只能处理有限数量的请求。通常会有一个服务器集群来处理所有流量。如何路由这些请求，以便每个主机能够均匀地接收请求？
+description: >-
+  大规模的网络服务处理来自全球的高流量，但单个主机只能处理有限数量的请求。通常会有一个服务器集群来处理所有流量。如何路由这些请求，以便每个主机能够均匀地接收请求？
 references:
-  - https://blogs.dropbox.com/tech/2019/09/enhancing-bandaid-load-balancing-at-dropbox-by-leveraging-real-time-backend-server-load-information/
-  - https://medium.com/netflix-techblog/netflix-edge-load-balancing-695308b5548c
-  - https://www.nginx.com/blog/nginx-power-of-two-choices-load-balancing-algorithm/#least_conn
+  - >-
+    https://blogs.dropbox.com/tech/2019/09/enhancing-bandaid-load-balancing-at-dropbox-by-leveraging-real-time-backend-server-load-information/
+  - 'https://medium.com/netflix-techblog/netflix-edge-load-balancing-695308b5548c'
+  - >-
+    https://www.nginx.com/blog/nginx-power-of-two-choices-load-balancing-algorithm/#least_conn
 ---
 
 ## 需求

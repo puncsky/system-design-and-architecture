@@ -1,7 +1,7 @@
 ---
 slug: 2016-02-13-crack-the-system-design-interview
 id: 2016-02-13-crack-the-system-design-interview
-title: "Design Pinterest"
+title: "Crack the System Design Interview"
 date: 2016-2-14 01:27
 comments: true
 tags: [system design]
@@ -48,16 +48,15 @@ Pinterest is a highly scalable photo-sharing service with hundreds of millions o
   - There are too many features and teams developing the product, so the product is decoupled into microservices.
   - Most of the services should be horizontally scalable and stateless.
 
-
 ## Step 2. Sketch out the high-level design
 
-**Do not dive into details before outlining the big picture.**  Otherwise, going off too far in the wrong direction would waste time and prevent you from finishing the task.
+**Do not dive into details before outlining the big picture.** Otherwise, going off too far in the wrong direction would waste time and prevent you from finishing the task.
 
 Here is the high-level architecture, in which arrows indicate dependencies. (Sometimes, people would use arrows to describe the direction of data flow.)
 
 ![Instagram Architecture Overview](https://tp-misc.b-cdn.net/SDA/design-instagram-architecture-overview@2x.png "Instagram Architecture Overview")
 
-[//]: # (https://whimsical.com/design-instagram-5JeJxJuxbWf3p97DaYttgH)
+[//]: # "https://whimsical.com/design-instagram-5JeJxJuxbWf3p97DaYttgH"
 
 ## Step 3. Dive into individual components and how they interact with each other
 
@@ -115,8 +114,8 @@ Clients talk to the servers via public APIs. Nowadays, people often serve RESTfu
 
 1. by using more efficient software, e.g. using frameworks with [async and non-blocking reactor pattern](http://www.puncsky.com/blog/2015/01/13/understanding-reactor-pattern-for-highly-scalable-i-o-bound-web-server/), or
 2. by using more hardware, like
-    1. scaling up, aka vertical scaling: using more powerful machines like supercomputers or mainframes, or
-    2. scaling out, aka horizontal scaling: using a more significant number of less-expensive machines.
+   1. scaling up, aka vertical scaling: using more powerful machines like supercomputers or mainframes, or
+   2. scaling out, aka horizontal scaling: using a more significant number of less-expensive machines.
 
 Internet companies prefer scaling out, since
 
@@ -130,7 +129,7 @@ Learn more about scaling in [how to scale a web service.](41-how-to-scale-a-web-
 ### Service Tier
 
 **The single responsibility principle** advocates small and autonomous services that work together so that
-Each service can "do one thing and do it well", and grow  independently.
+Each service can "do one thing and do it well", and grow independently.
 Small teams owning small services can plan much more aggressively for hyper-growth.
 Learn more about Micro Services vs. Monolithic Services in [Designing Uber](120-designing-uber.md)
 
@@ -142,7 +141,7 @@ How do those services find each other?
 
 Zookeeper is a CP system in terms of CAP theorem (See Section 2.3 for more discussion), which means it stays consistent in the case of failures, but the leader of the centralized consensus will be unavailable for registering new services.
 
-In contrast to Zookeeper, Uber did some interesting work in a decentralized way, named [hyperbahn](https://github.com/uber/hyperbahn), based on [Ringpop consistent hash ring](https://github.com/uber/ringpop-node), though it turned out to be a big failure. Read [Amazon's Dynamo](http://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf ) to understand AP and eventual consistency.
+In contrast to Zookeeper, Uber did some interesting work in a decentralized way, named [hyperbahn](https://github.com/uber/hyperbahn), based on [Ringpop consistent hash ring](https://github.com/uber/ringpop-node), though it turned out to be a big failure. Read [Amazon's Dynamo](http://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf) to understand AP and eventual consistency.
 
 In the context of Kubernetes, I would like to use service objects and Kube-proxy, so it would be easy for programmers to specify the address of the target service with internal DNS.
 
@@ -157,10 +156,10 @@ A key-value store, like Redis, is very suitable here because the data structure 
 
 The follower service serves functionalities for followers and followees. For an image to appear in the feed, there are two models to make it happen.
 
-* Push. Once the image is uploaded, we push the image metadata into all the followers' feeds. The follower will see its prepared feed directly.
-  * If the `Map <Followee, List of Followers>` fan-out is too large, then the push model will cost a lot of time and data duplicates.
-* Pull. We don't prepare the feed in advance; instead, when the follower checks its feed, it fetches the list of followees and gets their images.
-  * If the `Map<Follower, List of Followees>` fan-out is too large, then the pull model will spend a lot of time iterating the huge followee list.
+- Push. Once the image is uploaded, we push the image metadata into all the followers' feeds. The follower will see its prepared feed directly.
+  - If the `Map <Followee, List of Followers>` fan-out is too large, then the push model will cost a lot of time and data duplicates.
+- Pull. We don't prepare the feed in advance; instead, when the follower checks its feed, it fetches the list of followees and gets their images.
+  - If the `Map<Follower, List of Followees>` fan-out is too large, then the pull model will spend a lot of time iterating the huge followee list.
 
 ### Feed Service
 
@@ -190,8 +189,8 @@ The spam service uses machine learning techniques like supervised and unsupervis
 
 What are the blindspots or bottlenecks of the design above?
 
-* As of 2022, people find it less favorable to use the follower-followee way of organizing feeds, because it would be hard 1) for new customers to bootstrap and 2) for existing customers to find more intriguing content. TikTok and Toutiao lead the new wave of innovations to organize feeds with recommendation algorithms. This design, however, does not cover the recommendation system part.
-* For a popular photo-based SNS, scaling is the system's biggest challenge. So to make sure the design can survive the load, we need a capacity-planning.
+- As of 2022, people find it less favorable to use the follower-followee way of organizing feeds, because it would be hard 1) for new customers to bootstrap and 2) for existing customers to find more intriguing content. TikTok and Toutiao lead the new wave of innovations to organize feeds with recommendation algorithms. This design, however, does not cover the recommendation system part.
+- For a popular photo-based SNS, scaling is the system's biggest challenge. So to make sure the design can survive the load, we need a capacity-planning.
 
 ### Capacity planning with a spreadsheet and back-of-the-envelope calculation
 
@@ -203,15 +202,15 @@ For top-down, you start with the customers in theory and make the back-of-the-en
 
 When we rely on external blob storage and CDN, bandwidth is unlikely to be a problem. So I will estimate the capacity for the follower service as an example:
 
-| Row  | Description ("/" means per)                           | Estimated Number               | Calculated |
-| ---- | ----------------------------------------------------- | ------------------------------ | ---------- |
-| A    | daily active users                                    | 33,000,000                     |            |
-| B    | requests / user / day                                 | 60                             |            |
-| C    | rps / machine                                         | 10,000 (c10k problem)          |            |
-| D    | scale factor<br/>(redundency for user growth in 1 yr) | 3 times                        |            |
-| E    | Number of service instances                           | =  A * B / (24 * 3600) / C * D | ~= 7       |
+| Row | Description ("/" means per)                           | Estimated Number               | Calculated |
+| --- | ----------------------------------------------------- | ------------------------------ | ---------- |
+| A   | daily active users                                    | 33,000,000                     |            |
+| B   | requests / user / day                                 | 60                             |            |
+| C   | rps / machine                                         | 10,000 (c10k problem)          |            |
+| D   | scale factor<br/>(redundency for user growth in 1 yr) | 3 times                        |            |
+| E   | Number of service instances                           | = A _ B / (24 _ 3600) / C \* D | ~= 7       |
 
-We can see that *Row E* is a calculated result of the formula. After applying this estimation method to each one of those microservices and storages, we will better understand the entire system.
+We can see that _Row E_ is a calculated result of the formula. After applying this estimation method to each one of those microservices and storages, we will better understand the entire system.
 
 Real-world capacity planning is not a one-time deal. Provisioning too many machines will waste money, and preparing too few ones will cause outages. We usually do it with a few cycles of estimation and experimentation to find the right answer; or use autoscaling if the system supports this and budgets are not a problem.
 

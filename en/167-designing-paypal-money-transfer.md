@@ -23,7 +23,6 @@ Designing a service money transfer backend system like Square Cash (we will call
 5. Deduplication for non-idempotent APIs and for at-least-once delivery.
 6. Consistency across multiple data sources.
 
-
 ## Architecture
 
 <svg
@@ -33,11 +32,11 @@ version="1.1"
 width="944px"
 viewBox="-0.5 -0.5 944 300"
 content='<mxfile modified="2019-08-23T22:19:44.443Z" host="www.draw.io" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36" etag="D6R8hmRlifbxjgfwLXy7" pages="1" version="11.2.2" type="google"><diagram id="q0F2OQlhvJY46wws1bqZ" name="Page-1">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</diagram></mxfile>'
-onclick="(function(svg){var src=window.event.target||window.event.srcElement;while (src!=null&&src.nodeName.toLowerCase()!='a'){src=src.parentNode;}if(src==null){if(svg.wnd!=null&&!svg.wnd.closed){svg.wnd.focus();}else{var r=function(evt){if(evt.data=='ready'&&evt.source==svg.wnd){svg.wnd.postMessage(decodeURIComponent(svg.getAttribute('content')),'*');window.removeEventListener('message',r);}};window.addEventListener('message',r);svg.wnd=window.open('https://www.draw.io/?client=1&lightbox=1&edit=_blank');}}})(this);"
-style={{ cursor: "pointer", maxWidth: "100%", maxHeight: 300 }}
->
-  <defs />
-  <g>
+onclick="(function(svg){var src=window.event.target||window.event.srcElement;while (src!=null&&src.nodeName.toLowerCase()!='a'){src=src.parentNode;}if(src==null){if(svg.wnd!=null&&!svg.wnd.closed){svg.wnd.focus();}else{var r=function(evt){if(evt.data=='ready'&&evt.source==svg.wnd){svg.wnd.postMessage(decodeURIComponent(svg.getAttribute('content')),'\*');window.removeEventListener('message',r);}};window.addEventListener('message',r);svg.wnd=window.open('https://www.draw.io/?client=1&lightbox=1&edit=_blank');}}})(this);"
+style={{ cursor: "pointer", maxWidth: "100%", maxHeight: 300 }}>
+<defs />
+<g>
+
     <rect
       x={610}
       y={269}
@@ -1833,6 +1832,7 @@ style={{ cursor: "pointer", maxWidth: "100%", maxHeight: 300 }}
         </text>
       </switch>
     </g>
+
   </g>
 </svg>
 
@@ -1844,7 +1844,7 @@ The payment data model is essentially “[double-entry bookkeeping](https://en.w
 
 #### Deposit and Payout
 
-Transaction: new user Jane Doe deposits $100 from bank to Cash App. This one transaction involves those DB entries:
+Transaction: new user Jane Doe deposits \$100 from bank to Cash App. This one transaction involves those DB entries:
 
 bookkeeping table (for history)
 
@@ -1858,7 +1858,6 @@ transaction table
 ```txt
 txId, timestamp, status(pending/confirmed), [bookkeeping entries], narration
 ```
-
 
 Once the bank confirmed the transaction, update the pending status above and the following balance sheet in one transaction.
 
@@ -1894,11 +1893,11 @@ Transaction table, balance sheet, etc. are similar to the transaction discussed 
 
 ### How to sync across the transaction table and external banks and vendors?
 
-* [retry with idempotency to improve the success rate of the external calls and ensure no duplicate orders](https://tianpan.co/notes/43-how-to-design-robust-and-predictable-apis-with-idempotency).
-* two ways to check if the PENDING orders are filled or failed.
-    1. `poll`: cronjobs (SWF, Airflow, Cadence, etc.) to poll the status for PENDING orders.
-    2. `callback`: provide a callback API for the external vendors.
-* Graceful shutdown. The bank gateway calls may take tens of seconds to finish, and restarting the servers may resume unfinished transactions from the database. The process may create too many connections. To reduce connections, before the shutdown, stop accepting new requests and wait for the existing outgoing ones to wrap up.
+- [retry with idempotency to improve the success rate of the external calls and ensure no duplicate orders](https://tianpan.co/notes/43-how-to-design-robust-and-predictable-apis-with-idempotency).
+- two ways to check if the PENDING orders are filled or failed.
+  1. `poll`: cronjobs (SWF, Airflow, Cadence, etc.) to poll the status for PENDING orders.
+  2. `callback`: provide a callback API for the external vendors.
+- Graceful shutdown. The bank gateway calls may take tens of seconds to finish, and restarting the servers may resume unfinished transactions from the database. The process may create too many connections. To reduce connections, before the shutdown, stop accepting new requests and wait for the existing outgoing ones to wrap up.
 
 ### Deduplication
 
@@ -1915,13 +1914,13 @@ For the `callback` case, we can ensure we implement with idempotent APIs, and we
 
 #### Event queue may be at-least-once
 
-* For the even queue, we can use an exactly-once Kafka with the producer throughput declines only by 3%.
-* In the database layer, we can use [idempotency key or deduplication key](https://tianpan.co/notes/43-how-to-design-robust-and-predictable-apis-with-idempotency).
-* In the service layer, we can use Redis key-value store.
+- For the even queue, we can use an exactly-once Kafka with the producer throughput declines only by 3%.
+- In the database layer, we can use [idempotency key or deduplication key](https://tianpan.co/notes/43-how-to-design-robust-and-predictable-apis-with-idempotency).
+- In the service layer, we can use Redis key-value store.
 
 ### Availability and Scalability
 
-* Overall failover strategies: [Improving availability with failover](https://tianpan.co/notes/85-improving-availability-with-failover): Cold Standby, Hot Standby, Warm Standby, Active-active.
-* Service layer scaling: [AKF Scale Cube](https://tianpan.co/notes/41-how-to-scale-a-web-service)
-* Data layer scaling: CQRS Pattern
-* Needing a speed layer? [Lambda Architecture](https://tianpan.co/notes/83-lambda-architecture)
+- Overall failover strategies: [Improving availability with failover](https://tianpan.co/notes/85-improving-availability-with-failover): Cold Standby, Hot Standby, Warm Standby, Active-active.
+- Service layer scaling: [AKF Scale Cube](https://tianpan.co/notes/41-how-to-scale-a-web-service)
+- Data layer scaling: CQRS Pattern
+- Needing a speed layer? [Lambda Architecture](https://tianpan.co/notes/83-lambda-architecture)

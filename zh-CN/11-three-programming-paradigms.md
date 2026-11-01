@@ -1,13 +1,15 @@
 ---
 slug: 11-three-programming-paradigms
 id: 11-three-programming-paradigms
-title: "三种编程范式"
-date: 2018-08-12 02:31
+title: 三种编程范式
+date: '2018-08-12 02:31'
 comments: true
-tags: [系统设计]
-description: "结构化编程是一种对直接控制转移的约束。面向对象编程是一种对间接控制转移的约束。函数式编程是一种对变量赋值的约束。"
+tags:
+  - system design
+description: 结构化编程是一种对直接控制转移的约束。面向对象编程是一种对间接控制转移的约束。函数式编程是一种对变量赋值的约束。
 references:
-  - https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164
+  - >-
+    https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164
 ---
 
 结构化编程 vs. 面向对象编程 vs. 函数式编程

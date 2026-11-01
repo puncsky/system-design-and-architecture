@@ -1,15 +1,16 @@
 ---
 slug: 174-designing-memcached
 id: 174-designing-memcached
-title: "设计 Memcached 或内存中的 KV 存储"
-date: 2019-10-03 22:04
+title: 设计 Memcached 或内存中的 KV 存储
+date: '2019-10-03 22:04'
 comments: true
-tags: [系统设计]
+tags:
+  - system design
 description: Memcached = 丰富的客户端 + 分布式服务器 + 哈希表 + LRU。它具有简单的服务器，将复杂性推给客户端，因此可靠且易于部署。
 references:
-  - https://github.com/memcached/memcached/wiki/Overview
-  - https://people.cs.uchicago.edu/~junchenj/34702/slides/34702-MemCache.pdf
-  - https://en.wikipedia.org/wiki/Hash_table
+  - 'https://github.com/memcached/memcached/wiki/Overview'
+  - 'https://people.cs.uchicago.edu/~junchenj/34702/slides/34702-MemCache.pdf'
+  - 'https://en.wikipedia.org/wiki/Hash_table'
 ---
 
 ## 需求 
@@ -46,7 +47,7 @@ src="https://res.cloudinary.com/dohtidfqh/image/upload/v1569196539/web-guiguio/m
 
 如何处理冲突？主要有三种解决方法：
 
-1. 分离链：发生冲突的桶链表中包含相同索引的多个条目，您可以始终将新发生冲突的键值对附加到列表中。
+1. 分离链：发生冲突的桶链表中包含相同索引的多个条目，你可以始终将新发生冲突的键值对附加到列表中。
 2. 开放寻址：如果发生冲突，转到下一个索引，直到找到可用的桶。
 3. 动态调整大小：调整哈希表的大小并分配更多空间；因此，冲突发生的频率会降低。
 

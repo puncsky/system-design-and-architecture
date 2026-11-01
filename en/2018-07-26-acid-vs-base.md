@@ -7,7 +7,7 @@ comments: true
 tags: [system design]
 description: "ACID and BASE indicate different designing philosophy. ACID focuses on consistency over availability. In ACID, the C means that a transaction pre-serves all the database rules. Meanwhile, BASE focuses more on availability indicating the system is guaranteed to be available."
 references:
-    - https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed
+  - https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed
 ---
 
 ACID (Consistency over Availability)

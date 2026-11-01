@@ -29,17 +29,18 @@ the shorter, the better
 show statics (real-time and daily/monthly/yearly)
 
 ## Encode Url
+
 http://blog.codinghorror.com/url-shortening-hashes-in-practice/
 
 Choice 1. md5(128 bit, 16 hex numbers, collision, birthday paradox, 2^(n/2) = 2^64) truncate? (64bit, 8 hex number, collision 2^32), Base64.
 
-* Pros: hashing is simple and horizontally scalable.
-* Cons: too long, how to purify expired URLs?
+- Pros: hashing is simple and horizontally scalable.
+- Cons: too long, how to purify expired URLs?
 
 Choice 2. Distributed Seq Id Generator. (Base62: a~z, A~Z, 0~9, 62 chars, 62^7), sharding: each node maintains a section of ids.
 
-* Pros: easy to outdate expired entries, shorter
-* Cons: coordination (zookeeper)
+- Pros: easy to outdate expired entries, shorter
+- Cons: coordination (zookeeper)
 
 ## KV store
 
@@ -48,34 +49,35 @@ MySQL(10k qps, slow, no relation), KV (100k qps, Redis, Memcached)
 A great candidate will ask about the lifespan of the aliases and design a system that purges aliases past their expiration.
 
 ## Followup
+
 Q: How will shortened URLs be generated?
 
-* A poor candidate will propose a solution that uses a single id generator (single point of failure) or a solution that requires coordination among id generator servers on every request. For example, a single database server using an auto-increment primary key.
-* An acceptable candidate will propose a solution using an md5 of the URL, or some form of UUID generator that can be done independently on any node. While this allows distributed generation of non- colliding IDs, it yields large "shortened" URLs
-* A good candidate will design a solution that utilizes a cluster of id generators that reserve chunks of the id space from a central coordinator (e.g. ZooKeeper) and independently allocate IDs from their chunk, refreshing as necessary.
+- A poor candidate will propose a solution that uses a single id generator (single point of failure) or a solution that requires coordination among id generator servers on every request. For example, a single database server using an auto-increment primary key.
+- An acceptable candidate will propose a solution using an md5 of the URL, or some form of UUID generator that can be done independently on any node. While this allows distributed generation of non- colliding IDs, it yields large "shortened" URLs
+- A good candidate will design a solution that utilizes a cluster of id generators that reserve chunks of the id space from a central coordinator (e.g. ZooKeeper) and independently allocate IDs from their chunk, refreshing as necessary.
 
 Q: How to store the mappings?
 
-* A poor candidate will suggest a monolithic database. There are no relational aspects to this store. It is a pure key-value store.
-* A good candidate will propose using any light-weight, distributed store. MongoDB/HBase/Voldemort/etc.
-* A great candidate will ask about the lifespan of the aliases and design a system that ==purges aliases past their expiration==
+- A poor candidate will suggest a monolithic database. There are no relational aspects to this store. It is a pure key-value store.
+- A good candidate will propose using any light-weight, distributed store. MongoDB/HBase/Voldemort/etc.
+- A great candidate will ask about the lifespan of the aliases and design a system that ==purges aliases past their expiration==
 
 Q: How to implement the redirect servers?
 
-* A poor candidate will start designing something from scratch to solve an already solved problem
-* A good candidate will propose using an off-the-shelf HTTP server with a plug-in that parses the shortened URL key, looks the alias up in the DB, updates click stats and returns a 303 back to the original URL. Apache/Jetty/Netty/tomcat/etc. are all fine.
+- A poor candidate will start designing something from scratch to solve an already solved problem
+- A good candidate will propose using an off-the-shelf HTTP server with a plug-in that parses the shortened URL key, looks the alias up in the DB, updates click stats and returns a 303 back to the original URL. Apache/Jetty/Netty/tomcat/etc. are all fine.
 
 Q: How are click stats stored?
 
-* A poor candidate will suggest write-back to a data store on every click
-* A good candidate will suggest some form of ==aggregation tier that accepts clickstream data, aggregates it, and writes back a persistent data store periodically==
+- A poor candidate will suggest write-back to a data store on every click
+- A good candidate will suggest some form of ==aggregation tier that accepts clickstream data, aggregates it, and writes back a persistent data store periodically==
 
 Q: How will the aggregation tier be partitioned?
 
-* A great candidate will suggest a low-latency messaging system to buffer the click data and transfer it to the aggregation tier.
-* A candidate may ask how often the stats need to be updated. If daily, storing in HDFS and running map/reduce jobs to compute stats is a reasonable approach If near real-time, the aggregation logic should compute stats
+- A great candidate will suggest a low-latency messaging system to buffer the click data and transfer it to the aggregation tier.
+- A candidate may ask how often the stats need to be updated. If daily, storing in HDFS and running map/reduce jobs to compute stats is a reasonable approach If near real-time, the aggregation logic should compute stats
 
 Q: How to prevent visiting restricted sites?
 
-* A good candidate can answer with maintaining a blacklist of hostnames in a KV store.
-* A great candidate may propose some advanced scaling techniques like bloom filter.
+- A good candidate can answer with maintaining a blacklist of hostnames in a KV store.
+- A great candidate may propose some advanced scaling techniques like bloom filter.

@@ -21,7 +21,7 @@ references:
 
 ![lyft growth model](https://res.cloudinary.com/dohtidfqh/image/upload/v1570050291/web-guiguio/1_JBgJKb6DFrG7X2Fc7dtAaQ.png)
 
-然而，最大挑战是管理跨区域营销的所有流程，包括选择竞标、预算、创意、激励和受众，进行 A/B 测试等。您可以看到数字营销人员一天的工作：
+然而，最大挑战是管理跨区域营销的所有流程，包括选择竞标、预算、创意、激励和受众，进行 A/B 测试等。你可以看到数字营销人员一天的工作：
 
 ![营销者的一天](https://res.cloudinary.com/dohtidfqh/image/upload/v1570050798/web-guiguio/0_FXK0RW9qx3e9f_kv.png)
 

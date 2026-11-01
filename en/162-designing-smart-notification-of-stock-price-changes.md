@@ -12,19 +12,18 @@ slides: false
 
 - 3 million users
 - 5000 stocks + 250 global stocks
-- a user gets notified about the price change when 
-    1. subscribing the stock
-    1. the stock has 5% or 10% changes
-    1. since a) the last week or b) the last day
+- a user gets notified about the price change when
+  1. subscribing the stock
+  1. the stock has 5% or 10% changes
+  1. since a) the last week or b) the last day
 - extensibility. may support other kinds of notifications like breaking news, earnings call, etc.
-
 
 ## Sketching out the Architecture
 
 Contexts:
-  * What is clearing? Clearing is the procedure by which financial trades settle – that is, the correct and timely transfer of funds to the seller and securities to the buyer. Often with clearing, a specialized organization acts as an intermediary known as a clearinghouse.
-  * What is a stock exchange? A facility where stock brokers and traders can buy and sell securities.
 
+- What is clearing? Clearing is the procedure by which financial trades settle – that is, the correct and timely transfer of funds to the seller and securities to the buyer. Often with clearing, a specialized organization acts as an intermediary known as a clearinghouse.
+- What is a stock exchange? A facility where stock brokers and traders can buy and sell securities.
 
 <svg
 xmlns="http://www.w3.org/2000/svg"
@@ -34,10 +33,10 @@ width="100%"
 height="100%"
 viewBox="-0.5 -0.5 749 424"
 content='<mxfile modified="2019-08-13T20:36:13.011Z" host="www.draw.io" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36" etag="pxUH_iOYvXXWOA2Ql9Aj" version="11.1.4" type="google"><diagram id="zNECO6JhliZ6oZAxU33_" name="Page-1">7Vxdc9o4FP01zOw+JGNLtoFHSEjabtPSpttunzrCCKPGWIwsB+ivX8nIgC2VmIKxmUkegn0t2+Kee+6XlLTgzWx5z9B8+kDHOGwBa7xswdsWALbd8cSHlKzWEs9TgoCRsRq0FTySX1gJLSVNyBjHuYGc0pCTeV7o0yjCPs/JEGN0kR82oWH+rXMUYE3w6KNQl34jYz5dSzuutZW/wSSYZm+2LXVlhrLBShBP0ZgudkRw0II3jFK+Ppotb3AolZfpZX3f3W+ubibGcMTL3BD/mHx9XgT/vPvgryadz2+f46fZFXDU5Pgq+8Z4LBSgTinjUxrQCIWDrbTPaBKNsXysJc62Y95TOhdCWwh/Ys5XCk2UcCpEUz4L1VW8JPy/nePv8lHXrjq7Xaonpyer7CTibLW5SZ7s3CVPt7elZ7n7hpiRGeaYKaGuO6XOmCbMx3sUltkgYgHme8YpK5fK3HmBQuYeUzEbthIDGA4RJ895a0PKaIPNuC2u4kBBewDM6rnPKEzUm3rzucASWMMknoqPD5STCfHFVGgk1YDZMxF6AF4ovmR/xMRRII/+6g0/xH9rNpO3iMWUcPw4R6kiF8Iv5NH/rfKfMeN4uVdd6qqXkUp5FehBYQipZLFlqZ2Nmu4w1LMq0jFwX6l0EJXARVIJaFS6pzRIuXRHGB6hWB7ehDQZi88HHMcoIFFgoNLdzUPzmOQ4DWCS98qkg5gEL5JJUGPSYIaIvO1xHX5inTS9b4/y+kD+Fi+NcTROE0lwh7nfODK5oAFksjW1NJ1M1mFk+nPeOCV5AxrFGwBeET0WUbtZiMJXRI9FFDYKUdiuE9Etit93rryE6BbEzV31IurWBSmxRvHH5PvTu+Wb+bsfV++jz+FHQw1dB8RnCHbtRjHJ0dQepb0KkTbXne453ULt5JrSPc+Q7TlVZXuunlMvRYUhLExIv4psmTJDVq1LHhB7ElYCrCFbJ+I1q1qrUi1Nzx1TVt2uSM/dC3cGXkln0GmUL/A0rX+mIxJNKZW9lt58roEgLYz4QqVohMMhjUna4IS3I8o5neW1mY3thSSQY7hEoY/UmS90LEv1fswZfcI3NKSycI9oJKGckDDMRC0ALas/uANy8BTN5VRmy0Cuj1yjXwnD1zMx6xD/iLMyF/bnlMjHD57FW+LT0QZ2ujneAKdj8FAQZMJd7rhV+ShoaTBdWG60zYZOnRu1LzNItzVi9oZvheAecbxAq9rDB/SszMSzCGKZYnXXEENgVTywX3nwUtx5kQfNokFHj09YGGm6IjBkdNkIIuRoAI0B4bw0qHUJ2mr9QfPjwG7/n9PALrvcXFupbJ52rQs4zfZspSG1m9V1tvUYP0Lcl5sHFky4LQ1x4ZF4HiCGY/ILjdIBVpb0pvN0+y331pRsF3PyGRmPU2sJZULfR/5TkNrNTu49SX+MGO01Vs2JbjYVqSm3dvftmJzrlXWtbiwNiXrWUGpiZwidTGJZfhcw27zyCBj1NtacGbd6CL0/NaDJYruFxM3YZGmfs8mSMXNHh1/IDF+Jeo7IXol1a+iokGgSJktxUdipUAmTc5niRG+tZCWjvwqJ0DR7WcujNSTvRxvBhhcfEy6egk8IBywscXbsskuc7crw0LteX4TxSt8pvpicvBhgzUikK1t3Ui+W90pU3lWZ0Muz6BS4WO1ihWPcyeEYgAGVrT3XU+GcOqbXEKoLcSHrgrqFNmjXyT9inX2ou7bg9RiTRfhmmAq8pd/jeoWtpYXxdnfveHGwnsFJI5ljiGTCAVMmSZjqGo0vNinJmHN8UmJdg24b5uDJ9jMca4150DcdluqTGHh5u5bPV190Szqt0y+vms0EOnk78WCnaCnruR7ttopvctrOXrelzQyAM7itjNmXunRU3sC6lRjYwcGsXQhOcH8wA1133/hqrCJT6stl2UIW3Q2oywBoXF0Ga2HSZbSdQNmVJdiwrXF62+nfWJq/9ShQIVFQ/94Ew+KSW3tXHerZsaaoZncaYKeoVtc2uRjX5GLcqtSqtxrOqVZGOVI7GK66J+ocOFYnr2VjR8ek5U5lxqsvpBX+QO1TgpMyLecL7ebotu+5pftslbVzoJ6k8KkwSR6mDtlHIjG5MCcDvGI7E5TLYapyME6tW8GbncM4oGQOYzcrh3HqaVc0GJ+TV4bH4QM0v+YzGv2kIw238+97LezXaJcLzdA7WFfidPvPCNZ17fZfOsDB/w==</diagram></mxfile>'
-style={{ backgroundColor: "rgb(255, 255, 255)" }}
->
-  <defs />
-  <g>
+style={{ backgroundColor: "rgb(255, 255, 255)" }}>
+<defs />
+<g>
+
     <path
       d="M 720 146 L 740 146 L 740 26 L 408.37 26"
       fill="none"
@@ -1357,28 +1356,28 @@ style={{ backgroundColor: "rgb(255, 255, 255)" }}
         </text>
       </switch>
     </g>
+
   </g>
 </svg>
 
-
 ## What are those components and how do they interact with each other?
 
-* Price ticker 
-    * data fetching policies
-      * option 1 preliminary: fetches data every 5 mins and flush into the time-series database in batches.
-      * option 2 advanced: nowadays external systems usually push data directly so that we do not have to pull all the time.
-    * ~6000 points per request or per price change.
-    * data retention of 1 week, because this is just the speeding layer of the lambda architecture.
-* Price watcher
-    * read the data ranging from last week or last 24 hours for each stock.
-    * calculate if the fluctuation exceeds 5% or 10% in those two time spans. we get tuples like (stock, up 5%, 1 week).
-        * corner case: should we normalize the price data? for example, some abnormal price like someone sold UBER mistakenly for $1 USD.
-    * **ratelimit (because 5% or 10% delta may occur many times within one day)**, and then emit an event `PRICE_CHANGE(STOCK_CODE, timeSpan, percentage)` to the notification queue.
-* Periodical triggers are cron jobs, e.g. Airflow, Cadence.
-* notification queue
-    * may not necessarily be introduced in the first place when users and stocks are small.
-    * may accept generic messaging event, like `PRICE_CHANGE`, `EARNINGS_CALL`, `BREAKING_NEWS`, etc.
-* Notifier
-    * subscribe the notification queue to get the event
-    * and then fetch who to notify from the user settings service
-    * finally based on user settings, send out messages through APNs, FCM or AWS SES.
+- Price ticker
+  - data fetching policies
+    - option 1 preliminary: fetches data every 5 mins and flush into the time-series database in batches.
+    - option 2 advanced: nowadays external systems usually push data directly so that we do not have to pull all the time.
+  - ~6000 points per request or per price change.
+  - data retention of 1 week, because this is just the speeding layer of the lambda architecture.
+- Price watcher
+  - read the data ranging from last week or last 24 hours for each stock.
+  - calculate if the fluctuation exceeds 5% or 10% in those two time spans. we get tuples like (stock, up 5%, 1 week).
+    - corner case: should we normalize the price data? for example, some abnormal price like someone sold UBER mistakenly for \$1 USD.
+  - **ratelimit (because 5% or 10% delta may occur many times within one day)**, and then emit an event `PRICE_CHANGE(STOCK_CODE, timeSpan, percentage)` to the notification queue.
+- Periodical triggers are cron jobs, e.g. Airflow, Cadence.
+- notification queue
+  - may not necessarily be introduced in the first place when users and stocks are small.
+  - may accept generic messaging event, like `PRICE_CHANGE`, `EARNINGS_CALL`, `BREAKING_NEWS`, etc.
+- Notifier
+  - subscribe the notification queue to get the event
+  - and then fetch who to notify from the user settings service
+  - finally based on user settings, send out messages through APNs, FCM or AWS SES.

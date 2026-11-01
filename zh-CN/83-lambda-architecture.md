@@ -1,14 +1,15 @@
 ---
 slug: 83-lambda-architecture
 id: 83-lambda-architecture
-title: "Lambda 架构"
-date: 2018-10-23 10:30
+title: Lambda 架构
+date: '2018-10-23 10:30'
 comments: true
-tags: [系统设计]
+tags:
+  - system design
 description: Lambda 架构 = CQRS（批处理层 + 服务层） + 快速层。它解决了大数据的准确性、延迟和吞吐量问题。
 references:
-  - https://www.amazon.com/Big-Data-Principles-practices-scalable/dp/1617290343
-  - https://mapr.com/resources/stream-processing-mapr/
+  - 'https://www.amazon.com/Big-Data-Principles-practices-scalable/dp/1617290343'
+  - 'https://mapr.com/resources/stream-processing-mapr/'
 ---
 
 ## 为什么选择 Lambda 架构？

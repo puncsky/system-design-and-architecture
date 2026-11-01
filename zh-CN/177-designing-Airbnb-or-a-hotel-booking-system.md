@@ -1,14 +1,16 @@
 ---
 slug: 177-designing-Airbnb-or-a-hotel-booking-system
 id: 177-designing-Airbnb-or-a-hotel-booking-system
-title: "设计 Airbnb 或酒店预订系统"
-date: 2019-10-06 01:39
+title: 设计 Airbnb 或酒店预订系统
+date: '2019-10-06 01:39'
 comments: true
 slides: false
-tags: [系统设计]
+tags:
+  - system design
 description: 对于客人和房东，我们使用关系数据库存储数据，并建立索引以按位置、元数据和可用性进行搜索。我们可以使用外部供应商进行支付，并通过优先队列提醒预订。
 references:
-  - https://www.vertabelo.com/blog/designing-a-data-model-for-a-hotel-room-booking-system/
+  - >-
+    https://www.vertabelo.com/blog/designing-a-data-model-for-a-hotel-room-booking-system/
 ---
 
 ## 需求
@@ -31,7 +33,7 @@ references:
 
 ### 库存 \<\> 预订 \<\> 用户（客人和房东）
 
-供应商在库存中提供他们的房间详情。用户可以相应地搜索、获取和预订房间。在预订房间后，用户的付款也会更改 `reserved_room` 的 `status`。您可以在 [这篇文章](https://www.vertabelo.com/blog/designing-a-data-model-for-a-hotel-room-booking-system/) 中查看数据模型。
+供应商在库存中提供他们的房间详情。用户可以相应地搜索、获取和预订房间。在预订房间后，用户的付款也会更改 `reserved_room` 的 `status`。你可以在 [这篇文章](https://www.vertabelo.com/blog/designing-a-data-model-for-a-hotel-room-booking-system/) 中查看数据模型。
 
 ### 如何查找可用房间？
 

@@ -1,10 +1,11 @@
 ---
 slug: 161-designing-stock-exchange
 id: 161-designing-stock-exchange
-title: "设计股票交易所"
-date: 2019-08-12 09:50
+title: 设计股票交易所
+date: '2019-08-12 09:50'
 comments: true
-tags: [系统设计]
+tags:
+  - system design
 slides: false
 ---
 

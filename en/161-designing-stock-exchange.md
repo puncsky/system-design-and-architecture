@@ -10,16 +10,14 @@ slides: false
 
 ## Requirements
 
-* order-matching system for `buy` and `sell` orders. Types of orders:
-    * Market Orders
-    * Limit Orders
-    * Stop-Loss Orders
-    * Fill-or-Kill Orders
-    * Duration of Orders
-* high availability and low latency for millions of users
-    * async design - use messaging queue extensively (btw. side-effect: engineers work on one service pub to a queue and does not even know where exactly is the downstream service and hence cannot do evil.)
-
-
+- order-matching system for `buy` and `sell` orders. Types of orders:
+  - Market Orders
+  - Limit Orders
+  - Stop-Loss Orders
+  - Fill-or-Kill Orders
+  - Duration of Orders
+- high availability and low latency for millions of users
+  - async design - use messaging queue extensively (btw. side-effect: engineers work on one service pub to a queue and does not even know where exactly is the downstream service and hence cannot do evil.)
 
 ## Architecture
 
@@ -31,10 +29,10 @@ width="100%"
 height="100%"
 viewBox="-0.5 -0.5 672 412"
 content='<mxfile modified="2019-07-29T04:46:36.590Z" host="www.draw.io" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36" etag="fP7YkbHKARZ_0o3JLRy3" version="11.0.7" type="google"><diagram id="uO2wHRNSVC2y_v88RBhh" name="Page-1">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</diagram></mxfile>'
-style={{ backgroundColor: "rgb(255, 255, 255)" }}
->
-  <defs />
-  <g>
+style={{ backgroundColor: "rgb(255, 255, 255)" }}>
+<defs />
+<g>
+
     <path
       d="M 196.45 50.07 L 196.45 59.72 L 264.72 59.72 L 264.72 73.36"
       fill="none"
@@ -1321,26 +1319,25 @@ style={{ backgroundColor: "rgb(255, 255, 255)" }}
         </text>
       </switch>
     </g>
+
   </g>
 </svg>
-
-
 
 ## Components and How do they interact with each other.
 
 ### order matching system
 
-* shard by stock code
-* order's basic data model (other metadata are omitted): `Order(id, stock, side, time, qty, price)`
-* the core abstraction of the order book is the matching algorithm. there are a bunch of matching algorithms([ref to stackoverflow](http://web.archive.org/web/20120626161034/http://www.cmegroup.com/confluence/display/EPICSANDBOX/Match+Algorithms), [ref to medium](https://medium.com/lgogroup/a-matching-engine-for-our-values-part-1-795a29b400fa))
-* example 1: [price-time FIFO](https://stackoverflow.com/questions/13112062/which-are-the-order-matching-algorithms-most-commonly-used-by-electronic-financi) - a kind of 2D vector cast or flatten into 1D vector
-    * x-axis is price
-    * y-axis is orders. Price/time priority queue, FIFO.
-        * Buy-side: ascending in price, descending in time.
-        * Sell-side: ascending in price, ascending in time.
-    * in other words
-        * Buy-side: the higher the price and the earlier the order, the nearer we should put it to the center of the matching.
-        * Sell-side: the lower the price and the earlier the order, the nearer we should put it to the center of the matching.
+- shard by stock code
+- order's basic data model (other metadata are omitted): `Order(id, stock, side, time, qty, price)`
+- the core abstraction of the order book is the matching algorithm. there are a bunch of matching algorithms([ref to stackoverflow](http://web.archive.org/web/20120626161034/http://www.cmegroup.com/confluence/display/EPICSANDBOX/Match+Algorithms), [ref to medium](https://medium.com/lgogroup/a-matching-engine-for-our-values-part-1-795a29b400fa))
+- example 1: [price-time FIFO](https://stackoverflow.com/questions/13112062/which-are-the-order-matching-algorithms-most-commonly-used-by-electronic-financi) - a kind of 2D vector cast or flatten into 1D vector
+  - x-axis is price
+  - y-axis is orders. Price/time priority queue, FIFO.
+    - Buy-side: ascending in price, descending in time.
+    - Sell-side: ascending in price, ascending in time.
+  - in other words
+    - Buy-side: the higher the price and the earlier the order, the nearer we should put it to the center of the matching.
+    - Sell-side: the lower the price and the earlier the order, the nearer we should put it to the center of the matching.
 
 x-axis
 
@@ -1348,71 +1345,66 @@ x-axis
 
 with y-axis cast into x-axis
 
-
 ```text
-Id   Side    Time   Qty   Price   Qty    Time   Side  
+Id   Side    Time   Qty   Price   Qty    Time   Side
 ---+------+-------+-----+-------+-----+-------+------
-#3                        20.30   200   09:05   SELL  
-#1                        20.30   100   09:01   SELL  
-#2                        20.25   100   09:03   SELL  
-#5   BUY    09:08   200   20.20                       
-#4   BUY    09:06   100   20.15                       
-#6   BUY    09:09   200   20.15                       
+#3                        20.30   200   09:05   SELL
+#1                        20.30   100   09:01   SELL
+#2                        20.25   100   09:03   SELL
+#5   BUY    09:08   200   20.20
+#4   BUY    09:06   100   20.15
+#6   BUY    09:09   200   20.15
 ```
 
 Order book from Coinbase Pro
 
 ![](https://res.cloudinary.com/dohtidfqh/image/upload/v1564466496/web-guiguio/1_EiZZjOVe0mqXhxbOhe4_uw.png)
 
-
 [The Single Stock-Exchange Simulator](http://homepages.gold.ac.uk/nikolaev/aalts.htm)
 
 ![](https://res.cloudinary.com/dohtidfqh/image/upload/v1564466429/web-guiguio/SSESNIK.gif)
 
-
-* example 2: pro-rata
+- example 2: pro-rata
 
 ![pure pro-rata](https://res.cloudinary.com/dohtidfqh/image/upload/v1564361620/web-guiguio/1_hahTecyPk0aKMJ1CCME4qw.png)
 
-
 How to implement the price-time FIFO matching algorithm?
 
-* shard by stock, CP over AP: one stock one partition
-* stateful in-memory tree-map
-    * periodically iterate the treemap to match orders
-* data persistence with cassandra
-* in/out requests of the order matching services are made through messaging queues
-* failover
-    * the in-memory tree-maps are snapshotting into database
-    * in an error case, recover from the snapshot and de-duplicate with cache
+- shard by stock, CP over AP: one stock one partition
+- stateful in-memory tree-map
+  - periodically iterate the treemap to match orders
+- data persistence with cassandra
+- in/out requests of the order matching services are made through messaging queues
+- failover
+  - the in-memory tree-maps are snapshotting into database
+  - in an error case, recover from the snapshot and de-duplicate with cache
 
 How to transmit data of the order book to the client-side in realtime?
 
-* websocket
+- websocket
 
 How to support different kinds of orders?
 
-* same `SELL or BUY: qty @ price` in the treemap with different creation setup and matching conditions
-    * Market Orders: place the order at the last market price.
-    * Limit Orders: place the order with at a specific price.
-    * Stop-Loss Orders: place the order with at a specific price, and match it in certain conditions.
-    * Fill-or-Kill Orders: place the order with at a specific price, but match it only once.
-    * Duration of Orders: place the order with at a specific price, but match it only in the given time span.
-    
+- same `SELL or BUY: qty @ price` in the treemap with different creation setup and matching conditions
+  - Market Orders: place the order at the last market price.
+  - Limit Orders: place the order with at a specific price.
+  - Stop-Loss Orders: place the order with at a specific price, and match it in certain conditions.
+  - Fill-or-Kill Orders: place the order with at a specific price, but match it only once.
+  - Duration of Orders: place the order with at a specific price, but match it only in the given time span.
+
 ### Orders Service
 
-* Preserves all active orders and order history.
-* Writes to order matching when receives a new order.
-* Receives matched orders and settle with external clearing house (async external gateway call + cronjob to sync DB)
-
+- Preserves all active orders and order history.
+- Writes to order matching when receives a new order.
+- Receives matched orders and settle with external clearing house (async external gateway call + cronjob to sync DB)
 
 ### References
 
-* How Exchange Happen? [Simulating a financial exchange in Scala](http://falconair.github.io/2015/01/05/financial-exchange.html)
-* Open Sources
-  * [GitHub - objectcomputing/liquibook: Modern C++ order matching engine](https://github.com/objectcomputing/liquibook)
-  * [GitHub - cyanly/gotrade: A proof of concept of an electronic trading system written in Golang](https://github.com/cyanly/gotrade)
-* [The Financial Information eXchange ("FIX") Protocol](http://help.cqg.com/continuum/default.htm#!Documents/fixserver.htm)
-* Types of orders: [Technical Analysis Course. Training,Coaching & Mentoring for Traders / Investors - Types of orders used when buying or selling a stock](http://www.tradersplace.in/TypesofOrders.html)
-* [GitHub - fmstephe/matching_engine: A simple financial trading matching engine. Built to learn more about how they work.](https://github.com/fmstephe/matching_engine)
-* [Automated Algorithmic Trading: Learning Agents for Limit Order Book Trading](http://homepages.gold.ac.uk/nikolaev/aalts.htm)
+- How Exchange Happen? [Simulating a financial exchange in Scala](http://falconair.github.io/2015/01/05/financial-exchange.html)
+- Open Sources
+  - [GitHub - objectcomputing/liquibook: Modern C++ order matching engine](https://github.com/objectcomputing/liquibook)
+  - [GitHub - cyanly/gotrade: A proof of concept of an electronic trading system written in Golang](https://github.com/cyanly/gotrade)
+- [The Financial Information eXchange ("FIX") Protocol](http://help.cqg.com/continuum/default.htm#!Documents/fixserver.htm)
+- Types of orders: [Technical Analysis Course. Training,Coaching & Mentoring for Traders / Investors - Types of orders used when buying or selling a stock](http://www.tradersplace.in/TypesofOrders.html)
+- [GitHub - fmstephe/matching_engine: A simple financial trading matching engine. Built to learn more about how they work.](https://github.com/fmstephe/matching_engine)
+- [Automated Algorithmic Trading: Learning Agents for Limit Order Book Trading](http://homepages.gold.ac.uk/nikolaev/aalts.htm)

@@ -25,7 +25,7 @@ However, the biggest challenge is to manage all the processes of cross-region ma
 
 ![营销者的一天](https://res.cloudinary.com/dohtidfqh/image/upload/v1570050798/web-guiguio/0_FXK0RW9qx3e9f_kv.png)
 
-We can find out that *execution* occupies most of the time while *analysis*, thought as more important, takes much less time. A scaling strategy will enable marketers to concentrate on analysis and decision-making process instead of operational activities.
+We can find out that _execution_ occupies most of the time while _analysis_, thought as more important, takes much less time. A scaling strategy will enable marketers to concentrate on analysis and decision-making process instead of operational activities.
 
 ## Solution: Automation
 
@@ -63,18 +63,15 @@ Initial eigenvalue:
 
 ![特征值](https://res.cloudinary.com/dohtidfqh/image/upload/v1570072545/web-guiguio/0_YHwm9D9a-Fvm7cq8.png)
 
-
-The forecast improves as the historical data of interactivity accumulates: 
+The forecast improves as the historical data of interactivity accumulates:
 
 ![根据历史记录判断 LTV](https://res.cloudinary.com/dohtidfqh/image/upload/v1570072568/web-guiguio/0_SwHgIjhJAQf35t_C.png)
-
 
 ### Budget allocator
 
 After LTV is predicted, the next is to estimate budgets based on the price. A curve of the form `LTV = a * (spend)^b` is fit to the data. A degree of randomness will be injected into the cost-curve creation process in order to converge a global optimum.
 
 ![预算计算](https://res.cloudinary.com/dohtidfqh/image/upload/v1570073827/web-guiguio/0_bLNhBPW6UFA227JB.png)
-
 
 ### Bidders
 
@@ -84,8 +81,6 @@ Some popular bidding strategies, applied in different channels, are listed as be
 
 ![投放策略](https://res.cloudinary.com/dohtidfqh/image/upload/v1570074354/web-guiguio/0_bPtZels9tqGXoFCW.png)
 
-
 ### Conclusion
 
 We have to value human experiences in the automation process; otherwise, the quality of the models may be "garbage in, garbage out". Once saved from laboring tasks, marketers can focus more on understanding users, channels, and the messages they want to convey to audiences, and thus obtain better ad impacts. That's how Lyft can achieve a higher ROI with less time and efforts.
-

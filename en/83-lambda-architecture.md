@@ -15,10 +15,9 @@ references:
 
 To solve three problems introduced by big data
 
-1. Accuracy  (好)
+1. Accuracy (好)
 2. Latency (快)
 3. Throughput (多)
-
 
 e.g. problems with scaling a pageview service in a traditional way
 
@@ -30,8 +29,6 @@ e.g. problems with scaling a pageview service in a traditional way
 
 The key point is that ==X-axis dimension alone of the [AKF scale cube](https://tianpan.co/notes/41-how-to-scale-a-web-service) is not good enough. We should introduce Y-axis / functional decomposition as well. Lambda architecture tells us how to do it for a data system.==
 
-
-
 ## What is lambda architecture?
 
 If we define a data system as
@@ -40,11 +37,9 @@ If we define a data system as
 Query = function(all data)
 ```
 
-
 Then a lambda architecture is
 
 ![Lambda Architecture](/img/lambda-architecture.png)
-
 
 ```txt
 batch view = function(all data at the batching job's execution time)
@@ -54,6 +49,5 @@ query = function(batch view. realtime view)
 ```
 
 ==Lambda architecture = CQRS (batch layer + serving layer) + speed layer==
-
 
 ![Lambda Architecture for big data systems](https://res.cloudinary.com/dohtidfqh/image/upload/v1548840018/web-guiguio/lambda-architecture-for-big-data-systems.png)

@@ -12,16 +12,17 @@ references:
 ---
 
 ## Requirements
-* for guests
-    * search rooms by locations, dates, number of rooms, and number of guests
-    * get room details (like picture, name, review, address, etc.) and prices
-    * pay and book room from inventory by date and room id
-        * checkout as a guest 
-        * user is logged in already
-    * notification via Email and mobile push notification
-* for hotel or rental administrators (suppliers/hosts)
-    * administrators (receptionist/manager/rental owner): manage room inventory and help the guest to check-in and check out
-    * housekeeper: clean up rooms routinely
+
+- for guests
+  - search rooms by locations, dates, number of rooms, and number of guests
+  - get room details (like picture, name, review, address, etc.) and prices
+  - pay and book room from inventory by date and room id
+    - checkout as a guest
+    - user is logged in already
+  - notification via Email and mobile push notification
+- for hotel or rental administrators (suppliers/hosts)
+  - administrators (receptionist/manager/rental owner): manage room inventory and help the guest to check-in and check out
+  - housekeeper: clean up rooms routinely
 
 ## Architecture
 
@@ -35,19 +36,19 @@ Suppliers provide their room details in the inventory. And users can search, get
 
 ### How to find available rooms?
 
-* by location: geo-search with [spatial indexing](https://en.wikipedia.org/wiki/Spatial_database), e.g. geo-hash or quad-tree.
-* by room metadata: apply filters or search conditions when querying the database.
-* by date-in and date-out and availability. Two options:
-    * option 1: for a given `room_id`, check all `occupied_room` today or later, transform the data structure to an array of occupation by days, and finally find available slots in the array. This process might be time-consuming, so we can build the availability index.
-    * option 2: for a given `room_id`, always create an entry for an occupied day. Then it will be easier to query unavailable slots by dates. 
+- by location: geo-search with [spatial indexing](https://en.wikipedia.org/wiki/Spatial_database), e.g. geo-hash or quad-tree.
+- by room metadata: apply filters or search conditions when querying the database.
+- by date-in and date-out and availability. Two options:
+  - option 1: for a given `room_id`, check all `occupied_room` today or later, transform the data structure to an array of occupation by days, and finally find available slots in the array. This process might be time-consuming, so we can build the availability index.
+  - option 2: for a given `room_id`, always create an entry for an occupied day. Then it will be easier to query unavailable slots by dates.
 
 ### For hotels, syncing data
 
-If it is a hotel booking system, then it will probably publish to Booking Channels like GDS, Aggregators, and Wholesalers. 
+If it is a hotel booking system, then it will probably publish to Booking Channels like GDS, Aggregators, and Wholesalers.
 
 ![Hotel Booking Ecosystem](https://res.cloudinary.com/dohtidfqh/image/upload/v1570439485/web-guiguio/scheme.png)
 
-To sync data across those places. We can 
+To sync data across those places. We can
 
 1. [retry with idempotency to improve the success rate of the external calls and ensure no duplicate orders](https://puncsky.com/notes/43-how-to-design-robust-and-predictable-apis-with-idempotency).
 2. provide webhook callback APIs to external vendors to update status in the internal system.

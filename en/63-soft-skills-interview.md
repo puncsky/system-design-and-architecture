@@ -5,8 +5,9 @@ title: "What can we communicate in soft skills interview?"
 date: 2018-10-01 08:56
 comments: true
 tags: [system design]
-description: "An interview is a process for workers to find future co-workers. The candidate will be evaluated based on answers to three key questions: capability, willingness, and culture-fit. 
-           Any question above can not be answered without good communication."
+description:
+  "An interview is a process for workers to find future co-workers. The candidate will be evaluated based on answers to three key questions: capability, willingness, and culture-fit.
+  Any question above can not be answered without good communication."
 references:
   - https://www.jianshu.com/p/73b1d5682fd3
   - https://www.amazon.com/dp/B01NAI5Q6H/
@@ -19,16 +20,12 @@ are finding signals to answer the following three key questions:
 
 1. capability question - can you do the job?
 2. willingness question - will you do the job?
-2. culture-fit question - will you fit in?
-
-
+3. culture-fit question - will you fit in?
 
 ## Why is soft skill so important?
 
 None of the critical questions above can be answered without good communication.
 Your job will be taken away by people who can talk better than you.
-
-
 
 ## Generic answers (stories) to prepare
 

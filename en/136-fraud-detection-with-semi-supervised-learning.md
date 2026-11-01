@@ -8,8 +8,6 @@ tags: [architecture, system design]
 description: Fraud Detection fights against account takeovers and Botnet attacks during login. Semi-supervised learning has better learning accuracy than unsupervised learning and less time and costs than supervised learning.
 references:
   - https://www.slideshare.net/Hadoop_Summit/semisupervised-learning-in-an-adversarial-environment
-image: https://web-dash-v2.onrender.com/api/og-tianpan-co?title=Fraud%20Detection%20with%20Semi-supervised%20Learning
-
 ---
 
 ## Clarify Requirements
@@ -40,10 +38,10 @@ ATOs ranking from easy to hard to detect
 
 Challenges
 
-* Manual feature selection
-* Feature evolution in adversarial environment
-* Scalability
-* No online DBSCAN
+- Manual feature selection
+- Feature evolution in adversarial environment
+- Scalability
+- No online DBSCAN
 
 ## **High-level Architecture**
 
@@ -100,4 +98,3 @@ The serving layer is where the rubber meets the road - where we turn our machine
   - Monitors model drift and feature distribution changes
   - Provides dashboards for security analysts to investigate patterns
   - Logs detailed information for post-incident analysis
-
