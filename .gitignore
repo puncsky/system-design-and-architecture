@@ -2,3 +2,4 @@
 *.pdf
 _book/**
 .agents/tmp/
+.DS_Store

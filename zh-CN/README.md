@@ -56,3 +56,4 @@
 * [3 Programming Paradigms](11-three-programming-paradigms.md)
 * [SOLID Design Principles](12-solid-design-principles.md)
 * [Agent System Layers and Logical Components](2026-10-22-agent-system-layers-and-logical-components.md)
+* [LLM Inference Stack](2026-10-24-llm-inference-stack.md)

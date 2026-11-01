@@ -83,6 +83,7 @@ What is out of this book's scope?
 * [3 Programming Paradigms](./en/11-three-programming-paradigms.md)
 * [SOLID Design Principles](./en/12-solid-design-principles.md)
 * [Agent System Layers and Logical Components](./en/2026-10-22-agent-system-layers-and-logical-components.md)
+* [LLM Inference Stack](./en/2026-10-24-llm-inference-stack.md)
 * How to do capacity planning?
 
 ### Prepare for an Interview effectively
