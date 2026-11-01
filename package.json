@@ -1,0 +1,15 @@
+{
+  "name": "system-design-and-architecture",
+  "private": true,
+  "description": "Tooling for the book's Markdown sources: formatting and structure checks. The GitBook build is separate (see Makefile).",
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "python3 -m unittest discover -s scripts -p 'test_*.py'",
+    "check:book": "python3 scripts/check-book.py"
+  },
+  "packageManager": "yarn@4.17.0",
+  "devDependencies": {
+    "prettier": "3.8.1"
+  }
+}

@@ -3,3 +3,5 @@
 _book/**
 .agents/tmp/
 .DS_Store
+node_modules/
+.yarn/install-state.gz

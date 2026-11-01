@@ -4,7 +4,7 @@ Guidance for AI coding agents (Codex, Claude Code, etc.) working in this reposit
 
 ## What this repo is
 
-The source of the book *System Design and Architecture* (2nd Edition, work in progress) by Tian Pan. It is a pure Markdown content repo built with GitBook — there is no application code, test suite, or linter.
+The source of the book _System Design and Architecture_ (2nd Edition, work in progress) by Tian Pan. It is a pure Markdown content repo built with GitBook — there is no application code. Formatting and structure checks run through Yarn (below), mirroring the `beancount-io` repo's Prettier + CI setup.
 
 ## Commands
 
@@ -13,6 +13,15 @@ make install   # nvm use v10 && npm install gitbook-cli -g  (gitbook-cli needs N
 make dev       # gitbook serve — local preview
 make build     # PDF/EPUB/MOBI into ./_book/ (needs calibre's ebook-convert)
 ```
+
+```sh
+yarn install --immutable   # Node >= 20, Yarn 4 via corepack (separate from the Node 10 GitBook toolchain)
+yarn format:check          # Prettier 3.8.1, default config; `yarn format` rewrites
+yarn test                  # unit tests for scripts/check-book.py
+yarn check:book            # front matter slug/id, en/zh-CN parity, SUMMARY/README/image links
+```
+
+CI (`.github/workflows/ci.yml`) runs all three on every push and PR to `main`. Root-absolute links (`/notes/...`, `/img/...`) point at the author's site and are not checked.
 
 `_book/` and `*.pdf` are gitignored.
 
@@ -39,7 +48,7 @@ make build     # PDF/EPUB/MOBI into ./_book/ (needs calibre's ebook-convert)
   comments: true
   tags: [system design]
   references:
-     - https://...
+    - https://...
   ---
   ```
 
@@ -47,17 +56,30 @@ make build     # PDF/EPUB/MOBI into ./_book/ (needs calibre's ebook-convert)
 - Images are mostly hosted externally (`res.cloudinary.com`). Local images go in `images/` at the repo root and are referenced from chapters as `../images/<file>`, so the same path works from `en/` and `zh-CN/`.
 - Design chapters generally follow the book's 4-step framework: clarify requirements → high-level design → component deep dive → wrap-up/bottlenecks.
 
+## Published on tianpan.co (single source of truth)
+
+These chapters are the source of truth for the "System Design & Architecture" notes on https://tianpan.co/notes. The website monorepo (`tpkb`) imports them with `yarn sync:sda` (`en/` → `docs/`, `zh-CN/` → the zh docs folder, `images/` → `public/img/system-design/`, rewriting `../images/x` to `/img/system-design/x`). Edit chapters **here**, never in the site's `docs/`, or the next import overwrites the change.
+
+`yarn check:book` mirrors the rules the site's Vitest suite enforces on imported chapters, so a green check here means the site's content tests will pass too:
+
+- front matter has `title`, and `slug`/`id` equal the filename;
+- no front matter keys (`title:`, `tags:`, …) repeated in the body outside code fences, and the file is not wrapped in a code fence;
+- `zh-CN/` uses informal 你, never 您, and is never identical to the `en/` file;
+- `en/` and `zh-CN/` have identical filenames.
+
+Formatting is the same Prettier 3.8.1 as the site (the site's root `.prettierrc` equals Prettier's defaults for Markdown), so `yarn format:check` here and `prettier --check` there agree. A brand-new chapter additionally needs a `sidebars.ts` entry in `tianpan-v4-web`.
+
 ## Agent skills and the `.pm` board
 
 Development workflows live in `.agents/skills/<name>/SKILL.md` (read by Codex); Claude Code reads the same files through the relative symlink `.claude/skills -> ../.agents/skills`. Edit the canonical files and keep the link relative. Ported from the `beancount-io` repo and adapted to this book.
 
-| Skill | Purpose |
-| ----- | ------- |
-| `pm` | Maintain the public `.pm/` board (pillars B1 content quality, B2 bilingual parity, B3 reach/build health); the only writer of `.pm/`. |
-| `pm-brainstorm` | Propose milestones/tasks as text for `/pm` to materialize. |
-| `loopx` | Drain a workstream (`/loopx w1`): triage, write, ship, close, block, or drop each item. |
-| `ship` | Rebase, commit, and push. |
-| `mermaid` | Draw and syntax-check Mermaid diagrams (`npx @mermaid-js/mermaid-cli`); GitBook needs a rendered image or plugin. |
-| `dont-code-but-answer` | Read-only Q&A: answer without editing files. |
+| Skill                  | Purpose                                                                                                                               |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| `pm`                   | Maintain the public `.pm/` board (pillars B1 content quality, B2 bilingual parity, B3 reach/build health); the only writer of `.pm/`. |
+| `pm-brainstorm`        | Propose milestones/tasks as text for `/pm` to materialize.                                                                            |
+| `loopx`                | Drain a workstream (`/loopx w1`): triage, write, ship, close, block, or drop each item.                                               |
+| `ship`                 | Rebase, commit, and push.                                                                                                             |
+| `mermaid`              | Draw and syntax-check Mermaid diagrams (`npx @mermaid-js/mermaid-cli`); GitBook needs a rendered image or plugin.                     |
+| `dont-code-but-answer` | Read-only Q&A: answer without editing files.                                                                                          |
 
 Board hard constraints are in `.pm/DO_NOT_DO.md`. Scratch files go in `.agents/tmp/` (gitignored).
