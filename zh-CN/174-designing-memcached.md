@@ -2,30 +2,33 @@
 slug: 174-designing-memcached
 id: 174-designing-memcached
 title: 设计 Memcached 或内存中的 KV 存储
-date: '2019-10-03 22:04'
+date: "2019-10-03 22:04"
 comments: true
 tags:
   - system design
 description: Memcached = 丰富的客户端 + 分布式服务器 + 哈希表 + LRU。它具有简单的服务器，将复杂性推给客户端，因此可靠且易于部署。
 references:
-  - 'https://github.com/memcached/memcached/wiki/Overview'
-  - 'https://people.cs.uchicago.edu/~junchenj/34702/slides/34702-MemCache.pdf'
-  - 'https://en.wikipedia.org/wiki/Hash_table'
+  - "https://github.com/memcached/memcached/wiki/Overview"
+  - "https://people.cs.uchicago.edu/~junchenj/34702/slides/34702-MemCache.pdf"
+  - "https://en.wikipedia.org/wiki/Hash_table"
 ---
 
-## 需求 
+## 需求
 
 1. 高性能，分布式键值存储
- * 为什么分布式？ 
-   * 答：为了存储更大规模的数据
-     <img
-     style={{ width: 200 }}
-     src="https://res.cloudinary.com/dohtidfqh/image/upload/v1569196539/web-guiguio/memcached2.png"
-     />
+
+- 为什么分布式？
+  - 答：为了存储更大规模的数据
+    <img
+    style={{ width: 200 }}
+    src="https://res.cloudinary.com/dohtidfqh/image/upload/v1569196539/web-guiguio/memcached2.png"
+    />
+
 2. 用于小数据对象的内存存储
 3. 简单的服务器（将复杂性推给客户端），因此可靠且易于部署
 
 ## 架构
+
 大局：客户端-服务器
 
 <img
@@ -33,13 +36,12 @@ style={{ width: 256 }}
 src="https://res.cloudinary.com/dohtidfqh/image/upload/v1569196539/web-guiguio/memcached1.png"
 />
 
-* 客户端
- * 给定一组 Memcached 服务器
- * 根据键选择服务器
-* 服务器
- * 将 KV 存储到内部哈希表中
- * LRU 驱逐
-
+- 客户端
+- 给定一组 Memcached 服务器
+- 根据键选择服务器
+- 服务器
+- 将 KV 存储到内部哈希表中
+- LRU 驱逐
 
 键值服务器由固定大小的哈希表 + 单线程处理程序 + 粗粒度锁组成
 

@@ -2,20 +2,18 @@
 slug: 78-four-kinds-of-no-sql
 id: 78-four-kinds-of-no-sql
 title: 四种 No-SQL
-date: '2018-10-17 00:49'
+date: "2018-10-17 00:49"
 comments: true
 tags:
   - system design
 description: 从硬盘读取数据时，数据库连接操作耗时，99% 的时间花费在磁盘寻址上。为了优化读取性能，引入了非规范化，并且四种 NoSQL 类型可以帮助解决这个问题。
 references:
-  - 'https://www.puncsky.com/blog/2016-02-13-crack-the-system-design-interview'
+  - "https://www.puncsky.com/blog/2016-02-13-crack-the-system-design-interview"
 ---
 
 在一个常规的互联网服务中，读取与写入的比例大约是 100:1 到 1000:1。然而，从硬盘读取时，数据库连接操作耗时，99% 的时间花费在磁盘寻址上。更不用说跨网络的分布式连接操作了。
 
 为了优化读取性能，**非规范化**通过添加冗余数据或分组数据来引入。这四种 NoSQL 类型可以帮助解决这个问题。
-
-
 
 ## 键值存储
 
@@ -31,8 +29,6 @@ references:
 
 现成的选择：Redis/Memcache？Redis 支持数据持久化，而 Memcache 不支持。Riak、Berkeley DB、HamsterDB、Amazon Dynamo、Project Voldemort 等等。
 
-
-
 ## 文档存储
 
 文档存储的抽象类似于键值存储，但文档（如 XML、JSON、BSON 等）存储在键值对的值部分。
@@ -41,8 +37,6 @@ references:
 
 现成的选择：MongoDB、CouchDB、Terrastore、OrientDB、RavenDB 等等。
 
-
-
 ## 列式存储
 
 列式存储的抽象就像一个巨大的嵌套映射：`ColumnFamily<RowKey, Columns<Name, Value, Timestamp>>`。
@@ -50,8 +44,6 @@ references:
 我们希望使用列式存储的主要原因是它是分布式的、高可用的，并且针对写入进行了优化。
 
 现成的选择：Cassandra、HBase、Hypertable、Amazon SimpleDB 等等。
-
-
 
 ## 图数据库
 

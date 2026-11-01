@@ -2,7 +2,7 @@
 slug: 80-relational-database
 id: 80-relational-database
 title: 关系数据库简介
-date: '2018-10-18 23:19'
+date: "2018-10-18 23:19"
 comments: true
 tags:
   - system design
@@ -10,7 +10,7 @@ description: >-
   关系数据库是大多数存储使用案例的默认选择，原因在于原子性、一致性、隔离性和持久性。这里的一致性与 CAP 定理中的一致性有什么不同？我们为什么需要 3NF
   和数据库代理？
 references:
-  - 'https://www.puncsky.com/blog/2016-02-13-crack-the-system-design-interview'
+  - "https://www.puncsky.com/blog/2016-02-13-crack-the-system-design-interview"
 ---
 
 关系数据库是大多数存储使用案例的默认选择，原因在于 ACID（原子性、一致性、隔离性和持久性）。一个棘手的问题是“一致性”——它意味着任何事务都会将数据库从一个有效状态转变为另一个有效状态，这与 [CAP 定理](https://tianpan.co/notes/2018-07-24-replica-and-consistency) 中的一致性不同。

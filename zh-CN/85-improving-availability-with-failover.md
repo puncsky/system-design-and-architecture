@@ -2,7 +2,7 @@
 slug: 85-improving-availability-with-failover
 id: 85-improving-availability-with-failover
 title: 通过故障转移提高可用性
-date: '2018-10-26 12:02'
+date: "2018-10-26 12:02"
 comments: true
 tags:
   - system design
@@ -20,9 +20,9 @@ references:
 
 检查点（或类似于 Redis 快照）：使用预写日志（WAL）在处理之前记录请求。备用节点在故障转移期间从日志中恢复。
 
-* 缺点
-  * 对于大型日志来说耗时较长
-  * 自上次检查点以来丢失数据
-* 使用案例：Storm、WhillWheel、Samza
+- 缺点
+  - 对于大型日志来说耗时较长
+  - 自上次检查点以来丢失数据
+- 使用案例：Storm、WhillWheel、Samza
 
 主动-主动（或全活动）：在负载均衡器后保持两个活动系统。它们并行处理。数据复制是双向的。

@@ -2,7 +2,7 @@
 slug: 137-stream-and-batch-processing
 id: 137-stream-and-batch-processing
 title: 流处理与批处理框架
-date: '2019-02-16 22:13'
+date: "2019-02-16 22:13"
 comments: true
 tags:
   - system design
@@ -12,18 +12,18 @@ description: >-
 references:
   - >-
     https://storage.googleapis.com/pub-tools-public-publication-data/pdf/43864.pdf
-  - 'https://cs.stanford.edu/~matei/papers/2018/sigmod_structured_streaming.pdf'
+  - "https://cs.stanford.edu/~matei/papers/2018/sigmod_structured_streaming.pdf"
   - >-
     https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html
-  - 'https://stackoverflow.com/questions/28502787/google-dataflow-vs-apache-storm'
+  - "https://stackoverflow.com/questions/28502787/google-dataflow-vs-apache-storm"
 ---
 
 ## 为什么需要这样的框架？
 
-* 以低延迟处理高吞吐量。
-* 分布式系统中的容错能力。
-* 通用抽象以满足多变的业务需求。
-* 适用于有界数据集（批处理）和无界数据集（流处理）。
+- 以低延迟处理高吞吐量。
+- 分布式系统中的容错能力。
+- 通用抽象以满足多变的业务需求。
+- 适用于有界数据集（批处理）和无界数据集（流处理）。
 
 ## 批处理/流处理的简史
 
@@ -43,8 +43,8 @@ references:
 
 为了用商品机器满足上述需求，流处理框架在这些架构中使用分布式系统……
 
-* 主从（集中式）：apache storm 与 zookeeper，apache samza 与 YARN。
-* P2P（去中心化）：apache s4。
+- 主从（集中式）：apache storm 与 zookeeper，apache samza 与 YARN。
+- P2P（去中心化）：apache s4。
 
 ### 特性
 
@@ -55,11 +55,11 @@ references:
 
 ## 比较
 
-| 框架                       | Storm         | Storm-trident | Spark        | Flink        |
-| --------------------------- | ------------- | ------------- | ------------ | ------------ |
-| 模型                       | 原生          | 微批处理      | 微批处理     | 原生         |
-| 保证                       | 至少一次     | 精确一次     | 精确一次     | 精确一次     |
-| 容错能力                   | 记录确认      | 记录确认      | 检查点       | 检查点       |
-| 容错开销                   | 高            | 中等          | 中等         | 低           |
-| 延迟                       | 非常低        | 高            | 高           | 低           |
-| 吞吐量                     | 低            | 中等          | 高           | 高           |
+| 框架     | Storm    | Storm-trident | Spark    | Flink    |
+| -------- | -------- | ------------- | -------- | -------- |
+| 模型     | 原生     | 微批处理      | 微批处理 | 原生     |
+| 保证     | 至少一次 | 精确一次      | 精确一次 | 精确一次 |
+| 容错能力 | 记录确认 | 记录确认      | 检查点   | 检查点   |
+| 容错开销 | 高       | 中等          | 中等     | 低       |
+| 延迟     | 非常低   | 高            | 高       | 低       |
+| 吞吐量   | 低       | 中等          | 高       | 高       |

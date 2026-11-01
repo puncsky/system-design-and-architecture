@@ -8,7 +8,7 @@ tags: [system design]
 references:
 ---
 
-Inference deserves at least as much engineering attention as training. Using DeepSeek's published figures as an example, training took roughly 2.8 million H800-hours, while serving consumed about 43,000 H800-hours *per day*. At that rate annual inference compute is about 6x training compute, and over a two-year model lifetime inference accounts for roughly **12x** the computation. Inference efficiency therefore drives both serving cost and product margin, and model comparisons should account for inference compute, not just training compute.
+Inference deserves at least as much engineering attention as training. Using DeepSeek's published figures as an example, training took roughly 2.8 million H800-hours, while serving consumed about 43,000 H800-hours _per day_. At that rate annual inference compute is about 6x training compute, and over a two-year model lifetime inference accounts for roughly **12x** the computation. Inference efficiency therefore drives both serving cost and product margin, and model comparisons should account for inference compute, not just training compute.
 
 ## Life of a request
 
@@ -17,44 +17,43 @@ Inference deserves at least as much engineering attention as training. Using Dee
 A request passes through these stages:
 
 1. **Routing** to a data center and a GPU. FLEET LAYER, BEFORE THE GPUS
-  • An API call lands at the gateway and is validated, then handed to the router
-  • The router chooses a serving replica - by load, session affinity, or cache locality
-  • Cluster-level and fleet-level choices affect cache rate, load balancing
+   • An API call lands at the gateway and is validated, then handed to the router
+   • The router chooses a serving replica - by load, session affinity, or cache locality
+   • Cluster-level and fleet-level choices affect cache rate, load balancing
 2. **Tokenization**, including the correct representation of tool-call instructions. CPU-SIDE MILLISECONDS
-  • The prompt text is split into token IDs from the model's vocabulary
-  • Roughly 3-4 characters per token in English
-  • Tool calling processing, etc at this layer - key for correctness and user experience
+   • The prompt text is split into token IDs from the model's vocabulary
+   • Roughly 3-4 characters per token in English
+   • Tool calling processing, etc at this layer - key for correctness and user experience
 3. **Queuing and batching** with other in-flight requests. SCHEDULER. SHAPES TTFT.
-  • Requests wait in a queue until the scheduler admits them
-  • Continuous batching mixes new prompts with in-flight generations to keep GPUs busy
-  • Workload requirements shape engine and load decisions
+   • Requests wait in a queue until the scheduler admits them
+   • Continuous batching mixes new prompts with in-flight generations to keep GPUs busy
+   • Workload requirements shape engine and load decisions
 4. **Prefill**: process the whole prompt and build the KV cache. GPU. COMPUTE-BOUND. SETS TTFT
-• Prompt processed in one parallel forward pass
-• Compute-bound: large matrix multiplies saturate the tensor
-cores
-• Writes a KV-cache entry for every prompt token
-• Dominant factor for TTFT - key for low-latency (e.g. voice) applications, snappiness of first response
+   • Prompt processed in one parallel forward pass
+   • Compute-bound: large matrix multiplies saturate the tensor
+   cores
+   • Writes a KV-cache entry for every prompt token
+   • Dominant factor for TTFT - key for low-latency (e.g. voice) applications, snappiness of first response
 5. **Decode**: generate output tokens one at a time. GPU, MEMORY BOUND, SETS TPS
-• Tokens are generated one per forward pass, auto-regressively (+speculative decoding)
-• Memory-bound: every step re-reads the weights and the growing KV cache
-• Dominating factor for TPS - total end-to-end response
-completion
+   • Tokens are generated one per forward pass, auto-regressively (+speculative decoding)
+   • Memory-bound: every step re-reads the weights and the growing KV cache
+   • Dominating factor for TPS - total end-to-end response
+   completion
 6. **Detokenization** back to text, plus parsing and handling of tool calls. CPU-side. User Visible.
-• Token IDs are detokenized back into text as they are
-produced
-• Tokens stream to the caller immediately - nobody waits for the full response
-• On completion the KV cache is freed, or kept warm for prefix
-reuse
+   • Token IDs are detokenized back into text as they are
+   produced
+   • Tokens stream to the caller immediately - nobody waits for the full response
+   • On completion the KV cache is freed, or kept warm for prefix
+   reuse
 
-
-A production service has to manage routing, cache locality, tokenization, batching, scheduling, GPU execution, and cache retention *jointly*. Scheduling is a trade-off: maximizing throughput across all users is not the same as minimizing one user's latency.
+A production service has to manage routing, cache locality, tokenization, batching, scheduling, GPU execution, and cache retention _jointly_. Scheduling is a trade-off: maximizing throughput across all users is not the same as minimizing one user's latency.
 
 ### Prefill vs. decode
 
-| Phase   | What it does                   | Bottleneck       |
-| ------- | ------------------------------ | ---------------- |
-| Prefill | Processes the prompt in bulk   | Compute-bound    |
-| Decode  | Generates one token at a time  | Memory-bandwidth-bound |
+| Phase   | What it does                  | Bottleneck             |
+| ------- | ----------------------------- | ---------------------- |
+| Prefill | Processes the prompt in bulk  | Compute-bound          |
+| Decode  | Generates one token at a time | Memory-bandwidth-bound |
 
 Prefill throughput is far higher than decode throughput, so decode is usually the main bottleneck. The two phases favor different scheduling and hardware optimizations.
 

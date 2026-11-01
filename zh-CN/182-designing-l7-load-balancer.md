@@ -2,7 +2,7 @@
 slug: 182-designing-l7-load-balancer
 id: 182-designing-l7-load-balancer
 title: 设计负载均衡器或 Dropbox 修补程序
-date: '2019-10-19 15:21'
+date: "2019-10-19 15:21"
 comments: true
 tags:
   - system design
@@ -12,7 +12,7 @@ description: >-
 references:
   - >-
     https://blogs.dropbox.com/tech/2019/09/enhancing-bandaid-load-balancing-at-dropbox-by-leveraging-real-time-backend-server-load-information/
-  - 'https://medium.com/netflix-techblog/netflix-edge-load-balancing-695308b5548c'
+  - "https://medium.com/netflix-techblog/netflix-edge-load-balancing-695308b5548c"
   - >-
     https://www.nginx.com/blog/nginx-power-of-two-choices-load-balancing-algorithm/#least_conn
 ---
@@ -25,13 +25,14 @@ references:
 
 由于从用户到服务器之间有许多跳数和负载均衡器层，因此这次我们的设计要求是
 
-* [在数据中心设计 L7 负载均衡器](https://tianpan.co/notes/2018-07-23-load-balancer-types)
-* 利用来自后端的实时负载信息
-* 每秒处理 10 万 RPS，10 TB 流量
+- [在数据中心设计 L7 负载均衡器](https://tianpan.co/notes/2018-07-23-load-balancer-types)
+- 利用来自后端的实时负载信息
+- 每秒处理 10 万 RPS，10 TB 流量
 
 > 注意：如果服务 A 依赖于（或消费）服务 B，则 A 是 B 的下游服务，而 B 是 A 的上游服务。
 
 ## 挑战
+
 为什么负载均衡很难？答案是很难收集准确的负载分布统计数据并相应地采取行动。
 
 ### 按请求分配 ≠ 按负载分配
@@ -52,7 +53,7 @@ references:
 
 然而，这两种算法仅在只有一个负载均衡器的情况下效果良好。如果有多个负载均衡器，可能会出现 **羊群效应**。也就是说，所有负载均衡器都注意到某个服务瞬时更快，然后都向该服务发送请求。
 
-**随机 N 选择**（在大多数情况下 N=2 / 也称为 *二选一的力量*）：随机选择两个并选择两个中的更好选项，*避免选择更差的选项*。
+**随机 N 选择**（在大多数情况下 N=2 / 也称为 _二选一的力量_）：随机选择两个并选择两个中的更好选项，_避免选择更差的选项_。
 
 ### 分布式环境
 
@@ -60,23 +61,24 @@ references:
 
 本地负载均衡器对全局下游和上游状态并不知情，包括
 
-* 上游服务负载
-* 上游服务可能非常庞大，因此很难选择正确的子集来覆盖负载均衡器
-* 下游服务负载
-* 各种请求的处理时间很难预测
+- 上游服务负载
+- 上游服务可能非常庞大，因此很难选择正确的子集来覆盖负载均衡器
+- 下游服务负载
+- 各种请求的处理时间很难预测
 
 ## 解决方案
+
 有三种选项可以准确收集负载统计数据，然后采取相应的行动：
 
-* 集中式和动态控制器
-* 分布式但具有共享状态
-* 在响应消息或主动探测中附加服务器端信息
+- 集中式和动态控制器
+- 分布式但具有共享状态
+- 在响应消息或主动探测中附加服务器端信息
 
-Dropbox Bandaid 团队选择了第三种选项，因为它很好地适应了他们现有的 *随机 N 选择* 方法。
+Dropbox Bandaid 团队选择了第三种选项，因为它很好地适应了他们现有的 _随机 N 选择_ 方法。
 
 ![](https://res.cloudinary.com/dohtidfqh/image/upload/v1571519434/web-guiguio/03-s_36fd13246bc17faff0558a94f22b02b1467d2b44c17456e7ff5ae7d2f7c84c87_1567054697304_microservice2.png)
 
-然而，他们并没有像原始的 *随机 N 选择* 那样使用本地状态，而是通过响应头使用来自后端服务器的实时全局信息。
+然而，他们并没有像原始的 _随机 N 选择_ 那样使用本地状态，而是通过响应头使用来自后端服务器的实时全局信息。
 
 **服务器利用率**：后端服务器配置了最大容量并计算正在进行的请求，然后计算利用率百分比，范围从 0.0 到 1.0。
 

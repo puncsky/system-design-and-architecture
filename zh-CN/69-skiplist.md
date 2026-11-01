@@ -2,14 +2,14 @@
 slug: 69-skiplist
 id: 69-skiplist
 title: 跳表
-date: '2018-10-09 12:39'
+date: "2018-10-09 12:39"
 comments: true
 tags:
   - system design
   - data structures
 description: "跳表是一种概率性的多层链表，支持 O(log n) 的搜索、插入与删除。被 LevelDB 的 MemTable、Redis 的 Sorted Set 和 Lucene 的倒排索引采用。本文讲解其工作原理、为何相较于平衡 BST 被选中，以及每个真实实现中的具体权衡。"
 references:
-  - 'https://en.wikipedia.org/wiki/Skip_list'
+  - "https://en.wikipedia.org/wiki/Skip_list"
   - https://www.cl.cam.ac.uk/teaching/0506/Algorithms/skiplists.pdf
 ---
 

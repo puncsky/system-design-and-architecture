@@ -2,7 +2,7 @@
 slug: 161-designing-stock-exchange
 id: 161-designing-stock-exchange
 title: 设计股票交易所
-date: '2019-08-12 09:50'
+date: "2019-08-12 09:50"
 comments: true
 tags:
   - system design
@@ -11,14 +11,14 @@ slides: false
 
 ## 需求
 
-* `买入` 和 `卖出` 订单的订单匹配系统。订单类型：
-    * 市场订单
-    * 限价订单
-    * 止损订单
-    * 完全成交或取消订单
-    * 订单有效期
-* 为数百万用户提供高可用性和低延迟
-    * 异步设计 - 广泛使用消息队列（顺便提一下，副作用：工程师在一个服务上发布到队列，不知道下游服务具体在哪里，因此无法做坏事。）
+- `买入` 和 `卖出` 订单的订单匹配系统。订单类型：
+  - 市场订单
+  - 限价订单
+  - 止损订单
+  - 完全成交或取消订单
+  - 订单有效期
+- 为数百万用户提供高可用性和低延迟
+  - 异步设计 - 广泛使用消息队列（顺便提一下，副作用：工程师在一个服务上发布到队列，不知道下游服务具体在哪里，因此无法做坏事。）
 
 ## 架构
 
@@ -31,9 +31,10 @@ height="100%"
 viewBox="-0.5 -0.5 672 412"
 content='<mxfile modified="2019-07-29T04:46:36.590Z" host="www.draw.io" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36" etag="fP7YkbHKARZ_0o3JLRy3" version="11.0.7" type="google"><diagram id="uO2wHRNSVC2y_v88RBhh" name="Page-1">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</diagram></mxfile>'
 style={{ backgroundColor: "rgb(255, 255, 255)" }}
->
-  <defs />
-  <g>
+
+>   <defs />
+>   <g>
+
     <path
       d="M 196.45 50.07 L 196.45 59.72 L 264.72 59.72 L 264.72 73.36"
       fill="none"
@@ -1320,6 +1321,7 @@ style={{ backgroundColor: "rgb(255, 255, 255)" }}
         </text>
       </switch>
     </g>
+
   </g>
 </svg>
 
@@ -1327,17 +1329,17 @@ style={{ backgroundColor: "rgb(255, 255, 255)" }}
 
 ### 订单匹配系统
 
-* 按股票代码分片
-* 订单的基本数据模型（其他元数据省略）：`Order(id, stock, side, time, qty, price)`
-* 订单簿的核心抽象是匹配算法。有许多匹配算法（[参考 stackoverflow](http://web.archive.org/web/20120626161034/http://www.cmegroup.com/confluence/display/EPICSANDBOX/Match+Algorithms)，[参考 medium](https://medium.com/lgogroup/a-matching-engine-for-our-values-part-1-795a29b400fa)）
-* 示例 1：[价格-时间 FIFO](https://stackoverflow.com/questions/13112062/which-are-the-order-matching-algorithms-most-commonly-used-by-electronic-financi) - 一种将二维向量投射或展平为一维向量的方式
-    * x 轴是价格
-    * y 轴是订单。价格/时间优先队列，FIFO。
-        * 买方：按价格升序，按时间降序。
-        * 卖方：按价格升序，按时间升序。
-    * 换句话说
-        * 买方：价格越高，订单越早，越接近匹配中心。
-        * 卖方：价格越低，订单越早，越接近匹配中心。
+- 按股票代码分片
+- 订单的基本数据模型（其他元数据省略）：`Order(id, stock, side, time, qty, price)`
+- 订单簿的核心抽象是匹配算法。有许多匹配算法（[参考 stackoverflow](http://web.archive.org/web/20120626161034/http://www.cmegroup.com/confluence/display/EPICSANDBOX/Match+Algorithms)，[参考 medium](https://medium.com/lgogroup/a-matching-engine-for-our-values-part-1-795a29b400fa)）
+- 示例 1：[价格-时间 FIFO](https://stackoverflow.com/questions/13112062/which-are-the-order-matching-algorithms-most-commonly-used-by-electronic-financi) - 一种将二维向量投射或展平为一维向量的方式
+  - x 轴是价格
+  - y 轴是订单。价格/时间优先队列，FIFO。
+    - 买方：按价格升序，按时间降序。
+    - 卖方：按价格升序，按时间升序。
+  - 换句话说
+    - 买方：价格越高，订单越早，越接近匹配中心。
+    - 卖方：价格越低，订单越早，越接近匹配中心。
 
 x 轴
 
@@ -1364,47 +1366,47 @@ Id   Side    Time   Qty   Price   Qty    Time   Side
 
 ![](https://res.cloudinary.com/dohtidfqh/image/upload/v1564466429/web-guiguio/SSESNIK.gif)
 
-* 示例 2：按比例分配
+- 示例 2：按比例分配
 
 ![纯按比例分配](https://res.cloudinary.com/dohtidfqh/image/upload/v1564361620/web-guiguio/1_hahTecyPk0aKMJ1CCME4qw.png)
 
 如何实现价格-时间 FIFO 匹配算法？
 
-* 按股票分片，CP 优于 AP：一股一个分区
-* 有状态的内存树图
-    * 定期迭代树图以匹配订单
-* 使用 Cassandra 进行数据持久化
-* 订单匹配服务的进出请求通过消息队列进行
-* 故障转移
-    * 内存树图快照到数据库
-    * 在错误情况下，从快照恢复并与缓存去重
+- 按股票分片，CP 优于 AP：一股一个分区
+- 有状态的内存树图
+  - 定期迭代树图以匹配订单
+- 使用 Cassandra 进行数据持久化
+- 订单匹配服务的进出请求通过消息队列进行
+- 故障转移
+  - 内存树图快照到数据库
+  - 在错误情况下，从快照恢复并与缓存去重
 
 如何实时将订单簿数据传输到客户端？
 
-* websocket
+- websocket
 
 如何支持不同类型的订单？
 
-* 在树图中使用相同的 `卖出或买入：数量 @ 价格`，但具有不同的创建设置和匹配条件
-    * 市场订单：以最后市场价格下单。
-    * 限价订单：以特定价格下单。
-    * 止损订单：以特定价格下单，并在特定条件下匹配。
-    * 完全成交或取消订单：以特定价格下单，但仅匹配一次。
-    * 订单有效期：以特定价格下单，但仅在给定时间范围内匹配。
+- 在树图中使用相同的 `卖出或买入：数量 @ 价格`，但具有不同的创建设置和匹配条件
+  - 市场订单：以最后市场价格下单。
+  - 限价订单：以特定价格下单。
+  - 止损订单：以特定价格下单，并在特定条件下匹配。
+  - 完全成交或取消订单：以特定价格下单，但仅匹配一次。
+  - 订单有效期：以特定价格下单，但仅在给定时间范围内匹配。
 
 ### 订单服务
 
-* 保留所有活动订单和订单历史。
-* 接收到新订单时写入订单匹配。
-* 接收匹配的订单并与外部清算所结算（异步外部网关调用 + 定时任务同步数据库）
+- 保留所有活动订单和订单历史。
+- 接收到新订单时写入订单匹配。
+- 接收匹配的订单并与外部清算所结算（异步外部网关调用 + 定时任务同步数据库）
 
 ### 参考文献
 
-* 交易是如何发生的？[在 Scala 中模拟金融交易所](http://falconair.github.io/2015/01/05/financial-exchange.html)
-* 开源
-  * [GitHub - objectcomputing/liquibook: 现代 C++ 订单匹配引擎](https://github.com/objectcomputing/liquibook)
-  * [GitHub - cyanly/gotrade: 用 Go 编写的电子交易系统的概念验证](https://github.com/cyanly/gotrade)
-* [金融信息交换（"FIX"）协议](http://help.cqg.com/continuum/default.htm#!Documents/fixserver.htm)
-* 订单类型：[技术分析课程。交易者/投资者的培训、辅导与指导 - 买卖股票时使用的订单类型](http://www.tradersplace.in/TypesofOrders.html)
-* [GitHub - fmstephe/matching_engine: 一个简单的金融交易匹配引擎。旨在了解它们的工作原理。](https://github.com/fmstephe/matching_engine)
-* [自动化算法交易：限价订单簿交易的学习代理](http://homepages.gold.ac.uk/nikolaev/aalts.htm)
+- 交易是如何发生的？[在 Scala 中模拟金融交易所](http://falconair.github.io/2015/01/05/financial-exchange.html)
+- 开源
+  - [GitHub - objectcomputing/liquibook: 现代 C++ 订单匹配引擎](https://github.com/objectcomputing/liquibook)
+  - [GitHub - cyanly/gotrade: 用 Go 编写的电子交易系统的概念验证](https://github.com/cyanly/gotrade)
+- [金融信息交换（"FIX"）协议](http://help.cqg.com/continuum/default.htm#!Documents/fixserver.htm)
+- 订单类型：[技术分析课程。交易者/投资者的培训、辅导与指导 - 买卖股票时使用的订单类型](http://www.tradersplace.in/TypesofOrders.html)
+- [GitHub - fmstephe/matching_engine: 一个简单的金融交易匹配引擎。旨在了解它们的工作原理。](https://github.com/fmstephe/matching_engine)
+- [自动化算法交易：限价订单簿交易的学习代理](http://homepages.gold.ac.uk/nikolaev/aalts.htm)

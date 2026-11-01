@@ -2,7 +2,7 @@
 slug: 145-introduction-to-architecture
 id: 145-introduction-to-architecture
 title: 架构导论
-date: '2019-05-11 15:52'
+date: "2019-05-11 15:52"
 comments: true
 tags:
   - system design
@@ -12,16 +12,16 @@ references:
     https://puncsky.com/notes/10-thinking-software-architecture-as-physical-buildings
   - >-
     https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/ch01.html
-  - 'http://www.ruanyifeng.com/blog/2016/09/software-architecture.html'
+  - "http://www.ruanyifeng.com/blog/2016/09/software-architecture.html"
 ---
 
 ## 什么是架构？
 
 架构是软件系统的形状。就好像是一个物理世界的建筑的全景：
 
-* 范式是砖块。
-* 设计原则是房间。
-* 组件是一幢建筑。
+- 范式是砖块。
+- 设计原则是房间。
+- 组件是一幢建筑。
 
 它们共同服务于特定的目的，例如医院是为治愈病人而设，学校是为教育学生而设。
 
@@ -43,24 +43,24 @@ O’Reilly的书《软件架构模式》由Mark Richards撰写，是对这五种
 
 分层架构是最常见的架构，开发人员广泛熟知，因此是应用程序的事实标准。如果你不知道使用什么架构，请使用它。
 
-[comment]: \<\> (https://www.draw.io/#G1ldM5O9Y62Upqg_t5rcTNHIRseP-7fqQT)
+[comment]: <> "https://www.draw.io/#G1ldM5O9Y62Upqg_t5rcTNHIRseP-7fqQT"
 
 ![](https://res.cloudinary.com/dohtidfqh/image/upload/v1557614663/web-guiguio/Software_Architecture_101.png)
 
 示例
 
-* TCP / IP模型：应用层 > 传输层 > 网络层 > 网络接入层
-* [Facebook TAO](https://puncsky.com/notes/49-facebook-tao)：网页层 > 缓存层（跟随者 + 领导者） > 数据库层
+- TCP / IP模型：应用层 > 传输层 > 网络层 > 网络接入层
+- [Facebook TAO](https://puncsky.com/notes/49-facebook-tao)：网页层 > 缓存层（跟随者 + 领导者） > 数据库层
 
 优缺点
 
-* 优点
-    * 易于使用
-    * 职责分离
-    * 可测试性
-* 缺点
-    * 单体
-        * 难以调整、扩展或更新。你必须对所有层进行更改。
+- 优点
+  - 易于使用
+  - 职责分离
+  - 可测试性
+- 缺点
+  - 单体
+    - 难以调整、扩展或更新。你必须对所有层进行更改。
 
 ## 2. 事件驱动架构
 
@@ -74,8 +74,8 @@ O’Reilly的书《软件架构模式》由Mark Richards撰写，是对这五种
 
 示例
 
-* QT：信号和插槽
-* 支付基础设施：银行网关通常具有非常高的延迟，因此在其架构设计中采用异步技术。
+- QT：信号和插槽
+- 支付基础设施：银行网关通常具有非常高的延迟，因此在其架构设计中采用异步技术。
 
 ## 3. 微内核架构（即插件架构）
 
@@ -85,8 +85,8 @@ O’Reilly的书《软件架构模式》由Mark Richards撰写，是对这五种
 
 示例
 
-* Visual Studio Code，Eclipse
-* MINIX操作系统
+- Visual Studio Code，Eclipse
+- MINIX操作系统
 
 ## 4. 微服务架构
 
@@ -96,8 +96,8 @@ O’Reilly的书《软件架构模式》由Mark Richards撰写，是对这五种
 
 示例
 
-* Uber：见[设计Uber](https://puncsky.com/notes/120-designing-uber)
-* Smartly
+- Uber：见[设计Uber](https://puncsky.com/notes/120-designing-uber)
+- Smartly
 
 ## 5. 基于空间的架构
 

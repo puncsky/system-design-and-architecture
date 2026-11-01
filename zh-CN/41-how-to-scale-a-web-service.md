@@ -2,7 +2,7 @@
 slug: 41-how-to-scale-a-web-service
 id: 41-how-to-scale-a-web-service
 title: 如何扩展网络服务？
-date: '2018-09-11 21:32'
+date: "2018-09-11 21:32"
 comments: true
 tags:
   - system design
@@ -10,8 +10,8 @@ tags:
   - architecture
 description: "AKF 规模立方体是思考 Web 服务扩展的心智模型，沿三个维度进行——克隆（X）、功能分解（Y）和数据分区（Z）。本文讨论每个轴何时起作用、应用它们的顺序，以及各自的运维成本。"
 references:
-  - 'https://akfpartners.com/growth-blog/scale-cube'
-  - 'https://akfpartners.com/growth-blog/akf-scale-cube-ze-case-for-z-axis'
+  - "https://akfpartners.com/growth-blog/scale-cube"
+  - "https://akfpartners.com/growth-blog/akf-scale-cube-ze-case-for-z-axis"
 ---
 
 《Art of Scalability》中的 AKF 规模立方体把 Web 服务扩展的全部词汇压缩为三个正交的轴。几乎每一个真实世界的扩展决策，都可以被放到这个立方体里的某个位置，这使得它成为思考容量问题的最有用的单一图示。
@@ -46,11 +46,11 @@ references:
 
 ## 每个轴的实际成本
 
-| 轴 | 工程成本 | 运维成本 | 可回滚性 |
-|---|---|---|---|
-| X（克隆） | 低（若已无状态） | 负载均衡、自动伸缩 | 完全可回滚 |
-| Y（分解） | 高 | Service mesh、可观测性、API 版本化 | 难以回滚 |
-| Z（分片） | 极高 | 分片管理、重分片、跨分片查询 | 极难回滚 |
+| 轴        | 工程成本         | 运维成本                           | 可回滚性   |
+| --------- | ---------------- | ---------------------------------- | ---------- |
+| X（克隆） | 低（若已无状态） | 负载均衡、自动伸缩                 | 完全可回滚 |
+| Y（分解） | 高               | Service mesh、可观测性、API 版本化 | 难以回滚   |
+| Z（分片） | 极高             | 分片管理、重分片、跨分片查询       | 极难回滚   |
 
 一个有用的规则：**任何回滚需要停机的扩展决策都是赌上架构的决策。** X 轴通常不是。Y 和 Z 通常是。
 

@@ -2,7 +2,7 @@
 slug: 68-bloom-filter
 id: 68-bloom-filter
 title: 布隆过滤器
-date: '2018-10-09 12:39'
+date: "2018-10-09 12:39"
 comments: true
 tags:
   - system design
@@ -10,7 +10,7 @@ tags:
   - probabilistic
 description: "布隆过滤器是一种紧凑的概率集合成员结构——1% 假阳性率约 10 位/元素，零假阴性。本文讲解其工作原理、参数选择的数学、真实系统中的使用（Cassandra、HBase、Chrome、CDN），以及何时应改用计数型 / 布谷鸟 / 商数过滤器等变种。"
 references:
-  - 'https://zh.wikipedia.org/wiki/%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8'
+  - "https://zh.wikipedia.org/wiki/%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8"
   - https://hur.st/bloomfilter/
 ---
 

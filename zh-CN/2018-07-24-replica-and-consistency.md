@@ -2,7 +2,7 @@
 slug: 2018-07-24-replica-and-consistency
 id: 2018-07-24-replica-and-consistency
 title: 副本、一致性与CAP定理
-date: '2018-07-24 11:54'
+date: "2018-07-24 11:54"
 comments: true
 tags:
   - system design
@@ -17,8 +17,6 @@ references:
 
 大数据集 ⟶ 扩展 ⟶ 数据分片/分区 ⟶ 1) 数据访问路由 2) 可用性副本 ⟶ 一致性挑战
 
-
-
 ## CAP定理的一致性权衡
 
 ![CAP定理](https://res.cloudinary.com/dohtidfqh/image/upload/v1566606463/web-guiguio/Es1houG50FNQoCgGUo2fGwMPriezTtKqliSVMW9F11CN2W7SSHcI3li61Qdnw0FoOm0UfitYOvbAiJBvJXLmAmrjRH75VDO54uGucIynJrdR2RV51GboaZ17bc5pZt88_GK43PT0.png)
@@ -27,14 +25,10 @@ references:
 - 可用性：保证每个请求都能收到关于其成功或失败的响应
 - 分区容忍性：系统在任意消息丢失或部分系统故障的情况下继续运行
 
-
-
 任何网络共享数据系统只能拥有三种理想属性中的两种。
 
 - 关系数据库管理系统（rDBMS）倾向于CP ⟶ ACID
 - NoSQL倾向于AP ⟶ BASE
-
-
 
 ## “2 of 3”是误导性的
 
@@ -43,8 +37,6 @@ references:
 1. 分区是罕见的，当系统没有分区时，几乎没有理由放弃C或A。
 2. 选择实际上可以在同一系统内的多个地方以非常细的粒度应用。
 3. 选择不是二元的，而是有一定程度的。
-
-
 
 因此，当没有分区（节点正确连接）时，这种情况经常发生，我们应该同时拥有AC。当出现分区时，处理它们的步骤如下：
 

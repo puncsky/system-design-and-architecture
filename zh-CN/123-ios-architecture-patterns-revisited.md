@@ -20,16 +20,13 @@ references:
 2. 可测试性
 3. 易用性和可维护性
 
-
-| | 责任分配 | 可测试性 |  易用性 |
-| --- | ---    | ---    | --- |
-| 紧耦合 MVC | ❌ | ❌ | ✅ |
-| Cocoa MVC | ❌ VC 耦合 | ❌ | ✅⭐ |
-| MVP | ✅ 分离的视图生命周期 | ✅ | 一般：代码较多 |
-| MVVM | ✅ | 一般：由于视图依赖 UIKit | 一般 |
-| VIPER | ✅⭐️ | ✅⭐️ | ❌ |
-
-
+|            | 责任分配              | 可测试性                 | 易用性         |
+| ---------- | --------------------- | ------------------------ | -------------- |
+| 紧耦合 MVC | ❌                    | ❌                       | ✅             |
+| Cocoa MVC  | ❌ VC 耦合            | ❌                       | ✅⭐           |
+| MVP        | ✅ 分离的视图生命周期 | ✅                       | 一般：代码较多 |
+| MVVM       | ✅                    | 一般：由于视图依赖 UIKit | 一般           |
+| VIPER      | ✅⭐️                  | ✅⭐️                     | ❌             |
 
 ## 紧耦合 MVC
 
@@ -37,14 +34,11 @@ references:
 
 例如，在一个多页面的 web 应用中，一旦点击链接导航到其他地方，页面会完全重新加载。问题在于视图与控制器和模型紧密耦合。
 
-
-
 ## Cocoa MVC
 
 苹果的 MVC 理论上通过控制器将视图与模型解耦。
 
 ![Cocoa MVC](https://res.cloudinary.com/dohtidfqh/image/upload/v1547002648/web-guiguio/ios-architecture-1-cocoa-mvc.png)
-
 
 实际上，苹果的 MVC 鼓励 ==庞大的视图控制器==。而视图控制器最终负责所有事情。
 
@@ -52,20 +46,15 @@ references:
 
 测试耦合的庞大视图控制器是困难的。然而，Cocoa MVC 在开发速度方面是最佳的架构模式。
 
-
-
 ## MVP
 
 在 MVP 中，呈现者与视图控制器的生命周期无关，视图可以轻松模拟。我们可以说 UIViewController 实际上就是视图。
 
 ![MVC 变体](https://res.cloudinary.com/dohtidfqh/image/upload/v1547002648/web-guiguio/ios-architecture-3-mvc-variant.png)
 
-
 还有另一种 MVP：带有数据绑定的 MVP。正如你所看到的，视图与其他两个之间存在紧密耦合。
 
 ![MVP](https://res.cloudinary.com/dohtidfqh/image/upload/v1547002648/web-guiguio/ios-architecture-4-mvp.png)
-
-
 
 ## MVVM
 
@@ -73,13 +62,11 @@ references:
 
 ![MVVM](https://res.cloudinary.com/dohtidfqh/image/upload/v1547002648/web-guiguio/ios-architecture-5-mvvm.png)
 
-
-
 ## VIPER
+
 与 MV(X) 相比，VIPER 有五个层次（VIPER 视图、交互器、呈现者、实体和路由）。这很好地分配了责任，但可维护性较差。
 
 ![VIPER](https://res.cloudinary.com/dohtidfqh/image/upload/v1547002648/web-guiguio/ios-architecture-6-viper.png)
-
 
 与 MV(X) 相比，VIPER
 
