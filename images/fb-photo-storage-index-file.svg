@@ -1,0 +1,26 @@
+<svg width="100%" viewBox="0 0 720 320" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">Haystack index file layout</title>
+<desc id="d">The index file is a Superblock followed by one index record per needle. Zooming into Needle 2's index record shows its fields: Key, Alternate Key, Flags, Offset and Size.</desc>
+<defs><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="719" height="319" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<polygon points="260,184 260,240 380,290 380,90" fill="#F1EFE8" stroke="#C9C7BE" stroke-width="1" stroke-linejoin="round"/>
+<text x="150" y="62" font-size="13" font-weight="500" fill="#5F5E5A">Index file</text>
+<rect x="40" y="84" width="220" height="44" rx="0" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="150" y="106" font-size="13" font-weight="500" fill="#3C3489">Superblock</text>
+<rect x="40" y="128" width="220" height="56" rx="0" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="150" y="156" font-size="13" font-weight="500" fill="#633806">Needle 1 index record</text>
+<rect x="40" y="240" width="220" height="56" rx="0" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="150" y="268" font-size="13" font-weight="500" fill="#633806">Needle 3 index record</text>
+<rect x="40" y="184" width="220" height="56" rx="0" fill="#FAEEDA" stroke="#854F0B" stroke-width="2"/>
+<text x="150" y="212" font-size="13" font-weight="500" fill="#633806">Needle 2 index record</text>
+<rect x="380" y="90" width="300" height="40" rx="0" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="530" y="110" font-size="13" font-weight="500" fill="#633806">Key</text>
+<rect x="380" y="130" width="300" height="40" rx="0" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="530" y="150" font-size="13" font-weight="500" fill="#633806">Alternate Key</text>
+<rect x="380" y="170" width="300" height="40" rx="0" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="530" y="190" font-size="13" font-weight="500" fill="#633806">Flags</text>
+<rect x="380" y="210" width="300" height="40" rx="0" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="530" y="230" font-size="13" font-weight="500" fill="#633806">Offset</text>
+<rect x="380" y="250" width="300" height="40" rx="0" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="530" y="270" font-size="13" font-weight="500" fill="#633806">Size</text>
+</svg>

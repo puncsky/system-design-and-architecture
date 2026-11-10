@@ -12,7 +12,7 @@ references:
   - https://en.wikipedia.org/wiki/B%2B_tree
 ---
 
-![B tree vs. B+ tree](https://res.cloudinary.com/dohtidfqh/image/upload/v1566606512/web-guiguio/bMjxUqmqcmytVpJLUd9gAVEzrmGEowwQdqV4bBARLvWVRauXH_IXY01atDp4xgAnRy89RhWy9yzThAUBwIU6xWwk9gHOZT9EdXLp7rwQ3SUFwyo_4O-uUkh34vkk424x13Mlzck.png)
+![B tree and B+ tree of order 4 side by side](../images/b-tree-vs-b-plus-tree.svg)
 
 B-trees and B+ trees are the on-disk data structures that hold up most of the database industry. MySQL (InnoDB), PostgreSQL indexes, SQL Server, Oracle, SQLite, and virtually every file system metadata store uses one or the other. Once you understand the structural difference, the operational trade-offs fall out directly.
 

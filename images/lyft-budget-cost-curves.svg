@@ -1,0 +1,57 @@
+<svg width="100%" viewBox="0 0 760 760" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">Budget allocator: sampled cost curves</title>
+<desc id="d">Top: LTV against spend with data points; a sampled cost curve lies inside a band from which 95% of cost curves are drawn. Bottom: two different sampled curve shapes, each with a tangent marking the point where ROI is 15%; the random variation moves that point to different spend levels so the algorithm explores them.</desc>
+<defs><marker id="m2C2C2A" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#2C2C2A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="759" height="759" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<rect x="220" y="100" width="280" height="230" rx="0" fill="#EDEBE4" stroke="#EDEBE4" stroke-width="1"/>
+<path d="M220.0 90.0 L220.0 330.0 L508.0 330.0" fill="none" stroke="#2C2C2A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="198" y="215" font-size="12" font-weight="500" fill="#2C2C2A">LTV</text>
+<text x="360" y="350" font-size="12" font-weight="500" fill="#2C2C2A">Spend</text>
+<path d="M236.8 272.9 L243.4 264.1 L250.0 256.5 L256.5 249.7 L263.1 243.5 L269.7 237.8 L276.3 232.5 L282.9 227.5 L289.4 222.7 L296.0 218.2 L302.6 213.9 L309.2 209.7 L315.8 205.7 L322.3 201.8 L328.9 198.0 L335.5 194.4 L342.1 190.8 L348.7 187.3 L355.2 184.0 L361.8 180.7 L368.4 177.4 L375.0 174.3 L381.6 171.2 L388.1 168.1 L394.7 165.1 L401.3 162.2 L407.9 159.3 L414.5 156.5 L421.0 153.7 L427.6 150.9 L434.2 148.2 L440.8 145.6 L447.4 142.9 L453.9 140.3 L460.5 137.8 L467.1 135.2 L473.7 132.7 L480.3 130.3 L486.8 127.8 L493.4 125.4 L500.0 123.0 L500.0 215.0 L493.4 215.7 L486.8 216.3 L480.3 217.0 L473.7 217.7 L467.1 218.5 L460.5 219.2 L453.9 220.0 L447.4 220.8 L440.8 221.6 L434.2 222.5 L427.6 223.4 L421.0 224.3 L414.5 225.2 L407.9 226.2 L401.3 227.2 L394.7 228.2 L388.1 229.3 L381.6 230.4 L375.0 231.6 L368.4 232.8 L361.8 234.0 L355.2 235.4 L348.7 236.7 L342.1 238.2 L335.5 239.7 L328.9 241.3 L322.3 242.9 L315.8 244.7 L309.2 246.5 L302.6 248.5 L296.0 250.6 L289.4 252.9 L282.9 255.3 L276.3 258.0 L269.7 260.9 L263.1 264.1 L256.5 267.7 L250.0 271.8 L243.4 276.7 L236.8 282.6 Z" fill="#CECBF6" stroke="#AFA9EC" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M236.8 277.7 L243.4 270.4 L250.0 264.1 L256.5 258.7 L263.1 253.8 L269.7 249.4 L276.3 245.3 L282.9 241.4 L289.4 237.8 L296.0 234.4 L302.6 231.2 L309.2 228.1 L315.8 225.2 L322.3 222.4 L328.9 219.6 L335.5 217.0 L342.1 214.5 L348.7 212.0 L355.2 209.7 L361.8 207.4 L368.4 205.1 L375.0 202.9 L381.6 200.8 L388.1 198.7 L394.7 196.7 L401.3 194.7 L407.9 192.7 L414.5 190.8 L421.0 189.0 L427.6 187.2 L434.2 185.4 L440.8 183.6 L447.4 181.9 L453.9 180.2 L460.5 178.5 L467.1 176.9 L473.7 175.2 L480.3 173.6 L486.8 172.1 L493.4 170.5 L500.0 169.0" fill="none" stroke="#2C2C2A" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M479.9 135.2 L489.9 135.2" fill="none" stroke="#2C2C2A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M484.9 130.2 L484.9 140.2" fill="none" stroke="#2C2C2A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M431.2 160.7 L441.2 160.7" fill="none" stroke="#2C2C2A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M436.2 155.7 L436.2 165.7" fill="none" stroke="#2C2C2A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M373.8 181.2 L383.8 181.2" fill="none" stroke="#2C2C2A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M378.8 176.2 L378.8 186.2" fill="none" stroke="#2C2C2A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M485.2 198.0 L495.2 198.0" fill="none" stroke="#2C2C2A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M490.2 193.0 L490.2 203.0" fill="none" stroke="#2C2C2A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M405.4 212.7 L415.4 212.7" fill="none" stroke="#2C2C2A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M410.4 207.7 L410.4 217.7" fill="none" stroke="#2C2C2A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M308.0 253.6 L318.0 253.6" fill="none" stroke="#2C2C2A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M313.0 248.6 L313.0 258.6" fill="none" stroke="#2C2C2A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M329.8 276.9 L339.8 276.9" fill="none" stroke="#2C2C2A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M334.8 271.9 L334.8 281.9" fill="none" stroke="#2C2C2A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="283.6" y="16" width="220" height="46" rx="8" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="393.6" y="31.2" font-size="12" fill="#2C2C2A">95% of cost curves will be</text>
+<text x="393.6" y="46.8" font-size="12" fill="#2C2C2A">drawn from this region</text>
+<path d="M393.6 62 L393.6 187" fill="none" stroke="#2C2C2A" stroke-width="1.2" stroke-linejoin="round" marker-end="url(#m2C2C2A)"/>
+<rect x="560" y="164.7" width="130" height="36" rx="8" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="625" y="182.7" font-size="12" fill="#2C2C2A">Sampled curve</text>
+<path d="M560 182.7 L452 182.7" fill="none" stroke="#2C2C2A" stroke-width="1.2" stroke-linejoin="round" marker-end="url(#m2C2C2A)"/>
+<rect x="250" y="392" width="260" height="62" rx="8" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="380" y="407.4" font-size="12" fill="#2C2C2A">Random variation in curve shape</text>
+<text x="380" y="423" font-size="12" fill="#2C2C2A">encourages the algorithm to</text>
+<text x="380" y="438.6" font-size="12" fill="#2C2C2A">explore different spend levels</text>
+<rect x="70" y="510" width="280" height="190" rx="0" fill="#FAECE7" stroke="#FAECE7" stroke-width="1"/>
+<path d="M70.0 500.0 L70.0 700.0 L358.0 700.0" fill="none" stroke="#2C2C2A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="48" y="605" font-size="12" font-weight="500" fill="#2C2C2A">LTV</text>
+<text x="210" y="720" font-size="12" font-weight="500" fill="#2C2C2A">Spend</text>
+<path d="M84.0 700.0 L89.3 693.7 L94.6 688.4 L100.0 683.6 L105.3 679.3 L110.6 675.3 L115.9 671.6 L121.2 668.2 L126.6 664.9 L131.9 661.8 L137.2 658.8 L142.5 656.0 L147.8 653.3 L153.2 650.7 L158.5 648.1 L163.8 645.7 L169.1 643.3 L174.4 641.0 L179.8 638.8 L185.1 636.6 L190.4 634.5 L195.7 632.4 L201.0 630.4 L206.4 628.4 L211.7 626.4 L217.0 624.5 L222.3 622.7 L227.6 620.8 L233.0 619.0 L238.3 617.3 L243.6 615.5 L248.9 613.8 L254.2 612.2 L259.6 610.5 L264.9 608.9 L270.2 607.3 L275.5 605.7 L280.8 604.2 L286.2 602.6 L291.5 601.1 L296.8 599.6 L302.1 598.2 L307.4 596.7 L312.8 595.3 L318.1 593.8 L323.4 592.4 L328.7 591.0 L334.0 589.7 L339.4 588.3 L344.7 587.0 L350.0 585.6" fill="none" stroke="#2C2C2A" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M86.4 684.0 L210.4 622.0" fill="none" stroke="#2C2C2A" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="butt" stroke-dasharray="7 4"/>
+<circle cx="148.4" cy="653" r="6" fill="#D4537E" stroke="#993556" stroke-width="1"/>
+<text x="213.5" y="684" font-size="11" style="text-anchor:start" fill="#2C2C2A">= point where ROI is 15%</text>
+<circle cx="201.5" cy="684" r="6" fill="#D4537E" stroke="#993556" stroke-width="1"/>
+<path d="M250 423 L148.4 423 L148.4 639" fill="none" stroke="#2C2C2A" stroke-width="1.2" stroke-linejoin="round" marker-end="url(#m2C2C2A)"/>
+<rect x="410" y="510" width="280" height="190" rx="0" fill="#E6F1FB" stroke="#E6F1FB" stroke-width="1"/>
+<path d="M410.0 500.0 L410.0 700.0 L698.0 700.0" fill="none" stroke="#2C2C2A" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="388" y="605" font-size="12" font-weight="500" fill="#2C2C2A">LTV</text>
+<text x="550" y="720" font-size="12" font-weight="500" fill="#2C2C2A">Spend</text>
+<path d="M424.0 700.0 L429.3 692.9 L434.6 686.6 L440.0 680.8 L445.3 675.4 L450.6 670.4 L455.9 665.6 L461.2 661.0 L466.6 656.5 L471.9 652.3 L477.2 648.2 L482.5 644.2 L487.8 640.4 L493.2 636.6 L498.5 633.0 L503.8 629.4 L509.1 625.9 L514.4 622.5 L519.8 619.1 L525.1 615.8 L530.4 612.6 L535.7 609.5 L541.0 606.3 L546.4 603.3 L551.7 600.3 L557.0 597.3 L562.3 594.4 L567.6 591.5 L573.0 588.6 L578.3 585.8 L583.6 583.0 L588.9 580.3 L594.2 577.6 L599.6 574.9 L604.9 572.2 L610.2 569.6 L615.5 567.0 L620.8 564.5 L626.2 561.9 L631.5 559.4 L636.8 556.9 L642.1 554.4 L647.4 552.0 L652.8 549.6 L658.1 547.2 L663.4 544.8 L668.7 542.4 L674.0 540.1 L679.4 537.8 L684.7 535.5 L690.0 533.2" fill="none" stroke="#2C2C2A" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M538.4 605.5 L662.4 543.5" fill="none" stroke="#2C2C2A" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="butt" stroke-dasharray="7 4"/>
+<circle cx="600.4" cy="574.5" r="6" fill="#D4537E" stroke="#993556" stroke-width="1"/>
+<text x="553.5" y="684" font-size="11" style="text-anchor:start" fill="#2C2C2A">= point where ROI is 15%</text>
+<circle cx="541.5" cy="684" r="6" fill="#D4537E" stroke="#993556" stroke-width="1"/>
+<path d="M510 423 L600.4 423 L600.4 560.5" fill="none" stroke="#2C2C2A" stroke-width="1.2" stroke-linejoin="round" marker-end="url(#m2C2C2A)"/>
+</svg>

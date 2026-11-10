@@ -1,0 +1,122 @@
+<svg width="100%" viewBox="0 0 760 846" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">The Single Stock-Exchange Simulator</title>
+<desc id="d">Trader agents (re-trained learning agent, learning agent, ZI agent, market maker) place orders into a double auction market where Accept Order passes them to Match and Store Order, Execute Order and the order book; trades and quotes flow to Calculate Balance, and confirmations and notifications loop back to the agents.</desc>
+<defs><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="759" height="845" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<text x="380" y="22" font-size="16" font-weight="600" fill="#2C2C2A">The Single Stock-Exchange Simulator</text>
+<rect x="16" y="44" width="728" height="314" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="28" y="60" font-size="12" style="text-anchor:start" fill="#5F5E5A">Traders (Agents)</text>
+<rect x="60" y="140" width="140" height="62" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="130" y="154.8" font-size="13" font-weight="500" fill="#3C3489">Re-train</text>
+<text x="130" y="171.7" font-size="13" font-weight="500" fill="#3C3489">Learning Agent</text>
+<text x="130" y="187.9" font-size="12" fill="#534AB7">p, b</text>
+<rect x="224" y="140" width="140" height="62" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="294" y="154.8" font-size="13" font-weight="500" fill="#3C3489">Activate</text>
+<text x="294" y="171.7" font-size="13" font-weight="500" fill="#3C3489">Learning Agent</text>
+<text x="294" y="187.9" font-size="12" fill="#534AB7">params</text>
+<rect x="388" y="140" width="140" height="62" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="458" y="154.8" font-size="13" font-weight="500" fill="#2C2C2A">Activate</text>
+<text x="458" y="171.7" font-size="13" font-weight="500" fill="#2C2C2A">ZI Agent</text>
+<text x="458" y="187.9" font-size="12" fill="#5F5E5A">p, p, p</text>
+<rect x="552" y="140" width="140" height="62" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="622" y="154.8" font-size="13" font-weight="500" fill="#2C2C2A">Activate</text>
+<text x="622" y="171.7" font-size="13" font-weight="500" fill="#2C2C2A">Market Maker</text>
+<text x="622" y="187.9" font-size="12" fill="#5F5E5A">limit</text>
+<path d="M36 104 L720 104" fill="none" stroke="#898781" stroke-width="1.5"/>
+<path d="M130 104 L130 140" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M458 104 L458 140" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M622 104 L622 140" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<text x="466" y="114.3" font-size="11" style="text-anchor:start" fill="#5F5E5A">time tick</text>
+<text x="466" y="129.7" font-size="11" style="text-anchor:start" fill="#5F5E5A">(discrete time)</text>
+<text x="630" y="114.3" font-size="11" style="text-anchor:start" fill="#5F5E5A">time tick</text>
+<text x="630" y="129.7" font-size="11" style="text-anchor:start" fill="#5F5E5A">(discrete time)</text>
+<text x="48" y="90" font-size="12" style="text-anchor:start" fill="#5F5E5A">confirmation</text>
+<text x="708" y="90" font-size="12" style="text-anchor:end" fill="#5F5E5A">notification</text>
+<path d="M200 171 L224 171" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M458 202 L458 232" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M622 202 L622 232 L294 232" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="341.2" y="222.6" width="69.6" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="376" y="232" font-size="11" fill="#5F5E5A">arrival rate</text>
+<path d="M294 202 L294 262" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="60" y="262" width="320" height="66" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="220" y="276" font-size="13" font-weight="500" fill="#2C2C2A">Place Order</text>
+<rect x="68" y="290" width="56" height="30" rx="4" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="96" y="305" font-size="12" fill="#2C2C2A">type</text>
+<rect x="130" y="290" width="56" height="30" rx="4" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="158" y="305" font-size="12" fill="#2C2C2A">price</text>
+<rect x="192" y="290" width="56" height="30" rx="4" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="220" y="305" font-size="12" fill="#2C2C2A">size</text>
+<rect x="254" y="290" width="56" height="30" rx="4" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="282" y="305" font-size="12" fill="#2C2C2A">status</text>
+<rect x="316" y="290" width="56" height="30" rx="4" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="344" y="305" font-size="12" fill="#2C2C2A">time</text>
+<rect x="476" y="262" width="200" height="66" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="576" y="287.2" font-size="13" font-weight="500" fill="#0C447C">Calculate Balance</text>
+<text x="576" y="303.4" font-size="12" fill="#185FA5">TradeAccount, Settlements</text>
+<path d="M676 295 L714 295 Q720 295 720 289 L720 104" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="16" y="374" width="728" height="448" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="150" y="390" font-size="12" style="text-anchor:start" fill="#5F5E5A">Double Auction Market (CDA)</text>
+<rect x="284" y="430" width="372" height="270" rx="8" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1"/>
+<text x="296" y="446" font-size="13" font-weight="600" style="text-anchor:start" fill="#2C2C2A">Order Book</text>
+<text x="296" y="463" font-size="11" style="text-anchor:start" fill="#5F5E5A">(Good-till-cancelled orders)</text>
+<rect x="304" y="486" width="120" height="52" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="364" y="503.6" font-size="13" font-weight="500" fill="#0C447C">Match and</text>
+<text x="364" y="520.5" font-size="13" font-weight="500" fill="#0C447C">Store Order</text>
+<rect x="516" y="486" width="120" height="52" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="576" y="503.6" font-size="13" font-weight="500" fill="#0C447C">Execute</text>
+<text x="576" y="520.5" font-size="13" font-weight="500" fill="#0C447C">Order</text>
+<path d="M424 512 L516 512" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="460.7" y="502.6" width="18.6" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="470" y="512" font-size="11" fill="#5F5E5A">ID</text>
+<rect x="304" y="602" width="332" height="94" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="316" y="618" font-size="13" font-weight="500" style="text-anchor:start" fill="#633806">Update Order Book</text>
+<text x="445.9" y="618" font-size="11" style="text-anchor:start" fill="#854F0B">(for a single instrument)</text>
+<rect x="316" y="634" width="150" height="26" rx="4" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="391" y="647" font-size="12" fill="#2C2C2A">Bid Limit Orders</text>
+<rect x="474" y="634" width="150" height="26" rx="4" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="549" y="647" font-size="12" fill="#2C2C2A">Ask Limit Orders</text>
+<rect x="316" y="664" width="150" height="26" rx="4" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="391" y="677" font-size="12" fill="#2C2C2A">PartiallyFilledOrders</text>
+<rect x="474" y="664" width="150" height="26" rx="4" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="549" y="677" font-size="12" fill="#2C2C2A">Filled Orders</text>
+<path d="M364 570 L364 538" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M364 570 L364 602" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<text x="374" y="562.3" font-size="11" style="text-anchor:start" fill="#5F5E5A">market,</text>
+<text x="374" y="577.7" font-size="11" style="text-anchor:start" fill="#5F5E5A">limit</text>
+<path d="M576 570 L576 538" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M576 570 L576 602" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<text x="586" y="570" font-size="11" style="text-anchor:start" fill="#5F5E5A">ID</text>
+<rect x="56" y="458" width="140" height="108" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="126" y="474" font-size="13" font-weight="500" fill="#0C447C">Accept Order</text>
+<rect x="66" y="492" width="120" height="64" rx="4" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<path d="M66 524 L186 524" fill="none" stroke="#B4B2AA" stroke-width="1"/>
+<text x="126" y="508" font-size="12" fill="#5F5E5A">Arrival Protocol</text>
+<text x="126" y="540" font-size="12" fill="#5F5E5A">Submitted Orders</text>
+<path d="M126 328 L126 458" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="97.2" y="332.5" width="57.5" height="19" rx="4" fill="#FFFFFF"/>
+<text x="126" y="342" font-size="11" fill="#5F5E5A">buy / sell</text>
+<rect x="68.8" y="418.5" width="114.4" height="19" rx="4" fill="#FFFFFF"/>
+<text x="126" y="428" font-size="11" fill="#5F5E5A">market, limit, cancel</text>
+<path d="M196 512 L304 512" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<text x="240" y="466.6" font-size="11" fill="#5F5E5A">market,</text>
+<text x="240" y="482" font-size="11" fill="#5F5E5A">limit,</text>
+<text x="240" y="497.4" font-size="11" fill="#5F5E5A">order ID</text>
+<path d="M196 542 L222 542 Q228 542 228 548 L228 643 Q228 649 234 649 L304 649" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<text x="234" y="619.3" font-size="11" style="text-anchor:start" fill="#5F5E5A">cancel</text>
+<text x="234" y="634.7" font-size="11" style="text-anchor:start" fill="#5F5E5A">order ID</text>
+<path d="M56 480 L42 480 Q36 480 36 474 L36 104" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M576 486 L576 328" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<text x="568" y="392" font-size="11" style="text-anchor:end" fill="#5F5E5A">trade (price, size)</text>
+<text x="568" y="408" font-size="11" style="text-anchor:end" fill="#5F5E5A">quote (bestBid, bestAsk, volume)</text>
+<rect x="304" y="728" width="190" height="64" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="399" y="752.2" font-size="13" font-weight="500" fill="#0C447C">Clean Orderbook</text>
+<text x="399" y="768.4" font-size="12" fill="#185FA5">End of session signal</text>
+<path d="M399 728 L399 696" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="502" y="728" width="160" height="64" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="582" y="744.4" font-size="13" font-weight="500" fill="#0C447C">Update Asset Stats</text>
+<text x="582" y="760.6" font-size="12" fill="#185FA5">AskVWAP, BidVWAP,</text>
+<text x="582" y="776.2" font-size="12" fill="#185FA5">liquidity</text>
+<path d="M636 512 L694 512 Q700 512 700 518 L700 754 Q700 760 694 760 L662 760" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="662.5" y="626.6" width="75.1" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="700" y="636" font-size="11" fill="#5F5E5A">trade record</text>
+</svg>

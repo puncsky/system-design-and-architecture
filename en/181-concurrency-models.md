@@ -8,7 +8,7 @@ tags: [system design, concurrency, programming-languages]
 description: "Five concurrency models — single-threaded async, shared-memory threads with locks, CSP, Actor Model, and Software Transactional Memory — compared on how they share state, how they compose, and what kinds of failure they produce. Notes on when each fits and why language choice often dictates the model more than the problem does."
 ---
 
-![](https://res.cloudinary.com/dohtidfqh/image/upload/v1571262011/web-guiguio/Concurrency_Models_1.png)
+![Five concurrency models: single-threaded, threads with a lock, CSP, actors and STM](../images/concurrency-models-overview.svg)
 
 Concurrency models are different answers to one question: **how do independent threads of execution coordinate without corrupting each other's data?** Each model makes different trade-offs between performance, composability, and the kinds of bugs it produces. Language choice often forces the model — you can use CSP in any language, but Go makes it the path of least resistance; you can do threads in Erlang, but you won't.
 

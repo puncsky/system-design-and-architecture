@@ -1,0 +1,120 @@
+<svg width="100%" viewBox="0 0 720 436" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">Facebook TAO 读取故障转移</title>
+<desc id="d">布局与 TAO 架构图相同。在副本数据中心，Web 服务器无法访问自己的跟随缓存时，故障转移到另一个集群的跟随缓存；跟随缓存无法访问领导缓存时直接读取副本数据库；领导缓存无法访问数据库时，改为读取主数据中心的领导缓存。</desc>
+<defs><marker id="m185FA5" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#185FA5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="m3B6D11" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#3B6D11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="719" height="435" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<path d="M410 16 L410 352" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-dasharray="4 4"/>
+<text x="260" y="28" font-size="13" font-weight="500" fill="#2C2C2A">主数据中心</text>
+<text x="560" y="28" font-size="13" font-weight="500" fill="#2C2C2A">副本数据中心</text>
+<text x="24" y="63" font-size="13" style="text-anchor:start" fill="#2C2C2A">Web 服务器</text>
+<text x="24" y="133" font-size="13" style="text-anchor:start" fill="#2C2C2A">跟随缓存</text>
+<text x="24" y="227" font-size="13" style="text-anchor:start" fill="#2C2C2A">领导缓存</text>
+<text x="24" y="324" font-size="13" style="text-anchor:start" fill="#2C2C2A">数据库</text>
+<rect x="351.5" y="306" width="117" height="36" rx="3" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<path d="M364.5 306 L364.5 342" fill="none" stroke="#9FD6C3" stroke-width="1"/>
+<path d="M377.5 306 L377.5 342" fill="none" stroke="#9FD6C3" stroke-width="1"/>
+<path d="M390.5 306 L390.5 342" fill="none" stroke="#9FD6C3" stroke-width="1"/>
+<path d="M403.5 306 L403.5 342" fill="none" stroke="#9FD6C3" stroke-width="1"/>
+<path d="M416.5 306 L416.5 342" fill="none" stroke="#9FD6C3" stroke-width="1"/>
+<path d="M429.5 306 L429.5 342" fill="none" stroke="#9FD6C3" stroke-width="1"/>
+<path d="M442.5 306 L442.5 342" fill="none" stroke="#9FD6C3" stroke-width="1"/>
+<path d="M455.5 306 L455.5 342" fill="none" stroke="#9FD6C3" stroke-width="1"/>
+<text x="410" y="366" font-size="11" fill="#5F5E5A">复制流</text>
+<rect x="135" y="52" width="20" height="22" rx="3" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<rect x="158" y="52" width="20" height="22" rx="3" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<rect x="181" y="52" width="20" height="22" rx="3" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<rect x="227" y="52" width="20" height="22" rx="3" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<rect x="250" y="52" width="20" height="22" rx="3" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<rect x="273" y="52" width="20" height="22" rx="3" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<rect x="319" y="52" width="20" height="22" rx="3" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<rect x="342" y="52" width="20" height="22" rx="3" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<rect x="365" y="52" width="20" height="22" rx="3" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<rect x="132.5" y="112" width="56" height="26" rx="3" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<rect x="137.5" y="117" width="56" height="26" rx="3" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<rect x="142.5" y="122" width="56" height="26" rx="3" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<rect x="147.5" y="127" width="56" height="26" rx="3" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<rect x="224.5" y="112" width="56" height="26" rx="3" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<rect x="229.5" y="117" width="56" height="26" rx="3" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<rect x="234.5" y="122" width="56" height="26" rx="3" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<rect x="239.5" y="127" width="56" height="26" rx="3" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<rect x="316.5" y="112" width="56" height="26" rx="3" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<rect x="321.5" y="117" width="56" height="26" rx="3" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<rect x="326.5" y="122" width="56" height="26" rx="3" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<rect x="331.5" y="127" width="56" height="26" rx="3" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<rect x="224.5" y="206" width="56" height="26" rx="3" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<rect x="229.5" y="211" width="56" height="26" rx="3" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<rect x="234.5" y="216" width="56" height="26" rx="3" fill="#EAF3DE" stroke="#3B6D11" stroke-width="1"/>
+<rect x="239.5" y="221" width="56" height="26" rx="3" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<rect x="435" y="52" width="20" height="22" rx="3" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<rect x="458" y="52" width="20" height="22" rx="3" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<rect x="481" y="52" width="20" height="22" rx="3" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<rect x="527" y="52" width="20" height="22" rx="3" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<rect x="550" y="52" width="20" height="22" rx="3" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<rect x="573" y="52" width="20" height="22" rx="3" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<rect x="619" y="52" width="20" height="22" rx="3" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<rect x="642" y="52" width="20" height="22" rx="3" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<rect x="665" y="52" width="20" height="22" rx="3" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<rect x="432.5" y="112" width="56" height="26" rx="3" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<rect x="437.5" y="117" width="56" height="26" rx="3" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<rect x="442.5" y="122" width="56" height="26" rx="3" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<rect x="447.5" y="127" width="56" height="26" rx="3" fill="#EAF3DE" stroke="#3B6D11" stroke-width="1"/>
+<rect x="524.5" y="112" width="56" height="26" rx="3" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<rect x="529.5" y="117" width="56" height="26" rx="3" fill="#EAF3DE" stroke="#3B6D11" stroke-width="1"/>
+<rect x="534.5" y="122" width="56" height="26" rx="3" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<rect x="539.5" y="127" width="56" height="26" rx="3" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<rect x="616.5" y="112" width="56" height="26" rx="3" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<rect x="621.5" y="117" width="56" height="26" rx="3" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<rect x="626.5" y="122" width="56" height="26" rx="3" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<rect x="631.5" y="127" width="56" height="26" rx="3" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<rect x="524.5" y="206" width="56" height="26" rx="3" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<rect x="529.5" y="211" width="56" height="26" rx="3" fill="#EAF3DE" stroke="#3B6D11" stroke-width="1"/>
+<rect x="534.5" y="216" width="56" height="26" rx="3" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<rect x="539.5" y="221" width="56" height="26" rx="3" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M168 74 L168 112" fill="none" stroke="#185FA5" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m185FA5)"/>
+<path d="M260 74 L260 112" fill="none" stroke="#185FA5" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m185FA5)"/>
+<path d="M352 74 L352 112" fill="none" stroke="#185FA5" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m185FA5)"/>
+<path d="M260 153 L260 206" fill="none" stroke="#185FA5" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m185FA5)"/>
+<path d="M168 153 L168 212 Q168 218 174 218 L224.5 218" fill="none" stroke="#185FA5" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m185FA5)"/>
+<path d="M352 153 L352 228 Q352 234 346 234 L295.5 234" fill="none" stroke="#185FA5" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m185FA5)"/>
+<path d="M468 74 L468 112" fill="none" stroke="#185FA5" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m185FA5)"/>
+<path d="M652 74 L652 112" fill="none" stroke="#185FA5" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m185FA5)"/>
+<path d="M468 153 L468 212 Q468 218 474 218 L524.5 218" fill="none" stroke="#185FA5" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m185FA5)"/>
+<path d="M652 153 L652 228 Q652 234 646 234 L595.5 234" fill="none" stroke="#185FA5" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m185FA5)"/>
+<path d="M234 305 A20 5 0 0 1 274 305 L274 331 A20 5 0 0 1 234 331 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M234 305 A20 5 0 0 0 274 305" fill="none" stroke="#854F0B" stroke-width="1"/>
+<path d="M240 311 A20 5 0 0 1 280 311 L280 337 A20 5 0 0 1 240 337 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M240 311 A20 5 0 0 0 280 311" fill="none" stroke="#854F0B" stroke-width="1"/>
+<path d="M246 317 A20 5 0 0 1 286 317 L286 343 A20 5 0 0 1 246 343 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M246 317 A20 5 0 0 0 286 317" fill="none" stroke="#854F0B" stroke-width="1"/>
+<path d="M534 305 A20 5 0 0 1 574 305 L574 331 A20 5 0 0 1 534 331 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M534 305 A20 5 0 0 0 574 305" fill="none" stroke="#854F0B" stroke-width="1"/>
+<path d="M540 311 A20 5 0 0 1 580 311 L580 337 A20 5 0 0 1 540 337 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M540 311 A20 5 0 0 0 580 311" fill="none" stroke="#854F0B" stroke-width="1"/>
+<path d="M546 317 A20 5 0 0 1 586 317 L586 343 A20 5 0 0 1 546 343 Z" fill="#EAF3DE" stroke="#3B6D11" stroke-width="1"/>
+<path d="M546 317 A20 5 0 0 0 586 317" fill="none" stroke="#3B6D11" stroke-width="1"/>
+<path d="M260 247 L260 300" fill="none" stroke="#185FA5" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m185FA5)"/>
+<path d="M286 322 L351.5 322" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#m898781)"/>
+<path d="M468.5 322 L534 322" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#m898781)"/>
+<path d="M560 74 L560 112" fill="none" stroke="#185FA5" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m185FA5)"/>
+<path d="M560 153 L560 206" fill="none" stroke="#185FA5" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m185FA5)"/>
+<path d="M560 247 L560 300" fill="none" stroke="#185FA5" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m185FA5)"/>
+<path d="M540 74 L540 87 Q540 93 534 93 L490 93 Q484 93 484 99 L484 112" fill="none" stroke="#3B6D11" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m3B6D11)"/>
+<rect x="620" y="231" width="8" height="6" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0"/>
+<path d="M590 153 L590 170 Q590 176 596 176 L618 176 Q624 176 624 182 L624 318 Q624 324 618 324 L586 324" fill="none" stroke="#3B6D11" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m3B6D11)"/>
+<path d="M548 247 L548 256 Q548 262 542 262 L294 262 Q288 262 288 256 L288 247" fill="none" stroke="#3B6D11" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m3B6D11)"/>
+<circle cx="560" cy="93" r="9" fill="#FFFFFF" stroke="#A32D2D" stroke-width="2"/>
+<path d="M553.6 86.6 L566.4 99.4" fill="none" stroke="#A32D2D" stroke-width="2"/>
+<circle cx="560" cy="179.5" r="9" fill="#FFFFFF" stroke="#A32D2D" stroke-width="2"/>
+<path d="M553.6 173.1 L566.4 185.9" fill="none" stroke="#A32D2D" stroke-width="2"/>
+<circle cx="560" cy="273.5" r="9" fill="#FFFFFF" stroke="#A32D2D" stroke-width="2"/>
+<path d="M553.6 267.1 L566.4 279.9" fill="none" stroke="#A32D2D" stroke-width="2"/>
+<path d="M40 396 L68 396" fill="none" stroke="#185FA5" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m185FA5)"/>
+<text x="76" y="396" font-size="12" style="text-anchor:start" fill="#5F5E5A">正常路径</text>
+<path d="M150 396 L178 396" fill="none" stroke="#3B6D11" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m3B6D11)"/>
+<text x="186" y="396" font-size="12" style="text-anchor:start" fill="#5F5E5A">故障转移路径</text>
+<circle cx="293" cy="396" r="8" fill="#FFFFFF" stroke="#A32D2D" stroke-width="2"/>
+<path d="M287.3 390.3 L298.7 401.7" fill="none" stroke="#A32D2D" stroke-width="2"/>
+<text x="310" y="396" font-size="12" style="text-anchor:start" fill="#5F5E5A">不可达</text>
+<path d="M372 396 L400 396" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<text x="408" y="396" font-size="12" style="text-anchor:start" fill="#5F5E5A">异步复制</text>
+</svg>

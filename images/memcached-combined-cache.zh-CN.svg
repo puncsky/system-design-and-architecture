@@ -1,0 +1,37 @@
+<svg width="100%" viewBox="0 0 280 502" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">Memcached 把各服务的空闲缓存汇聚成一个池</title>
+<desc id="d">上图：不使用 Memcached 时，两个服务各自保留 64MB 的空闲缓存，可用缓存总量只有 64MB。下图：使用 Memcached 后，两个 64MB 的空闲缓存在逻辑上合并成一个 128MB 的缓存，由两个服务共用。</desc>
+<defs><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="279" height="501" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<rect x="12" y="12" width="256" height="168" rx="10" fill="#FCEBEB" fill-opacity="0.45" stroke="#A32D2D" stroke-width="1"/>
+<text x="28" y="32" font-size="14" font-weight="600" style="text-anchor:start" fill="#791F1F">不使用 Memcached</text>
+<rect x="31" y="52" width="108" height="34" rx="4" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="85" y="69" font-size="13" fill="#633806">64MB 空闲缓存</text>
+<rect x="31" y="86" width="108" height="34" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="85" y="103" font-size="13" fill="#0C447C">服务</text>
+<rect x="151" y="52" width="108" height="34" rx="4" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="205" y="69" font-size="13" fill="#633806">64MB 空闲缓存</text>
+<rect x="151" y="86" width="108" height="34" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="205" y="103" font-size="13" fill="#0C447C">服务</text>
+<text x="140" y="144.9" font-size="13" fill="#2C2C2A">服务可用缓存</text>
+<text x="140" y="163.1" font-size="13" fill="#2C2C2A">总量：64MB</text>
+<polygon points="128,186 152,186 152,202 160,202 140,224 120,202 128,202" fill="#FFFFFF" stroke="#5F5E5A" stroke-width="1.25" stroke-linejoin="round"/>
+<rect x="12" y="232" width="256" height="258" rx="10" fill="#EAF3DE" fill-opacity="0.45" stroke="#3B6D11" stroke-width="1"/>
+<text x="28" y="252" font-size="14" font-weight="600" style="text-anchor:start" fill="#27500A">使用 Memcached</text>
+<rect x="28" y="272" width="224" height="34" rx="4" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="140" y="289" font-size="14" fill="#633806">合并缓存：128MB</text>
+<rect x="28" y="306" width="112" height="34" rx="4" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="84" y="323" font-size="13" fill="#633806">64MB 空闲缓存</text>
+<rect x="140" y="306" width="112" height="34" rx="4" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="196" y="323" font-size="13" fill="#633806">64MB 空闲缓存</text>
+<rect x="34" y="370" width="100" height="34" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="84" y="387" font-size="13" fill="#0C447C">服务</text>
+<rect x="146" y="370" width="100" height="34" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="196" y="387" font-size="13" fill="#0C447C">服务</text>
+<path d="M28 340 L34 370" fill="none" stroke="#3B6D11" stroke-width="1.25" stroke-dasharray="4 4"/>
+<path d="M140 340 L134 370" fill="none" stroke="#3B6D11" stroke-width="1.25" stroke-dasharray="4 4"/>
+<path d="M140 340 L146 370" fill="none" stroke="#3B6D11" stroke-width="1.25" stroke-dasharray="4 4"/>
+<path d="M252 340 L246 370" fill="none" stroke="#3B6D11" stroke-width="1.25" stroke-dasharray="4 4"/>
+<text x="140" y="428.9" font-size="13" fill="#2C2C2A">逻辑合并后</text>
+<text x="140" y="447.1" font-size="13" fill="#2C2C2A">可用缓存总量：128MB</text>
+</svg>

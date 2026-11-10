@@ -21,7 +21,7 @@ Here, viewing data means...
 
 ## Architecture
 
-![Netflix Viewing Data Architecture](/img/netflix-viewing-data-architecture.png)
+![Netflix viewing data architecture: stateful and stateless tiers](../images/netflix-viewing-data-architecture.svg)
 
 The viewing service has two tiers:
 

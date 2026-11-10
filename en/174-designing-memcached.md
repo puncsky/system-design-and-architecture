@@ -20,7 +20,8 @@ references:
   - Answer: to hold a larger size of data
     <img
     style={{ width: 200 }}
-    src="https://res.cloudinary.com/dohtidfqh/image/upload/v1569196539/web-guiguio/memcached2.png"
+    src="../images/memcached-combined-cache.svg"
+    alt="Without Memcached each service keeps its own 64MB spare cache; with Memcached the two spare caches combine into one 128MB cache"
     />
 
 2. For in-memory storage of small data objects
@@ -30,10 +31,7 @@ references:
 
 Big Picture: Client-server
 
-<img
-style={{ width: 256 }}
-src="https://res.cloudinary.com/dohtidfqh/image/upload/v1569196539/web-guiguio/memcached1.png"
-/>
+![Memcached client-server big picture](../images/memcached-client-server.svg)
 
 - client
 - given a list of Memcached servers
@@ -44,7 +42,7 @@ src="https://res.cloudinary.com/dohtidfqh/image/upload/v1569196539/web-guiguio/m
 
 The Key-value server consists of a fixed-size hash table + single-threaded handler + coarse locking
 
-![hash table](https://res.cloudinary.com/dohtidfqh/image/upload/v1569197517/web-guiguio/900px-Hash_table_5_0_1_1_1_1_1_LL.svg.png)
+![Hash table with separate chaining](../images/memcached-hash-table.svg)
 
 How to handle collisions? Mostly three ways to resolve:
 

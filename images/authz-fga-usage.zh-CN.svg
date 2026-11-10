@@ -1,0 +1,25 @@
+<svg width="100%" viewBox="0 0 720 284" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">如何使用 Auth0 FGA</title>
+<desc id="d">企业开发者第 1 步通过 FGA 仪表板配置 Auth0 FGA；第 2 步在微服务中开发，微服务调用 FGA 包装器服务，再由其调用 Auth0 FGA。</desc>
+<defs><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="719" height="283" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<rect x="40" y="40" width="170" height="60" rx="30" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="125" y="70" font-size="14" font-weight="500" fill="#2C2C2A">企业开发者</text>
+<rect x="300" y="40" width="170" height="60" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="385" y="70" font-size="14" font-weight="500" fill="#0C447C">FGA 仪表板</text>
+<rect x="560" y="40" width="130" height="60" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<text x="625" y="70" font-size="14" font-weight="500" fill="#712B13">Auth0 FGA</text>
+<path d="M210 70 L300 70" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<circle cx="255" cy="70" r="10" fill="#5F5E5A"/>
+<text x="255" y="70" font-size="11" font-weight="600" fill="#FFFFFF">1</text>
+<path d="M470 70 L560 70" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="40" y="200" width="170" height="60" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="125" y="230" font-size="14" font-weight="500" fill="#0C447C">微服务</text>
+<rect x="300" y="200" width="170" height="60" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="385" y="230" font-size="14" font-weight="500" fill="#0C447C">FGA 包装器服务</text>
+<path d="M125 100 L125 200" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<circle cx="125" cy="150" r="10" fill="#5F5E5A"/>
+<text x="125" y="150" font-size="11" font-weight="600" fill="#FFFFFF">2</text>
+<path d="M210 230 L300 230" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M470 230 L619 230 Q625 230 625 224 L625 100" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+</svg>

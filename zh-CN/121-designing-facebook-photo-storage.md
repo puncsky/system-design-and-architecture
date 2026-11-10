@@ -30,20 +30,20 @@ references:
 
 ## 架构
 
-![Facebook 照片存储架构](https://res.cloudinary.com/dohtidfqh/image/upload/v1546633724/web-guiguio/facebook-photo-storage-architecture.png)
+![基于 NFS 的 Facebook 照片存储架构](../images/fb-photo-storage-architecture.zh-CN.svg)
 
 ## 数据布局
 
 索引文件（用于快速内存加载）+ 包含针的 haystack 存储文件。
 
 索引文件布局
-![索引文件布局 1](https://res.cloudinary.com/dohtidfqh/image/upload/v1546633724/web-guiguio/facebook-photo-storage-index-file-1.jpg)
+![Haystack 索引文件布局](../images/fb-photo-storage-index-file.zh-CN.svg)
 
-![索引文件布局 2](https://res.cloudinary.com/dohtidfqh/image/upload/v1546633724/web-guiguio/facebook-photo-storage-storage-file.jpg)
+![Haystack 存储文件布局](../images/fb-photo-storage-store-file.zh-CN.svg)
 
 haystack 存储文件
 
-![haystack 存储文件](https://res.cloudinary.com/dohtidfqh/image/upload/v1546633724/web-guiguio/facebook-photo-storage-storage-file.jpg)
+![Haystack 存储文件布局](../images/fb-photo-storage-store-file.zh-CN.svg)
 
 ### CRUD 操作
 
@@ -56,8 +56,8 @@ haystack 存储文件
 
 上传
 
-![照片存储上传](https://res.cloudinary.com/dohtidfqh/image/upload/v1546633724/web-guiguio/facebook-photo-storage-upload.png)
+![照片存储上传流程](../images/fb-photo-storage-upload.zh-CN.svg)
 
 下载
 
-![照片存储下载](https://res.cloudinary.com/dohtidfqh/image/upload/v1546633724/web-guiguio/facebook-photo-storage-download.png)
+![照片存储下载流程](../images/fb-photo-storage-download.zh-CN.svg)

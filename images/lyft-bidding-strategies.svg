@@ -1,0 +1,49 @@
+<svg width="100%" viewBox="0 0 720 514" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">Bidding strategies and their goals</title>
+<desc id="d">Seven bidding strategies mapped to goals: maximize clicks, conversions, revenue or page location; ECPC; target CPA; and target ROAS, which weighs lifetime value over cost per action.</desc>
+<defs><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="719" height="513" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<text x="139" y="30" font-size="15" font-weight="600" fill="#3C3489">Bidding strategy</text>
+<text x="493" y="30" font-size="15" font-weight="600" fill="#27500A">Goal</text>
+<rect x="24" y="54" width="230" height="52" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="139" y="80" font-size="13" font-weight="500" fill="#3C3489">Maximize clicks</text>
+<rect x="290" y="54" width="406" height="52" rx="8" fill="#EAF3DE" stroke="#3B6D11" stroke-width="1"/>
+<text x="493" y="72.2" font-size="13" font-weight="500" fill="#27500A">Maximize visits to page</text>
+<text x="493" y="88.5" font-size="12" fill="#3B6D11">e.g. site visits</text>
+<path d="M254 80 L290 80" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="24" y="118" width="230" height="52" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="139" y="144" font-size="13" font-weight="500" fill="#3C3489">Maximize conversions</text>
+<rect x="290" y="118" width="406" height="52" rx="8" fill="#EAF3DE" stroke="#3B6D11" stroke-width="1"/>
+<text x="493" y="136.2" font-size="13" font-weight="500" fill="#27500A">Maximize conversions</text>
+<text x="493" y="152.5" font-size="12" fill="#3B6D11">e.g. signup, 1st ride</text>
+<path d="M254 144 L290 144" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="24" y="182" width="230" height="52" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="139" y="208" font-size="13" font-weight="500" fill="#3C3489">Maximize revenue</text>
+<rect x="290" y="182" width="406" height="52" rx="8" fill="#EAF3DE" stroke="#3B6D11" stroke-width="1"/>
+<text x="493" y="200.2" font-size="13" font-weight="500" fill="#27500A">Maximize conversion value</text>
+<text x="493" y="216.5" font-size="12" fill="#3B6D11">e.g. bookings</text>
+<path d="M254 208 L290 208" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="24" y="246" width="230" height="52" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="139" y="272" font-size="13" font-weight="500" fill="#3C3489">Maximize page location</text>
+<rect x="290" y="246" width="406" height="52" rx="8" fill="#EAF3DE" stroke="#3B6D11" stroke-width="1"/>
+<text x="493" y="264.2" font-size="13" font-weight="500" fill="#27500A">Maximize ad visibility</text>
+<text x="493" y="280.4" font-size="12" fill="#3B6D11">e.g. location on search page</text>
+<path d="M254 272 L290 272" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="24" y="310" width="230" height="52" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="139" y="336" font-size="13" font-weight="500" fill="#3C3489">ECPC</text>
+<rect x="290" y="310" width="406" height="52" rx="8" fill="#EAF3DE" stroke="#3B6D11" stroke-width="1"/>
+<text x="493" y="327.6" font-size="13" font-weight="500" fill="#27500A">Enhanced cost per click based on</text>
+<text x="493" y="344.4" font-size="13" font-weight="500" fill="#27500A">target cost per action</text>
+<path d="M254 336 L290 336" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="24" y="374" width="230" height="52" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="139" y="400" font-size="13" font-weight="500" fill="#3C3489">Target CPA</text>
+<rect x="290" y="374" width="406" height="52" rx="8" fill="#EAF3DE" stroke="#3B6D11" stroke-width="1"/>
+<text x="493" y="400" font-size="13" font-weight="500" fill="#27500A">Target cost per action</text>
+<path d="M254 400 L290 400" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="24" y="438" width="230" height="52" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="139" y="464" font-size="13" font-weight="500" fill="#3C3489">Target ROAS</text>
+<rect x="290" y="438" width="406" height="52" rx="8" fill="#EAF3DE" stroke="#3B6D11" stroke-width="1"/>
+<text x="493" y="456.2" font-size="13" font-weight="500" fill="#27500A">Target based on the return on ad spend</text>
+<text x="493" y="472.4" font-size="12" fill="#3B6D11">Think lifetime value (LTV) over cost per action (CPA)</text>
+<path d="M254 464 L290 464" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+</svg>

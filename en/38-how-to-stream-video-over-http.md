@@ -28,4 +28,4 @@ Video service over Http Live Streaming for mobile devices, which...
 
 ## Architecture
 
-![HLS Architecture](/img/hls-architecture.png)
+![HLS architecture: encoder, segmenter, origin web server, HTTP and clients](../images/hls-streaming-architecture.svg)

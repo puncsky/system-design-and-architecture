@@ -1,0 +1,36 @@
+<svg width="100%" viewBox="0 0 720 452" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">Haystack store file layout</title>
+<desc id="d">A haystack store file is a Superblock followed by needles (Needle 1, 2, 3). Zooming into one needle shows a header magic number, cookie, key, alternate key, flags and size, then the data, then a footer magic number, a data checksum and padding.</desc>
+<defs><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="719" height="451" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<polygon points="260,176 260,272 380,428 380,60" fill="#F1EFE8" stroke="#C9C7BE" stroke-width="1" stroke-linejoin="round"/>
+<text x="150" y="62" font-size="13" font-weight="500" fill="#5F5E5A">Haystack store file</text>
+<rect x="40" y="84" width="220" height="36" rx="0" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="150" y="102" font-size="13" font-weight="500" fill="#3C3489">Superblock</text>
+<rect x="40" y="120" width="220" height="56" rx="0" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="150" y="148" font-size="13" font-weight="500" fill="#633806">Needle 1</text>
+<rect x="40" y="272" width="220" height="132" rx="0" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="150" y="338" font-size="13" font-weight="500" fill="#633806">Needle 3</text>
+<rect x="40" y="176" width="220" height="96" rx="0" fill="#FAEEDA" stroke="#854F0B" stroke-width="2"/>
+<text x="150" y="224" font-size="13" font-weight="500" fill="#633806">Needle 2</text>
+<rect x="380" y="60" width="300" height="32" rx="0" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="530" y="76" font-size="13" font-weight="500" fill="#633806">Header Magic Number</text>
+<rect x="380" y="92" width="300" height="32" rx="0" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="530" y="108" font-size="13" font-weight="500" fill="#633806">Cookie</text>
+<rect x="380" y="124" width="300" height="32" rx="0" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="530" y="140" font-size="13" font-weight="500" fill="#633806">Key</text>
+<rect x="380" y="156" width="300" height="32" rx="0" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="530" y="172" font-size="13" font-weight="500" fill="#633806">Alternate Key</text>
+<rect x="380" y="188" width="300" height="32" rx="0" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="530" y="204" font-size="13" font-weight="500" fill="#633806">Flags</text>
+<rect x="380" y="220" width="300" height="32" rx="0" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="530" y="236" font-size="13" font-weight="500" fill="#633806">Size</text>
+<rect x="380" y="252" width="300" height="64" rx="0" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="530" y="284" font-size="13" font-weight="500" fill="#2C2C2A">Data</text>
+<rect x="380" y="316" width="300" height="32" rx="0" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="530" y="332" font-size="13" font-weight="500" fill="#633806">Footer Magic Number</text>
+<rect x="380" y="348" width="300" height="32" rx="0" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="530" y="364" font-size="13" font-weight="500" fill="#633806">Data Checksum</text>
+<rect x="380" y="380" width="300" height="48" rx="0" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="530" y="404" font-size="13" font-weight="500" fill="#2C2C2A">Padding</text>
+</svg>

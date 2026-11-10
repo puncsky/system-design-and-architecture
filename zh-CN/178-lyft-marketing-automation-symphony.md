@@ -19,11 +19,11 @@ references:
 2. 以数据驱动的增长为指导：增长必须是可扩展的、可衡量的和可预测的
 3. 支持 Lyft 独特的增长模型，如下所示
 
-![lyft growth model](https://res.cloudinary.com/dohtidfqh/image/upload/v1570050291/web-guiguio/1_JBgJKb6DFrG7X2Fc7dtAaQ.png)
+![Lyft 增长模型：司机与乘客漏斗](../images/lyft-growth-model.zh-CN.svg)
 
 然而，最大挑战是管理跨区域营销的所有流程，包括选择竞标、预算、创意、激励和受众，进行 A/B 测试等。你可以看到数字营销人员一天的工作：
 
-![营销者的一天](https://res.cloudinary.com/dohtidfqh/image/upload/v1570050798/web-guiguio/0_FXK0RW9qx3e9f_kv.png)
+![数字营销人员的一天](../images/lyft-marketer-day.zh-CN.svg)
 
 我们发现 _执行_ 占用了大部分时间，而 _分析_，被认为更重要的，所花的时间要少得多。一个扩展策略将使营销人员能够专注于分析和决策过程，而不是操作活动。
 
@@ -47,7 +47,7 @@ references:
 
 ## 架构
 
-![Lyft Symphony Architecture](https://res.cloudinary.com/dohtidfqh/image/upload/v1570052539/web-guiguio/0_k_I3YVF9XEAu9OLl.png)
+![Lyft Symphony 架构：LTV 预测器、预算分配器与竞标者](../images/lyft-symphony-architecture.zh-CN.svg)
 
 技术栈包括 - Apache Hive、Presto、ML 平台、Airflow、第三方 API、UI。
 
@@ -61,17 +61,17 @@ references:
 
 初始特征值：
 
-![特征值](https://res.cloudinary.com/dohtidfqh/image/upload/v1570072545/web-guiguio/0_YHwm9D9a-Fvm7cq8.png)
+![LTV 预测的初始特征：司机特征与乘客特征](../images/lyft-ltv-features.zh-CN.svg)
 
 随着互动历史数据的积累，预测会得到改善：
 
-![根据历史记录判断 LTV](https://res.cloudinary.com/dohtidfqh/image/upload/v1570072568/web-guiguio/0_SwHgIjhJAQf35t_C.png)
+![生命周期价值预测：已实现、预测与基准线](../images/lyft-ltv-forecast.zh-CN.svg)
 
 ### 预算分配器
 
 在预测 LTV 之后，接下来是根据价格估算预算。一个形式为 `LTV = a * (spend)^b` 的曲线拟合数据。在成本曲线创建过程中将注入一定程度的随机性，以便收敛到全局最优解。
 
-![预算计算](https://res.cloudinary.com/dohtidfqh/image/upload/v1570073827/web-guiguio/0_bLNhBPW6UFA227JB.png)
+![预算分配器：成本曲线采样与 ROI 为 15% 的点](../images/lyft-budget-cost-curves.zh-CN.svg)
 
 ### 竞标者
 
@@ -79,7 +79,7 @@ references:
 
 一些在不同渠道应用的流行竞标策略如下所示：
 
-![投放策略](https://res.cloudinary.com/dohtidfqh/image/upload/v1570074354/web-guiguio/0_bPtZels9tqGXoFCW.png)
+![竞标策略及其目标](../images/lyft-bidding-strategies.zh-CN.svg)
 
 ### 结论
 

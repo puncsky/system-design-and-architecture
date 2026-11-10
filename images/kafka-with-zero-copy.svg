@@ -1,0 +1,33 @@
+<svg width="100%" viewBox="0 0 288 452" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">Kafka data path with zero-copy</title>
+<desc id="d">With zero-copy the application only calls transferTo() and the data never enters an application buffer. A DMA copy moves data from the disk into the kernel read buffer, step 2 passes it from the read buffer to the socket buffer inside the kernel, and a DMA copy moves it into the NIC buffer.</desc>
+<defs><marker id="m3B6D11" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#3B6D11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="m2C2C2A" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#2C2C2A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="287" height="451" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<text x="62" y="25.6" font-size="12" fill="#5F5E5A">Application</text>
+<text x="62" y="42.4" font-size="12" fill="#5F5E5A">context</text>
+<text x="200" y="25.6" font-size="12" fill="#5F5E5A">Kernel</text>
+<text x="200" y="42.4" font-size="12" fill="#5F5E5A">context</text>
+<path d="M112 16 L112 388" fill="none" stroke="#5F5E5A" stroke-width="1.5"/>
+<path d="M168 73 A32 7 0 0 1 232 73 L232 109 A32 7 0 0 1 168 109 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M168 73 A32 7 0 0 0 232 73" fill="none" stroke="#854F0B" stroke-width="1"/>
+<text x="200" y="94.5" font-size="12" font-weight="500" fill="#633806">Disk</text>
+<rect x="136" y="152" width="128" height="36" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<text x="200" y="170" font-size="13" font-weight="500" fill="#085041">Read buffer</text>
+<rect x="136" y="268" width="128" height="36" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<text x="200" y="286" font-size="13" font-weight="500" fill="#085041">Socket buffer</text>
+<rect x="136" y="340" width="128" height="36" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<text x="200" y="358" font-size="13" font-weight="500" fill="#085041">NIC buffer</text>
+<path d="M200 116 L200 152" fill="none" stroke="#3B6D11" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m3B6D11)"/>
+<polygon points="193,192 207,192 207,248 214,248 200,264 186,248 193,248" fill="#FFFFFF" stroke="#A32D2D" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M200 304 L200 340" fill="none" stroke="#3B6D11" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m3B6D11)"/>
+<text x="24" y="212" font-size="12" font-style="italic" style="text-anchor:start" fill="#2C2C2A">transferTo()</text>
+<path d="M24 228 L178 228" fill="none" stroke="#2C2C2A" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m2C2C2A)"/>
+<circle cx="230" cy="228" r="10" fill="#A32D2D"/>
+<text x="230" y="228" font-size="11" font-weight="600" fill="#FFFFFF">2</text>
+<circle cx="220" cy="134" r="10" fill="#3B6D11"/>
+<text x="220" y="134" font-size="11" font-weight="600" fill="#FFFFFF">1</text>
+<circle cx="220" cy="322" r="10" fill="#3B6D11"/>
+<text x="220" y="322" font-size="11" font-weight="600" fill="#FFFFFF">3</text>
+<path d="M24 412 L58 412" fill="none" stroke="#3B6D11" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m3B6D11)"/>
+<text x="68" y="412" font-size="12" style="text-anchor:start" fill="#5F5E5A">DMA copy</text>
+</svg>

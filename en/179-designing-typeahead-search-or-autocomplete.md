@@ -32,7 +32,7 @@ Multi-layer architecture
 - result aggregator
 - various typeahead backend
 
-![Cleo Architecture](https://res.cloudinary.com/dohtidfqh/image/upload/v1570321528/web-guiguio/cleo.png)
+![Cleo Architecture](../images/cleo-architecture.svg)
 
 ## Result Aggregator
 
@@ -43,7 +43,7 @@ The abstraction of this problem is to find documents by prefixes and terms in a 
 3. `ForwardIndex<documents, prefixes or terms>`: previous bloom filter may return false positives, and now we query the actual documents to reject them.
 4. `scorer(document):relevance`: Each partition return all of its true hits and scores. And then we aggregate and rank.
 
-![](https://res.cloudinary.com/dohtidfqh/image/upload/v1570758116/web-guiguio/cleo-search-flow_0.jpg)
+![Cleo search flow within a partition](../images/cleo-search-flow.svg)
 
 ## Performance
 

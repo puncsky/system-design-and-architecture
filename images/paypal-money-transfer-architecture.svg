@@ -1,0 +1,91 @@
+<svg width="100%" viewBox="0 0 760 522" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">Square Cash / PayPal money transfer architecture</title>
+<desc id="d">Merchant and end users use a presentation layer of dashboard and wallet apps whose clients call a monolithic api-gateway, then the payment service with risk control, backed by a user-profile AuthDB and an Aurora payment DB. Payment and the payment-gateway (risk control, AWS CloudHSM, talking to banks and vendors) publish to an Event Queue that the side-effect maker and the financial-reporter (fed by a task-queue and operators) also use.</desc>
+<defs><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="759" height="521" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<circle cx="79" cy="26" r="6" fill="#FFFFFF" stroke="#5F5E5A" stroke-width="1.3"/>
+<path d="M79 32 L79 50 M68 39 L90 39 M79 50 L70 64 M79 50 L88 64" fill="none" stroke="#5F5E5A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="79" y="78" font-size="12" fill="#2C2C2A">Merchant User</text>
+<circle cx="179" cy="26" r="6" fill="#FFFFFF" stroke="#5F5E5A" stroke-width="1.3"/>
+<path d="M179 32 L179 50 M168 39 L190 39 M179 50 L170 64 M179 50 L188 64" fill="none" stroke="#5F5E5A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="179" y="78" font-size="12" fill="#2C2C2A">End User</text>
+<rect x="24" y="96" width="210" height="312" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="36" y="112" font-size="12" style="text-anchor:start" fill="#5F5E5A">Presentation Layer</text>
+<rect x="34" y="124" width="190" height="28" rx="8" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="129" y="138" font-size="12" font-weight="500" fill="#2C2C2A">SDK/Docs</text>
+<rect x="34" y="162" width="100" height="36" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="84" y="172.2" font-size="12" font-weight="500" fill="#2C2C2A">mobile-</text>
+<text x="84" y="187.8" font-size="12" font-weight="500" fill="#2C2C2A">dashboard</text>
+<rect x="34" y="202" width="100" height="36" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="84" y="212.2" font-size="12" font-weight="500" fill="#2C2C2A">web-</text>
+<text x="84" y="227.8" font-size="12" font-weight="500" fill="#2C2C2A">dashboard</text>
+<rect x="138" y="162" width="86" height="76" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="181" y="192.2" font-size="12" font-weight="500" fill="#0C447C">dashboard-</text>
+<text x="181" y="207.8" font-size="12" font-weight="500" fill="#0C447C">client</text>
+<rect x="34" y="246" width="100" height="36" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="84" y="264" font-size="12" font-weight="500" fill="#2C2C2A">mobile-wallet</text>
+<rect x="34" y="286" width="100" height="36" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="84" y="304" font-size="12" font-weight="500" fill="#2C2C2A">web-wallet</text>
+<rect x="34" y="326" width="100" height="36" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="84" y="336.2" font-size="12" font-weight="500" fill="#2C2C2A">web-chrome-</text>
+<text x="84" y="351.8" font-size="12" font-weight="500" fill="#2C2C2A">extension</text>
+<rect x="138" y="246" width="86" height="116" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="181" y="296.2" font-size="12" font-weight="500" fill="#0C447C">wallet-</text>
+<text x="181" y="311.8" font-size="12" font-weight="500" fill="#0C447C">client</text>
+<rect x="34" y="370" width="190" height="28" rx="8" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="129" y="384" font-size="12" font-weight="500" fill="#2C2C2A">help service portal</text>
+<rect x="270" y="172" width="92" height="56" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="316" y="192.2" font-size="12" font-weight="500" fill="#0C447C">api-gateway</text>
+<text x="316" y="207.8" font-size="12" font-weight="500" fill="#0C447C">monolithic</text>
+<rect x="390" y="166" width="96" height="68" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="438" y="183" font-size="13" font-weight="500" fill="#0C447C">payment</text>
+<rect x="398" y="204" width="80" height="20" rx="5" fill="#FFFFFF" stroke="#993C1D" stroke-width="1"/>
+<text x="438" y="214" font-size="11" fill="#712B13">risk control</text>
+<path d="M526 174 L602 174 A10 26 0 0 1 602 226 L526 226 A10 26 0 0 1 526 174 Z" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<path d="M602 174 A10 26 0 0 0 602 226" fill="none" stroke="#0F6E56" stroke-width="1"/>
+<text x="554" y="192.2" font-size="12" font-weight="500" fill="#085041">Event</text>
+<text x="554" y="207.8" font-size="12" font-weight="500" fill="#085041">Queue</text>
+<rect x="642" y="172" width="94" height="56" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="689" y="192.2" font-size="12" font-weight="500" fill="#0C447C">financial-</text>
+<text x="689" y="207.8" font-size="12" font-weight="500" fill="#0C447C">reporter</text>
+<path d="M224 200 L270 200" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M224 304 L245 304 Q251 304 251 298 L251 206 Q251 200 257 200 L270 200" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M362 200 L390 200" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M486 200 L516 200" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M642 200 L612 200" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="516" y="88" width="96" height="44" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="564" y="102.2" font-size="12" font-weight="500" fill="#0C447C">side-effect</text>
+<text x="564" y="117.8" font-size="12" font-weight="500" fill="#0C447C">maker</text>
+<path d="M652 88 L726 88 A10 22 0 0 1 726 132 L652 132 A10 22 0 0 1 652 88 Z" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<path d="M726 88 A10 22 0 0 0 726 132" fill="none" stroke="#0F6E56" stroke-width="1"/>
+<text x="679" y="110" font-size="12" font-weight="500" fill="#085041">task-queue</text>
+<path d="M564 132 L564 174" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M689 132 L689 172" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<circle cx="689" cy="302" r="6" fill="#FFFFFF" stroke="#5F5E5A" stroke-width="1.3"/>
+<path d="M689 308 L689 326 M678 315 L700 315 M689 326 L680 340 M689 326 L698 340" fill="none" stroke="#5F5E5A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="689" y="354" font-size="12" fill="#2C2C2A">Operators</text>
+<path d="M689 290 L689 228" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M266 305 A50 9 0 0 1 366 305 L366 351 A50 9 0 0 1 266 351 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M266 305 A50 9 0 0 0 366 305" fill="none" stroke="#854F0B" stroke-width="1"/>
+<text x="316" y="324.7" font-size="12" font-weight="500" fill="#633806">User Profiles</text>
+<text x="316" y="340.3" font-size="12" font-weight="500" fill="#633806">AuthDB</text>
+<path d="M316 228 L316 296" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M376 317 A44 9 0 0 1 464 317 L464 375 A44 9 0 0 1 376 375 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M376 317 A44 9 0 0 0 464 317" fill="none" stroke="#854F0B" stroke-width="1"/>
+<text x="420" y="334" font-size="11" fill="#854F0B">Aurora</text>
+<text x="420" y="352" font-size="12" font-weight="500" fill="#633806">Payment DB</text>
+<path d="M420 234 L420 308" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="500" y="298" width="128" height="100" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="564" y="315" font-size="13" font-weight="500" fill="#0C447C">payment-gateway</text>
+<rect x="510" y="338" width="108" height="20" rx="5" fill="#FFFFFF" stroke="#993C1D" stroke-width="1"/>
+<text x="564" y="348" font-size="11" fill="#712B13">risk control</text>
+<rect x="510" y="366" width="108" height="20" rx="5" fill="#FFFFFF" stroke="#993C1D" stroke-width="1"/>
+<text x="564" y="376" font-size="11" fill="#712B13">AWS CloudHSM</text>
+<path d="M474 234 L474 314 Q474 320 480 320 L500 320" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M500 350 L464 350" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M564 298 L564 226" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M530.0 490.4 C512.0 490.4 506.0 467.8 524.0 462.1 C522.0 441.3 550.0 433.8 562.0 448.9 C574.0 431.9 604.0 439.4 602.0 460.2 C622.0 462.1 626.0 488.6 602.0 490.4 Z" fill="#FAECE7" stroke="#993C1D" stroke-width="1" stroke-linejoin="round"/>
+<text x="564" y="455.6" font-size="12" font-weight="500" fill="#712B13">banks /</text>
+<text x="564" y="472.4" font-size="12" font-weight="500" fill="#712B13">vendors</text>
+<path d="M564 398 L564 434" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+</svg>

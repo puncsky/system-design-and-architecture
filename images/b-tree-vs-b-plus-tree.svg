@@ -1,0 +1,116 @@
+<svg width="100%" viewBox="0 0 720 589" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">B-tree vs. B+-tree of order 4</title>
+<desc id="d">Two order-4 trees side by side in two panels. In the B-tree every node holds keys and a pointer to a data record for each key. In the B+-tree only the leaves hold data pointers, internal nodes hold keys only, and the leaves are linked left to right and end in NULL.</desc>
+<defs><marker id="m5F5E5A" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="m993556" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#993556" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="m0F6E56" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#0F6E56" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="719" height="588" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<rect x="16" y="16" width="688" height="222" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1"/>
+<text x="32" y="36" font-size="14" font-weight="600" style="text-anchor:start" fill="#2C2C2A">B-tree of order 4</text>
+<rect x="136" y="180" width="84" height="26" rx="5" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M164 183 L164 203" fill="none" stroke="#C9A064" stroke-width="1"/>
+<path d="M192 183 L192 203" fill="none" stroke="#C9A064" stroke-width="1"/>
+<text x="150" y="193" font-size="13" font-weight="500" fill="#633806">1</text>
+<text x="178" y="193" font-size="13" font-weight="500" fill="#633806">3</text>
+<text x="206" y="193" font-size="13" font-weight="500" fill="#633806">4</text>
+<rect x="276" y="180" width="28" height="26" rx="5" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="290" y="193" font-size="13" font-weight="500" fill="#633806">6</text>
+<rect x="360" y="180" width="28" height="26" rx="5" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="374" y="193" font-size="13" font-weight="500" fill="#633806">12</text>
+<rect x="444" y="180" width="56" height="26" rx="5" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M472 183 L472 203" fill="none" stroke="#C9A064" stroke-width="1"/>
+<text x="458" y="193" font-size="13" font-weight="500" fill="#633806">16</text>
+<text x="486" y="193" font-size="13" font-weight="500" fill="#633806">18</text>
+<rect x="556" y="180" width="28" height="26" rx="5" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="570" y="193" font-size="13" font-weight="500" fill="#633806">25</text>
+<rect x="220" y="120" width="28" height="26" rx="5" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="234" y="133" font-size="13" font-weight="500" fill="#633806">5</text>
+<rect x="444" y="120" width="56" height="26" rx="5" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M472 123 L472 143" fill="none" stroke="#C9A064" stroke-width="1"/>
+<text x="458" y="133" font-size="13" font-weight="500" fill="#633806">15</text>
+<text x="486" y="133" font-size="13" font-weight="500" fill="#633806">20</text>
+<rect x="339" y="60" width="28" height="26" rx="5" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="353" y="73" font-size="13" font-weight="500" fill="#633806">10</text>
+<path d="M339 86 L234 119" fill="none" stroke="#5F5E5A" stroke-width="1.2" stroke-linejoin="round" marker-end="url(#m5F5E5A)"/>
+<path d="M367 86 L472 119" fill="none" stroke="#5F5E5A" stroke-width="1.2" stroke-linejoin="round" marker-end="url(#m5F5E5A)"/>
+<path d="M220 146 L178 179" fill="none" stroke="#5F5E5A" stroke-width="1.2" stroke-linejoin="round" marker-end="url(#m5F5E5A)"/>
+<path d="M248 146 L290 179" fill="none" stroke="#5F5E5A" stroke-width="1.2" stroke-linejoin="round" marker-end="url(#m5F5E5A)"/>
+<path d="M444 146 L374 179" fill="none" stroke="#5F5E5A" stroke-width="1.2" stroke-linejoin="round" marker-end="url(#m5F5E5A)"/>
+<path d="M472 146 L472 179" fill="none" stroke="#5F5E5A" stroke-width="1.2" stroke-linejoin="round" marker-end="url(#m5F5E5A)"/>
+<path d="M500 146 L570 179" fill="none" stroke="#5F5E5A" stroke-width="1.2" stroke-linejoin="round" marker-end="url(#m5F5E5A)"/>
+<path d="M353 87 L353 101" fill="none" stroke="#993556" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#m993556)"/>
+<path d="M234 147 L234 161" fill="none" stroke="#993556" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#m993556)"/>
+<path d="M458 147 L458 161" fill="none" stroke="#993556" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#m993556)"/>
+<path d="M486 147 L486 161" fill="none" stroke="#993556" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#m993556)"/>
+<path d="M150 207 L150 221" fill="none" stroke="#993556" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#m993556)"/>
+<path d="M178 207 L178 221" fill="none" stroke="#993556" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#m993556)"/>
+<path d="M206 207 L206 221" fill="none" stroke="#993556" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#m993556)"/>
+<path d="M290 207 L290 221" fill="none" stroke="#993556" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#m993556)"/>
+<path d="M374 207 L374 221" fill="none" stroke="#993556" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#m993556)"/>
+<path d="M458 207 L458 221" fill="none" stroke="#993556" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#m993556)"/>
+<path d="M486 207 L486 221" fill="none" stroke="#993556" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#m993556)"/>
+<path d="M570 207 L570 221" fill="none" stroke="#993556" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#m993556)"/>
+<rect x="16" y="250" width="688" height="222" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1"/>
+<text x="32" y="270" font-size="14" font-weight="600" style="text-anchor:start" fill="#2C2C2A">B+-tree of order 4</text>
+<rect x="40" y="414" width="84" height="26" rx="5" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M68 417 L68 437" fill="none" stroke="#C9A064" stroke-width="1"/>
+<path d="M96 417 L96 437" fill="none" stroke="#C9A064" stroke-width="1"/>
+<text x="54" y="427" font-size="13" font-weight="500" fill="#633806">1</text>
+<text x="82" y="427" font-size="13" font-weight="500" fill="#633806">3</text>
+<text x="110" y="427" font-size="13" font-weight="500" fill="#633806">4</text>
+<rect x="180" y="414" width="28" height="26" rx="5" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="194" y="427" font-size="13" font-weight="500" fill="#633806">5</text>
+<rect x="264" y="414" width="84" height="26" rx="5" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M292 417 L292 437" fill="none" stroke="#C9A064" stroke-width="1"/>
+<path d="M320 417 L320 437" fill="none" stroke="#C9A064" stroke-width="1"/>
+<text x="278" y="427" font-size="13" font-weight="500" fill="#633806">6</text>
+<text x="306" y="427" font-size="13" font-weight="500" fill="#633806">10</text>
+<text x="334" y="427" font-size="13" font-weight="500" fill="#633806">12</text>
+<rect x="404" y="414" width="56" height="26" rx="5" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M432 417 L432 437" fill="none" stroke="#C9A064" stroke-width="1"/>
+<text x="418" y="427" font-size="13" font-weight="500" fill="#633806">15</text>
+<text x="446" y="427" font-size="13" font-weight="500" fill="#633806">16</text>
+<rect x="516" y="414" width="84" height="26" rx="5" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M544 417 L544 437" fill="none" stroke="#C9A064" stroke-width="1"/>
+<path d="M572 417 L572 437" fill="none" stroke="#C9A064" stroke-width="1"/>
+<text x="530" y="427" font-size="13" font-weight="500" fill="#633806">18</text>
+<text x="558" y="427" font-size="13" font-weight="500" fill="#633806">20</text>
+<text x="586" y="427" font-size="13" font-weight="500" fill="#633806">25</text>
+<path d="M126 427 L178 427" fill="none" stroke="#0F6E56" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#m0F6E56)"/>
+<path d="M210 427 L262 427" fill="none" stroke="#0F6E56" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#m0F6E56)"/>
+<path d="M350 427 L402 427" fill="none" stroke="#0F6E56" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#m0F6E56)"/>
+<path d="M462 427 L514 427" fill="none" stroke="#0F6E56" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#m0F6E56)"/>
+<path d="M602 427 L638 427" fill="none" stroke="#0F6E56" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#m0F6E56)"/>
+<text x="644" y="427" font-size="11" font-weight="500" style="text-anchor:start" fill="#0F6E56">NULL</text>
+<rect x="124" y="354" width="28" height="26" rx="5" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="138" y="367" font-size="13" font-weight="500" fill="#633806">5</text>
+<rect x="404" y="354" width="56" height="26" rx="5" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M432 357 L432 377" fill="none" stroke="#C9A064" stroke-width="1"/>
+<text x="418" y="367" font-size="13" font-weight="500" fill="#633806">15</text>
+<text x="446" y="367" font-size="13" font-weight="500" fill="#633806">18</text>
+<rect x="271" y="294" width="28" height="26" rx="5" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="285" y="307" font-size="13" font-weight="500" fill="#633806">6</text>
+<path d="M271 320 L138 353" fill="none" stroke="#5F5E5A" stroke-width="1.2" stroke-linejoin="round" marker-end="url(#m5F5E5A)"/>
+<path d="M299 320 L432 353" fill="none" stroke="#5F5E5A" stroke-width="1.2" stroke-linejoin="round" marker-end="url(#m5F5E5A)"/>
+<path d="M124 380 L82 413" fill="none" stroke="#5F5E5A" stroke-width="1.2" stroke-linejoin="round" marker-end="url(#m5F5E5A)"/>
+<path d="M152 380 L194 413" fill="none" stroke="#5F5E5A" stroke-width="1.2" stroke-linejoin="round" marker-end="url(#m5F5E5A)"/>
+<path d="M404 380 L306 413" fill="none" stroke="#5F5E5A" stroke-width="1.2" stroke-linejoin="round" marker-end="url(#m5F5E5A)"/>
+<path d="M432 380 L432 413" fill="none" stroke="#5F5E5A" stroke-width="1.2" stroke-linejoin="round" marker-end="url(#m5F5E5A)"/>
+<path d="M460 380 L558 413" fill="none" stroke="#5F5E5A" stroke-width="1.2" stroke-linejoin="round" marker-end="url(#m5F5E5A)"/>
+<path d="M54 441 L54 455" fill="none" stroke="#993556" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#m993556)"/>
+<path d="M82 441 L82 455" fill="none" stroke="#993556" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#m993556)"/>
+<path d="M110 441 L110 455" fill="none" stroke="#993556" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#m993556)"/>
+<path d="M194 441 L194 455" fill="none" stroke="#993556" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#m993556)"/>
+<path d="M278 441 L278 455" fill="none" stroke="#993556" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#m993556)"/>
+<path d="M306 441 L306 455" fill="none" stroke="#993556" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#m993556)"/>
+<path d="M334 441 L334 455" fill="none" stroke="#993556" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#m993556)"/>
+<path d="M418 441 L418 455" fill="none" stroke="#993556" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#m993556)"/>
+<path d="M446 441 L446 455" fill="none" stroke="#993556" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#m993556)"/>
+<path d="M530 441 L530 455" fill="none" stroke="#993556" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#m993556)"/>
+<path d="M558 441 L558 455" fill="none" stroke="#993556" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#m993556)"/>
+<path d="M586 441 L586 455" fill="none" stroke="#993556" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#m993556)"/>
+<path d="M190 492 L190 508" fill="none" stroke="#993556" stroke-width="1.3" stroke-linejoin="round" marker-end="url(#m993556)"/>
+<text x="202" y="500" font-size="12" style="text-anchor:start" fill="#5F5E5A">pointer to a data record</text>
+<path d="M384.4 500 L414.4 500" fill="none" stroke="#0F6E56" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#m0F6E56)"/>
+<text x="424.4" y="500" font-size="12" style="text-anchor:start" fill="#5F5E5A">link to the next leaf</text>
+<text x="360" y="531.6" font-size="12" fill="#444441">A B+-tree can be viewed as a B-tree in which each node contains only keys (not pairs), and to which an</text>
+<text x="360" y="548.4" font-size="12" fill="#444441">additional level is added at the bottom with linked leaves.</text>
+</svg>

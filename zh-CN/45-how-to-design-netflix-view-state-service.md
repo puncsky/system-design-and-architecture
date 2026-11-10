@@ -21,7 +21,7 @@ references:
 
 ## 架构
 
-![Netflix 观看数据架构](/img/netflix-viewing-data-architecture.png)
+![Netflix 观看数据架构：有状态层与无状态层](../images/netflix-viewing-data-architecture.zh-CN.svg)
 
 观看服务有两个层次：
 

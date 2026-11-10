@@ -1,0 +1,55 @@
+<svg width="100%" viewBox="0 0 720 468" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">照片上传流程</title>
+<desc id="d">浏览器把上传请求发给 Web 服务器（1），后者向 Haystack 目录查询（2）并得到答复（3）。随后 Web 服务器把照片写入 Haystack 存储的每个副本（4），并答复浏览器（5）。Haystack 缓存和 CDN 不在这条路径上。</desc>
+<defs><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="719" height="467" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<rect x="40" y="36" width="140" height="56" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="110" y="54.9" font-size="14" font-weight="500" fill="#0C447C">Haystack</text>
+<text x="110" y="73.1" font-size="14" font-weight="500" fill="#0C447C">目录</text>
+<rect x="40" y="196" width="140" height="56" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="110" y="224" font-size="14" font-weight="500" fill="#0C447C">Web 服务器</text>
+<rect x="40" y="368" width="140" height="76" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="110" y="406" font-size="14" font-weight="500" fill="#2C2C2A">浏览器</text>
+<rect x="270" y="24" width="426" height="148" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="483" y="40" font-size="12" fill="#5F5E5A">Haystack 存储</text>
+<path d="M299 70.4 A32 6.4 0 0 1 363 70.4 L363 103.6 A32 6.4 0 0 1 299 103.6 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M299 70.4 A32 6.4 0 0 0 363 70.4" fill="none" stroke="#854F0B" stroke-width="1"/>
+<path d="M309 83.4 A32 6.4 0 0 1 373 83.4 L373 116.6 A32 6.4 0 0 1 309 116.6 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M309 83.4 A32 6.4 0 0 0 373 83.4" fill="none" stroke="#854F0B" stroke-width="1"/>
+<path d="M319 96.4 A32 6.4 0 0 1 383 96.4 L383 129.6 A32 6.4 0 0 1 319 129.6 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M319 96.4 A32 6.4 0 0 0 383 96.4" fill="none" stroke="#854F0B" stroke-width="1"/>
+<path d="M441 70.4 A32 6.4 0 0 1 505 70.4 L505 103.6 A32 6.4 0 0 1 441 103.6 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M441 70.4 A32 6.4 0 0 0 505 70.4" fill="none" stroke="#854F0B" stroke-width="1"/>
+<path d="M451 83.4 A32 6.4 0 0 1 515 83.4 L515 116.6 A32 6.4 0 0 1 451 116.6 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M451 83.4 A32 6.4 0 0 0 515 83.4" fill="none" stroke="#854F0B" stroke-width="1"/>
+<path d="M461 96.4 A32 6.4 0 0 1 525 96.4 L525 129.6 A32 6.4 0 0 1 461 129.6 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M461 96.4 A32 6.4 0 0 0 525 96.4" fill="none" stroke="#854F0B" stroke-width="1"/>
+<path d="M583 70.4 A32 6.4 0 0 1 647 70.4 L647 103.6 A32 6.4 0 0 1 583 103.6 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M583 70.4 A32 6.4 0 0 0 647 70.4" fill="none" stroke="#854F0B" stroke-width="1"/>
+<path d="M593 83.4 A32 6.4 0 0 1 657 83.4 L657 116.6 A32 6.4 0 0 1 593 116.6 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M593 83.4 A32 6.4 0 0 0 657 83.4" fill="none" stroke="#854F0B" stroke-width="1"/>
+<path d="M603 96.4 A32 6.4 0 0 1 667 96.4 L667 129.6 A32 6.4 0 0 1 603 129.6 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M603 96.4 A32 6.4 0 0 0 667 96.4" fill="none" stroke="#854F0B" stroke-width="1"/>
+<rect x="383" y="262" width="200" height="56" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="483" y="290" font-size="14" font-weight="500" fill="#633806">Haystack 缓存</text>
+<rect x="383" y="374" width="200" height="64" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="483" y="406" font-size="14" font-weight="500" fill="#633806">CDN</text>
+<path d="M86 368 L86 252" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<circle cx="86" cy="310" r="10" fill="#5F5E5A"/>
+<text x="86" y="310" font-size="11" font-weight="600" fill="#FFFFFF">1</text>
+<path d="M86 196 L86 92" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<circle cx="86" cy="144" r="10" fill="#5F5E5A"/>
+<text x="86" y="144" font-size="11" font-weight="600" fill="#FFFFFF">2</text>
+<path d="M134 92 L134 196" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<circle cx="134" cy="144" r="10" fill="#5F5E5A"/>
+<text x="134" y="144" font-size="11" font-weight="600" fill="#FFFFFF">3</text>
+<path d="M180 224 L625 224" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M341 224 L341 136" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M483 224 L483 136" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M625 224 L625 136" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<circle cx="260" cy="224" r="10" fill="#5F5E5A"/>
+<text x="260" y="224" font-size="11" font-weight="600" fill="#FFFFFF">4</text>
+<path d="M134 252 L134 368" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<circle cx="134" cy="310" r="10" fill="#5F5E5A"/>
+<text x="134" y="310" font-size="11" font-weight="600" fill="#FFFFFF">5</text>
+</svg>

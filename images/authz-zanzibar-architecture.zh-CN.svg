@@ -1,0 +1,87 @@
+<svg width="100%" viewBox="0 0 760 464" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">Zanzibar 架构</title>
+<desc id="d">客户端向由四个全连接 aclserver 组成的服务集群发送 Check、Read、Expand 和 Write 请求；aclserver 在 Spanner 中读写命名空间配置和关系元组，并向 changelog 追加记录。watchserver 尾随读取 changelog，并把 Watch 事件推送给客户端和 Leopard 索引系统；Leopard 还读取由定期离线管道导出的命名空间快照，并把优化的集合计算结果提供给 aclserver。</desc>
+<defs><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="s898781" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M8 1L2 5L8 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="759" height="463" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<rect x="124" y="20" width="160" height="36" rx="18" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="204" y="38" font-size="14" font-weight="500" fill="#2C2C2A">客户端</text>
+<rect x="24" y="100" width="360" height="182" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="40" y="266" font-size="12" style="text-anchor:start" fill="#5F5E5A">Zanzibar 服务集群</text>
+<rect x="52" y="124" width="110" height="44" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="107" y="146" font-size="14" font-weight="500" fill="#0C447C">aclserver</text>
+<rect x="246" y="124" width="110" height="44" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="301" y="146" font-size="14" font-weight="500" fill="#0C447C">aclserver</text>
+<rect x="52" y="196" width="110" height="44" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="107" y="218" font-size="14" font-weight="500" fill="#0C447C">aclserver</text>
+<rect x="246" y="196" width="110" height="44" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="301" y="218" font-size="14" font-weight="500" fill="#0C447C">aclserver</text>
+<path d="M162 146 L246 146" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)" marker-start="url(#s898781)"/>
+<path d="M162 218 L246 218" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)" marker-start="url(#s898781)"/>
+<path d="M107 168 L107 196" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)" marker-start="url(#s898781)"/>
+<path d="M301 168 L301 196" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)" marker-start="url(#s898781)"/>
+<path d="M160 166 L248 198" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)" marker-start="url(#s898781)"/>
+<path d="M248 166 L160 198" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)" marker-start="url(#s898781)"/>
+<path d="M204 56 L204 100" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)" marker-start="url(#s898781)"/>
+<text x="216" y="78" font-size="12" style="text-anchor:start" fill="#5F5E5A">Check, Read, Expand, Write</text>
+<rect x="424" y="20" width="136" height="36" rx="18" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="492" y="38" font-size="14" font-weight="500" fill="#2C2C2A">客户端</text>
+<rect x="424" y="190" width="136" height="44" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="492" y="212" font-size="14" font-weight="500" fill="#0C447C">watchserver</text>
+<rect x="600" y="96" width="140" height="56" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="670" y="115.5" font-size="13" font-weight="500" fill="#0C447C">Leopard</text>
+<text x="670" y="132.4" font-size="13" font-weight="500" fill="#0C447C">索引系统</text>
+<path d="M492 190 L492 56" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="472.5" y="140.6" width="38.9" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="492" y="150" font-size="11" fill="#5F5E5A">Watch</text>
+<path d="M542 190 L542 146 Q542 140 548 140 L600 140" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="522.5" y="155.6" width="38.9" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="542" y="165" font-size="11" fill="#5F5E5A">Watch</text>
+<path d="M600 112 L499 112 A7 7 0 0 0 485 112 L384 112" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<text x="548" y="94" font-size="12" fill="#5F5E5A">优化的集合计算</text>
+<rect x="604" y="198" width="132" height="50" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<rect x="600" y="202" width="132" height="50" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<rect x="596" y="206" width="132" height="50" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="662" y="223.2" font-size="12" font-weight="500" fill="#633806">命名空间</text>
+<text x="662" y="238.8" font-size="12" font-weight="500" fill="#633806">快照</text>
+<path d="M670 198 L670 152" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="655" y="165.6" width="30" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="670" y="175" font-size="11" fill="#5F5E5A">读取</text>
+<rect x="600" y="334" width="140" height="60" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<text x="670" y="355.6" font-size="13" font-weight="500" fill="#085041">定期离线</text>
+<text x="670" y="372.4" font-size="13" font-weight="500" fill="#085041">管道</text>
+<path d="M662 334 L662 256" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="647" y="285.6" width="30" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="662" y="295" font-size="11" fill="#5F5E5A">导出</text>
+<rect x="24" y="312" width="532" height="128" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="40" y="424" font-size="12" style="text-anchor:start" fill="#5F5E5A">Spanner 全球数据库系统</text>
+<path d="M36 341 A52 9 0 0 1 140 341 L140 387 A52 9 0 0 1 36 387 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M36 341 A52 9 0 0 0 140 341" fill="none" stroke="#854F0B" stroke-width="1"/>
+<text x="88" y="360.7" font-size="12" font-weight="500" fill="#633806">命名空间</text>
+<text x="88" y="376.3" font-size="12" font-weight="500" fill="#633806">配置</text>
+<path d="M150 341 A52 9 0 0 1 254 341 L254 387 A52 9 0 0 1 150 387 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M150 341 A52 9 0 0 0 254 341" fill="none" stroke="#854F0B" stroke-width="1"/>
+<text x="202" y="360.7" font-size="12" font-weight="500" fill="#633806">命名空间 1</text>
+<text x="202" y="376.3" font-size="12" font-weight="500" fill="#633806">关系元组</text>
+<text x="272" y="364" font-size="18" font-weight="500" fill="#2C2C2A">…</text>
+<path d="M290 341 A52 9 0 0 1 394 341 L394 387 A52 9 0 0 1 290 387 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M290 341 A52 9 0 0 0 394 341" fill="none" stroke="#854F0B" stroke-width="1"/>
+<text x="342" y="360.7" font-size="12" font-weight="500" fill="#633806">命名空间 N</text>
+<text x="342" y="376.3" font-size="12" font-weight="500" fill="#633806">关系元组</text>
+<path d="M446 341 A46 9 0 0 1 538 341 L538 387 A46 9 0 0 1 446 387 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M446 341 A46 9 0 0 0 538 341" fill="none" stroke="#854F0B" stroke-width="1"/>
+<text x="492" y="368.5" font-size="12" font-weight="500" fill="#633806">changelog</text>
+<path d="M88 282 L88 332" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)" marker-start="url(#s898781)"/>
+<text x="96" y="298" font-size="12" style="text-anchor:start" fill="#5F5E5A">读/写</text>
+<path d="M202 282 L202 332" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)" marker-start="url(#s898781)"/>
+<text x="210" y="298" font-size="12" style="text-anchor:start" fill="#5F5E5A">读/写</text>
+<path d="M342 282 L342 332" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)" marker-start="url(#s898781)"/>
+<path d="M384 262 L466 262 Q472 262 472 268 L472 332" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="457" y="288.6" width="30" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="472" y="298" font-size="11" fill="#5F5E5A">追加</text>
+<path d="M512 332 L512 234" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="500" y="252.6" width="24" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="512" y="262" font-size="11" fill="#5F5E5A">tail</text>
+<path d="M556 364 L600 364" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)" marker-start="url(#s898781)"/>
+<text x="578" y="350" font-size="12" fill="#5F5E5A">读取</text>
+<text x="578" y="380" font-size="12" fill="#5F5E5A">写入</text>
+</svg>

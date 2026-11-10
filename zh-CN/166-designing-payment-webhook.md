@@ -35,7 +35,7 @@ references:
 
 异步设计 + 重试 + 排队 + 可观察性 + 安全性
 
-![](https://tp-misc.b-cdn.net/blockeden/designing-payment-webhook@2x.webp)
+![支付 webhook 架构](../images/payment-webhook-architecture.zh-CN.svg)
 
 ## 3. 功能和组件
 

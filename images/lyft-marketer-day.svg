@@ -1,0 +1,27 @@
+<svg width="100%" viewBox="0 0 720 420" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">A day in the life of a digital marketer</title>
+<desc id="d">A semicircle split into three slices. Review performance and identify opportunities are small slices labelled Analysis; execute changes is the largest slice, labelled Execution, so most of the day goes to execution.</desc>
+<defs><marker id="m5F5E5A" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="719" height="419" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<path d="M360 330 L110.0 330.0 A250 250 0 0 1 133.4 224.3 Z" fill="#B8B2F0" stroke="#FFFFFF" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M360 330 L133.4 224.3 A250 250 0 0 1 295.3 88.5 Z" fill="#D9D6FA" stroke="#FFFFFF" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M360 330 L295.3 88.5 A250 250 0 0 1 610.0 330.0 Z" fill="#EFEDE6" stroke="#FFFFFF" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M86 334 L634 334" stroke="#2C2C2A" stroke-width="6" stroke-linecap="butt"/>
+<circle cx="196" cy="265.6" r="12" fill="#534AB7"/>
+<text x="196" y="265.6" font-size="13" font-weight="600" fill="#FFFFFF">1</text>
+<text x="196" y="292.5" font-size="13" font-weight="500" fill="#3C3489">Review</text>
+<text x="196" y="310.7" font-size="13" font-weight="500" fill="#3C3489">performance</text>
+<circle cx="249.4" cy="170.2" r="12" fill="#534AB7"/>
+<text x="249.4" y="170.2" font-size="13" font-weight="600" fill="#FFFFFF">2</text>
+<text x="249.4" y="197.1" font-size="13" font-weight="500" fill="#3C3489">Identify</text>
+<text x="249.4" y="215.3" font-size="13" font-weight="500" fill="#3C3489">opportunities</text>
+<circle cx="452.3" cy="183.8" r="12" fill="#5F5E5A"/>
+<text x="452.3" y="183.8" font-size="13" font-weight="600" fill="#FFFFFF">3</text>
+<text x="452.3" y="210.7" font-size="13" font-weight="500" fill="#2C2C2A">Execute</text>
+<text x="452.3" y="228.9" font-size="13" font-weight="500" fill="#2C2C2A">changes</text>
+<path d="M84.7 291.3 A278 278 0 0 1 360.0 52.0" fill="none" stroke="#5F5E5A" stroke-width="2" stroke-dasharray="1 6" stroke-linecap="round" marker-end="url(#m5F5E5A)"/>
+<path d="M360.0 52.0 A278 278 0 0 1 636.5 300.9" fill="none" stroke="#5F5E5A" stroke-width="2" stroke-dasharray="1 6" stroke-linecap="round"/>
+<text x="120.4" y="149.5" font-size="14" font-weight="500" fill="#3C3489" transform="rotate(-53 120.4 149.5)">Analysis</text>
+<text x="589.8" y="137.2" font-size="14" font-weight="500" fill="#444441" transform="rotate(50 589.8 137.2)">Execution</text>
+<text x="360" y="386" font-size="16" font-weight="500" fill="#2C2C2A">A day in the life of a digital marketer</text>
+</svg>

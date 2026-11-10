@@ -22,7 +22,7 @@ Disclaimer: All things below are collected from public sources or purely origina
 
 ## Architecture
 
-![uber architecture](https://res.cloudinary.com/dohtidfqh/image/upload/v1546574738/web-guiguio/uber-architecture_2.jpg)
+![Uber architecture](../images/uber-architecture.svg)
 
 ## Why micro services?
 

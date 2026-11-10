@@ -11,7 +11,7 @@ tags:
 description: "五种并发模型——单线程异步、共享内存加锁、CSP、Actor 模型、软件事务内存（STM）——在状态共享、组合性和故障模式上的比较。附各自适用场景，以及为何语言选择往往比问题本身更能决定采用哪种模型。"
 ---
 
-![](https://res.cloudinary.com/dohtidfqh/image/upload/v1571262011/web-guiguio/Concurrency_Models_1.png)
+![五种并发模型示意图：单线程、多线程加锁、CSP、Actor、STM](../images/concurrency-models-overview.zh-CN.svg)
 
 并发模型是对一个问题的不同回答：**独立的执行流如何在不破坏彼此数据的前提下协调？** 每种模型在性能、可组合性和会产生的 bug 类型之间做出了不同的权衡。语言选择通常会强制模型——你可以在任何语言里写 CSP，但 Go 让它成为阻力最小的路径；你可以在 Erlang 里做线程，但没人真这么干。
 

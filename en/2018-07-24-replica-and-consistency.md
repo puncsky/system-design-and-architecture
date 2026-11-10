@@ -16,7 +16,7 @@ large dataset ⟶ scale out ⟶ data shard / partition ⟶ 1) routing for data a
 
 ## Consistency trade-offs for CAP theorem
 
-![CAP Theorem](https://res.cloudinary.com/dohtidfqh/image/upload/v1566606463/web-guiguio/Es1houG50FNQoCgGUo2fGwMPriezTtKqliSVMW9F11CN2W7SSHcI3li61Qdnw0FoOm0UfitYOvbAiJBvJXLmAmrjRH75VDO54uGucIynJrdR2RV51GboaZ17bc5pZt88_GK43PT0.png)
+![CAP theorem: AP, CP and AC scenarios with two replicas](../images/replica-consistency-cap-scenarios.svg)
 
 - Consistency: all nodes see the same data at the same time
 - Availability: a guarantee that every request receives a response about whether it succeeded or failed

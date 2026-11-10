@@ -21,7 +21,7 @@ references:
 
 互联网规模的网络服务处理来自全球的高流量。然而，单个服务器在同一时间只能处理有限数量的请求。因此，通常会有一个服务器集群或大型服务器集群来共同承担流量。问题来了：如何路由这些请求，以便每个主机能够均匀地接收和处理请求？
 
-![](https://res.cloudinary.com/dohtidfqh/image/upload/v1571516030/web-guiguio/01-s_71d9a66b3d35f2559b6febf625b03c50d20a1b0c11818ddb19fbbadeafbd11d5_1567646267795_image.png)
+![从用户经 GSLB、L4 LB、L7 LB 和 Bandaid 到达服务的请求路径](../images/l7-lb-request-path.zh-CN.svg)
 
 由于从用户到服务器之间有许多跳数和负载均衡器层，因此这次我们的设计要求是
 
@@ -39,17 +39,17 @@ references:
 
 随机和轮询通过请求分配流量。然而，实际负载并不是每个请求 - 有些在 CPU 或线程利用率上很重，而有些则很轻。
 
-![](https://res.cloudinary.com/dohtidfqh/image/upload/v1571519977/web-guiguio/round-robin_power-of-two-choices.png)
+![轮询把旅客依次送往 A、B、C 三个队列](../images/l7-lb-round-robin.zh-CN.svg)
 
 为了更准确地评估负载，负载均衡器必须维护每个后端服务器的观察到的活动请求数量、连接数量或请求处理延迟的本地状态。基于这些信息，我们可以使用诸如最少连接、最少时间和随机 N 选择等分配算法：
 
 **最少连接**：请求被传递给活动连接数最少的服务器。
 
-![](https://res.cloudinary.com/dohtidfqh/image/upload/v1571520022/web-guiguio/least-conn_power-of-two-choices.png)
+![最少连接把旅客送往最短的队列](../images/l7-lb-least-conn.zh-CN.svg)
 
 **基于延迟（最少时间）**：请求被传递给平均响应时间最少和活动连接数最少的服务器，同时考虑服务器的权重。
 
-![](https://res.cloudinary.com/dohtidfqh/image/upload/v1571520022/web-guiguio/least-conn_power-of-two-choices.png)
+![最少连接把旅客送往最短的队列](../images/l7-lb-least-conn.zh-CN.svg)
 
 然而，这两种算法仅在只有一个负载均衡器的情况下效果良好。如果有多个负载均衡器，可能会出现 **羊群效应**。也就是说，所有负载均衡器都注意到某个服务瞬时更快，然后都向该服务发送请求。
 
@@ -57,7 +57,7 @@ references:
 
 ### 分布式环境
 
-![](https://res.cloudinary.com/dohtidfqh/image/upload/v1571516504/web-guiguio/02-s_71d9a66b3d35f2559b6febf625b03c50d20a1b0c11818ddb19fbbadeafbd11d5_1567573729122_image.png)
+![单个 LB 面对服务器池，与多个 LB 连接到每台服务器的对比](../images/l7-lb-local-vs-real.zh-CN.svg)
 
 本地负载均衡器对全局下游和上游状态并不知情，包括
 
@@ -76,13 +76,13 @@ references:
 
 Dropbox Bandaid 团队选择了第三种选项，因为它很好地适应了他们现有的 _随机 N 选择_ 方法。
 
-![](https://res.cloudinary.com/dohtidfqh/image/upload/v1571519434/web-guiguio/03-s_36fd13246bc17faff0558a94f22b02b1467d2b44c17456e7ff5ae7d2f7c84c87_1567054697304_microservice2.png)
+![Bandaid 位于多个微服务之前](../images/l7-lb-bandaid-services.zh-CN.svg)
 
 然而，他们并没有像原始的 _随机 N 选择_ 那样使用本地状态，而是通过响应头使用来自后端服务器的实时全局信息。
 
 **服务器利用率**：后端服务器配置了最大容量并计算正在进行的请求，然后计算利用率百分比，范围从 0.0 到 1.0。
 
-![](https://res.cloudinary.com/dohtidfqh/image/upload/v1571521419/web-guiguio/04-s_71d9a66b3d35f2559b6febf625b03c50d20a1b0c11818ddb19fbbadeafbd11d5_1567652883718_image.png)
+![服务器通过 X-Bandaid-Utilization 响应头向 Bandaid 上报利用率](../images/l7-lb-bandaid-utilization.zh-CN.svg)
 
 需要考虑两个问题：
 

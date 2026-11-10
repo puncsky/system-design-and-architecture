@@ -33,7 +33,7 @@ references:
 
 async design + retry + queuing + observability + security
 
-![](https://tp-misc.b-cdn.net/blockeden/designing-payment-webhook@2x.webp)
+![Payment webhook architecture](../images/payment-webhook-architecture.svg)
 
 ## 3. Features and Components
 

@@ -36,7 +36,7 @@ references:
 - 结果聚合器
 - 各种联想后端
 
-![Cleo 架构](https://res.cloudinary.com/dohtidfqh/image/upload/v1570321528/web-guiguio/cleo.png)
+![Cleo 架构](../images/cleo-architecture.zh-CN.svg)
 
 ## 结果聚合器
 
@@ -47,7 +47,7 @@ references:
 3. `ForwardIndex<文档, 前缀或术语>`：之前的布隆过滤器可能会返回假阳性，现在我们查询实际文档以拒绝它们。
 4. `scorer(文档):相关性`：每个分区返回所有真实命中及其评分。然后我们进行聚合和排名。
 
-![](https://res.cloudinary.com/dohtidfqh/image/upload/v1570758116/web-guiguio/cleo-search-flow_0.jpg)
+![Cleo 单分区搜索流程](../images/cleo-search-flow.zh-CN.svg)
 
 ## 性能
 

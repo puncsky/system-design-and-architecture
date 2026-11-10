@@ -40,7 +40,7 @@ references:
 
 那么 Lambda 架构是
 
-![Lambda 架构](/img/lambda-architecture.png)
+![Lambda 架构](../images/lambda-architecture.zh-CN.svg)
 
 ```txt
 批处理视图 = 函数（批处理作业执行时的所有数据）
@@ -51,7 +51,7 @@ references:
 
 ==Lambda 架构 = CQRS（批处理层 + 服务层） + 快速层==
 
-![适用于大数据系统的 Lambda 架构](https://res.cloudinary.com/dohtidfqh/image/upload/v1548840018/web-guiguio/lambda-architecture-for-big-data-systems.png)
+![适用于大数据系统的 Lambda 架构](../images/lambda-architecture-big-data.zh-CN.svg)
 
 ```
 

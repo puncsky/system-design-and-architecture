@@ -1,0 +1,36 @@
+<svg width="100%" viewBox="0 0 720 390" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">推送通知登录确认</title>
+<desc id="d">Web 应用通过服务器创建会话并订阅（1），服务器在消息队列上订阅（1）。服务器通过 Apple Push Notification 或 Google Cloud Messaging 向移动应用发起询问（2）；移动应用把应答发回服务器（3），服务器再把结果发布到消息队列（4）。</desc>
+<defs><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="719" height="389" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<rect x="24" y="56" width="120" height="44" rx="22" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="84" y="78" font-size="14" font-weight="500" fill="#2C2C2A">Web 应用</text>
+<rect x="24" y="170" width="120" height="44" rx="22" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="84" y="192" font-size="14" font-weight="500" fill="#2C2C2A">移动应用</text>
+<rect x="320" y="30" width="120" height="210" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="380" y="135" font-size="14" font-weight="500" fill="#0C447C">服务器</text>
+<path d="M580 106 L690 106 A10 24 0 0 1 690 154 L580 154 A10 24 0 0 1 580 106 Z" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<path d="M690 106 A10 24 0 0 0 690 154" fill="none" stroke="#0F6E56" stroke-width="1"/>
+<text x="625" y="130" font-size="13" font-weight="500" fill="#085041">消息队列</text>
+<rect x="250" y="310" width="260" height="56" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<text x="380" y="329.6" font-size="13" font-weight="500" fill="#712B13">Apple Push Notification</text>
+<text x="380" y="346.4" font-size="13" font-weight="500" fill="#712B13">Google Cloud Messaging</text>
+<path d="M144 78 L320 78" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="183.1" y="68.6" width="97.8" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="232" y="78" font-size="11" fill="#5F5E5A">1. 创建会话并订阅</text>
+<path d="M440 73 L629 73 Q635 73 635 79 L635 106" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="516.1" y="63.6" width="42.8" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="537.5" y="73" font-size="11" fill="#5F5E5A">1. 订阅</text>
+<path d="M380 240 L380 310" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="358.6" y="265.6" width="42.8" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="380" y="275" font-size="11" fill="#5F5E5A">2. 询问</text>
+<path d="M250 338 L90 338 Q84 338 84 332 L84 214" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="145.6" y="328.6" width="42.8" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="167" y="338" font-size="11" fill="#5F5E5A">2. 询问</text>
+<path d="M144 192 L320 192" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="210.6" y="182.6" width="42.8" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="232" y="192" font-size="11" fill="#5F5E5A">3. 应答</text>
+<path d="M440 197 L629 197 Q635 197 635 191 L635 154" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="516.1" y="187.6" width="42.8" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="537.5" y="197" font-size="11" fill="#5F5E5A">4. 发布</text>
+</svg>

@@ -11,7 +11,7 @@ references:
   - http://blog.unibulmerchantservices.com/how-visas-payment-system-works/
 ---
 
-![Credit Card Payment Processing](https://res.cloudinary.com/dohtidfqh/image/upload/v1587965500/web-guiguio/Credit_Card_Payment_Processing.png)
+![Credit card payment processing: cardholder, merchant, acquirer, network and issuer](../images/credit-card-payment-flow.svg)
 
 ## 5 Parties
 

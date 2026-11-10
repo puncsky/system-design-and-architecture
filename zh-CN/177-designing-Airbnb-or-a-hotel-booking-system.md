@@ -28,7 +28,7 @@ references:
 
 ## 架构
 
-![](https://res.cloudinary.com/dohtidfqh/image/upload/v1570439920/web-guiguio/hotel-booking-system_2.png)
+![酒店预订系统架构](../images/hotel-booking-architecture.zh-CN.svg)
 
 ## 组件
 
@@ -48,7 +48,7 @@ references:
 
 如果这是一个酒店预订系统，那么它可能会发布到 GDS、聚合器和批发商等预订渠道。
 
-![酒店预订生态系统](https://res.cloudinary.com/dohtidfqh/image/upload/v1570439485/web-guiguio/scheme.png)
+![酒店预订生态系统](../images/hotel-booking-ecosystem.zh-CN.svg)
 
 为了在这些地方同步数据，我们可以
 

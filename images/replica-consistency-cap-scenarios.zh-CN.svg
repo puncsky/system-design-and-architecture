@@ -1,0 +1,59 @@
+<svg width="100%" viewBox="0 0 720 336" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">CAP 定理的三种情形</title>
+<desc id="d">三个面板，每个都有两个副本和一个从两者读取的用户。AP，无 C：网络分区把 State=1 与 State=2 隔开，两者都可用，用户看到 1 和 2。CP，无 A：分区隔开两者，State=1 不可用，用户只能看到 2。AC，无 P：两个副本相连且都是 State=1，用户看到 1。</desc>
+<defs><marker id="m5F5E5A" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="719" height="335" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<rect x="16" y="16" width="224" height="296" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1"/>
+<text x="128" y="38" font-size="14" font-weight="600" fill="#2C2C2A">AP，无 C</text>
+<rect x="30" y="78" width="80" height="62" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="70" y="97" font-size="13" font-weight="500" fill="#633806">State=1</text>
+<circle cx="70" cy="121" r="9" fill="#3B6D11" stroke="#3B6D11" stroke-width="1"/>
+<polyline points="65.5,121.5 68.5,124.5 74.5,117.5" fill="none" stroke="#FFFFFF" stroke-width="1.9" stroke-linejoin="round"/>
+<rect x="146" y="78" width="80" height="62" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="186" y="97" font-size="13" font-weight="500" fill="#633806">State=2</text>
+<circle cx="186" cy="121" r="9" fill="#3B6D11" stroke="#3B6D11" stroke-width="1"/>
+<polyline points="181.5,121.5 184.5,124.5 190.5,117.5" fill="none" stroke="#FFFFFF" stroke-width="1.9" stroke-linejoin="round"/>
+<path d="M128 66 L128 152" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-dasharray="4 4"/>
+<text x="128" y="58" font-size="11" fill="#5F5E5A">分区</text>
+<path d="M70 140 L70 168 Q70 174 76 174 L112 174 Q118 174 118 180 L118 212" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#m5F5E5A)"/>
+<path d="M186 140 L186 168 Q186 174 180 174 L144 174 Q138 174 138 180 L138 212" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#m5F5E5A)"/>
+<circle cx="128" cy="226" r="10" fill="#B4B2AA" stroke="#5F5E5A" stroke-width="1"/>
+<path d="M107 262 Q107 240 128 240 Q149 240 149 262 Z" fill="#B4B2AA" stroke="#5F5E5A" stroke-width="1"/>
+<text x="128" y="286" font-size="12" fill="#444441">看到 1 和 2</text>
+<rect x="248" y="16" width="224" height="296" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1"/>
+<text x="360" y="38" font-size="14" font-weight="600" fill="#2C2C2A">CP，无 A</text>
+<rect x="262" y="78" width="80" height="62" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="302" y="97" font-size="13" font-weight="500" fill="#633806">State=1</text>
+<circle cx="302" cy="121" r="9" fill="#A32D2D" stroke="#A32D2D" stroke-width="1"/>
+<path d="M298.5 117.5 L305.5 124.5" fill="none" stroke="#FFFFFF" stroke-width="1.9"/>
+<path d="M298.5 124.5 L305.5 117.5" fill="none" stroke="#FFFFFF" stroke-width="1.9"/>
+<rect x="378" y="78" width="80" height="62" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="418" y="97" font-size="13" font-weight="500" fill="#633806">State=2</text>
+<circle cx="418" cy="121" r="9" fill="#3B6D11" stroke="#3B6D11" stroke-width="1"/>
+<polyline points="413.5,121.5 416.5,124.5 422.5,117.5" fill="none" stroke="#FFFFFF" stroke-width="1.9" stroke-linejoin="round"/>
+<path d="M360 66 L360 152" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-dasharray="4 4"/>
+<text x="360" y="58" font-size="11" fill="#5F5E5A">分区</text>
+<path d="M302 140 L302 168 Q302 174 308 174 L344 174 Q350 174 350 180 L350 212" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#m5F5E5A)"/>
+<path d="M418 140 L418 168 Q418 174 412 174 L376 174 Q370 174 370 180 L370 212" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#m5F5E5A)"/>
+<circle cx="360" cy="226" r="10" fill="#B4B2AA" stroke="#5F5E5A" stroke-width="1"/>
+<path d="M339 262 Q339 240 360 240 Q381 240 381 262 Z" fill="#B4B2AA" stroke="#5F5E5A" stroke-width="1"/>
+<text x="360" y="277.6" font-size="12" fill="#444441">State=1 不可用，</text>
+<text x="360" y="294.4" font-size="12" fill="#444441">因此只能看到 2</text>
+<rect x="480" y="16" width="224" height="296" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1"/>
+<text x="592" y="38" font-size="14" font-weight="600" fill="#2C2C2A">AC，无 P</text>
+<rect x="494" y="78" width="80" height="62" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="534" y="97" font-size="13" font-weight="500" fill="#633806">State=1</text>
+<circle cx="534" cy="121" r="9" fill="#3B6D11" stroke="#3B6D11" stroke-width="1"/>
+<polyline points="529.5,121.5 532.5,124.5 538.5,117.5" fill="none" stroke="#FFFFFF" stroke-width="1.9" stroke-linejoin="round"/>
+<rect x="610" y="78" width="80" height="62" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="650" y="97" font-size="13" font-weight="500" fill="#633806">State=1</text>
+<circle cx="650" cy="121" r="9" fill="#3B6D11" stroke="#3B6D11" stroke-width="1"/>
+<polyline points="645.5,121.5 648.5,124.5 654.5,117.5" fill="none" stroke="#FFFFFF" stroke-width="1.9" stroke-linejoin="round"/>
+<path d="M592 109 L578 109" fill="none" stroke="#5F5E5A" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#m5F5E5A)"/>
+<path d="M592 109 L606 109" fill="none" stroke="#5F5E5A" stroke-width="1.8" stroke-linejoin="round" marker-end="url(#m5F5E5A)"/>
+<path d="M534 140 L534 168 Q534 174 540 174 L576 174 Q582 174 582 180 L582 212" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#m5F5E5A)"/>
+<path d="M650 140 L650 168 Q650 174 644 174 L608 174 Q602 174 602 180 L602 212" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#m5F5E5A)"/>
+<circle cx="592" cy="226" r="10" fill="#B4B2AA" stroke="#5F5E5A" stroke-width="1"/>
+<path d="M571 262 Q571 240 592 240 Q613 240 613 262 Z" fill="#B4B2AA" stroke="#5F5E5A" stroke-width="1"/>
+<text x="592" y="286" font-size="12" fill="#444441">看到 1</text>
+</svg>

@@ -1,0 +1,90 @@
+<svg width="100%" viewBox="0 0 760 490" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">SpiceDB architecture</title>
+<desc id="d">Inside a SpiceDB node an HTTP /v1/ gateway feeds the authzed.api.v1.* gRPC API, which routes to eight services. CheckPermission, ExpandPermissionTree and LookupResources go through the Dispatcher to the Check, Expand and Lookup graph engines, which read the datastore (CockroachDB) or dispatch sub-requests to another SpiceDB node through dispatch.v1.*; the relationship and schema read/write services go straight to the datastore.</desc>
+<defs><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="m3B6D11" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#3B6D11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="m185FA5" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#185FA5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="m993556" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#993556" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="m534AB7" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#534AB7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="m0F6E56" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#0F6E56" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="m854F0B" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#854F0B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="759" height="489" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<rect x="22" y="32" width="600" height="434" rx="6" fill="#FFFFFF" stroke="#5F5E5A" stroke-width="1.5"/>
+<rect x="16" y="38" width="600" height="428" rx="6" fill="#FFFFFF" stroke="#5F5E5A" stroke-width="1.5"/>
+<text x="32" y="56" font-size="14" font-weight="600" style="text-anchor:start" fill="#2C2C2A">SpiceDB</text>
+<rect x="28" y="167" width="116" height="40" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="86" y="187" font-size="12" font-weight="500" fill="#2C2C2A">HTTP /v1/</text>
+<rect x="28" y="241" width="116" height="40" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="86" y="261" font-size="12" fill="#2C2C2A">authzed.api.v1.*</text>
+<path d="M86 207 L86 241" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="176" y="52" width="178" height="398" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="265" y="68" font-size="11" fill="#5F5E5A">internal/services/v1</text>
+<rect x="188" y="86" width="154" height="32" rx="8" fill="#EAF3DE" stroke="#3B6D11" stroke-width="1"/>
+<text x="265" y="102" font-size="12" fill="#27500A">CheckPermission</text>
+<rect x="188" y="128" width="154" height="32" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="265" y="144" font-size="12" fill="#0C447C">ExpandPermissionTree</text>
+<rect x="188" y="170" width="154" height="32" rx="8" fill="#FBEAF0" stroke="#993556" stroke-width="1"/>
+<text x="265" y="186" font-size="12" fill="#72243E">LookupResources</text>
+<rect x="188" y="236" width="154" height="32" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="265" y="252" font-size="12" fill="#3C3489">WriteRelationships</text>
+<rect x="188" y="278" width="154" height="32" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="265" y="294" font-size="12" fill="#3C3489">ReadRelationships</text>
+<rect x="188" y="320" width="154" height="32" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="265" y="336" font-size="12" fill="#3C3489">DeleteRelationships</text>
+<rect x="188" y="362" width="154" height="32" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="265" y="378" font-size="12" fill="#3C3489">ReadSchema</text>
+<rect x="188" y="404" width="154" height="32" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="265" y="420" font-size="12" fill="#3C3489">WriteSchema</text>
+<path d="M144 261 L160 261" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M160 102 L160 420" fill="none" stroke="#898781" stroke-width="1.5"/>
+<path d="M160 102 L188 102" fill="none" stroke="#3B6D11" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m3B6D11)"/>
+<path d="M160 144 L188 144" fill="none" stroke="#185FA5" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m185FA5)"/>
+<path d="M160 186 L188 186" fill="none" stroke="#993556" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m993556)"/>
+<path d="M160 252 L188 252" fill="none" stroke="#534AB7" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m534AB7)"/>
+<path d="M160 294 L188 294" fill="none" stroke="#534AB7" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m534AB7)"/>
+<path d="M160 336 L188 336" fill="none" stroke="#534AB7" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m534AB7)"/>
+<path d="M160 378 L188 378" fill="none" stroke="#534AB7" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m534AB7)"/>
+<path d="M160 420 L188 420" fill="none" stroke="#534AB7" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m534AB7)"/>
+<rect x="388" y="52" width="216" height="110" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="496" y="68" font-size="11" fill="#5F5E5A">internal/dispatch</text>
+<rect x="402" y="88" width="188" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<text x="496" y="116" font-size="14" font-weight="500" fill="#085041">Dispatcher</text>
+<path d="M342 102 L402 102" fill="none" stroke="#3B6D11" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m3B6D11)"/>
+<path d="M342 144 L364 144 L364 116 L402 116" fill="none" stroke="#185FA5" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m185FA5)"/>
+<path d="M342 186 L374 186 L374 130 L402 130" fill="none" stroke="#993556" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m993556)"/>
+<rect x="388" y="178" width="216" height="158" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="402" y="257" font-size="11" fill="#5F5E5A" transform="rotate(-90 402 257)">internal/graph</text>
+<rect x="412" y="214" width="64" height="28" rx="8" fill="#EAF3DE" stroke="#3B6D11" stroke-width="1"/>
+<text x="444" y="228" font-size="12" font-weight="500" fill="#27500A">Check</text>
+<rect x="470" y="252" width="64" height="28" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="502" y="266" font-size="12" font-weight="500" fill="#0C447C">Expand</text>
+<rect x="528" y="290" width="64" height="28" rx="8" fill="#FBEAF0" stroke="#993556" stroke-width="1"/>
+<text x="560" y="304" font-size="12" font-weight="500" fill="#72243E">Lookup</text>
+<path d="M444 144 L444 214" fill="none" stroke="#3B6D11" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m3B6D11)"/>
+<path d="M502 144 L502 252" fill="none" stroke="#185FA5" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m185FA5)"/>
+<path d="M560 144 L560 290" fill="none" stroke="#993556" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m993556)"/>
+<rect x="388" y="352" width="216" height="86" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="496" y="424" font-size="11" fill="#5F5E5A">internal/datastore</text>
+<rect x="402" y="368" width="188" height="40" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="496" y="388" font-size="14" font-weight="500" fill="#633806">datastore</text>
+<path d="M444 242 L444 368" fill="none" stroke="#3B6D11" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m3B6D11)"/>
+<path d="M502 280 L502 368" fill="none" stroke="#185FA5" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m185FA5)"/>
+<path d="M560 318 L560 368" fill="none" stroke="#993556" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m993556)"/>
+<path d="M342 252 L364 252 Q370 252 370 258 L370 382 Q370 388 376 388 L402 388" fill="none" stroke="#534AB7" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m534AB7)"/>
+<path d="M342 294 L370 294" fill="none" stroke="#534AB7" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M342 336 L370 336" fill="none" stroke="#534AB7" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M342 378 L370 378" fill="none" stroke="#534AB7" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M342 420 L364 420 Q370 420 370 414 L370 388" fill="none" stroke="#534AB7" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="648" y="84" width="100" height="48" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<rect x="640" y="92" width="100" height="48" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<text x="690" y="116" font-size="12" font-weight="500" fill="#085041">dispatch.v1.*</text>
+<path d="M640 116 L590 116" fill="none" stroke="#0F6E56" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m0F6E56)"/>
+<path d="M476 228 L654 228 Q660 228 660 222 L660 140" fill="none" stroke="#3B6D11" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m3B6D11)"/>
+<path d="M534 266 L684 266 Q690 266 690 260 L690 140" fill="none" stroke="#185FA5" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m185FA5)"/>
+<path d="M592 304 L714 304 Q720 304 720 298 L720 140" fill="none" stroke="#993556" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m993556)"/>
+<rect x="626" y="8" width="128" height="62" rx="6" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="690" y="23.6" font-size="11" fill="#2C2C2A">Requests are usually</text>
+<text x="690" y="39" font-size="11" fill="#2C2C2A">dispatched to another</text>
+<text x="690" y="54.4" font-size="11" fill="#2C2C2A">SpiceDB node.</text>
+<polygon points="680,70 704,70 701,84" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1" stroke-linejoin="round"/>
+<path d="M648 358.4 A50 8.4 0 0 1 748 358.4 L748 401.6 A50 8.4 0 0 1 648 401.6 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M648 358.4 A50 8.4 0 0 0 748 358.4" fill="none" stroke="#854F0B" stroke-width="1"/>
+<path d="M640 366.4 A50 8.4 0 0 1 740 366.4 L740 409.6 A50 8.4 0 0 1 640 409.6 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M640 366.4 A50 8.4 0 0 0 740 366.4" fill="none" stroke="#854F0B" stroke-width="1"/>
+<text x="690" y="392.2" font-size="12" font-weight="500" fill="#633806">CockroachDB</text>
+<path d="M590 388 L640 388" fill="none" stroke="#854F0B" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m854F0B)"/>
+</svg>

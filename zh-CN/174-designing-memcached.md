@@ -21,7 +21,8 @@ references:
   - 答：为了存储更大规模的数据
     <img
     style={{ width: 200 }}
-    src="https://res.cloudinary.com/dohtidfqh/image/upload/v1569196539/web-guiguio/memcached2.png"
+    src="../images/memcached-combined-cache.zh-CN.svg"
+    alt="不使用 Memcached 时每个服务各有 64MB 空闲缓存；使用 Memcached 后两份空闲缓存合并成一个 128MB 缓存"
     />
 
 2. 用于小数据对象的内存存储
@@ -31,10 +32,7 @@ references:
 
 大局：客户端-服务器
 
-<img
-style={{ width: 256 }}
-src="https://res.cloudinary.com/dohtidfqh/image/upload/v1569196539/web-guiguio/memcached1.png"
-/>
+![Memcached 客户端-服务器全景](../images/memcached-client-server.zh-CN.svg)
 
 - 客户端
 - 给定一组 Memcached 服务器
@@ -45,7 +43,7 @@ src="https://res.cloudinary.com/dohtidfqh/image/upload/v1569196539/web-guiguio/m
 
 键值服务器由固定大小的哈希表 + 单线程处理程序 + 粗粒度锁组成
 
-![哈希表](https://res.cloudinary.com/dohtidfqh/image/upload/v1569197517/web-guiguio/900px-Hash_table_5_0_1_1_1_1_1_LL.svg.png)
+![采用分离链接法的哈希表](../images/memcached-hash-table.zh-CN.svg)
 
 如何处理冲突？主要有三种解决方法：
 

@@ -1,0 +1,41 @@
+<svg width="100%" viewBox="0 0 720 338" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">简化的事件驱动架构</title>
+<desc id="d">中介、事件队列和通道合并为一。事件经通道交给一个处理器；该处理器再送入第二个通道，第二个通道分发给三个处理器，其中一个处理器又送入第三个通道和最后一个处理器。</desc>
+<defs><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="719" height="337" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<rect x="20" y="30" width="130" height="40" rx="8" fill="#FBEAF0" stroke="#993556" stroke-width="1"/>
+<text x="85" y="50" font-size="13" font-weight="500" fill="#72243E">事件</text>
+<path d="M295 30 L425 30 A10 20 0 0 1 425 70 L295 70 A10 20 0 0 1 295 30 Z" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<path d="M425 30 A10 20 0 0 0 425 70" fill="none" stroke="#0F6E56" stroke-width="1"/>
+<text x="350" y="50" font-size="13" font-weight="500" fill="#085041">事件通道</text>
+<rect x="570" y="26" width="130" height="48" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="635" y="41.5" font-size="13" font-weight="500" fill="#0C447C">事件</text>
+<text x="635" y="58.5" font-size="13" font-weight="500" fill="#0C447C">处理器</text>
+<rect x="20" y="146" width="130" height="48" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="85" y="161.5" font-size="13" font-weight="500" fill="#0C447C">事件</text>
+<text x="85" y="178.4" font-size="13" font-weight="500" fill="#0C447C">处理器</text>
+<path d="M295 150 L425 150 A10 20 0 0 1 425 190 L295 190 A10 20 0 0 1 295 150 Z" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<path d="M425 150 A10 20 0 0 0 425 190" fill="none" stroke="#0F6E56" stroke-width="1"/>
+<text x="350" y="170" font-size="13" font-weight="500" fill="#085041">事件通道</text>
+<rect x="570" y="146" width="130" height="48" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="635" y="161.5" font-size="13" font-weight="500" fill="#0C447C">事件</text>
+<text x="635" y="178.4" font-size="13" font-weight="500" fill="#0C447C">处理器</text>
+<rect x="20" y="266" width="130" height="48" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="85" y="281.6" font-size="13" font-weight="500" fill="#0C447C">事件</text>
+<text x="85" y="298.4" font-size="13" font-weight="500" fill="#0C447C">处理器</text>
+<path d="M295 270 L425 270 A10 20 0 0 1 425 310 L295 310 A10 20 0 0 1 295 270 Z" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<path d="M425 270 A10 20 0 0 0 425 310" fill="none" stroke="#0F6E56" stroke-width="1"/>
+<text x="350" y="290" font-size="13" font-weight="500" fill="#085041">事件通道</text>
+<rect x="570" y="266" width="130" height="48" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="635" y="281.6" font-size="13" font-weight="500" fill="#0C447C">事件</text>
+<text x="635" y="298.4" font-size="13" font-weight="500" fill="#0C447C">处理器</text>
+<path d="M150 50 L285 50" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M435 50 L570 50" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M635 74 L635 104 Q635 110 629 110 L366 110 Q360 110 360 116 L360 150" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M285 170 L150 170" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M435 170 L570 170" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M217.5 170 L217.5 224 Q217.5 230 211.5 230 L91 230 Q85 230 85 236 L85 266" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<circle cx="217.5" cy="170" r="3" fill="#898781" stroke="#898781" stroke-width="1"/>
+<path d="M150 290 L285 290" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M435 290 L570 290" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+</svg>

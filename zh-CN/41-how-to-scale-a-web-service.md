@@ -16,7 +16,7 @@ references:
 
 《Art of Scalability》中的 AKF 规模立方体把 Web 服务扩展的全部词汇压缩为三个正交的轴。几乎每一个真实世界的扩展决策，都可以被放到这个立方体里的某个位置，这使得它成为思考容量问题的最有用的单一图示。
 
-![AKF 规模立方体](/img/akf-scale-cube.gif)
+![AKF 规模立方体：X、Y、Z 三个轴](../images/scale-web-service-akf-cube.zh-CN.svg)
 
 ## 三个轴
 

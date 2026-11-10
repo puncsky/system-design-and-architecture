@@ -25,20 +25,20 @@ Eliminates the metadata overhead by aggregating hundreds of thousands of images 
 
 ## Architecture
 
-![Facebook Photo Storage Architecture](https://res.cloudinary.com/dohtidfqh/image/upload/v1546633724/web-guiguio/facebook-photo-storage-architecture.png)
+![NFS-based Facebook photo storage architecture](../images/fb-photo-storage-architecture.svg)
 
 ## Data Layout
 
 index file (for quick memory load) + haystack store file containing needles.
 
 index file layout
-![index file layout 1](https://res.cloudinary.com/dohtidfqh/image/upload/v1546633724/web-guiguio/facebook-photo-storage-index-file-1.jpg)
+![Haystack index file layout](../images/fb-photo-storage-index-file.svg)
 
-![index file layout 2](https://res.cloudinary.com/dohtidfqh/image/upload/v1546633724/web-guiguio/facebook-photo-storage-storage-file.jpg)
+![Haystack store file layout](../images/fb-photo-storage-store-file.svg)
 
 haystack store file
 
-![haystack store file](https://res.cloudinary.com/dohtidfqh/image/upload/v1546633724/web-guiguio/facebook-photo-storage-storage-file.jpg)
+![Haystack store file layout](../images/fb-photo-storage-store-file.svg)
 
 ### CRUD Operations
 
@@ -51,8 +51,8 @@ haystack store file
 
 Upload
 
-![Photo Storage Upload](https://res.cloudinary.com/dohtidfqh/image/upload/v1546633724/web-guiguio/facebook-photo-storage-upload.png)
+![Photo storage upload flow](../images/fb-photo-storage-upload.svg)
 
 Download
 
-![Photo Storage Download](https://res.cloudinary.com/dohtidfqh/image/upload/v1546633724/web-guiguio/facebook-photo-storage-download.png)
+![Photo storage download flow](../images/fb-photo-storage-download.svg)

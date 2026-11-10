@@ -1,0 +1,39 @@
+<svg width="100%" viewBox="0 0 720 552" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">Lambda 架构的三层</title>
+<desc id="d">新数据同时进入保存主数据集的批处理层和维护实时视图的快速层。批处理层向保存批处理视图的服务层供数；查询同时由服务层和快速层来回答。</desc>
+<defs><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="719" height="551" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<rect x="250" y="24" width="220" height="52" rx="26" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="360" y="42.2" font-size="14" font-weight="500" fill="#2C2C2A">新数据</text>
+<text x="360" y="59.1" font-size="12" fill="#5F5E5A">011010010…</text>
+<path d="M360 76 L360 104" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M360 104 L171 104 Q165 104 165 110 L165 130" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M360 104 L499 104 Q505 104 505 110 L505 130" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="40" y="130" width="250" height="300" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="56" y="150" font-size="13" font-weight="500" style="text-anchor:start" fill="#2C2C2A">快速层</text>
+<rect x="60" y="174" width="210" height="64" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="165" y="206" font-size="14" font-weight="500" fill="#633806">实时视图</text>
+<rect x="60" y="262" width="210" height="64" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="165" y="294" font-size="14" font-weight="500" fill="#633806">实时视图</text>
+<rect x="60" y="350" width="210" height="64" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="165" y="382" font-size="14" font-weight="500" fill="#633806">实时视图</text>
+<rect x="330" y="130" width="350" height="120" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="346" y="150" font-size="13" font-weight="500" style="text-anchor:start" fill="#2C2C2A">批处理层</text>
+<path d="M395 175 A110 9 0 0 1 615 175 L615 221 A110 9 0 0 1 395 221 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M395 175 A110 9 0 0 0 615 175" fill="none" stroke="#854F0B" stroke-width="1"/>
+<text x="505" y="202.5" font-size="14" font-weight="500" fill="#633806">主数据集</text>
+<rect x="330" y="304" width="350" height="126" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="346" y="324" font-size="13" font-weight="500" style="text-anchor:start" fill="#2C2C2A">服务层</text>
+<rect x="346" y="346" width="96" height="64" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="394" y="378" font-size="14" font-weight="500" fill="#633806">批处理视图</text>
+<rect x="457" y="346" width="96" height="64" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="505" y="378" font-size="14" font-weight="500" fill="#633806">批处理视图</text>
+<rect x="568" y="346" width="96" height="64" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="616" y="378" font-size="14" font-weight="500" fill="#633806">批处理视图</text>
+<path d="M505 250 L505 304" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="230" y="480" width="260" height="48" rx="24" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="360" y="496.2" font-size="14" font-weight="500" fill="#2C2C2A">查询</text>
+<text x="360" y="513.1" font-size="12" fill="#5F5E5A">“有多少……？”</text>
+<path d="M265 480 L265 430" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M455 480 L455 430" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+</svg>

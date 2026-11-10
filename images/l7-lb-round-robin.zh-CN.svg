@@ -1,0 +1,48 @@
+<svg width="100%" viewBox="0 0 720 369" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">轮询不考虑队列长短</title>
+<desc id="d">8 个待分配请求到达 NGINX，后面有三台服务器 A、B、C，各自排着 5、3、4 位等待的旅客。轮询依次把第 1 位送往 A、第 2 位送往 B、第 3 位送往 C，不管各队列有多长、多慢。</desc>
+<defs><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="719" height="368" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<circle cx="31" cy="146" r="7" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1.25"/>
+<circle cx="49" cy="146" r="7" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1.25"/>
+<circle cx="67" cy="146" r="7" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1.25"/>
+<circle cx="85" cy="146" r="7" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1.25"/>
+<circle cx="103" cy="146" r="7" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1.25"/>
+<circle cx="121" cy="146" r="7" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1.25"/>
+<circle cx="139" cy="146" r="7" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1.25"/>
+<circle cx="157" cy="146" r="7" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1.25"/>
+<text x="94" y="170" font-size="11" fill="#5F5E5A">待分配请求</text>
+<rect x="200" y="124" width="84" height="44" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="242" y="146" font-size="14" font-weight="500" fill="#3C3489">NGINX</text>
+<path d="M172 146 L200 146" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<circle cx="560" cy="62" r="7" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1.25"/>
+<circle cx="542" cy="62" r="7" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1.25"/>
+<circle cx="524" cy="62" r="7" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1.25"/>
+<circle cx="506" cy="62" r="7" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1.25"/>
+<circle cx="488" cy="62" r="7" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1.25"/>
+<rect x="574" y="38" width="122" height="48" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="635" y="62" font-size="14" font-weight="500" fill="#0C447C">服务器 A</text>
+<circle cx="560" cy="146" r="7" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1.25"/>
+<circle cx="542" cy="146" r="7" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1.25"/>
+<circle cx="524" cy="146" r="7" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1.25"/>
+<rect x="574" y="122" width="122" height="48" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="635" y="146" font-size="14" font-weight="500" fill="#0C447C">服务器 B</text>
+<circle cx="560" cy="230" r="7" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1.25"/>
+<circle cx="542" cy="230" r="7" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1.25"/>
+<circle cx="524" cy="230" r="7" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1.25"/>
+<circle cx="506" cy="230" r="7" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1.25"/>
+<rect x="574" y="206" width="122" height="48" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="635" y="230" font-size="14" font-weight="500" fill="#0C447C">服务器 C</text>
+<path d="M284 146 L310 146 Q316 146 316 140 L316 68 Q316 62 322 62 L476 62" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<circle cx="372" cy="62" r="9" fill="#534AB7"/>
+<text x="372" y="62" font-size="10" font-weight="600" fill="#FFFFFF">1</text>
+<path d="M284 146 L512 146" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<circle cx="372" cy="146" r="9" fill="#534AB7"/>
+<text x="372" y="146" font-size="10" font-weight="600" fill="#FFFFFF">2</text>
+<path d="M284 146 L310 146 Q316 146 316 152 L316 224 Q316 230 322 230 L494 230" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<circle cx="372" cy="230" r="9" fill="#534AB7"/>
+<text x="372" y="230" font-size="10" font-weight="600" fill="#FFFFFF">3</text>
+<rect x="24" y="292" width="672" height="52" rx="8" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1"/>
+<text x="360" y="309" font-size="12" fill="#444441">使用轮询（Round Robin）时，NGINX 会把每位旅客依次送往下一个队列，</text>
+<text x="360" y="327" font-size="12" fill="#444441">无论该队列有多长、多慢。</text>
+</svg>

@@ -1,0 +1,33 @@
+<svg width="100%" viewBox="0 0 760 206" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">Request path from the user to the services</title>
+<desc id="d">Requests go through a GSLB (DNS) in external networks, then an L4 LB and an L7 LB in 20+ PoP locations, then the Bandaid L7 LB and the services in 3 main data centers. The left half is the downstream direction and the right half the upstream direction.</desc>
+<defs><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="759" height="205" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<text x="24" y="28" font-size="12" font-style="italic" style="text-anchor:start" fill="#444441">downstream direction</text>
+<text x="736" y="28" font-size="12" font-style="italic" style="text-anchor:end" fill="#444441">upstream direction</text>
+<rect x="24" y="54" width="92" height="56" rx="28" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="70" y="82" font-size="13" font-weight="500" fill="#2C2C2A">requests</text>
+<rect x="148" y="54" width="96" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="196" y="74.2" font-size="14" font-weight="500" fill="#3C3489">GSLB</text>
+<text x="196" y="91.1" font-size="12" fill="#534AB7">(DNS)</text>
+<rect x="276" y="54" width="84" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="318" y="82" font-size="14" font-weight="500" fill="#3C3489">L4 LB</text>
+<rect x="392" y="54" width="84" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="434" y="82" font-size="14" font-weight="500" fill="#3C3489">L7 LB</text>
+<rect x="508" y="54" width="100" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="558" y="72.9" font-size="14" font-weight="500" fill="#3C3489">Bandaid</text>
+<text x="558" y="91.1" font-size="14" font-weight="500" fill="#3C3489">L7 LB</text>
+<rect x="640" y="54" width="96" height="56" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="688" y="82" font-size="14" font-weight="500" fill="#0C447C">Services</text>
+<path d="M116 82 L148 82" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M244 82 L276 82" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M360 82 L392 82" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M476 82 L508 82" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M608 82 L640 82" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M24 138 V146 H244 V138" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="134" y="166" font-size="12" fill="#444441">external networks</text>
+<path d="M276 138 V146 H476 V138" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="376" y="166" font-size="12" fill="#444441">20+ PoP locations</text>
+<path d="M508 138 V146 H736 V138" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="622" y="166" font-size="12" fill="#444441">3 main data centers</text>
+</svg>

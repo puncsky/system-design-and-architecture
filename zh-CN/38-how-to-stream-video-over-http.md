@@ -32,4 +32,4 @@ references:
 
 ## 架构
 
-![HLS 架构](/img/hls-architecture.png)
+![HLS 架构：编码器、分段器、源 Web 服务器、HTTP 与客户端](../images/hls-streaming-architecture.zh-CN.svg)

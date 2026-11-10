@@ -15,7 +15,7 @@ references:
   - https://en.wikipedia.org/wiki/B%2B_tree
 ---
 
-![B 树与 B+ 树](https://res.cloudinary.com/dohtidfqh/image/upload/v1566606512/web-guiguio/bMjxUqmqcmytVpJLUd9gAVEzrmGEowwQdqV4bBARLvWVRauXH_IXY01atDp4xgAnRy89RhWy9yzThAUBwIU6xWwk9gHOZT9EdXLp7rwQ3SUFwyo_4O-uUkh34vkk424x13Mlzck.png)
+![4 阶 B 树与 B+ 树对比图](../images/b-tree-vs-b-plus-tree.zh-CN.svg)
 
 B 树和 B+ 树是支撑整个数据库行业的磁盘数据结构。MySQL（InnoDB）、PostgreSQL 索引、SQL Server、Oracle、SQLite 以及几乎所有文件系统的元数据存储都使用其中之一。一旦理解了结构上的差异，运维上的权衡就自然而然推导出来。
 

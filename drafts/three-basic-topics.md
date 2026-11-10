@@ -17,7 +17,7 @@ Here is a simple comparison of those protocols.
 Since RPC is super useful, some interviewers may ask how RPC works. The following picture is a brief answer.
 
 
-<p align="middle"><img src="https://puncsky.github.io/images/crack-the-system-design-interview/rpc.png" alt="RPC"></p>
+![RPC request and reply between client and server processes](../images/three-basic-topics-rpc.svg)
 
 * Stub procedure: a local procedure that marshals the procedure identifier and the arguments into a request message, and then to send via its communication module to the server. When the reply message arrives, it unmarshals the results.
 

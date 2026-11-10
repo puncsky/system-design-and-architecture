@@ -1,0 +1,25 @@
+<svg width="100%" viewBox="0 0 720 338" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">信用卡支付处理</title>
+<desc id="d">五个参与方：持卡人向商户付款，商户把支付交给收单机构，收单机构经电子支付网络（Visa、MasterCard、Discover、AmEx）连到发卡机构，持卡人也与发卡机构直接相连。</desc>
+<defs><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="719" height="337" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<text x="360" y="30" font-size="15" font-weight="600" fill="#2C2C2A">信用卡支付处理</text>
+<rect x="24" y="88" width="128" height="64" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="88" y="120" font-size="14" font-weight="500" fill="#2C2C2A">持卡人</text>
+<rect x="204" y="88" width="128" height="64" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="268" y="120" font-size="14" font-weight="500" fill="#0C447C">商户</text>
+<rect x="384" y="88" width="128" height="64" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="448" y="120" font-size="14" font-weight="500" fill="#0C447C">收单机构</text>
+<rect x="564" y="68" width="132" height="104" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="630" y="96.6" font-size="14" font-weight="500" fill="#3C3489">电子支付网络</text>
+<text x="630" y="113.5" font-size="12" fill="#534AB7">例如 Visa、</text>
+<text x="630" y="129.1" font-size="12" fill="#534AB7">MasterCard、</text>
+<text x="630" y="144.7" font-size="12" fill="#534AB7">Discover、AmEx</text>
+<rect x="294" y="250" width="132" height="64" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<text x="360" y="282" font-size="14" font-weight="500" fill="#712B13">发卡机构</text>
+<path d="M152 120 L204 120" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M332 120 L384 120" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M512 120 L564 120" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M630 172 L630 276 Q630 282 624 282 L426 282" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M88 152 L88 276 Q88 282 94 282 L294 282" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+</svg>

@@ -1,0 +1,38 @@
+<svg width="100%" viewBox="0 0 720 352" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">Layered architecture</title>
+<desc id="d">Four stacked layers: presentation, business and persistence layers each hold three modules, and the database layer at the bottom holds three databases.</desc>
+<defs><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="719" height="351" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<rect x="20" y="24" width="680" height="64" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1"/>
+<text x="40" y="56" font-size="14" font-weight="500" style="text-anchor:start" fill="#2C2C2A">Presentation Layer</text>
+<rect x="236" y="36" width="130" height="40" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="301" y="56" font-size="13" font-weight="500" fill="#0C447C">module</text>
+<rect x="396" y="36" width="130" height="40" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="461" y="56" font-size="13" font-weight="500" fill="#0C447C">module</text>
+<rect x="556" y="36" width="130" height="40" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="621" y="56" font-size="13" font-weight="500" fill="#0C447C">module</text>
+<rect x="20" y="104" width="680" height="64" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1"/>
+<text x="40" y="136" font-size="14" font-weight="500" style="text-anchor:start" fill="#2C2C2A">Business Layer</text>
+<rect x="236" y="116" width="130" height="40" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="301" y="136" font-size="13" font-weight="500" fill="#0C447C">module</text>
+<rect x="396" y="116" width="130" height="40" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="461" y="136" font-size="13" font-weight="500" fill="#0C447C">module</text>
+<rect x="556" y="116" width="130" height="40" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="621" y="136" font-size="13" font-weight="500" fill="#0C447C">module</text>
+<rect x="20" y="184" width="680" height="64" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1"/>
+<text x="40" y="216" font-size="14" font-weight="500" style="text-anchor:start" fill="#2C2C2A">Persistence Layer</text>
+<rect x="236" y="196" width="130" height="40" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="301" y="216" font-size="13" font-weight="500" fill="#0C447C">module</text>
+<rect x="396" y="196" width="130" height="40" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="461" y="216" font-size="13" font-weight="500" fill="#0C447C">module</text>
+<rect x="556" y="196" width="130" height="40" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="621" y="216" font-size="13" font-weight="500" fill="#0C447C">module</text>
+<rect x="20" y="264" width="680" height="64" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1"/>
+<text x="40" y="296" font-size="14" font-weight="500" style="text-anchor:start" fill="#2C2C2A">Database Layer</text>
+<path d="M277 280.2 A24 6.2 0 0 1 325 280.2 L325 311.8 A24 6.2 0 0 1 277 311.8 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M277 280.2 A24 6.2 0 0 0 325 280.2" fill="none" stroke="#854F0B" stroke-width="1"/>
+<path d="M437 280.2 A24 6.2 0 0 1 485 280.2 L485 311.8 A24 6.2 0 0 1 437 311.8 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M437 280.2 A24 6.2 0 0 0 485 280.2" fill="none" stroke="#854F0B" stroke-width="1"/>
+<path d="M597 280.2 A24 6.2 0 0 1 645 280.2 L645 311.8 A24 6.2 0 0 1 597 311.8 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M597 280.2 A24 6.2 0 0 0 645 280.2" fill="none" stroke="#854F0B" stroke-width="1"/>
+</svg>

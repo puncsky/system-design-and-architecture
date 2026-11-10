@@ -1,0 +1,54 @@
+<svg width="100%" viewBox="0 0 760 312" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">Lyft growth model</title>
+<desc id="d">Six acquisition channels (organic, search, social, partners, retarget, referrals) feed two funnels. Drivers go from landing page to lead, background and vehicle check, activation and driver hours; riders go from app install to activation to rides. Both funnels pass through the Acquire, Nurture and Grow stages.</desc>
+<defs><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="759" height="311" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<rect x="168" y="40" width="568" height="84" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="180" y="56" font-size="12" style="text-anchor:start" fill="#5F5E5A">Driver</text>
+<rect x="168" y="204" width="568" height="84" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="180" y="220" font-size="12" style="text-anchor:start" fill="#5F5E5A">Rider</text>
+<rect x="20" y="49" width="108" height="30" rx="15" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="74" y="64" font-size="13" font-weight="500" fill="#2C2C2A">Organic</text>
+<rect x="20" y="89" width="108" height="30" rx="15" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="74" y="104" font-size="13" font-weight="500" fill="#2C2C2A">Search</text>
+<rect x="20" y="129" width="108" height="30" rx="15" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="74" y="144" font-size="13" font-weight="500" fill="#2C2C2A">Social</text>
+<rect x="20" y="169" width="108" height="30" rx="15" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="74" y="184" font-size="13" font-weight="500" fill="#2C2C2A">Partners</text>
+<rect x="20" y="209" width="108" height="30" rx="15" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="74" y="224" font-size="13" font-weight="500" fill="#2C2C2A">Retarget</text>
+<rect x="20" y="249" width="108" height="30" rx="15" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="74" y="264" font-size="13" font-weight="500" fill="#2C2C2A">Referrals</text>
+<path d="M128 64 L142 64 Q148 64 148 70 L148 258 Q148 264 142 264 L128 264" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="183" y="66" width="94" height="40" rx="20" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="230" y="86" font-size="12" font-weight="500" fill="#0C447C">Landing page</text>
+<rect x="301" y="66" width="52" height="40" rx="20" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="327" y="86" font-size="12" font-weight="500" fill="#0C447C">Lead</text>
+<rect x="394" y="66" width="100" height="40" rx="20" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="444" y="78.2" font-size="12" font-weight="500" fill="#0C447C">Background +</text>
+<text x="444" y="93.8" font-size="12" font-weight="500" fill="#0C447C">vehicle check</text>
+<rect x="521" y="66" width="80" height="40" rx="20" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="561" y="86" font-size="12" font-weight="500" fill="#0C447C">Activation</text>
+<rect x="625" y="66" width="94" height="40" rx="20" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="672" y="86" font-size="12" font-weight="500" fill="#0C447C">Driver hours</text>
+<path d="M148 86 L183 86" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M277 86 L301 86" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M353 86 L394 86" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M494 86 L521 86" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M601 86 L625 86" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="218" y="230" width="100" height="40" rx="20" fill="#FBEAF0" stroke="#993556" stroke-width="1"/>
+<text x="268" y="250" font-size="12" font-weight="500" fill="#72243E">App install</text>
+<rect x="394" y="230" width="100" height="40" rx="20" fill="#FBEAF0" stroke="#993556" stroke-width="1"/>
+<text x="444" y="250" font-size="12" font-weight="500" fill="#72243E">Activation</text>
+<rect x="570" y="230" width="100" height="40" rx="20" fill="#FBEAF0" stroke="#993556" stroke-width="1"/>
+<text x="620" y="250" font-size="12" font-weight="500" fill="#72243E">Rides</text>
+<path d="M148 250 L218 250" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M318 250 L394 250" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M494 250 L570 250" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<polygon points="180,146 340,146 354,166 340,186 180,186 194,166" fill="#F1EFE8" stroke="#898781" stroke-width="1" stroke-linejoin="round"/>
+<text x="268" y="166" font-size="14" font-weight="500" fill="#2C2C2A">Acquire</text>
+<polygon points="356,146 516,146 530,166 516,186 356,186 370,166" fill="#E0DED5" stroke="#898781" stroke-width="1" stroke-linejoin="round"/>
+<text x="444" y="166" font-size="14" font-weight="500" fill="#2C2C2A">Nurture</text>
+<polygon points="532,146 692,146 706,166 692,186 532,186 546,166" fill="#CFCDC3" stroke="#898781" stroke-width="1" stroke-linejoin="round"/>
+<text x="620" y="166" font-size="14" font-weight="500" fill="#2C2C2A">Grow</text>
+</svg>

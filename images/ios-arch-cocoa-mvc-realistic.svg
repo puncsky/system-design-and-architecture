@@ -1,0 +1,23 @@
+<svg width="100%" viewBox="0 0 760 232" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">Cocoa MVC in reality</title>
+<desc id="d">The UIView and the UIViewController overlap: the View and the Controller are fused into one tightly coupled pair, linked back and forth by the view life cycle. The Controller owns and updates the Model, and the Model notifies it (dashed).</desc>
+<defs><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="759" height="231" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<rect x="24" y="70" width="170" height="64" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="109" y="94.8" font-size="14" font-weight="500" fill="#0C447C">View</text>
+<text x="109" y="111.1" font-size="11" fill="#185FA5">UIView</text>
+<rect x="164" y="82" width="170" height="64" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="249" y="106.8" font-size="14" font-weight="500" fill="#3C3489">Controller</text>
+<text x="249" y="123.1" font-size="11" fill="#534AB7">UIViewController</text>
+<rect x="566" y="82" width="170" height="64" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="651" y="114" font-size="14" font-weight="500" fill="#633806">Model</text>
+<path d="M150 70 L150 52 Q150 46 156 46 L224 46 Q230 46 230 52 L230 82" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M230 146 L230 164 Q230 170 224 170 L156 170 Q150 170 150 164 L150 134" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<text x="190" y="192" font-size="12" fill="#5F5E5A">View Life Cycle</text>
+<path d="M334 98 L566 98" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="395.2" y="87.9" width="109.6" height="20.2" rx="4" fill="#FFFFFF"/>
+<text x="450" y="98" font-size="12" fill="#5F5E5A">Owns and updates</text>
+<path d="M566 130 L334 130" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#m898781)"/>
+<rect x="424.9" y="119.9" width="50.1" height="20.2" rx="4" fill="#FFFFFF"/>
+<text x="450" y="130" font-size="12" fill="#5F5E5A">Notifies</text>
+</svg>

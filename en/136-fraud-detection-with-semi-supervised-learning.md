@@ -45,7 +45,7 @@ Challenges
 
 ## **High-level Architecture**
 
-![](https://tp-misc.b-cdn.net/SDA/136-fraud-detection-with-semi-supervised-learning-1.png)
+![Fraud detection architecture](../images/fraud-detection-architecture.svg)
 
 ## Core Components and Workflows
 

@@ -55,7 +55,7 @@ Pinterest 是一个高度可扩展的照片分享服务，拥有数亿月活跃�
 
 这是高层架构，其中箭头表示依赖关系。（有时，人们会使用箭头来描述数据流的方向。）
 
-![Instagram 架构概述](https://tp-misc.b-cdn.net/SDA/design-instagram-architecture-overview@2x.png "Instagram 架构概述")
+![Instagram 架构概述](../images/crack-interview-instagram-overview.zh-CN.svg)
 
 [//]: # "https://whimsical.com/design-instagram-5JeJxJuxbWf3p97DaYttgH"
 
@@ -91,7 +91,7 @@ Pinterest 是一个高度可扩展的照片分享服务，拥有数亿月活跃�
 2. 过滤：过滤掉没有有效凭证的请求，以进行身份验证或授权。
 3. 缓存：某些资源对 HTTP 请求非常受欢迎，因此你可能希望为该路由配置一些缓存，以节省一些服务器资源。
 
-![反向代理](https://res.cloudinary.com/dohtidfqh/image/upload/v1599623753/web-guiguio/Reverse_Proxy_Example.png)
+![反向代理](../images/crack-interview-reverse-proxy.zh-CN.svg)
 
 Nginx、Varnish、HAProxy 和 AWS 弹性负载均衡是市场上流行的产品。我发现编写一个[轻量级反向代理在 Golang 中](https://github.com/puncsky/reverse-proxy-golang-starter)既方便又强大。在 Kubernetes 的上下文中，这基本上就是 Ingress 和 Ingress 控制器所做的。
 

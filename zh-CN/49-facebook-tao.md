@@ -16,7 +16,7 @@ references:
 
 在 TAO 之前，使用缓存旁路模式
 
-![在 TAO 之前](https://puncsky.com/img/tao-before.png)
+![在 TAO 之前：Web 服务器同时使用 memcache 和存放社交图谱的 MySQL](../images/tao-before.zh-CN.svg)
 
 社交图谱数据存储在 MySQL 中，并缓存于 Memcached 中
 
@@ -61,8 +61,8 @@ references:
 - 领导缓存 → 协调对每个对象的写入
 - 跟随缓存 → 提供读取但不提供写入。将所有写入转发给领导。
 
-![Facebook TAO 架构](https://puncsky.com/img/tao-architecture.png)
+![Facebook TAO 架构：主、副本数据中心中的 Web 服务器、跟随缓存、领导缓存与数据库](../images/tao-architecture.zh-CN.svg)
 
 读取故障转移
 
-![Facebook TAO 读取故障转移](https://puncsky.com/img/tao-read-failover.png)
+![Facebook TAO 读取故障转移：跟随缓存、领导缓存或数据库不可达时的路径](../images/tao-read-failover.zh-CN.svg)

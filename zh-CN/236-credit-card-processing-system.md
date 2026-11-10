@@ -13,7 +13,7 @@ references:
   - "http://blog.unibulmerchantservices.com/how-visas-payment-system-works/"
 ---
 
-![信用卡支付处理](https://res.cloudinary.com/dohtidfqh/image/upload/v1587965500/web-guiguio/Credit_Card_Payment_Processing.png)
+![信用卡支付处理：持卡人、商户、收单机构、电子支付网络与发卡机构](../images/credit-card-payment-flow.zh-CN.svg)
 
 ## 5 个参与方
 

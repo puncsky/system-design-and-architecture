@@ -56,7 +56,7 @@ references:
 
 ## **高级架构**
 
-![](https://tp-misc.b-cdn.net/SDA/136-fraud-detection-with-semi-supervised-learning-1.png)
+![欺诈检测架构](../images/fraud-detection-architecture.zh-CN.svg)
 
 ## 核心组件和工作流程
 

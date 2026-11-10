@@ -1,0 +1,90 @@
+<svg width="100%" viewBox="0 0 760 560" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">Graph in Memcache before TAO</title>
+<desc id="d">A PHP web server exposes an object and association API to the Facebook page. The API reads and writes both memcache, which caches nodes, edges and edge lists, and MySQL, which stores the social graph of users, posts, photos, comments and locations connected by associations such as AUTHOR, LIKE and FRIEND.</desc>
+<defs><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="s898781" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M8 1L2 5L8 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="759" height="559" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<text x="24" y="30" font-size="15" font-weight="500" style="text-anchor:start" fill="#2C2C2A">Graph in Memcache</text>
+<rect x="24" y="85" width="126" height="80" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="87" y="110.7" font-size="13" font-weight="500" fill="#2C2C2A">Facebook page</text>
+<text x="87" y="126.3" font-size="11" fill="#5F5E5A">post, photo,</text>
+<text x="87" y="140.6" font-size="11" fill="#5F5E5A">likes, comment</text>
+<rect x="200" y="60" width="200" height="120" rx="10" fill="#E6F1FB" fill-opacity="0.45" stroke="#185FA5" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="300" y="76" font-size="12" fill="#185FA5">Web server (PHP)</text>
+<rect x="224" y="92" width="152" height="66" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="300" y="115.9" font-size="14" font-weight="500" fill="#0C447C">Obj &amp; Assoc</text>
+<text x="300" y="134.1" font-size="14" font-weight="500" fill="#0C447C">API</text>
+<rect x="520" y="95" width="216" height="60" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="628" y="117.2" font-size="14" font-weight="500" fill="#633806">memcache</text>
+<text x="628" y="134.1" font-size="12" fill="#854F0B">(nodes, edges, edge lists)</text>
+<path d="M224 125 L150 125" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M376 125 L520 125" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)" marker-start="url(#s898781)"/>
+<path d="M24 235 A356 9 0 0 1 736 235 L736 527 A356 9 0 0 1 24 527 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M24 235 A356 9 0 0 0 736 235" fill="none" stroke="#854F0B" stroke-width="1"/>
+<text x="380" y="252" font-size="14" font-weight="500" fill="#633806">mysql</text>
+<path d="M300 158 L300 227" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)" marker-start="url(#s898781)"/>
+<rect x="370" y="274" width="100" height="42" rx="4" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="420" y="287.8" font-size="11" font-weight="500" fill="#2C2C2A">LOCATION</text>
+<text x="420" y="302.1" font-size="11" fill="#5F5E5A">Charlotte Dome</text>
+<rect x="220" y="274" width="80" height="42" rx="4" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="260" y="295" font-size="11" font-weight="500" fill="#2C2C2A">GPS_DATA</text>
+<rect x="600" y="274" width="100" height="42" rx="4" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="650" y="287.8" font-size="11" font-weight="500" fill="#2C2C2A">USER</text>
+<text x="650" y="302.1" font-size="11" fill="#5F5E5A">Nathan</text>
+<rect x="40" y="366" width="110" height="42" rx="4" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="95" y="387" font-size="11" font-weight="500" fill="#2C2C2A">PHOTO</text>
+<rect x="420" y="366" width="100" height="42" rx="4" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="470" y="379.8" font-size="11" font-weight="500" fill="#2C2C2A">POST</text>
+<text x="470" y="394.1" font-size="11" fill="#5F5E5A">At the summit</text>
+<rect x="600" y="366" width="100" height="42" rx="4" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="650" y="379.8" font-size="11" font-weight="500" fill="#2C2C2A">USER</text>
+<text x="650" y="394.1" font-size="11" fill="#5F5E5A">Carol</text>
+<rect x="40" y="462" width="76" height="42" rx="4" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="78" y="483" font-size="11" font-weight="500" fill="#2C2C2A">EXIF_INFO</text>
+<rect x="124" y="462" width="80" height="42" rx="4" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="164" y="475.8" font-size="11" font-weight="500" fill="#2C2C2A">APP</text>
+<text x="164" y="490.1" font-size="11" fill="#5F5E5A">iPhoto</text>
+<rect x="230" y="462" width="90" height="42" rx="4" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="275" y="475.8" font-size="11" font-weight="500" fill="#2C2C2A">USER</text>
+<text x="275" y="490.1" font-size="11" fill="#5F5E5A">Alice</text>
+<rect x="420" y="462" width="100" height="42" rx="4" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="470" y="475.8" font-size="11" font-weight="500" fill="#2C2C2A">COMMENT</text>
+<text x="470" y="490.1" font-size="11" fill="#5F5E5A">how was it? …</text>
+<rect x="612" y="450" width="100" height="42" rx="4" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<rect x="606" y="456" width="100" height="42" rx="4" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<rect x="600" y="462" width="100" height="42" rx="4" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="650" y="483" font-size="11" font-weight="500" fill="#2C2C2A">USER</text>
+<path d="M370 295 L300 295" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="323.7" y="285.6" width="22.5" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="335" y="295" font-size="11" fill="#5F5E5A">AT</text>
+<path d="M440 366 L440 316" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="412.6" y="331.6" width="54.9" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="440" y="341" font-size="11" fill="#5F5E5A">CHECKIN</text>
+<path d="M500 366 L500 301 Q500 295 506 295 L600 295" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)" marker-start="url(#s898781)"/>
+<rect x="524.2" y="285.6" width="51.6" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="550" y="295" font-size="11" fill="#5F5E5A">AUTHOR</text>
+<path d="M650 316 L650 366" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)" marker-start="url(#s898781)"/>
+<rect x="626.2" y="331.6" width="47.6" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="650" y="341" font-size="11" fill="#5F5E5A">FRIEND</text>
+<path d="M520 377 L600 377" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)" marker-start="url(#s898781)"/>
+<rect x="543.5" y="367.6" width="33.1" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="560" y="377" font-size="11" fill="#5F5E5A">LIKE</text>
+<path d="M600 483 L561 483 Q555 483 555 477 L555 403 Q555 397 549 397 L520 397" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)" marker-start="url(#s898781)"/>
+<rect x="538.5" y="446.6" width="33.1" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="555" y="456" font-size="11" fill="#5F5E5A">LIKE</text>
+<path d="M420 387 L150 387" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="262.9" y="377.6" width="44.3" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="285" y="387" font-size="11" fill="#5F5E5A">PHOTO</text>
+<path d="M74 408 L74 462" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="57.5" y="425.6" width="33.1" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="74" y="435" font-size="11" fill="#5F5E5A">EXIF</text>
+<path d="M140 408 L140 462" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="96.9" y="425.6" width="86.1" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="140" y="435" font-size="11" fill="#5F5E5A">UPLOAD FROM</text>
+<path d="M495 408 L495 462" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="463.4" y="418.6" width="63.2" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="495" y="428" font-size="11" fill="#5F5E5A">COMMENT</text>
+<path d="M420 483 L320 483" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)" marker-start="url(#s898781)"/>
+<rect x="344.2" y="473.6" width="51.6" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="370" y="483" font-size="11" fill="#5F5E5A">AUTHOR</text>
+<path d="M440 408 L440 429 Q440 435 434 435 L281 435 Q275 435 275 441 L275 462" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+</svg>
