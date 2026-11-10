@@ -1,0 +1,92 @@
+<svg width="100%" viewBox="0 0 720 612" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>LLM architecture: hybrid linear/sparse attention, MoE and gated residuals</title>
+<desc>Input tokens go through a token embedding and an n-gram embedding injected at layer 2, then a transformer stack made of a repeating unit of three Gated DeltaNet layers and one Qwen Sparse Attention layer, each followed by a sparse MoE feed-forward block and wrapped in a four-branch gated residual stream. The final norm and LM head produce next-token logits, and a multi-token prediction module drafts extra tokens reusing the sparse attention indices.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}.t{font-size:14px;font-weight:500}.s{font-size:12px}.h{font-size:13px;font-weight:600;text-anchor:start}.n{font-size:12px;text-anchor:start}</style></defs>
+<rect x="40" y="24" width="360" height="36" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="220.0" y="42.0" class="t" fill="#2C2C2A">Input tokens</text>
+<rect x="440" y="24" width="260" height="36" rx="8" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1"/>
+<text x="570.0" y="42.0" class="t" fill="#2C2C2A">125B total · 6B active per token</text>
+<path d="M125 60 L125 84" fill="none" stroke="#898781" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M315 60 L315 84" fill="none" stroke="#898781" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="40" y="84" width="170" height="56" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="125.0" y="104.0" class="t" fill="#633806">N-gram embedding</text>
+<text x="125.0" y="123.0" class="s" fill="#854F0B">hash lookup · host memory</text>
+<rect x="230" y="84" width="170" height="56" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="315.0" y="104.0" class="t" fill="#633806">Token embedding</text>
+<text x="315.0" y="123.0" class="s" fill="#854F0B">vocab → hidden</text>
+<rect x="40" y="164" width="360" height="276" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="220" y="181" class="s" fill="#5F5E5A">Transformer stack · 4-layer unit × N/4</text>
+<path d="M315 140 L315 164" fill="none" stroke="#898781" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="48" y="198" width="30" height="224" rx="6" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<text x="63" y="310" class="s" fill="#712B13" transform="rotate(-90 63 310)">Gated Residual · 4 branches</text>
+<rect x="90" y="198" width="170" height="50" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="175.0" y="215.0" class="t" fill="#3C3489">Layer 1 · GDN</text>
+<text x="175.0" y="234.0" class="s" fill="#534AB7">linear-time mixer</text>
+<rect x="282" y="198" width="110" height="50" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="337.0" y="215.0" class="t" fill="#0C447C">MoE FFN</text>
+<text x="337.0" y="234.0" class="s" fill="#185FA5">sparse experts</text>
+<path d="M260 223 L282 223" fill="none" stroke="#898781" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="90" y="256" width="170" height="50" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="175.0" y="273.0" class="t" fill="#3C3489">Layer 2 · GDN</text>
+<text x="175.0" y="292.0" class="s" fill="#534AB7">linear-time mixer</text>
+<rect x="282" y="256" width="110" height="50" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="337.0" y="273.0" class="t" fill="#0C447C">MoE FFN</text>
+<text x="337.0" y="292.0" class="s" fill="#185FA5">sparse experts</text>
+<path d="M260 281 L282 281" fill="none" stroke="#898781" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="90" y="314" width="170" height="50" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="175.0" y="331.0" class="t" fill="#3C3489">Layer 3 · GDN</text>
+<text x="175.0" y="350.0" class="s" fill="#534AB7">linear-time mixer</text>
+<rect x="282" y="314" width="110" height="50" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="337.0" y="331.0" class="t" fill="#0C447C">MoE FFN</text>
+<text x="337.0" y="350.0" class="s" fill="#185FA5">sparse experts</text>
+<path d="M260 339 L282 339" fill="none" stroke="#898781" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="90" y="372" width="170" height="50" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<text x="175.0" y="389.0" class="t" fill="#085041">Layer 4 · QSA</text>
+<text x="175.0" y="408.0" class="s" fill="#0F6E56">sparse attention</text>
+<rect x="282" y="372" width="110" height="50" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="337.0" y="389.0" class="t" fill="#0C447C">MoE FFN</text>
+<text x="337.0" y="408.0" class="s" fill="#185FA5">sparse experts</text>
+<path d="M260 397 L282 397" fill="none" stroke="#898781" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M40 112 L22 112 L22 281 L48 281" fill="none" stroke="#898781" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M125 440 L125 466" fill="none" stroke="#898781" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M315 440 L315 466" fill="none" stroke="#898781" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="40" y="466" width="170" height="48" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="125.0" y="482.0" class="t" fill="#2C2C2A">Final norm + LM head</text>
+<text x="125.0" y="501.0" class="s" fill="#5F5E5A">next-token logits</text>
+<rect x="230" y="466" width="170" height="48" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="315.0" y="482.0" class="t" fill="#085041">MTP module</text>
+<text x="315.0" y="501.0" class="s" fill="#0F6E56">speculative drafts</text>
+<path d="M392 397 L424 397 L424 490 L402 490" fill="none" stroke="#898781" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M125 514 L125 538" fill="none" stroke="#898781" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M315 514 L315 538" fill="none" stroke="#898781" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="40" y="538" width="360" height="36" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="220.0" y="556.0" class="t" fill="#2C2C2A">Next token + draft tokens</text>
+<rect x="440" y="70" width="260" height="106" rx="8" fill="#F7F6F3" stroke="#854F0B" stroke-width="1.25"/>
+<text x="452" y="86" class="h" fill="#633806">N-gram embedding</text>
+<text x="452" y="108" class="n" fill="#5F5E5A">Injected at layer 2 only, so the</text>
+<text x="452" y="126" class="n" fill="#5F5E5A">host-memory prefetch hides behind</text>
+<text x="452" y="144" class="n" fill="#5F5E5A">layer 1. Bigger table: loss keeps</text>
+<text x="452" y="162" class="n" fill="#5F5E5A">falling, benchmarks plateau.</text>
+<rect x="440" y="184" width="260" height="106" rx="8" fill="#F7F6F3" stroke="#993C1D" stroke-width="1.25"/>
+<text x="452" y="200" class="h" fill="#712B13">Gated Residual (GR)</text>
+<text x="452" y="222" class="n" fill="#5F5E5A">4 residual branches: per-branch norm,</text>
+<text x="452" y="240" class="n" fill="#5F5E5A">gated read, one scalar write.</text>
+<text x="452" y="258" class="n" fill="#5F5E5A">No loss spikes at 4x the optimal LR,</text>
+<text x="452" y="276" class="n" fill="#5F5E5A">no qk-clip or SwiGLU-clip needed.</text>
+<rect x="440" y="298" width="260" height="70" rx="8" fill="#F7F6F3" stroke="#534AB7" stroke-width="1.25"/>
+<text x="452" y="314" class="h" fill="#3C3489">GDN · 3 of every 4 layers</text>
+<text x="452" y="336" class="n" fill="#5F5E5A">Fixed-size recurrent state: cost</text>
+<text x="452" y="354" class="n" fill="#5F5E5A">grows linearly, decode stays cheap.</text>
+<rect x="440" y="376" width="260" height="106" rx="8" fill="#F7F6F3" stroke="#0F6E56" stroke-width="1.25"/>
+<text x="452" y="392" class="h" fill="#085041">QSA · 1 of every 4 layers</text>
+<text x="452" y="414" class="n" fill="#5F5E5A">A compressed indexer scores blocks</text>
+<text x="452" y="432" class="n" fill="#5F5E5A">of 4 tokens and keeps the top 2048</text>
+<text x="452" y="450" class="n" fill="#5F5E5A">tokens. At 1M context: 7.6x faster</text>
+<text x="452" y="468" class="n" fill="#5F5E5A">prefill, 4.9x faster decode.</text>
+<rect x="440" y="490" width="260" height="106" rx="8" fill="#F7F6F3" stroke="#185FA5" stroke-width="1.25"/>
+<text x="452" y="506" class="h" fill="#0C447C">Training and decoding</text>
+<text x="452" y="528" class="n" fill="#5F5E5A">Muon for weight matrices; AdamW for</text>
+<text x="452" y="546" class="n" fill="#5F5E5A">embeddings, router and gates.</text>
+<text x="452" y="564" class="n" fill="#5F5E5A">MTP reuses the QSA top-k indices</text>
+<text x="452" y="582" class="n" fill="#5F5E5A">across speculative steps.</text>
+</svg>

@@ -1,0 +1,92 @@
+<svg width="100%" viewBox="0 0 720 612" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>LLM 架构：混合线性/稀疏注意力、MoE 与门控残差</title>
+<desc>输入 token 经过 token 嵌入，并在第 2 层注入 n-gram 嵌入，然后进入由「3 层 Gated DeltaNet + 1 层 Qwen 稀疏注意力」重复组成的 Transformer 堆叠；每层后接稀疏 MoE 前馈块，并由 4 分支门控残差流包裹。最终归一化与 LM 头输出下一 token 的 logits，多 token 预测模块复用稀疏注意力的索引生成草稿 token。</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}.t{font-size:14px;font-weight:500}.s{font-size:12px}.h{font-size:13px;font-weight:600;text-anchor:start}.n{font-size:12px;text-anchor:start}</style></defs>
+<rect x="40" y="24" width="360" height="36" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="220.0" y="42.0" class="t" fill="#2C2C2A">输入 token</text>
+<rect x="440" y="24" width="260" height="36" rx="8" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1"/>
+<text x="570.0" y="42.0" class="t" fill="#2C2C2A">总参数 125B · 每 token 激活 6B</text>
+<path d="M125 60 L125 84" fill="none" stroke="#898781" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M315 60 L315 84" fill="none" stroke="#898781" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="40" y="84" width="170" height="56" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="125.0" y="104.0" class="t" fill="#633806">N-gram 嵌入</text>
+<text x="125.0" y="123.0" class="s" fill="#854F0B">哈希查表 · 主机内存</text>
+<rect x="230" y="84" width="170" height="56" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="315.0" y="104.0" class="t" fill="#633806">Token 嵌入</text>
+<text x="315.0" y="123.0" class="s" fill="#854F0B">词表 → 隐藏维度</text>
+<rect x="40" y="164" width="360" height="276" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="220" y="181" class="s" fill="#5F5E5A">Transformer 堆叠 · 4 层单元 × N/4</text>
+<path d="M315 140 L315 164" fill="none" stroke="#898781" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="48" y="198" width="30" height="224" rx="6" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<text x="63" y="310" class="s" fill="#712B13" transform="rotate(-90 63 310)">门控残差 · 4 分支</text>
+<rect x="90" y="198" width="170" height="50" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="175.0" y="215.0" class="t" fill="#3C3489">第 1 层 · GDN</text>
+<text x="175.0" y="234.0" class="s" fill="#534AB7">线性时间混合</text>
+<rect x="282" y="198" width="110" height="50" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="337.0" y="215.0" class="t" fill="#0C447C">MoE FFN</text>
+<text x="337.0" y="234.0" class="s" fill="#185FA5">稀疏专家</text>
+<path d="M260 223 L282 223" fill="none" stroke="#898781" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="90" y="256" width="170" height="50" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="175.0" y="273.0" class="t" fill="#3C3489">第 2 层 · GDN</text>
+<text x="175.0" y="292.0" class="s" fill="#534AB7">线性时间混合</text>
+<rect x="282" y="256" width="110" height="50" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="337.0" y="273.0" class="t" fill="#0C447C">MoE FFN</text>
+<text x="337.0" y="292.0" class="s" fill="#185FA5">稀疏专家</text>
+<path d="M260 281 L282 281" fill="none" stroke="#898781" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="90" y="314" width="170" height="50" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="175.0" y="331.0" class="t" fill="#3C3489">第 3 层 · GDN</text>
+<text x="175.0" y="350.0" class="s" fill="#534AB7">线性时间混合</text>
+<rect x="282" y="314" width="110" height="50" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="337.0" y="331.0" class="t" fill="#0C447C">MoE FFN</text>
+<text x="337.0" y="350.0" class="s" fill="#185FA5">稀疏专家</text>
+<path d="M260 339 L282 339" fill="none" stroke="#898781" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="90" y="372" width="170" height="50" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<text x="175.0" y="389.0" class="t" fill="#085041">第 4 层 · QSA</text>
+<text x="175.0" y="408.0" class="s" fill="#0F6E56">稀疏注意力</text>
+<rect x="282" y="372" width="110" height="50" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="337.0" y="389.0" class="t" fill="#0C447C">MoE FFN</text>
+<text x="337.0" y="408.0" class="s" fill="#185FA5">稀疏专家</text>
+<path d="M260 397 L282 397" fill="none" stroke="#898781" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M40 112 L22 112 L22 281 L48 281" fill="none" stroke="#898781" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M125 440 L125 466" fill="none" stroke="#898781" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M315 440 L315 466" fill="none" stroke="#898781" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="40" y="466" width="170" height="48" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="125.0" y="482.0" class="t" fill="#2C2C2A">最终归一化 + LM 头</text>
+<text x="125.0" y="501.0" class="s" fill="#5F5E5A">下一 token 的 logits</text>
+<rect x="230" y="466" width="170" height="48" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="315.0" y="482.0" class="t" fill="#085041">MTP 模块</text>
+<text x="315.0" y="501.0" class="s" fill="#0F6E56">推测式草稿</text>
+<path d="M392 397 L424 397 L424 490 L402 490" fill="none" stroke="#898781" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M125 514 L125 538" fill="none" stroke="#898781" stroke-width="1.5" marker-end="url(#a)"/>
+<path d="M315 514 L315 538" fill="none" stroke="#898781" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="40" y="538" width="360" height="36" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="220.0" y="556.0" class="t" fill="#2C2C2A">下一个 token + 草稿 token</text>
+<rect x="440" y="70" width="260" height="106" rx="8" fill="#F7F6F3" stroke="#854F0B" stroke-width="1.25"/>
+<text x="452" y="86" class="h" fill="#633806">N-gram 嵌入</text>
+<text x="452" y="108" class="n" fill="#5F5E5A">只在第 2 层注入，主机内存的预取</text>
+<text x="452" y="126" class="n" fill="#5F5E5A">可以藏在第 1 层的计算之后。</text>
+<text x="452" y="144" class="n" fill="#5F5E5A">表越大 loss 越低，但下游指标</text>
+<text x="452" y="162" class="n" fill="#5F5E5A">会趋于饱和。</text>
+<rect x="440" y="184" width="260" height="106" rx="8" fill="#F7F6F3" stroke="#993C1D" stroke-width="1.25"/>
+<text x="452" y="200" class="h" fill="#712B13">门控残差（GR）</text>
+<text x="452" y="222" class="n" fill="#5F5E5A">4 条残差分支：逐分支归一化、</text>
+<text x="452" y="240" class="n" fill="#5F5E5A">门控读取、一个标量写入。</text>
+<text x="452" y="258" class="n" fill="#5F5E5A">4 倍最优学习率下也无 loss 尖峰，</text>
+<text x="452" y="276" class="n" fill="#5F5E5A">无需 qk-clip / SwiGLU-clip。</text>
+<rect x="440" y="298" width="260" height="70" rx="8" fill="#F7F6F3" stroke="#534AB7" stroke-width="1.25"/>
+<text x="452" y="314" class="h" fill="#3C3489">GDN · 每 4 层中的 3 层</text>
+<text x="452" y="336" class="n" fill="#5F5E5A">固定大小的循环状态：开销线性</text>
+<text x="452" y="354" class="n" fill="#5F5E5A">增长，解码保持低成本。</text>
+<rect x="440" y="376" width="260" height="106" rx="8" fill="#F7F6F3" stroke="#0F6E56" stroke-width="1.25"/>
+<text x="452" y="392" class="h" fill="#085041">QSA · 每 4 层中的 1 层</text>
+<text x="452" y="414" class="n" fill="#5F5E5A">压缩索引器按 4 个 token 一块打分，</text>
+<text x="452" y="432" class="n" fill="#5F5E5A">保留 top 2048 个 token。</text>
+<text x="452" y="450" class="n" fill="#5F5E5A">1M 上下文：预填充快 7.6 倍，</text>
+<text x="452" y="468" class="n" fill="#5F5E5A">解码快 4.9 倍。</text>
+<rect x="440" y="490" width="260" height="106" rx="8" fill="#F7F6F3" stroke="#185FA5" stroke-width="1.25"/>
+<text x="452" y="506" class="h" fill="#0C447C">训练与解码</text>
+<text x="452" y="528" class="n" fill="#5F5E5A">权重矩阵用 Muon；嵌入、路由、</text>
+<text x="452" y="546" class="n" fill="#5F5E5A">门控用 AdamW。</text>
+<text x="452" y="564" class="n" fill="#5F5E5A">MTP 在推测步之间复用</text>
+<text x="452" y="582" class="n" fill="#5F5E5A">QSA 的 top-k 索引。</text>
+</svg>

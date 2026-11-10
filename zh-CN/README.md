@@ -30,6 +30,7 @@
 - 🆕 [Designing an Always-on Agent](2026-10-21-designing-always-on-agent.md)
 - 🆕 [Agent System Layers and Logical Components](2026-10-22-agent-system-layers-and-logical-components.md)
 - 🆕 [LLM Inference Stack](2026-10-24-llm-inference-stack.md)
+- 🆕 [Designing an LLM Architecture](2026-11-01-designing-an-llm-architecture.md)
 
 ## 实战案例 System Design in Practice
 
@@ -111,6 +112,7 @@
 
 - [Agent System Layers and Logical Components](2026-10-22-agent-system-layers-and-logical-components.md)
 - [LLM Inference Stack](2026-10-24-llm-inference-stack.md)
+- [Designing an LLM Architecture](2026-11-01-designing-an-llm-architecture.md)
 
 **工程实践**
 

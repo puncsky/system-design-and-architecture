@@ -59,6 +59,7 @@
 - [SOLID Design Principles](./en/12-solid-design-principles.md)
 - [Agent System Layers and Logical Components](./en/2026-10-22-agent-system-layers-and-logical-components.md)
 - [LLM Inference Stack](./en/2026-10-24-llm-inference-stack.md)
+- [Designing an LLM Architecture](./en/2026-11-01-designing-an-llm-architecture.md)
 
 ## Effective Interview Prep
 

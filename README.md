@@ -55,6 +55,7 @@ The 2nd Edition covers what changed between 2015 and today: mobile ate the world
 - 🆕 [Designing an Always-on Agent](./en/2026-10-21-designing-always-on-agent.md)
 - 🆕 [Agent System Layers and Logical Components](./en/2026-10-22-agent-system-layers-and-logical-components.md)
 - 🆕 [LLM Inference Stack](./en/2026-10-24-llm-inference-stack.md)
+- 🆕 [Designing an LLM Architecture](./en/2026-11-01-designing-an-llm-architecture.md)
 
 Also coming in the 2nd Edition: more companies and products, existing chapters rewritten for current trends, more diagrams with step-by-step guides, a PDF edition, and less repetition so that each design teaches its own abstraction.
 
@@ -140,6 +141,7 @@ Also coming in the 2nd Edition: more companies and products, existing chapters r
 
 - [Agent System Layers and Logical Components](./en/2026-10-22-agent-system-layers-and-logical-components.md)
 - [LLM Inference Stack](./en/2026-10-24-llm-inference-stack.md)
+- [Designing an LLM Architecture](./en/2026-11-01-designing-an-llm-architecture.md)
 
 **Engineering craft**
 
