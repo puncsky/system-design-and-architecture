@@ -1,0 +1,27 @@
+<svg width="100%" viewBox="0 0 720 400" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">Lifetime value forecast</title>
+<desc id="d">A schematic chart of LTV against days since activation. The realized LTV curve rises quickly, then a dashed forecast continues to climb more slowly; a horizontal benchmark line is crossed where realized data ends and the forecast begins.</desc>
+<defs><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="719" height="399" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<path d="M100.0 60.0 L100.0 300.0 L690.0 300.0" fill="none" stroke="#2C2C2A" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M100 139.0 L680 139.0" stroke="#5F5E5A" stroke-width="3"/>
+<path d="M108.7 300.0 L113.2 276.0 L117.7 260.0 L122.3 247.9 L126.8 238.1 L131.3 230.0 L135.8 223.0 L140.3 216.9 L144.9 211.5 L149.4 206.6 L153.9 202.1 L158.4 198.1 L162.9 194.3 L167.5 190.8 L172.0 187.5 L176.5 184.4 L181.0 181.5 L185.5 178.8 L190.1 176.2 L194.6 173.7 L199.1 171.4 L203.6 169.2 L208.2 167.0 L212.7 165.0 L217.2 163.0 L221.7 161.1 L226.2 159.3 L230.8 157.5 L235.3 155.8 L239.8 154.2 L244.3 152.6 L248.8 151.1 L253.4 149.6 L257.9 148.1 L262.4 146.7 L266.9 145.3 L271.4 144.0 L276.0 142.7 L280.5 141.4 L285.0 140.2 L289.5 139.0" fill="none" stroke="#534AB7" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M289.5 139.0 L299.3 136.5 L309.0 134.1 L318.8 131.8 L328.6 129.7 L338.3 127.6 L348.1 125.6 L357.9 123.7 L367.6 121.8 L377.4 120.0 L387.1 118.3 L396.9 116.7 L406.7 115.1 L416.4 113.5 L426.2 112.0 L436.0 110.5 L445.7 109.1 L455.5 107.7 L465.2 106.4 L475.0 105.1 L484.8 103.8 L494.5 102.5 L504.3 101.3 L514.0 100.1 L523.8 99.0 L533.6 97.9 L543.3 96.8 L553.1 95.7 L562.9 94.6 L572.6 93.6 L582.4 92.6 L592.1 91.6 L601.9 90.6 L611.7 89.6 L621.4 88.7 L631.2 87.8 L641.0 86.9 L650.7 86.0 L660.5 85.1 L670.2 84.3 L680.0 83.4" fill="none" stroke="#534AB7" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="butt" stroke-dasharray="9 6"/>
+<circle cx="126.1" cy="239.5" r="6" fill="#534AB7" stroke="#534AB7" stroke-width="1"/>
+<circle cx="144.1" cy="212.4" r="6" fill="#534AB7" stroke="#534AB7" stroke-width="1"/>
+<circle cx="209" cy="166.6" r="6" fill="#534AB7" stroke="#534AB7" stroke-width="1"/>
+<circle cx="289.5" cy="139" r="6" fill="#534AB7" stroke="#534AB7" stroke-width="1"/>
+<circle cx="376.7" cy="120.2" r="6" fill="#AFA9EC" stroke="#534AB7" stroke-width="1.5"/>
+<circle cx="465.4" cy="106.4" r="6" fill="#AFA9EC" stroke="#534AB7" stroke-width="1.5"/>
+<circle cx="555.9" cy="95.4" r="6" fill="#AFA9EC" stroke="#534AB7" stroke-width="1.5"/>
+<circle cx="645.8" cy="86.4" r="6" fill="#AFA9EC" stroke="#534AB7" stroke-width="1.5"/>
+<path d="M120.0 36.0 L154.0 36.0" fill="none" stroke="#534AB7" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="164" y="36" font-size="12" style="text-anchor:start" fill="#5F5E5A">= realized</text>
+<path d="M284.0 36.0 L318.0 36.0" fill="none" stroke="#534AB7" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="butt" stroke-dasharray="9 6"/>
+<text x="328" y="36" font-size="12" style="text-anchor:start" fill="#5F5E5A">= forecast</text>
+<path d="M452 36 L486 36" stroke="#5F5E5A" stroke-width="3"/>
+<text x="496" y="36" font-size="12" style="text-anchor:start" fill="#5F5E5A">= benchmark</text>
+<text x="74" y="185" font-size="13" font-weight="500" fill="#2C2C2A">LTV</text>
+<text x="390" y="328" font-size="13" font-weight="500" fill="#2C2C2A">Days since activation</text>
+<text x="390" y="370" font-size="16" font-weight="500" fill="#2C2C2A">Lifetime value forecast</text>
+</svg>

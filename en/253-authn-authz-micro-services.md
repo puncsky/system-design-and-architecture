@@ -28,7 +28,7 @@ In the beginning... Let there be a simple service...
 
 <div style={{ display: "flex", flexDirection: "row" }}>
   <div style={{ width: "40%" }}>
-    <img src="https://res.cloudinary.com/dohtidfqh/image/upload/v1615424670/web-guiguio/5d771685-13c8-496c-88b7-4848ea83c25d.png" />
+    <img src="../images/authn-authz-simple-service.svg" alt="A simple service: web and mobile apps call one backend that keeps sessions and users in a database" />
   </div>
   <div style={{ width: "60%" }}>
     <ul>
@@ -61,7 +61,7 @@ Plus Conway's law: organization designs the systems mirroring its communication 
 
 In the microservice world, let's take a functional slice of the authn and authz services, and there is an Identity and Access Management (IAM) team working on it.
 
-![](https://res.cloudinary.com/dohtidfqh/image/upload/v1615538661/web-guiguio/0d601dac-78a6-4aca-9aec-7ea4ff487b06.png)
+![Identity-aware proxy in front of the OAuth2/OIDC provider, authorization, identity provider and other services](../images/authn-authz-identity-proxy.svg)
 
 - **Identity-aware proxy** is a reverse proxy that allows either public endpoints or checks credentials for protected endpoints. If the credential is not presented but required, redirect the user to an identity provider. e.g. [k8s ingress controller](https://res.cloudinary.com/dohtidfqh/image/upload/v1615539051/web-guiguio/ingress-controller.jpg), nginx, envoy, [Pomerium](https://www.pomerium.io/), [ory.sh/oathkeeper](https://www.ory.sh/oathkeeper), etc.
 - **Identity provider and manager** manages user identity through workflows like sign in, forgot password, MFA enrollment, etc. e.g. [ory.sh/kratos](https://www.ory.sh/kratos/), [keycloak](https://www.keycloak.org/)
@@ -70,63 +70,7 @@ In the microservice world, let's take a functional slice of the authn and authz 
 
 ### The whole picture in a nutshell
 
-```mermaid
-flowchart TB
-    subgraph Clients
-        SPA["Web SPA / MPA"]
-        Mobile["Mobile / Native"]
-        M2M["Backend / M2M"]
-        Device["CLI / IoT / Smart TV"]
-    end
-
-    SPA --> IAP
-    Mobile --> IAP
-    M2M --> IAP
-    Device --> IAP
-
-    subgraph Edge["Edge"]
-        IAP["Identity-aware Proxy / API Gateway<br/>public vs protected endpoints<br/>k8s ingress · Envoy · Pomerium · Oathkeeper"]
-        Bloom["Bloom filter (in-process)<br/>fast 'definitely not revoked'"]
-        Block[("Redis token blocklist<br/>jti / sid / userId · TTL = token life")]
-        IAP -->|"revocation check"| Bloom
-        Bloom -.->|"possible hit, confirm"| Block
-    end
-
-    IAP -->|"no / invalid credential, redirect"| IDP
-    IAP -->|"valid token"| Mesh
-
-    subgraph IAM["IAM Team — Authentication"]
-        IDP["Identity Provider &amp; Manager<br/>sign in · forgot pw · MFA enroll<br/>Kratos · Keycloak"]
-        OAuth["OAuth2 / OIDC Provider<br/>access + refresh + ID token<br/>Hydra · Auth0 · Okta · Cognito"]
-        SAML["SAML 2.0<br/>enterprise SSO / federation<br/>ADFS · Okta · Keycloak · WorkOS"]
-        Methods["Methods: password Argon2id ·<br/>MFA OTP/TOTP · Passkeys WebAuthn ·<br/>3rd-party OAuth2 · Push"]
-        IDP <--> OAuth
-        IDP <--> SAML
-        IDP --- Methods
-    end
-
-    IDP -->|"issues service credential"| IAP
-
-    subgraph Mesh["Service Mesh — Service-to-Service AuthN"]
-        S1["Service A"]
-        mTLS["mTLS · SPIFFE/SPIRE SVID<br/>JWT propagation"]
-        S2["Service B"]
-        S1 --- mTLS
-        mTLS --- S2
-    end
-
-    Mesh --> AuthZ
-
-    subgraph AuthZ["Authorization — isAuthorized(subject, action, resource)"]
-        RBAC["RBAC<br/>roles"]
-        ABAC["PBAC / ABAC<br/>policies"]
-        ReBAC["ReBAC / Zanzibar<br/>relationship graph<br/>OpenFGA · SpiceDB · Oso"]
-    end
-
-    OAuth -. "token claims" .-> AuthZ
-
-    AuthZ --> Resource[("Protected Resources<br/>+ Privacy: PII / PHI / PCI ·<br/>differential privacy · DID")]
-```
+![Big picture of authentication, authorization and identity management in microservices](../images/authn-authz-big-picture.svg)
 
 ## Authentication
 
@@ -137,13 +81,13 @@ flowchart TB
 - However, modern apps often deal with complex workflows like conditional sign up, multi-step login, forgot password, etc.
   Those workflows are essentially state transition graphs in the state machine.
 
-<img src="https://res.cloudinary.com/dohtidfqh/image/upload/v1615543207/web-guiguio/kratos-sm.png" height="500px" />
+![Ory Kratos settings and profile update workflow as a state diagram](../images/authn-authz-kratos-settings-flow.svg)
 
 _Workflow: User Settings and Profile Updates_
 
 Ory.sh/Kratos as an Example Architecture
 
-![](https://res.cloudinary.com/dohtidfqh/image/upload/v1615456054/web-guiguio/bb375937-d58d-477e-bed4-3370b940b187.png)
+![Ory Kratos example architecture: ports, module dependencies, workflow handlers and strategies](../images/authn-authz-kratos-architecture.svg)
 
 ### 2. Third-party OAuth2
 
@@ -202,7 +146,7 @@ Challenge: Bad deliverability of Email or SMS
 
 3. Push Notification — used by apps like Duo, Okta Verify
 
-<img height="600px" src="https://res.cloudinary.com/dohtidfqh/image/upload/v1615509173/web-guiguio/ec4e5fcf-9bb5-4129-a644-865ab8bdadbe.png"/>
+![Push notification login approval between web app, server, push service, mobile app and message queue](../images/authn-authz-push-approval.svg)
 
 How could clients subscribe to the server's state? Short polling, long polling, web socket, or server-sent events.
 
@@ -246,7 +190,7 @@ When the backend system gets too large, a user creation may fan out to many serv
 
 ### 1. Role-based Access Control (RBAC)
 
-![](https://www.ory.sh/keto/docs/assets/images/rbac-c92e14595b7a1f13c2e6bea6edb68673.png)
+![RBAC: subjects have roles, roles are granted permissions, permissions apply to resources](../images/authn-authz-rbac-model.svg)
 
 ### 2. Policy-based Access Control (PBAC / ABAC)
 
@@ -286,7 +230,7 @@ Redacting sensitive information alone may not be good enough to prevent data ass
 
 Differential privacy helps analysts extract data from the databases containing personal information but still protects individuals' privacy.
 
-![](https://res.cloudinary.com/dohtidfqh/image/upload/v1615501463/web-guiguio/3ee26c09-9541-4f97-a008-887bb02feb96.png)
+![Differential privacy: a privacy guard between the analyst and the database returns noisy data](../images/authn-authz-differential-privacy.svg)
 
 ### 3. Decentralized Identity
 

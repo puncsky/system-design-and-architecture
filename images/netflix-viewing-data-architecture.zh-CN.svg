@@ -1,0 +1,81 @@
+<svg width="100%" viewBox="0 0 760 410" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">Netflix 观看数据架构</title>
+<desc id="d">客户端经由观看服务写入观看事件流并读取数据。有状态层由内存中的节点 0 到 n-1 组成，保存活跃会话、最新位置和观看摘要。活跃会话与会话数据存储双向读写，观看摘要流入观看历史数据存储，后者前面有 Memcached。无状态层作为兜底，可以访问这两个数据存储。</desc>
+<defs><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="759" height="409" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<circle cx="58" cy="54" r="5" fill="#B4B2AA" stroke="#B4B2AA" stroke-width="1"/>
+<path d="M49 72 Q49 62 58 62 Q67 62 67 72 Z" fill="#B4B2AA"/>
+<rect x="78" y="46" width="12" height="20" rx="2.5" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1.5"/>
+<text x="54" y="100" font-size="12" style="text-anchor:end" fill="#444441">开始</text>
+<circle cx="70" cy="100" r="9" fill="#FFFFFF" stroke="#185FA5" stroke-width="1.5"/>
+<circle cx="70" cy="122" r="3.2" fill="#185FA5" stroke="#185FA5" stroke-width="1"/>
+<circle cx="70" cy="134" r="3.2" fill="#185FA5" stroke="#185FA5" stroke-width="1"/>
+<circle cx="70" cy="146" r="3.2" fill="#185FA5" stroke="#185FA5" stroke-width="1"/>
+<circle cx="70" cy="158" r="3.2" fill="#185FA5" stroke="#185FA5" stroke-width="1"/>
+<circle cx="70" cy="170" r="3.2" fill="#185FA5" stroke="#185FA5" stroke-width="1"/>
+<circle cx="70" cy="194" r="9" fill="#FFFFFF" stroke="#185FA5" stroke-width="1.5"/>
+<text x="54" y="194" font-size="12" style="text-anchor:end" fill="#444441">结束</text>
+<rect x="24" y="296" width="24" height="24" rx="3" fill="#B4B2AA" stroke="#5F5E5A" stroke-width="1"/>
+<rect x="32" y="304" width="24" height="24" rx="3" fill="#B4B2AA" stroke="#5F5E5A" stroke-width="1"/>
+<rect x="40" y="312" width="24" height="24" rx="3" fill="#B4B2AA" stroke="#5F5E5A" stroke-width="1"/>
+<rect x="180" y="96" width="34" height="156" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="197" y="174" font-size="13" font-weight="500" fill="#0C447C" transform="rotate(-90 197 174)">观看服务</text>
+<path d="M86 147 L180 147" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="118" y="137.6" width="30" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="133" y="147" font-size="11" fill="#5F5E5A">写入</text>
+<path d="M68 324 L118 324 Q124 324 124 318 L124 232 Q124 226 130 226 L180 226" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="109" y="265.6" width="30" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="124" y="275" font-size="11" fill="#5F5E5A">读取</text>
+<rect x="214" y="44" width="290" height="250" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="226" y="60" font-size="12" style="text-anchor:start" fill="#5F5E5A">有状态层</text>
+<path d="M261.0 116.4 A70 70 0 0 0 261.0 223.6" fill="none" stroke="#898781" stroke-width="1.5"/>
+<circle cx="261" cy="116.4" r="7" fill="#FAEEDA" stroke="#854F0B" stroke-width="1.5"/>
+<text x="274" y="119.4" font-size="12" style="text-anchor:start" fill="#444441">0</text>
+<circle cx="242.6" cy="140.4" r="7" fill="#FAEEDA" stroke="#854F0B" stroke-width="1.5"/>
+<text x="255.6" y="143.4" font-size="12" style="text-anchor:start" fill="#444441">1</text>
+<circle cx="242.6" cy="199.6" r="7" fill="#FAEEDA" stroke="#854F0B" stroke-width="1.5"/>
+<text x="255.6" y="202.6" font-size="12" style="text-anchor:start" fill="#444441">n-2</text>
+<circle cx="261" cy="223.6" r="7" fill="#FAEEDA" stroke="#854F0B" stroke-width="1.5"/>
+<text x="274" y="226.6" font-size="12" style="text-anchor:start" fill="#444441">n-1</text>
+<text x="250" y="170" font-size="14" fill="#444441" transform="rotate(90 250 170)">…</text>
+<rect x="322" y="76" width="150" height="34" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="397" y="93" font-size="13" font-weight="500" fill="#633806">活跃会话</text>
+<rect x="322" y="148" width="130" height="34" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="387" y="165" font-size="12" font-weight="500" fill="#633806">最新位置</text>
+<rect x="322" y="220" width="150" height="34" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="397" y="237" font-size="13" font-weight="500" fill="#633806">观看摘要</text>
+<path d="M387 182 L387 220" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M462 110 L462 220" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="214" y="306" width="290" height="80" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="359" y="336.9" font-size="13" font-weight="500" fill="#2C2C2A">无状态层</text>
+<text x="359" y="355.1" font-size="13" font-weight="500" fill="#2C2C2A">（兜底）</text>
+<rect x="580" y="44" width="124" height="112" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<circle cx="642" cy="88" r="28" fill="none" stroke="#854F0B" stroke-width="1.5"/>
+<circle cx="642" cy="60" r="6" fill="#FAEEDA" stroke="#854F0B" stroke-width="1.5"/>
+<circle cx="666.2" cy="74" r="6" fill="#FAEEDA" stroke="#854F0B" stroke-width="1.5"/>
+<circle cx="666.2" cy="102" r="6" fill="#FAEEDA" stroke="#854F0B" stroke-width="1.5"/>
+<circle cx="642" cy="116" r="6" fill="#FAEEDA" stroke="#854F0B" stroke-width="1.5"/>
+<circle cx="617.8" cy="102" r="6" fill="#FAEEDA" stroke="#854F0B" stroke-width="1.5"/>
+<circle cx="617.8" cy="74" r="6" fill="#FAEEDA" stroke="#854F0B" stroke-width="1.5"/>
+<path d="M631.0 88 Q642.0 79 653.0 88 Q642.0 97 631.0 88 Z" fill="#FFFFFF" stroke="#854F0B" stroke-width="1.2"/>
+<circle cx="642" cy="88" r="3.4" fill="#854F0B" stroke="#854F0B" stroke-width="1"/>
+<text x="642" y="140" font-size="12" font-weight="500" fill="#633806">会话</text>
+<rect x="580" y="182" width="124" height="112" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<circle cx="642" cy="226" r="28" fill="none" stroke="#854F0B" stroke-width="1.5"/>
+<circle cx="642" cy="198" r="6" fill="#FAEEDA" stroke="#854F0B" stroke-width="1.5"/>
+<circle cx="666.2" cy="212" r="6" fill="#FAEEDA" stroke="#854F0B" stroke-width="1.5"/>
+<circle cx="666.2" cy="240" r="6" fill="#FAEEDA" stroke="#854F0B" stroke-width="1.5"/>
+<circle cx="642" cy="254" r="6" fill="#FAEEDA" stroke="#854F0B" stroke-width="1.5"/>
+<circle cx="617.8" cy="240" r="6" fill="#FAEEDA" stroke="#854F0B" stroke-width="1.5"/>
+<circle cx="617.8" cy="212" r="6" fill="#FAEEDA" stroke="#854F0B" stroke-width="1.5"/>
+<path d="M631.0 226 Q642.0 217 653.0 226 Q642.0 235 631.0 226 Z" fill="#FFFFFF" stroke="#854F0B" stroke-width="1.2"/>
+<circle cx="642" cy="226" r="3.4" fill="#854F0B" stroke="#854F0B" stroke-width="1"/>
+<text x="642" y="278" font-size="12" font-weight="500" fill="#633806">观看历史</text>
+<rect x="710" y="190" width="28" height="96" rx="6" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="724" y="238" font-size="12" font-weight="500" fill="#633806" transform="rotate(-90 724 238)">Memcached</text>
+<path d="M526 93 L476 93" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M526 93 L576 93" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M472 237 L576 237" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M504 346 L536 346 Q542 346 542 340 L542 140 Q542 134 548 134 L580 134" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M504 346 L536 346 Q542 346 542 340 L542 276 Q542 270 548 270 L580 270" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+</svg>

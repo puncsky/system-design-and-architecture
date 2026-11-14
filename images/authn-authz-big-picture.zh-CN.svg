@@ -1,0 +1,121 @@
+<svg width="100%" viewBox="0 0 760 946" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">身份验证、授权与身份管理全貌</title>
+<desc id="d">客户端先到达边缘的身份感知代理，代理用 Bloom filter 和 Redis 黑名单检查令牌是否被吊销。没有有效凭证的请求被重定向到 IAM 团队的身份提供者；有效令牌则进入服务网格，再经过授权层（RBAC、PBAC/ABAC、ReBAC）访问受保护资源。</desc>
+<defs><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="s898781" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M8 1L2 5L8 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="759" height="945" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<rect x="16" y="16" width="728" height="80" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="380" y="32" font-size="12" fill="#5F5E5A">客户端</text>
+<rect x="25" y="46" width="164" height="36" rx="18" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="107" y="64" font-size="13" font-weight="500" fill="#2C2C2A">Web SPA / MPA</text>
+<rect x="207" y="46" width="164" height="36" rx="18" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="289" y="64" font-size="13" font-weight="500" fill="#2C2C2A">移动端 / 原生应用</text>
+<rect x="389" y="46" width="164" height="36" rx="18" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="471" y="64" font-size="13" font-weight="500" fill="#2C2C2A">后端 / M2M</text>
+<rect x="571" y="46" width="164" height="36" rx="18" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="653" y="64" font-size="13" font-weight="500" fill="#2C2C2A">CLI / IoT / 智能电视</text>
+<path d="M107 82 L107 112" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M289 82 L289 112" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M471 82 L471 112" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M653 82 L653 112" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M107 112 L653 112" fill="none" stroke="#898781" stroke-width="1.5"/>
+<rect x="16" y="124" width="728" height="144" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="380" y="140" font-size="12" fill="#5F5E5A">边缘</text>
+<rect x="36" y="154" width="200" height="100" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<text x="136" y="174.1" font-size="13" font-weight="500" fill="#712B13">身份感知代理 /</text>
+<text x="136" y="191" font-size="13" font-weight="500" fill="#712B13">API 网关</text>
+<text x="136" y="206.6" font-size="11" fill="#993C1D">公共 vs 受保护端点</text>
+<text x="136" y="220.9" font-size="11" fill="#993C1D">k8s ingress · Envoy ·</text>
+<text x="136" y="235.2" font-size="11" fill="#993C1D">Pomerium · Oathkeeper</text>
+<path d="M136 112 L136 154" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="346" y="168" width="140" height="72" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="416" y="181.2" font-size="13" font-weight="500" fill="#633806">Bloom filter</text>
+<text x="416" y="198.2" font-size="13" font-weight="500" fill="#633806">（进程内）</text>
+<text x="416" y="213.8" font-size="11" fill="#854F0B">快速判定</text>
+<text x="416" y="228.1" font-size="11" fill="#854F0B">『一定未被吊销』</text>
+<path d="M596 167 A64 9 0 0 1 724 167 L724 241 A64 9 0 0 1 596 241 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M596 167 A64 9 0 0 0 724 167" fill="none" stroke="#854F0B" stroke-width="1"/>
+<text x="660" y="185.8" font-size="13" font-weight="500" fill="#633806">Redis token</text>
+<text x="660" y="202.7" font-size="13" font-weight="500" fill="#633806">blocklist</text>
+<text x="660" y="218.3" font-size="11" fill="#854F0B">jti / sid / userId</text>
+<text x="660" y="232.6" font-size="11" fill="#854F0B">TTL = token 有效期</text>
+<path d="M236 204 L346 204" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="265" y="194.6" width="52" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="291" y="204" font-size="11" fill="#5F5E5A">吊销检查</text>
+<path d="M486 204 L596 204" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#m898781)"/>
+<rect x="509.5" y="187.2" width="63" height="33.7" rx="4" fill="#FFFFFF"/>
+<text x="541" y="196.6" font-size="11" fill="#5F5E5A">可能命中，</text>
+<text x="541" y="211.4" font-size="11" fill="#5F5E5A">回查确认</text>
+<rect x="330" y="304" width="414" height="266" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="537" y="320" font-size="12" fill="#5F5E5A">IAM 团队 — 身份验证</text>
+<rect x="346" y="342" width="382" height="64" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<text x="537" y="359.7" font-size="13" font-weight="500" fill="#712B13">身份提供者和管理者</text>
+<text x="537" y="375.3" font-size="11" fill="#993C1D">登录 · 忘记密码 · MFA 注册</text>
+<text x="537" y="389.6" font-size="11" fill="#993C1D">Kratos · Keycloak</text>
+<rect x="346" y="442" width="118" height="114" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<text x="405" y="461.9" font-size="13" font-weight="500" fill="#712B13">OAuth2 / OIDC</text>
+<text x="405" y="478.8" font-size="13" font-weight="500" fill="#712B13">提供者</text>
+<text x="405" y="494.4" font-size="11" fill="#993C1D">access + refresh</text>
+<text x="405" y="508.7" font-size="11" fill="#993C1D">+ ID token</text>
+<text x="405" y="523" font-size="11" fill="#993C1D">Hydra · Auth0 ·</text>
+<text x="405" y="537.3" font-size="11" fill="#993C1D">Okta · Cognito</text>
+<rect x="478" y="442" width="118" height="114" rx="8" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="537" y="463.2" font-size="13" font-weight="500" fill="#2C2C2A">方式</text>
+<text x="537" y="478.8" font-size="11" fill="#5F5E5A">密码 Argon2id</text>
+<text x="537" y="493.1" font-size="11" fill="#5F5E5A">MFA OTP/TOTP</text>
+<text x="537" y="507.4" font-size="11" fill="#5F5E5A">Passkeys WebAuthn</text>
+<text x="537" y="521.8" font-size="11" fill="#5F5E5A">第三方 OAuth2</text>
+<text x="537" y="536" font-size="11" fill="#5F5E5A">推送</text>
+<rect x="610" y="442" width="118" height="114" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<text x="669" y="470.4" font-size="13" font-weight="500" fill="#712B13">SAML 2.0</text>
+<text x="669" y="486" font-size="11" fill="#993C1D">企业 SSO /</text>
+<text x="669" y="500.3" font-size="11" fill="#993C1D">联合身份</text>
+<text x="669" y="514.6" font-size="11" fill="#993C1D">ADFS · Okta ·</text>
+<text x="669" y="528.9" font-size="11" fill="#993C1D">Keycloak · WorkOS</text>
+<path d="M405 406 L405 442" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)" marker-start="url(#s898781)"/>
+<path d="M537 406 L537 442" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M669 406 L669 442" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)" marker-start="url(#s898781)"/>
+<path d="M180 254 L180 344 Q180 350 186 350 L346 350" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="136.7" y="289.1" width="86.7" height="33.7" rx="4" fill="#FFFFFF"/>
+<text x="180" y="298.6" font-size="11" fill="#5F5E5A">无 / 无效凭证，</text>
+<text x="180" y="313.4" font-size="11" fill="#5F5E5A">重定向</text>
+<path d="M346 398 L128 398 Q122 398 122 392 L122 254" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="213" y="388.6" width="74" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="250" y="398" font-size="11" fill="#5F5E5A">签发服务凭证</text>
+<rect x="16" y="430" width="290" height="204" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="161" y="437.6" font-size="12" fill="#5F5E5A">服务网格 —</text>
+<text x="161" y="454.4" font-size="12" fill="#5F5E5A">服务间身份验证</text>
+<rect x="56" y="474" width="210" height="32" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="161" y="490" font-size="13" font-weight="500" fill="#0C447C">服务 A</text>
+<rect x="56" y="522" width="210" height="50" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<text x="161" y="539.2" font-size="13" font-weight="500" fill="#712B13">mTLS · SPIFFE/SPIRE SVID</text>
+<text x="161" y="555.4" font-size="12" fill="#993C1D">JWT 透传</text>
+<rect x="56" y="588" width="210" height="32" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="161" y="604" font-size="13" font-weight="500" fill="#0C447C">服务 B</text>
+<path d="M161 506 L161 522" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M161 572 L161 588" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M70 254 L70 430" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="44" y="330.6" width="52" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="70" y="340" font-size="11" fill="#5F5E5A">有效令牌</text>
+<rect x="16" y="674" width="728" height="128" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="380" y="690" font-size="12" fill="#5F5E5A">授权 — isAuthorized(subject, action, resource)</text>
+<rect x="32" y="714" width="220" height="74" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<text x="142" y="743.2" font-size="14" font-weight="500" fill="#712B13">RBAC</text>
+<text x="142" y="760.1" font-size="12" fill="#993C1D">角色</text>
+<rect x="270" y="714" width="220" height="74" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<text x="380" y="743.2" font-size="14" font-weight="500" fill="#712B13">PBAC / ABAC</text>
+<text x="380" y="760.1" font-size="12" fill="#993C1D">策略</text>
+<rect x="508" y="714" width="220" height="74" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<text x="618" y="735.4" font-size="14" font-weight="500" fill="#712B13">ReBAC / Zanzibar</text>
+<text x="618" y="752.3" font-size="12" fill="#993C1D">关系图</text>
+<text x="618" y="767.9" font-size="12" fill="#993C1D">OpenFGA · SpiceDB · Oso</text>
+<path d="M155 634 L155 674" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M405 556 L405 674" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#m898781)"/>
+<rect x="379" y="608.6" width="52" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="405" y="618" font-size="11" fill="#5F5E5A">令牌声明</text>
+<path d="M230 851 A150 9 0 0 1 530 851 L530 913 A150 9 0 0 1 230 913 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M230 851 A150 9 0 0 0 530 851" fill="none" stroke="#854F0B" stroke-width="1"/>
+<text x="380" y="870.9" font-size="14" font-weight="500" fill="#633806">受保护资源</text>
+<text x="380" y="887.8" font-size="12" fill="#854F0B">+ 隐私：PII / PHI / PCI ·</text>
+<text x="380" y="903.4" font-size="12" fill="#854F0B">差分隐私 · DID</text>
+<path d="M380 802 L380 842" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+</svg>

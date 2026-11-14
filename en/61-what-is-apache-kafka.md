@@ -37,14 +37,16 @@ Kafka is using zero copy in which that CPU does not perform the task of copying 
 Without zero copy:
 
 <img
-src="/img/kafka-without-zero-copy.png"
+src="../images/kafka-without-zero-copy.svg"
+alt="Kafka data path without zero-copy"
 style={{ width: "100%", maxWidth: 400 }}
 />
 
 With zero copy:
 
 <img
-src="/img/kafka-with-zero-copy.png"
+src="../images/kafka-with-zero-copy.svg"
+alt="Kafka data path with zero-copy"
 style={{ width: "100%", maxWidth: 300 }}
 />
 
@@ -52,11 +54,11 @@ style={{ width: "100%", maxWidth: 300 }}
 
 Looking from outside, producers write to brokers, and consumers read from brokers.
 
-<img src="/img/kafka-pub-sub.png" style={{ width: "100%", maxWidth: 300 }} />
+![Producers write to a Kafka cluster and consumers read from it](../images/kafka-pub-sub.svg)
 
 Data is stored in topics and split into partitions which are replicated.
 
-![Kafka Cluster Overview](/img/kafka-cluster-overview.png)
+![Kafka Cluster Overview](../images/kafka-cluster-overview.svg)
 
 1. Producer publishes messages to a specific topic.
    - Write to in-memory buffer first and flush to disk.
@@ -74,8 +76,9 @@ What is its network protocol? TCP
 What is a partition's storage layout? O(1) disk read
 
 <img
-src="/img/kafka-partition-data-layout.png"
-style={{ width: "100%", maxWidth: 300 }}
+src="../images/kafka-partition-data-layout.svg"
+alt="Kafka partition data layout: active segment list and segment files"
+style={{ width: "100%", maxWidth: 390 }}
 />
 
 ## How to tolerate fault?

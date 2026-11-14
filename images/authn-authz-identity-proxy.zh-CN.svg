@@ -1,0 +1,30 @@
+<svg width="100%" viewBox="0 0 720 358" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">认证服务前的身份感知代理</title>
+<desc id="d">Web 应用和移动应用把 cookie 或 token 发给身份感知代理。代理再把请求分发到 OAuth2 与 OpenID Connect 提供者、授权服务、身份提供者和管理者，以及其他服务。</desc>
+<defs><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="719" height="357" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<rect x="220" y="24" width="140" height="52" rx="26" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="290" y="42.2" font-size="14" font-weight="500" fill="#2C2C2A">Web 应用</text>
+<text x="290" y="59.1" font-size="12" fill="#5F5E5A">cookie 或 token</text>
+<rect x="380" y="24" width="140" height="52" rx="26" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="450" y="42.2" font-size="14" font-weight="500" fill="#2C2C2A">移动应用</text>
+<text x="450" y="59.1" font-size="12" fill="#5F5E5A">token</text>
+<rect x="240" y="150" width="240" height="48" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<text x="360" y="174" font-size="14" font-weight="500" fill="#712B13">身份感知代理</text>
+<path d="M290 76 L290 108 Q290 114 296 114 L354 114 Q360 114 360 120 L360 150" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M450 76 L450 108 Q450 114 444 114 L360 114" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="24" y="270" width="156" height="64" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<text x="102" y="293.6" font-size="13" font-weight="500" fill="#712B13">OAuth2 与 OpenID</text>
+<text x="102" y="310.4" font-size="13" font-weight="500" fill="#712B13">Connect 提供者</text>
+<rect x="196" y="270" width="156" height="64" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<text x="274" y="302" font-size="13" font-weight="500" fill="#712B13">授权服务</text>
+<rect x="368" y="270" width="156" height="64" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<text x="446" y="293.6" font-size="13" font-weight="500" fill="#712B13">身份提供者</text>
+<text x="446" y="310.4" font-size="13" font-weight="500" fill="#712B13">和管理者</text>
+<rect x="540" y="270" width="156" height="64" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="618" y="302" font-size="13" font-weight="500" fill="#0C447C">…其他服务</text>
+<path d="M360 198 L360 228 Q360 234 354 234 L108 234 Q102 234 102 240 L102 270" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M360 198 L360 228 Q360 234 354 234 L280 234 Q274 234 274 240 L274 270" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M360 198 L360 228 Q360 234 366 234 L440 234 Q446 234 446 240 L446 270" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M360 198 L360 228 Q360 234 366 234 L612 234 Q618 234 618 240 L618 270" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+</svg>

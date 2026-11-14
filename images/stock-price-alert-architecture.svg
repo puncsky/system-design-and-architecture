@@ -1,0 +1,85 @@
+<svg width="100%" viewBox="0 0 760 534" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">Smart stock price notification architecture</title>
+<desc id="d">A cronjob triggers the price ticker, which ticks external vendors every 5 minutes and batch-writes into a time-series database, and the price watcher, which periodically reads it, uses a throttler cache and emits events to a notification queue. The notifier reads the queue, looks up User Settings (reached by the Robinhood app through a reverse proxy and API gateway) and sends through APNs, FCM or email services back to the app.</desc>
+<defs><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="759" height="533" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<rect x="414" y="24" width="180" height="44" rx="22" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="504" y="46" font-size="13" font-weight="500" fill="#2C2C2A">Robinhood App</text>
+<rect x="436" y="34" width="14" height="24" rx="3" fill="#FFFFFF" stroke="#5F5E5A" stroke-width="1.2"/>
+<path d="M441 37.5 L445 37.5" stroke="#5F5E5A" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="443" cy="53.5" r="1.3" fill="#5F5E5A"/>
+<rect x="444" y="100" width="120" height="40" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="504" y="120" font-size="13" font-weight="500" fill="#0C447C">Reverse Proxy</text>
+<rect x="444" y="164" width="120" height="40" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="504" y="184" font-size="13" font-weight="500" fill="#0C447C">API Gateway</text>
+<rect x="444" y="228" width="120" height="44" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="504" y="250" font-size="13" font-weight="500" fill="#0C447C">User Settings</text>
+<path d="M594 232 A28 7 0 0 1 650 232 L650 268 A28 7 0 0 1 594 268 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M594 232 A28 7 0 0 0 650 232" fill="none" stroke="#854F0B" stroke-width="1"/>
+<text x="622" y="253.5" font-size="12" font-weight="500" fill="#633806">DB</text>
+<path d="M504 68 L504 100" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M504 140 L504 164" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M504 204 L504 228" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M564 250 L594 250" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="444" y="374" width="120" height="44" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="504" y="396" font-size="13" font-weight="500" fill="#0C447C">notifier</text>
+<path d="M454 466 L554 466 A10 22 0 0 1 554 510 L454 510 A10 22 0 0 1 454 466 Z" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<path d="M554 466 A10 22 0 0 0 554 510" fill="none" stroke="#0F6E56" stroke-width="1"/>
+<text x="494" y="480.2" font-size="12" font-weight="500" fill="#085041">Notification</text>
+<text x="494" y="495.8" font-size="12" font-weight="500" fill="#085041">Queue</text>
+<path d="M504 374 L504 272" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M504 418 L504 466" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="608" y="290" width="120" height="60" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<text x="668" y="304.4" font-size="12" font-weight="500" fill="#712B13">Apple Push</text>
+<text x="668" y="320" font-size="12" font-weight="500" fill="#712B13">Notification</text>
+<text x="668" y="335.6" font-size="12" font-weight="500" fill="#712B13">service (APNs)</text>
+<rect x="608" y="366" width="120" height="60" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<text x="668" y="380.4" font-size="12" font-weight="500" fill="#712B13">Google Firebase</text>
+<text x="668" y="396" font-size="12" font-weight="500" fill="#712B13">Cloud Messaging</text>
+<text x="668" y="411.6" font-size="12" font-weight="500" fill="#712B13">(FCM)</text>
+<rect x="608" y="442" width="120" height="60" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<text x="668" y="456.4" font-size="12" font-weight="500" fill="#712B13">Email Services</text>
+<text x="668" y="472" font-size="12" font-weight="500" fill="#712B13">AWS SES</text>
+<text x="668" y="487.6" font-size="12" font-weight="500" fill="#712B13">/sendgrid/etc</text>
+<path d="M564 396 L580 396 Q586 396 586 390 L586 326 Q586 320 592 320 L608 320" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M564 396 L586 396 Q586 396 586 396 L586 396 Q586 396 586 396 L608 396" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M564 396 L580 396 Q586 396 586 402 L586 466 Q586 472 592 472 L608 472" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M728 320 L736 320 Q742 320 742 314 L742 52 Q742 46 736 46 L594 46" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M728 396 L736 396 Q742 396 742 390 L742 52 Q742 46 736 46 L594 46" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M728 472 L736 472 Q742 472 742 466 L742 52 Q742 46 736 46 L594 46" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="259" y="170" width="90" height="38" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="304" y="189" font-size="13" font-weight="500" fill="#3C3489">cronjob</text>
+<rect x="24" y="244" width="94" height="68" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<text x="71" y="262.4" font-size="13" font-weight="500" fill="#712B13">External</text>
+<text x="71" y="279.3" font-size="13" font-weight="500" fill="#712B13">Vendors</text>
+<text x="71" y="294.9" font-size="11" fill="#993C1D">Market Prices</text>
+<rect x="206" y="250" width="86" height="56" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="249" y="269.6" font-size="13" font-weight="500" fill="#0C447C">price</text>
+<text x="249" y="286.4" font-size="13" font-weight="500" fill="#0C447C">ticker</text>
+<rect x="316" y="250" width="86" height="56" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="359" y="269.6" font-size="13" font-weight="500" fill="#0C447C">price</text>
+<text x="359" y="286.4" font-size="13" font-weight="500" fill="#0C447C">watcher</text>
+<path d="M304 208 L304 226 Q304 232 298 232 L255 232 Q249 232 249 238 L249 250" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M304 208 L304 226 Q304 232 310 232 L353 232 Q359 232 359 238 L359 250" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M206 278 L118 278" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#m898781)"/>
+<rect x="129.9" y="261.1" width="64.2" height="33.7" rx="4" fill="#FFFFFF"/>
+<text x="162" y="270.6" font-size="11" fill="#5F5E5A">Tick every</text>
+<text x="162" y="285.4" font-size="11" fill="#5F5E5A">5 mins</text>
+<path d="M140 388.7 A75 8.7 0 0 1 290 388.7 L290 433.3 A75 8.7 0 0 1 140 433.3 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M140 388.7 A75 8.7 0 0 0 290 388.7" fill="none" stroke="#854F0B" stroke-width="1"/>
+<text x="215" y="408.2" font-size="13" font-weight="500" fill="#633806">Time-series DB</text>
+<text x="215" y="423.8" font-size="11" fill="#854F0B">influx or prometheus</text>
+<path d="M317 391.6 A44 7.6 0 0 1 405 391.6 L405 430.4 A44 7.6 0 0 1 317 430.4 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M317 391.6 A44 7.6 0 0 0 405 391.6" fill="none" stroke="#854F0B" stroke-width="1"/>
+<text x="361" y="407" font-size="12" font-weight="500" fill="#633806">throttler</text>
+<text x="361" y="422.6" font-size="12" font-weight="500" fill="#633806">cache</text>
+<path d="M215 306 L215 380" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="181.5" y="333.6" width="67" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="215" y="343" font-size="11" fill="#5F5E5A">batch write</text>
+<path d="M337 306 L337 338 Q337 344 331 344 L273 344 Q267 344 267 350 L267 380" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#m898781)"/>
+<rect x="270.9" y="327.1" width="60.2" height="33.7" rx="4" fill="#FFFFFF"/>
+<text x="301" y="336.6" font-size="11" fill="#5F5E5A">periodical</text>
+<text x="301" y="351.4" font-size="11" fill="#5F5E5A">read</text>
+<path d="M381 306 L381 384" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M402 278 L417 278 Q423 278 423 284 L423 482 Q423 488 429 488 L444 488" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+</svg>

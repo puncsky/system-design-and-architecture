@@ -1,0 +1,67 @@
+<svg width="100%" viewBox="0 0 720 596" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">指标系统：InfluxDB 推送模型与 Prometheus 拉取模型</title>
+<desc id="d">上图：服务器农场中的 telegraf 向 InfluxDB 写入数据，Grafana 通过 REST API 访问 InfluxDB。下图：Prometheus 的检索组件从应用程序的客户端库以及第三方应用程序前的导出器拉取指标，写入存储，通过 PromQL 为 Web UI、Grafana 和 API 客户端提供查询，借助服务发现，并经 Alertmanager 向 PagerDuty 和邮件发出告警。</desc>
+<defs><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="719" height="595" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<rect x="24" y="24" width="672" height="182" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1"/>
+<text x="360" y="40" font-size="13" fill="#5F5E5A">InfluxDB 推送模型</text>
+<rect x="70" y="62" width="160" height="76" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<rect x="80" y="72" width="160" height="76" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<rect x="90" y="82" width="160" height="76" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<rect x="162" y="102" width="76" height="34" rx="5" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="200" y="119" font-size="13" font-weight="500" fill="#2C2C2A">telegraf</text>
+<text x="146" y="176" font-size="12" fill="#5F5E5A">服务器农场</text>
+<path d="M350 95 A55 9 0 0 1 460 95 L460 143 A55 9 0 0 1 350 143 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M350 95 A55 9 0 0 0 460 95" fill="none" stroke="#854F0B" stroke-width="1"/>
+<text x="405" y="123.5" font-size="13" font-weight="500" fill="#633806">InfluxDB</text>
+<rect x="570" y="97" width="110" height="44" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="625" y="119" font-size="13" font-weight="500" fill="#2C2C2A">Grafana</text>
+<path d="M238 119 L350 119" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="279" y="109.6" width="30" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="294" y="119" font-size="11" fill="#5F5E5A">写入</text>
+<path d="M570 119 L460 119" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="485.9" y="109.6" width="58.2" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="515" y="119" font-size="11" fill="#5F5E5A">REST API</text>
+<rect x="24" y="226" width="672" height="346" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1"/>
+<text x="360" y="242" font-size="13" fill="#5F5E5A">Prometheus 拉取模型</text>
+<rect x="280" y="378" width="372" height="100" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1"/>
+<text x="296" y="394" font-size="13" font-weight="500" style="text-anchor:start" fill="#2C2C2A">Prometheus</text>
+<rect x="296" y="412" width="92" height="44" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="342" y="434" font-size="13" font-weight="500" fill="#0C447C">检索</text>
+<rect x="420" y="412" width="92" height="44" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="466" y="434" font-size="13" font-weight="500" fill="#633806">存储</text>
+<rect x="544" y="412" width="92" height="44" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="590" y="434" font-size="13" font-weight="500" fill="#0C447C">PromQL</text>
+<path d="M388 434 L420 434" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M512 434 L544 434" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="60" y="316" width="160" height="86" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1"/>
+<text x="74" y="334" font-size="13" font-weight="500" style="text-anchor:start" fill="#2C2C2A">应用程序</text>
+<rect x="76" y="348" width="128" height="40" rx="8" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="140" y="368" font-size="12" font-weight="500" fill="#2C2C2A">客户端库</text>
+<rect x="60" y="414" width="160" height="40" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="140" y="434" font-size="13" font-weight="500" fill="#0C447C">导出器</text>
+<rect x="60" y="498" width="160" height="48" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<text x="140" y="513.6" font-size="13" font-weight="500" fill="#712B13">第三方</text>
+<text x="140" y="530.5" font-size="13" font-weight="500" fill="#712B13">应用程序</text>
+<path d="M140 454 L140 498" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M296 434 L220 434" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#m898781)"/>
+<path d="M296 434 L256 434 Q250 434 250 428 L250 374 Q250 368 244 368 L204 368" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#m898781)"/>
+<rect x="235" y="372.6" width="30" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="250" y="382" font-size="11" fill="#5F5E5A">拉取</text>
+<rect x="296" y="508" width="92" height="48" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="342" y="532" font-size="12" font-weight="500" fill="#3C3489">服务发现</text>
+<path d="M342 456 L342 508" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="510" y="508" width="160" height="48" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="590" y="524.2" font-size="12" font-weight="500" fill="#2C2C2A">Web UI / Grafana /</text>
+<text x="590" y="539.8" font-size="12" font-weight="500" fill="#2C2C2A">API 客户端</text>
+<path d="M590 456 L590 508" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="296" y="296" width="140" height="40" rx="8" fill="#FCEBEB" stroke="#A32D2D" stroke-width="1"/>
+<text x="366" y="316" font-size="13" font-weight="500" fill="#791F1F">告警管理器</text>
+<path d="M366 378 L366 336" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="490" y="266" width="110" height="38" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<text x="545" y="285" font-size="13" font-weight="500" fill="#712B13">PagerDuty</text>
+<rect x="490" y="322" width="110" height="38" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<text x="545" y="341" font-size="13" font-weight="500" fill="#712B13">邮件</text>
+<path d="M436 316 L458 316 Q464 316 464 310 L464 291 Q464 285 470 285 L490 285" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M436 316 L458 316 Q464 316 464 322 L464 335 Q464 341 470 341 L490 341" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+</svg>

@@ -1,0 +1,36 @@
+<svg width="100%" viewBox="0 0 720 420" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">Online judge architecture</title>
+<desc id="d">A presentation layer calls an API. The API records each submission in a submission database and publishes it to a submission queue. A code execution engine, backed by a sandbox and a compiler or interpreter, polls the queue and works with the database.</desc>
+<defs><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="719" height="419" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<text x="360" y="26" font-size="15" font-weight="600" fill="#2C2C2A">OJ architecture</text>
+<rect x="40" y="52" width="640" height="44" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="360" y="74" font-size="14" font-weight="500" fill="#2C2C2A">Presentation Layer</text>
+<rect x="40" y="136" width="640" height="44" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="360" y="158" font-size="14" font-weight="500" fill="#0C447C">API</text>
+<path d="M360 96 L360 136" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="260" y="252" width="200" height="44" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="360" y="274" font-size="14" font-weight="500" fill="#0C447C">Code Execution Engine</text>
+<rect x="260" y="302" width="200" height="44" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<text x="360" y="324" font-size="14" font-weight="500" fill="#712B13">Sandbox</text>
+<rect x="260" y="352" width="200" height="44" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="360" y="374" font-size="14" font-weight="500" fill="#3C3489">Compiler / Interpreter</text>
+<path d="M40 248 A75 9 0 0 1 190 248 L190 300 A75 9 0 0 1 40 300 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M40 248 A75 9 0 0 0 190 248" fill="none" stroke="#854F0B" stroke-width="1"/>
+<text x="115" y="270.1" font-size="13" font-weight="500" fill="#633806">Submission</text>
+<text x="115" y="286.9" font-size="13" font-weight="500" fill="#633806">Database</text>
+<path d="M540 239 L670 239 A10 35 0 0 1 670 309 L540 309 A10 35 0 0 1 540 239 Z" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<path d="M670 239 A10 35 0 0 0 670 309" fill="none" stroke="#0F6E56" stroke-width="1"/>
+<text x="595" y="265.6" font-size="13" font-weight="500" fill="#085041">Submission</text>
+<text x="595" y="282.4" font-size="13" font-weight="500" fill="#085041">Queue</text>
+<path d="M115 180 L115 239" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="123.8" y="200.1" width="50.3" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="149" y="209.5" font-size="11" fill="#5F5E5A">records</text>
+<path d="M605 180 L605 239" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="538.5" y="200.1" width="56.9" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="567" y="209.5" font-size="11" fill="#5F5E5A">publishes</text>
+<path d="M260 274 L190 274" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M460 274 L530 274" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#m898781)"/>
+<rect x="478.6" y="251.6" width="32.8" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="495" y="261" font-size="11" fill="#5F5E5A">polls</text>
+</svg>

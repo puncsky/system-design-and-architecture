@@ -39,7 +39,7 @@ Query = function(all data)
 
 Then a lambda architecture is
 
-![Lambda Architecture](/img/lambda-architecture.png)
+![Lambda Architecture](../images/lambda-architecture.svg)
 
 ```txt
 batch view = function(all data at the batching job's execution time)
@@ -50,4 +50,4 @@ query = function(batch view. realtime view)
 
 ==Lambda architecture = CQRS (batch layer + serving layer) + speed layer==
 
-![Lambda Architecture for big data systems](https://res.cloudinary.com/dohtidfqh/image/upload/v1548840018/web-guiguio/lambda-architecture-for-big-data-systems.png)
+![Lambda Architecture for big data systems](../images/lambda-architecture-big-data.svg)

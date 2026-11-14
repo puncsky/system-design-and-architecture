@@ -1,0 +1,47 @@
+<svg width="100%" viewBox="0 0 720 462" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">Event-driven architecture with a mediator</title>
+<desc id="d">An event enters an event queue and reaches an event mediator, which routes it to one of three event channels. Each channel feeds one or two event processors.</desc>
+<defs><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="719" height="461" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<rect x="300" y="24" width="120" height="38" rx="8" fill="#FBEAF0" stroke="#993556" stroke-width="1"/>
+<text x="360" y="43" font-size="13" font-weight="500" fill="#72243E">Event</text>
+<path d="M300 100 L420 100 A10 20 0 0 1 420 140 L300 140 A10 20 0 0 1 300 100 Z" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<path d="M420 100 A10 20 0 0 0 420 140" fill="none" stroke="#0F6E56" stroke-width="1"/>
+<text x="350" y="120" font-size="13" font-weight="500" fill="#085041">Event Queue</text>
+<path d="M360 62 L360 100" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="280" y="178" width="160" height="44" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="360" y="200" font-size="13" font-weight="500" fill="#3C3489">Event Mediator</text>
+<path d="M360 140 L360 178" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M75 284 L205 284 A10 20 0 0 1 205 324 L75 324 A10 20 0 0 1 75 284 Z" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<path d="M205 284 A10 20 0 0 0 205 324" fill="none" stroke="#0F6E56" stroke-width="1"/>
+<text x="130" y="304" font-size="13" font-weight="500" fill="#085041">Event Channel</text>
+<path d="M360 222 L360 248 Q360 254 354 254 L146 254 Q140 254 140 260 L140 284" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M295 284 L425 284 A10 20 0 0 1 425 324 L295 324 A10 20 0 0 1 295 284 Z" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<path d="M425 284 A10 20 0 0 0 425 324" fill="none" stroke="#0F6E56" stroke-width="1"/>
+<text x="350" y="304" font-size="13" font-weight="500" fill="#085041">Event Channel</text>
+<path d="M360 222 L360 284" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M515 284 L645 284 A10 20 0 0 1 645 324 L515 324 A10 20 0 0 1 515 284 Z" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<path d="M645 284 A10 20 0 0 0 645 324" fill="none" stroke="#0F6E56" stroke-width="1"/>
+<text x="570" y="304" font-size="13" font-weight="500" fill="#085041">Event Channel</text>
+<path d="M360 222 L360 248 Q360 254 366 254 L574 254 Q580 254 580 260 L580 284" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="20" y="392" width="110" height="46" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="75" y="406.6" font-size="13" font-weight="500" fill="#0C447C">Event</text>
+<text x="75" y="423.4" font-size="13" font-weight="500" fill="#0C447C">Processor</text>
+<path d="M140 324 L140 352 Q140 358 134 358 L81 358 Q75 358 75 364 L75 392" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="150" y="392" width="110" height="46" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="205" y="406.6" font-size="13" font-weight="500" fill="#0C447C">Event</text>
+<text x="205" y="423.4" font-size="13" font-weight="500" fill="#0C447C">Processor</text>
+<path d="M140 324 L140 352 Q140 358 146 358 L199 358 Q205 358 205 364 L205 392" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="305" y="392" width="110" height="46" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="360" y="406.6" font-size="13" font-weight="500" fill="#0C447C">Event</text>
+<text x="360" y="423.4" font-size="13" font-weight="500" fill="#0C447C">Processor</text>
+<path d="M360 324 L360 392" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="460" y="392" width="110" height="46" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="515" y="406.6" font-size="13" font-weight="500" fill="#0C447C">Event</text>
+<text x="515" y="423.4" font-size="13" font-weight="500" fill="#0C447C">Processor</text>
+<path d="M580 324 L580 352 Q580 358 574 358 L521 358 Q515 358 515 364 L515 392" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="590" y="392" width="110" height="46" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="645" y="406.6" font-size="13" font-weight="500" fill="#0C447C">Event</text>
+<text x="645" y="423.4" font-size="13" font-weight="500" fill="#0C447C">Processor</text>
+<path d="M580 324 L580 352 Q580 358 586 358 L639 358 Q645 358 645 364 L645 392" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+</svg>

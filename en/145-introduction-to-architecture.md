@@ -43,7 +43,7 @@ The layered architecture is the most common in adoption, well-known among develo
 
 [comment]: <> "https://www.draw.io/#G1ldM5O9Y62Upqg_t5rcTNHIRseP-7fqQT"
 
-![](https://res.cloudinary.com/dohtidfqh/image/upload/v1557614663/web-guiguio/Software_Architecture_101.png)
+![Layered architecture](../images/arch-patterns-layered.svg)
 
 Examples
 
@@ -64,11 +64,11 @@ Pros and Cons
 
 A state change will emit an event to the system. All the components communicate with each other through events.
 
-![](https://res.cloudinary.com/dohtidfqh/image/upload/v1557614663/web-guiguio/software-architecture-101-event-driven.png)
+![Event-driven architecture with a mediator](../images/arch-patterns-event-driven.svg)
 
 A simple project can combine the mediator, event queue, and channel. Then we get a simplified architecture:
 
-![](https://res.cloudinary.com/dohtidfqh/image/upload/v1557614663/web-guiguio/software-architecture-101-event-driven-simplified.png)
+![Simplified event-driven architecture](../images/arch-patterns-event-driven-simple.svg)
 
 Examples
 
@@ -79,7 +79,7 @@ Examples
 
 The software's responsibilities are divided into one "core" and multiple "plugins". The core contains the bare minimum functionality. Plugins are independent of each other and implement shared interfaces to achieve different goals.
 
-![](https://res.cloudinary.com/dohtidfqh/image/upload/v1557614663/web-guiguio/software-architecture-101-micro-kernel.png)
+![Micro-kernel architecture](../images/arch-patterns-micro-kernel.svg)
 
 Examples
 
@@ -90,7 +90,7 @@ Examples
 
 A massive system is decoupled to multiple micro-services, each of which is a separately deployed unit, and they communicate with each other via [RPCs](https://tianpan.co/notes/2016-02-13-crack-the-system-design-interview#21-communication).
 
-![uber architecture](https://res.cloudinary.com/dohtidfqh/image/upload/v1546574738/web-guiguio/uber-architecture_2.jpg)
+![Uber architecture](../images/uber-architecture.svg)
 
 Examples
 
@@ -101,7 +101,7 @@ Examples
 
 This pattern gets its name from "tuple space", which means “distributed shared memory". There is no database or synchronous database access, and thus no database bottleneck. All the processing units share the replicated application data in memory. These processing units can be started up and shut down elastically.
 
-![](https://res.cloudinary.com/dohtidfqh/image/upload/v1557614663/web-guiguio/software-architecture-101-space-based.png)
+![Space-based architecture](../images/arch-patterns-space-based.svg)
 
 Examples: See [Wikipedia](https://en.wikipedia.org/wiki/Tuple_space#Example_usage)
 

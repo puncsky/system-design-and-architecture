@@ -25,7 +25,7 @@ An online judge is primarily a place where you can execute code remotely for edu
 
 The architecture below is featured on queueing for async execution and sandboxing for secure execution. And each component is separately deployable and scalable.
 
-![designing online judge system](https://res.cloudinary.com/dohtidfqh/image/upload/v1594706130/web-guiguio/designing-online-judge.png)
+![Online judge architecture: API, submission database and queue, code execution engine](../images/online-judge-architecture.svg)
 
 ## Components
 

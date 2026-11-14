@@ -1,0 +1,144 @@
+<svg width="100%" viewBox="0 0 760 645" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">Uber architecture</title>
+<desc id="d">Rider and partner apps reach a public API gateway over HTTP or QUIC; services talk over Thrift RPC with service discovery. Dispatch is geo-sharded and mission critical, while Trip, Payment and User profile each own a database. Shared infrastructure includes a Schemaless MySQL proxy, a twemproxy cache proxy and a Kafka to data warehouse pipeline.</desc>
+<defs><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="759" height="644" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<rect x="150" y="24" width="120" height="34" rx="17" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="210" y="41" font-size="14" font-weight="500" fill="#2C2C2A">Rider app</text>
+<rect x="290" y="24" width="120" height="34" rx="17" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="350" y="41" font-size="14" font-weight="500" fill="#2C2C2A">Partner app</text>
+<rect x="100" y="100" width="330" height="48" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="265" y="124" font-size="14" font-weight="500" fill="#0C447C">Public API gateway &amp; auth</text>
+<rect x="450" y="100" width="150" height="48" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="525" y="124" font-size="14" font-weight="500" fill="#0C447C">Public websites</text>
+<path d="M210 58 L210 80 Q210 80 210 80 L210 80" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M350 58 L350 74 Q350 80 344 80 L210 80" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M210 80 L210 100" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="224.6" y="80.6" width="74.8" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="262" y="90" font-size="11" fill="#5F5E5A">HTTP / QUIC</text>
+<rect x="616" y="82" width="130" height="82" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="681" y="108.7" font-size="12" font-weight="500" fill="#633806">Service discovery</text>
+<text x="681" y="123.7" font-size="11" fill="#854F0B">chef + HAProxy</text>
+<text x="681" y="138" font-size="11" fill="#854F0B">or ZooKeeper</text>
+<path d="M70 196 L681 196" fill="none" stroke="#898781" stroke-width="1.5"/>
+<path d="M205 148 L205 196" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="173.8" y="162.6" width="62.3" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="205" y="172" font-size="11" fill="#5F5E5A">Thrift RPC</text>
+<path d="M525 148 L525 196" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="493.8" y="162.6" width="62.3" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="525" y="172" font-size="11" fill="#5F5E5A">Thrift RPC</text>
+<path d="M681 164 L681 196" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="5 4"/>
+<rect x="40" y="232" width="130" height="50" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="105" y="248.5" font-size="13" font-weight="500" fill="#0C447C">Dispatch</text>
+<text x="105" y="265.4" font-size="13" font-weight="500" fill="#0C447C">service</text>
+<path d="M105 196 L105 232" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="190" y="232" width="130" height="50" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="255" y="248.5" font-size="13" font-weight="500" fill="#0C447C">Trip</text>
+<text x="255" y="265.4" font-size="13" font-weight="500" fill="#0C447C">service</text>
+<path d="M255 196 L255 232" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="340" y="232" width="130" height="50" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="405" y="248.5" font-size="13" font-weight="500" fill="#0C447C">Payment</text>
+<text x="405" y="265.4" font-size="13" font-weight="500" fill="#0C447C">service</text>
+<path d="M405 196 L405 232" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="490" y="232" width="130" height="50" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="555" y="248.5" font-size="13" font-weight="500" fill="#0C447C">User profile</text>
+<text x="555" y="265.4" font-size="13" font-weight="500" fill="#0C447C">service</text>
+<path d="M555 196 L555 232" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="626" y="232" width="110" height="50" rx="8" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="681" y="249.2" font-size="12" font-weight="500" fill="#2C2C2A">…thousands of</text>
+<text x="681" y="264.8" font-size="12" font-weight="500" fill="#2C2C2A">microservices</text>
+<path d="M681 196 L681 232" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M77 324.2 A28 6.2 0 0 1 133 324.2 L133 355.8 A28 6.2 0 0 1 77 355.8 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M77 324.2 A28 6.2 0 0 0 133 324.2" fill="none" stroke="#854F0B" stroke-width="1"/>
+<text x="105" y="343.1" font-size="14" font-weight="500" fill="#633806">DB</text>
+<path d="M105 282 L105 318" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M227 324.2 A28 6.2 0 0 1 283 324.2 L283 355.8 A28 6.2 0 0 1 227 355.8 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M227 324.2 A28 6.2 0 0 0 283 324.2" fill="none" stroke="#854F0B" stroke-width="1"/>
+<text x="255" y="343.1" font-size="14" font-weight="500" fill="#633806">DB</text>
+<path d="M255 282 L255 318" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M527 324.2 A28 6.2 0 0 1 583 324.2 L583 355.8 A28 6.2 0 0 1 527 355.8 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M527 324.2 A28 6.2 0 0 0 583 324.2" fill="none" stroke="#854F0B" stroke-width="1"/>
+<text x="555" y="343.1" font-size="14" font-weight="500" fill="#633806">DB</text>
+<path d="M555 282 L555 318" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M336.1 322 L393.9 322 A9.1 19 0 0 1 393.9 360 L336.1 360 A9.1 19 0 0 1 336.1 322 Z" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<path d="M393.9 322 A9.1 19 0 0 0 393.9 360" fill="none" stroke="#0F6E56" stroke-width="1"/>
+<text x="355.9" y="341" font-size="12" font-weight="500" fill="#085041">Queue</text>
+<path d="M427 324.2 A28 6.2 0 0 1 483 324.2 L483 355.8 A28 6.2 0 0 1 427 355.8 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M427 324.2 A28 6.2 0 0 0 483 324.2" fill="none" stroke="#854F0B" stroke-width="1"/>
+<text x="455" y="343.1" font-size="14" font-weight="500" fill="#633806">DB</text>
+<path d="M361 282 L361 322" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M455 282 L455 318" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="26" y="216" width="158" height="166" rx="10" fill="none" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="105" y="372" font-size="11" fill="#5F5E5A">Mission critical</text>
+<path d="M64 382 L38 412" fill="none" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="4 4"/>
+<path d="M146 382 L272 412" fill="none" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="4 4"/>
+<rect x="24" y="412" width="262" height="168" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="155" y="428" font-size="11" fill="#5F5E5A">Geo-sharding · CAP: AP over CP (no replica)</text>
+<rect x="38" y="440" width="118" height="128" rx="8" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="97" y="457" font-size="12" font-weight="500" fill="#2C2C2A">California</text>
+<circle cx="97" cy="500" r="24" fill="none" stroke="#B4B2AA" stroke-width="1"/>
+<circle cx="97" cy="476" r="5" fill="#A32D2D" stroke="#FFFFFF" stroke-width="1"/>
+<circle cx="114" cy="483" r="5" fill="#185FA5" stroke="#FFFFFF" stroke-width="1"/>
+<circle cx="121" cy="500" r="5" fill="#3B6D11" stroke="#FFFFFF" stroke-width="1"/>
+<circle cx="114" cy="517" r="5" fill="#A32D2D" stroke="#FFFFFF" stroke-width="1"/>
+<circle cx="97" cy="524" r="5" fill="#185FA5" stroke="#FFFFFF" stroke-width="1"/>
+<circle cx="80" cy="517" r="5" fill="#3B6D11" stroke="#FFFFFF" stroke-width="1"/>
+<circle cx="73" cy="500" r="5" fill="#A32D2D" stroke="#FFFFFF" stroke-width="1"/>
+<circle cx="80" cy="483" r="5" fill="#185FA5" stroke="#FFFFFF" stroke-width="1"/>
+<text x="97" y="534" font-size="10" fill="#5F5E5A">DHT supply/</text>
+<text x="97" y="548" font-size="10" fill="#5F5E5A">demand matching</text>
+<rect x="164" y="440" width="118" height="128" rx="8" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="223" y="457" font-size="12" font-weight="500" fill="#2C2C2A">Northeast</text>
+<circle cx="223" cy="500" r="24" fill="none" stroke="#B4B2AA" stroke-width="1"/>
+<circle cx="223" cy="476" r="5" fill="#A32D2D" stroke="#FFFFFF" stroke-width="1"/>
+<circle cx="240" cy="483" r="5" fill="#185FA5" stroke="#FFFFFF" stroke-width="1"/>
+<circle cx="247" cy="500" r="5" fill="#3B6D11" stroke="#FFFFFF" stroke-width="1"/>
+<circle cx="240" cy="517" r="5" fill="#A32D2D" stroke="#FFFFFF" stroke-width="1"/>
+<circle cx="223" cy="524" r="5" fill="#185FA5" stroke="#FFFFFF" stroke-width="1"/>
+<circle cx="206" cy="517" r="5" fill="#3B6D11" stroke="#FFFFFF" stroke-width="1"/>
+<circle cx="199" cy="500" r="5" fill="#A32D2D" stroke="#FFFFFF" stroke-width="1"/>
+<circle cx="206" cy="483" r="5" fill="#185FA5" stroke="#FFFFFF" stroke-width="1"/>
+<text x="223" y="534" font-size="10" fill="#5F5E5A">DHT supply/</text>
+<text x="223" y="548" font-size="10" fill="#5F5E5A">demand matching</text>
+<rect x="306" y="412" width="160" height="168" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="386" y="566" font-size="11" fill="#5F5E5A">DB proxy</text>
+<rect x="330" y="426" width="112" height="28" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="386" y="440" font-size="12" font-weight="500" fill="#633806">Schemaless</text>
+<path d="M386 454 L386 470" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M334 476.2 A46 6.2 0 0 1 426 476.2 L426 507.8 A46 6.2 0 0 1 334 507.8 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M334 476.2 A46 6.2 0 0 0 426 476.2" fill="none" stroke="#854F0B" stroke-width="1"/>
+<path d="M344 488.2 A46 6.2 0 0 1 436 488.2 L436 519.8 A46 6.2 0 0 1 344 519.8 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M344 488.2 A46 6.2 0 0 0 436 488.2" fill="none" stroke="#854F0B" stroke-width="1"/>
+<path d="M354 500.2 A46 6.2 0 0 1 446 500.2 L446 531.8 A46 6.2 0 0 1 354 531.8 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M354 500.2 A46 6.2 0 0 0 446 500.2" fill="none" stroke="#854F0B" stroke-width="1"/>
+<text x="400" y="519.1" font-size="12" font-weight="500" fill="#633806">MySQL</text>
+<rect x="476" y="412" width="124" height="168" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="538" y="566" font-size="11" fill="#5F5E5A">Cache proxy</text>
+<rect x="490" y="426" width="96" height="28" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="538" y="440" font-size="12" font-weight="500" fill="#633806">twemproxy</text>
+<path d="M538 454 L538 470" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M494 476.2 A38 6.2 0 0 1 570 476.2 L570 507.8 A38 6.2 0 0 1 494 507.8 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M494 476.2 A38 6.2 0 0 0 570 476.2" fill="none" stroke="#854F0B" stroke-width="1"/>
+<path d="M502 488.2 A38 6.2 0 0 1 578 488.2 L578 519.8 A38 6.2 0 0 1 502 519.8 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M502 488.2 A38 6.2 0 0 0 578 488.2" fill="none" stroke="#854F0B" stroke-width="1"/>
+<path d="M510 500.2 A38 6.2 0 0 1 586 500.2 L586 531.8 A38 6.2 0 0 1 510 531.8 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M510 500.2 A38 6.2 0 0 0 586 500.2" fill="none" stroke="#854F0B" stroke-width="1"/>
+<text x="548" y="519.1" font-size="11" font-weight="500" fill="#633806">KV cache</text>
+<rect x="610" y="412" width="134" height="208" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="677" y="606" font-size="11" fill="#5F5E5A">Data pipeline</text>
+<path d="M634 426 L720 426 A10 14 0 0 1 720 454 L634 454 A10 14 0 0 1 634 426 Z" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<path d="M720 426 A10 14 0 0 0 720 454" fill="none" stroke="#0F6E56" stroke-width="1"/>
+<text x="667" y="440" font-size="12" font-weight="500" fill="#085041">Kafka</text>
+<path d="M634 466 L720 466 A10 14 0 0 1 720 494 L634 494 A10 14 0 0 1 634 466 Z" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<path d="M720 466 A10 14 0 0 0 720 494" fill="none" stroke="#0F6E56" stroke-width="1"/>
+<text x="667" y="480" font-size="12" font-weight="500" fill="#085041">Kafka …</text>
+<path d="M624 513.6 A53 5.6 0 0 1 730 513.6 L730 542.4 A53 5.6 0 0 1 624 542.4 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M624 513.6 A53 5.6 0 0 0 730 513.6" fill="none" stroke="#854F0B" stroke-width="1"/>
+<text x="677" y="523.6" font-size="11" font-weight="500" fill="#633806">Data</text>
+<text x="677" y="537.9" font-size="11" font-weight="500" fill="#633806">warehouse</text>
+<rect x="624" y="558" width="106" height="34" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="677" y="575" font-size="11" font-weight="500" fill="#2C2C2A">Business intel.</text>
+<path d="M677 454 L677 466" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M677 494 L677 508" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M677 548 L677 558" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+</svg>

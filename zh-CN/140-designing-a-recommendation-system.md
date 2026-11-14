@@ -80,7 +80,7 @@ references:
 
 考虑到所有内容的超大规模，无法用模型预测所有事情。因此，我们需要召回策略来关注数据的代表性子集。性能在这里至关重要，超时时间为 50 毫秒。
 
-![召回策略](https://res.cloudinary.com/dohtidfqh/image/upload/v1554489731/web-guiguio/recall-strategy_1.png)
+![召回策略](../images/recommendation-recall-strategy.zh-CN.svg)
 
 在所有召回策略中，我们采用 `InvertedIndex<Key, List<Article>> `。
 

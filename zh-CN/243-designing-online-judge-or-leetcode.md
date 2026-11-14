@@ -28,7 +28,7 @@ references:
 
 下面的架构以异步执行的队列和安全执行的沙箱为特色。每个组件都是可单独部署和扩展的。
 
-![设计在线评测系统](https://res.cloudinary.com/dohtidfqh/image/upload/v1594706130/web-guiguio/designing-online-judge.png)
+![在线评测系统架构：API、提交数据库与队列、代码执行引擎](../images/online-judge-architecture.zh-CN.svg)
 
 ## 组件
 

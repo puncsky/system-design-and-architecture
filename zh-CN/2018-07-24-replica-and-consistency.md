@@ -19,7 +19,7 @@ references:
 
 ## CAP定理的一致性权衡
 
-![CAP定理](https://res.cloudinary.com/dohtidfqh/image/upload/v1566606463/web-guiguio/Es1houG50FNQoCgGUo2fGwMPriezTtKqliSVMW9F11CN2W7SSHcI3li61Qdnw0FoOm0UfitYOvbAiJBvJXLmAmrjRH75VDO54uGucIynJrdR2RV51GboaZ17bc5pZt88_GK43PT0.png)
+![CAP 定理：两个副本下的 AP、CP、AC 三种情形](../images/replica-consistency-cap-scenarios.zh-CN.svg)
 
 - 一致性：所有节点在同一时间看到相同的数据
 - 可用性：保证每个请求都能收到关于其成功或失败的响应

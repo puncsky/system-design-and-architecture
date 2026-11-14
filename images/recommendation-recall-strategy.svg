@@ -1,0 +1,38 @@
+<svg width="100%" viewBox="0 0 720 408" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">Recall strategy</title>
+<desc id="d">All contents pass through several parallel recall strategies, which together narrow them down to a smaller set of recalled contents. That subset is then handed to the recommendation engine.</desc>
+<defs><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="719" height="407" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<ellipse cx="100" cy="214" rx="70" ry="170" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="100" y="214" font-size="14" font-weight="500" fill="#2C2C2A">contents</text>
+<ellipse cx="500" cy="214" rx="56" ry="104" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="500" y="214" font-size="14" font-weight="500" fill="#633806">contents</text>
+<text x="290" y="24" font-size="14" font-weight="500" fill="#2C2C2A">Recall Strategy</text>
+<path d="M140.9 76 L273 76" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<circle cx="290" cy="76" r="17" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<path d="M307 76 L380 76" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M159.4 124 L273 124" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<circle cx="290" cy="124" r="17" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<path d="M307 124 L380 124" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M167.8 172 L273 172" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<circle cx="290" cy="172" r="17" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<path d="M307 172 L380 172" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M167.8 256 L273 256" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<circle cx="290" cy="256" r="17" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<path d="M307 256 L380 256" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M159.4 304 L273 304" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<circle cx="290" cy="304" r="17" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<path d="M307 304 L380 304" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M140.9 352 L273 352" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<circle cx="290" cy="352" r="17" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<path d="M307 352 L380 352" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<circle cx="290" cy="202" r="2" fill="#898781" stroke="#898781" stroke-width="1"/>
+<circle cx="290" cy="214" r="2" fill="#898781" stroke="#898781" stroke-width="1"/>
+<circle cx="290" cy="226" r="2" fill="#898781" stroke="#898781" stroke-width="1"/>
+<path d="M380 76 L380 352" fill="none" stroke="#898781" stroke-width="1.5"/>
+<path d="M380 214 L444 214" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="580" y="178" width="130" height="72" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="645" y="204.9" font-size="14" font-weight="500" fill="#3C3489">recommendation</text>
+<text x="645" y="223.1" font-size="14" font-weight="500" fill="#3C3489">engine</text>
+<path d="M556 214 L580 214" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+</svg>

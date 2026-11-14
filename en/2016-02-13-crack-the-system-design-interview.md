@@ -54,7 +54,7 @@ Pinterest is a highly scalable photo-sharing service with hundreds of millions o
 
 Here is the high-level architecture, in which arrows indicate dependencies. (Sometimes, people would use arrows to describe the direction of data flow.)
 
-![Instagram Architecture Overview](https://tp-misc.b-cdn.net/SDA/design-instagram-architecture-overview@2x.png "Instagram Architecture Overview")
+![Instagram Architecture Overview](../images/crack-interview-instagram-overview.svg)
 
 [//]: # "https://whimsical.com/design-instagram-5JeJxJuxbWf3p97DaYttgH"
 
@@ -90,7 +90,7 @@ Reverse proxy brings a lot of benefits according to how you use it, and here are
 2. Filtering: filter out requests without valid credentials for authentication or authorization.
 3. Caching: Some resources are so popular for HTTP requests that you may want to configure some cache for the route to save some server resources.
 
-![reverse proxy](https://res.cloudinary.com/dohtidfqh/image/upload/v1599623753/web-guiguio/Reverse_Proxy_Example.png)
+![reverse proxy](../images/crack-interview-reverse-proxy.svg)
 
 Nginx, Varnish, HAProxy, and AWS Elastic Load balancing are popular products on the market. I find it handy but powerful to write a [lightweight reverse proxy in Golang](https://github.com/puncsky/reverse-proxy-golang-starter). In the context of Kubernetes, it's basically what Ingress and Ingress Controllers are doing.
 

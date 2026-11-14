@@ -30,7 +30,7 @@ isAuthorized(user, relation, object) = 用户与对象之间是否存在关系�
 
 Zanzibar 架构
 
-![Zanzibar 架构](https://tp-misc.b-cdn.net/zanzibar-architecture.png "Zanzibar 架构")
+![Zanzibar 架构：aclserver 集群、Spanner、watchserver 与 Leopard 索引系统](../images/authz-zanzibar-architecture.zh-CN.svg)
 
 为什么 Zanzibar 可扩展？
 
@@ -47,7 +47,7 @@ Zanzibar 架构
 
 对于微服务背景下的企业开发者，如何使用 FGA 的托管解决方案？
 
-![如何使用 FGA？](https://tp-misc.b-cdn.net/FGA@2x.png "如何使用 FGA？")
+![如何使用 FGA：开发者使用 FGA 仪表板，微服务调用 FGA 包装器服务](../images/authz-fga-usage.zh-CN.svg)
 
 1. 访问 FGA 仪表板，以 DSL 和关系元组定义授权模型，最后添加像自动化测试一样的授权断言（这太棒了！）。
 2. 开发者返回他们的服务并调用 FGA 包装器的检查端点。
@@ -64,7 +64,8 @@ Zanzibar 架构
 
 <img
 style={{ maxHeight: 500 }}
-src="https://tp-misc.b-cdn.net/osohq-architecture.png"
+src="../images/authz-oso-architecture.zh-CN.svg"
+alt="Oso Cloud 架构：中心区域的主节点通过事件流同步到每个可用区的副本，应用调用这些副本"
 />
 
 ## Ory Keto
@@ -75,7 +76,7 @@ src="https://tp-misc.b-cdn.net/osohq-architecture.png"
 
 [SpiceDB](https://github.com/authzed/spicedb) 是一个开源数据库系统，用于管理受安全保护的应用程序权限，灵感来自谷歌的 Zanzibar 论文。
 
-![](https://tp-misc.b-cdn.net/spicedb-architecture.png)
+![SpiceDB 架构：API 服务、分派器、图引擎与 datastore](../images/authz-spicedb-architecture.zh-CN.svg)
 
 ## Aserto Topaz
 
@@ -85,7 +86,7 @@ src="https://tp-misc.b-cdn.net/osohq-architecture.png"
 
 授权策略可以利用用户属性、组成员资格、应用程序资源及其之间的关系。所有用于授权的数据都在嵌入式数据库中建模和存储，因此可以快速高效地评估授权决策。
 
-![](https://tp-misc.b-cdn.net/topaz-architecture.png)
+![Topaz 架构：SDK、Authorizer、目录、策略配置与 CLI](../images/authz-topaz-architecture.zh-CN.svg)
 
 ## Cloudentity
 
@@ -103,7 +104,8 @@ Permit.IO 是一个基于 OPA 和 OPAL 的低代码 AuthZ 平台。
 
 <img
 style={{ maxHeight: 500 }}
-src="https://tp-misc.b-cdn.net/permit-io-architecture.svg"
+src="../images/authz-permit-architecture.zh-CN.svg"
+alt="Permit.io 架构：策略编写、向 PDP 实时更新策略，以及应用 API 服务在访问后端和数据库前校验每个请求"
 />
 
 ## Scaled Access

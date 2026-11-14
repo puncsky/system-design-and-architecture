@@ -1,0 +1,24 @@
+<svg width="100%" viewBox="0 0 580 316" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">Memcached 客户端-服务器全景</title>
+<desc id="d">服务内嵌 Memcached 客户端；客户端在多台 KV 服务器之间做选择（后面还有更多，用省略号表示），并直接与它们通信。</desc>
+<defs><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="579" height="315" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<rect x="140" y="24" width="300" height="130" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="152" y="40" font-size="12" style="text-anchor:start" fill="#5F5E5A">服务</text>
+<rect x="220" y="72" width="140" height="50" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="290" y="97" font-size="14" font-weight="500" fill="#0C447C">客户端</text>
+<path d="M290 122 L290 196" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M83 196 L497 196" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="28" y="238" width="110" height="54" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="83" y="265" font-size="13" font-weight="500" fill="#633806">KV 服务器</text>
+<path d="M83 196 L83 238" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="166" y="238" width="110" height="54" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="221" y="265" font-size="13" font-weight="500" fill="#633806">KV 服务器</text>
+<path d="M221 196 L221 238" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="304" y="238" width="110" height="54" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="359" y="265" font-size="13" font-weight="500" fill="#633806">KV 服务器</text>
+<path d="M359 196 L359 238" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="442" y="238" width="110" height="54" rx="8" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="497" y="265" font-size="18" font-weight="500" fill="#2C2C2A">…</text>
+<path d="M497 196 L497 238" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+</svg>

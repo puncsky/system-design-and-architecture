@@ -13,7 +13,7 @@ references:
 
 The AKF Scale Cube from _The Art of Scalability_ compresses the entire vocabulary of web-service scaling into three orthogonal axes. Almost every real-world scaling decision can be placed somewhere in this cube, which makes it the most useful single diagram for thinking about capacity.
 
-![AKF Scale Cube](/img/akf-scale-cube.gif)
+![AKF scale cube with X, Y and Z axes](../images/scale-web-service-akf-cube.svg)
 
 ## The three axes
 

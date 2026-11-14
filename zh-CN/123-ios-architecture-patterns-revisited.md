@@ -30,7 +30,7 @@ references:
 
 ## 紧耦合 MVC
 
-![传统 MVC](https://res.cloudinary.com/dohtidfqh/image/upload/v1547002648/web-guiguio/ios-architecture-0-mvc.png)
+![传统 MVC 架构图](../images/ios-arch-mvc.zh-CN.svg)
 
 例如，在一个多页面的 web 应用中，一旦点击链接导航到其他地方，页面会完全重新加载。问题在于视图与控制器和模型紧密耦合。
 
@@ -38,11 +38,11 @@ references:
 
 苹果的 MVC 理论上通过控制器将视图与模型解耦。
 
-![Cocoa MVC](https://res.cloudinary.com/dohtidfqh/image/upload/v1547002648/web-guiguio/ios-architecture-1-cocoa-mvc.png)
+![Cocoa MVC 架构图](../images/ios-arch-cocoa-mvc.zh-CN.svg)
 
 实际上，苹果的 MVC 鼓励 ==庞大的视图控制器==。而视图控制器最终负责所有事情。
 
-![现实中的 Cocoa MVC](https://res.cloudinary.com/dohtidfqh/image/upload/v1547002648/web-guiguio/ios-architecture-2-realistic-cocoa-mvc.png)
+![现实中的 Cocoa MVC 架构图](../images/ios-arch-cocoa-mvc-realistic.zh-CN.svg)
 
 测试耦合的庞大视图控制器是困难的。然而，Cocoa MVC 在开发速度方面是最佳的架构模式。
 
@@ -50,23 +50,23 @@ references:
 
 在 MVP 中，呈现者与视图控制器的生命周期无关，视图可以轻松模拟。我们可以说 UIViewController 实际上就是视图。
 
-![MVC 变体](https://res.cloudinary.com/dohtidfqh/image/upload/v1547002648/web-guiguio/ios-architecture-3-mvc-variant.png)
+![带被动视图的 MVP 架构图](../images/ios-arch-mvp-passive-view.zh-CN.svg)
 
 还有另一种 MVP：带有数据绑定的 MVP。正如你所看到的，视图与其他两个之间存在紧密耦合。
 
-![MVP](https://res.cloudinary.com/dohtidfqh/image/upload/v1547002648/web-guiguio/ios-architecture-4-mvp.png)
+![带数据绑定的 MVP 变体架构图](../images/ios-arch-mvc-data-binding.zh-CN.svg)
 
 ## MVVM
 
 它类似于 MVP，但绑定是在视图和视图模型之间。
 
-![MVVM](https://res.cloudinary.com/dohtidfqh/image/upload/v1547002648/web-guiguio/ios-architecture-5-mvvm.png)
+![MVVM 架构图](../images/ios-arch-mvvm.zh-CN.svg)
 
 ## VIPER
 
 与 MV(X) 相比，VIPER 有五个层次（VIPER 视图、交互器、呈现者、实体和路由）。这很好地分配了责任，但可维护性较差。
 
-![VIPER](https://res.cloudinary.com/dohtidfqh/image/upload/v1547002648/web-guiguio/ios-architecture-6-viper.png)
+![VIPER 架构图](../images/ios-arch-viper.zh-CN.svg)
 
 与 MV(X) 相比，VIPER
 

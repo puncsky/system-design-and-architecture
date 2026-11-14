@@ -1,0 +1,64 @@
+<svg width="100%" viewBox="0 0 760 578" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">欺诈检测架构</title>
+<desc id="d">训练：Spark 上的流式 ETL 用 MLlib 的 K-means 处理 Kafka 主题，批处理 ETL 用 scikit-learn 的 DBSCAN 处理离线历史数据，产出聚类特征。服务：调用方向规则引擎获取风险分数，规则引擎调用欺诈检测评分服务；评分服务读取聚类特征和流计数器，并调用其他服务。规则保存在规则数据库中，可通过管理门户调整。</desc>
+<defs><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="759" height="577" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<path d="M30 44 L150 44 A10 17 0 0 1 150 78 L30 78 A10 17 0 0 1 30 44 Z" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<path d="M150 44 A10 17 0 0 0 150 78" fill="none" stroke="#0F6E56" stroke-width="1"/>
+<text x="80" y="61" font-size="13" font-weight="500" fill="#085041">各类主题</text>
+<path d="M30 92 L150 92 A10 23 0 0 1 150 138 L30 138 A10 23 0 0 1 30 92 Z" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<path d="M150 92 A10 23 0 0 0 150 138" fill="none" stroke="#0F6E56" stroke-width="1"/>
+<text x="80" y="106.5" font-size="13" font-weight="500" fill="#085041">在线信号的</text>
+<text x="80" y="123.5" font-size="13" font-weight="500" fill="#085041">Kafka 主题</text>
+<rect x="190" y="30" width="210" height="218" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="295" y="46" font-size="13" fill="#5F5E5A">Spark</text>
+<rect x="204" y="84" width="182" height="62" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="295" y="106.5" font-size="13" font-weight="500" fill="#3C3489">使用 Spark MLlib 进行</text>
+<text x="295" y="123.5" font-size="13" font-weight="500" fill="#3C3489">K-means 的流式 ETL</text>
+<rect x="204" y="166" width="182" height="62" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="295" y="188.5" font-size="13" font-weight="500" fill="#3C3489">使用 scikit-learn 进行</text>
+<text x="295" y="205.4" font-size="13" font-weight="500" fill="#3C3489">DBSCAN 的批处理 ETL</text>
+<path d="M34 171 A56 9 0 0 1 146 171 L146 223 A56 9 0 0 1 34 223 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M34 171 A56 9 0 0 0 146 171" fill="none" stroke="#854F0B" stroke-width="1"/>
+<text x="90" y="193" font-size="13" font-weight="500" fill="#633806">离线</text>
+<text x="90" y="209.9" font-size="13" font-weight="500" fill="#633806">历史数据</text>
+<path d="M204 115 L160 115" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#m898781)"/>
+<path d="M204 197 L146 197" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#m898781)"/>
+<path d="M446 127 A65 9 0 0 1 576 127 L576 181 A65 9 0 0 1 446 181 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M446 127 A65 9 0 0 0 576 127" fill="none" stroke="#854F0B" stroke-width="1"/>
+<text x="511" y="158.5" font-size="13" font-weight="500" fill="#633806">聚类特征</text>
+<path d="M400 154 L446 154" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="246" y="280" width="130" height="40" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="311" y="300" font-size="13" font-weight="500" fill="#2C2C2A">管理门户</text>
+<rect x="246" y="360" width="130" height="56" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<text x="311" y="388" font-size="13" font-weight="500" fill="#712B13">规则引擎</text>
+<path d="M266 459 A45 9 0 0 1 356 459 L356 511 A45 9 0 0 1 266 511 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M266 459 A45 9 0 0 0 356 459" fill="none" stroke="#854F0B" stroke-width="1"/>
+<text x="311" y="489.5" font-size="13" font-weight="500" fill="#633806">规则数据库</text>
+<path d="M311 320 L311 360" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M311 416 L311 450" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M24 388 L246 388" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="98" y="378.6" width="74" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="135" y="388" font-size="11" fill="#5F5E5A">获取风险分数</text>
+<rect x="436" y="358" width="150" height="60" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="511" y="379.6" font-size="13" font-weight="500" fill="#3C3489">欺诈检测</text>
+<text x="511" y="396.4" font-size="13" font-weight="500" fill="#3C3489">评分服务</text>
+<path d="M376 388 L436 388" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M511 358 L511 190" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#m898781)"/>
+<rect x="630" y="314" width="110" height="52" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="685" y="340" font-size="13" font-weight="500" fill="#633806">流计数器</text>
+<path d="M586 374 L604 374 Q610 374 610 368 L610 346 Q610 340 616 340 L630 340" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#m898781)"/>
+<rect x="646" y="420" width="94" height="50" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<rect x="638" y="428" width="94" height="50" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<rect x="630" y="436" width="110" height="50" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="685" y="461" font-size="13" font-weight="500" fill="#0C447C">其他服务</text>
+<path d="M586 402 L604 402 Q610 402 610 408 L610 455 Q610 461 616 461 L630 461" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="20" y="450" width="190" height="70" rx="8" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="115" y="469.4" font-size="12" font-weight="500" fill="#2C2C2A">可观察性（指标、日志、</text>
+<text x="115" y="485" font-size="12" font-weight="500" fill="#2C2C2A">追踪）或数据仓库</text>
+<text x="115" y="500.6" font-size="12" font-weight="500" fill="#2C2C2A">仪表板</text>
+<path d="M436 538 L462 538" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#m898781)"/>
+<text x="470" y="538" font-size="12" style="text-anchor:start" fill="#5F5E5A">读取</text>
+<path d="M516 538 L542 538" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<text x="550" y="538" font-size="12" style="text-anchor:start" fill="#5F5E5A">调用 / 写入</text>
+</svg>

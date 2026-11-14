@@ -19,11 +19,11 @@ In details, Lyft's advertisements should meet requirements as below:
 2. guided by data-driven growth: The growth must be scalable, measurable, and predictable
 3. supporting Lyft's unique growth model as shown below
 
-![lyft growth model](https://res.cloudinary.com/dohtidfqh/image/upload/v1570050291/web-guiguio/1_JBgJKb6DFrG7X2Fc7dtAaQ.png)
+![Lyft growth model: driver and rider funnels](../images/lyft-growth-model.svg)
 
 However, the biggest challenge is to manage all the processes of cross-region marketing at scale, which include choosing bids, budgets, creatives, incentives, and audiences, running A/B tests, and so on. You can see what occupies a day in the life of a digital marketer:
 
-![营销者的一天](https://res.cloudinary.com/dohtidfqh/image/upload/v1570050798/web-guiguio/0_FXK0RW9qx3e9f_kv.png)
+![A day in the life of a digital marketer](../images/lyft-marketer-day.svg)
 
 We can find out that _execution_ occupies most of the time while _analysis_, thought as more important, takes much less time. A scaling strategy will enable marketers to concentrate on analysis and decision-making process instead of operational activities.
 
@@ -47,7 +47,7 @@ The problems that need to be automated include:
 
 ## Architecture
 
-![Lyft Symphony Architecture](https://res.cloudinary.com/dohtidfqh/image/upload/v1570052539/web-guiguio/0_k_I3YVF9XEAu9OLl.png)
+![Lyft Symphony architecture: LTV forecaster, budget allocator and bidders](../images/lyft-symphony-architecture.svg)
 
 The tech stack includes - Apache Hive, Presto, ML platform, Airflow, 3rd-party APIs, UI.
 
@@ -61,17 +61,17 @@ Our knowledge of a new user is limited. The historical data can help us to predi
 
 Initial eigenvalue:
 
-![特征值](https://res.cloudinary.com/dohtidfqh/image/upload/v1570072545/web-guiguio/0_YHwm9D9a-Fvm7cq8.png)
+![Initial driver and rider features for LTV forecasting](../images/lyft-ltv-features.svg)
 
 The forecast improves as the historical data of interactivity accumulates:
 
-![根据历史记录判断 LTV](https://res.cloudinary.com/dohtidfqh/image/upload/v1570072568/web-guiguio/0_SwHgIjhJAQf35t_C.png)
+![Lifetime value forecast: realized, forecast and benchmark](../images/lyft-ltv-forecast.svg)
 
 ### Budget allocator
 
 After LTV is predicted, the next is to estimate budgets based on the price. A curve of the form `LTV = a * (spend)^b` is fit to the data. A degree of randomness will be injected into the cost-curve creation process in order to converge a global optimum.
 
-![预算计算](https://res.cloudinary.com/dohtidfqh/image/upload/v1570073827/web-guiguio/0_bLNhBPW6UFA227JB.png)
+![Budget allocator: sampled cost curves and the 15% ROI point](../images/lyft-budget-cost-curves.svg)
 
 ### Bidders
 
@@ -79,7 +79,7 @@ Bidders are made up of two parts - the tuners and actors. The tuners decide exac
 
 Some popular bidding strategies, applied in different channels, are listed as below:
 
-![投放策略](https://res.cloudinary.com/dohtidfqh/image/upload/v1570074354/web-guiguio/0_bPtZels9tqGXoFCW.png)
+![Bidding strategies and their goals](../images/lyft-bidding-strategies.svg)
 
 ### Conclusion
 

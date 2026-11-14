@@ -1,0 +1,65 @@
+<svg width="100%" viewBox="0 0 720 450" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">The five concurrency models at a glance</title>
+<desc id="d">Five small pictograms: single-threaded is one execution line; threading or processing with a lock is several lines guarding shared data with a lock; CSP is four goroutines exchanging messages with one channel; Actors are five actor nodes exchanging messages along links; STM is a shared timeline from which transactions fork off.</desc>
+<defs><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><marker id="s898781" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M8 1L2 5L8 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="719" height="449" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<rect x="24" y="24" width="176" height="170" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1"/>
+<text x="112" y="172" font-size="13" font-weight="500" fill="#2C2C2A">Single-threaded</text>
+<path d="M62 100 L162 100" fill="none" stroke="#185FA5" stroke-width="6" stroke-linecap="round"/>
+<rect x="212" y="24" width="252" height="170" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1"/>
+<text x="338" y="172" font-size="13" font-weight="500" fill="#2C2C2A">Threading/processing + lock</text>
+<path d="M270 86 L338 86" fill="none" stroke="#185FA5" stroke-width="6" stroke-linecap="round"/>
+<path d="M270 114 L338 114" fill="none" stroke="#185FA5" stroke-width="6" stroke-linecap="round"/>
+<path d="M381 82 V73 A9 9 0 0 1 399 73 V82" fill="none" stroke="#993C1D" stroke-width="4" stroke-linecap="round"/>
+<rect x="374" y="82" width="32" height="26" rx="5" fill="#993C1D"/>
+<circle cx="390" cy="92" r="3.5" fill="#FFFFFF"/>
+<rect x="388.5" y="93" width="3" height="8" rx="1" fill="#FFFFFF"/>
+<rect x="476" y="24" width="220" height="170" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1"/>
+<text x="586" y="172" font-size="13" font-weight="500" fill="#2C2C2A">CSP</text>
+<path d="M613.7 82 L662.3 82 A7.7 18 0 0 1 662.3 118 L613.7 118 A7.7 18 0 0 1 613.7 82 Z" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<path d="M662.3 82 A7.7 18 0 0 0 662.3 118" fill="none" stroke="#0F6E56" stroke-width="1"/>
+<text x="638" y="133" font-size="12" fill="#085041">Channel</text>
+<text x="490" y="61" font-size="12" style="text-anchor:start" fill="#444441">Go</text>
+<path d="M514 61 L548 61" fill="none" stroke="#185FA5" stroke-width="3" stroke-linecap="round" stroke-dasharray="5 3"/>
+<path d="M558 61 L571 61 Q576 61 576 66 L576 95 Q576 100 581 100 L606 100" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)" marker-start="url(#s898781)"/>
+<text x="490" y="87" font-size="12" style="text-anchor:start" fill="#444441">Go</text>
+<path d="M514 87 L548 87" fill="none" stroke="#185FA5" stroke-width="3" stroke-linecap="round" stroke-dasharray="5 3"/>
+<path d="M558 87 L571 87 Q576 87 576 92 L576 95 Q576 100 581 100 L606 100" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)" marker-start="url(#s898781)"/>
+<text x="490" y="113" font-size="12" style="text-anchor:start" fill="#444441">Go</text>
+<path d="M514 113 L548 113" fill="none" stroke="#185FA5" stroke-width="3" stroke-linecap="round" stroke-dasharray="5 3"/>
+<path d="M558 113 L571 113 Q576 113 576 108 L576 105 Q576 100 581 100 L606 100" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)" marker-start="url(#s898781)"/>
+<text x="490" y="139" font-size="12" style="text-anchor:start" fill="#444441">Go</text>
+<path d="M514 139 L548 139" fill="none" stroke="#185FA5" stroke-width="3" stroke-linecap="round" stroke-dasharray="5 3"/>
+<path d="M558 139 L571 139 Q576 139 576 134 L576 105 Q576 100 581 100 L606 100" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)" marker-start="url(#s898781)"/>
+<rect x="24" y="206" width="330" height="220" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1"/>
+<text x="189" y="404" font-size="13" font-weight="500" fill="#2C2C2A">Actors</text>
+<path d="M206.5 255.6 L251.5 280.4" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)" marker-start="url(#s898781)"/>
+<path d="M251.5 299.6 L206.5 324.4" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)" marker-start="url(#s898781)"/>
+<path d="M171.5 324.4 L126.5 299.6" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)" marker-start="url(#s898781)"/>
+<path d="M171.5 343.6 L126.5 368.4" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)" marker-start="url(#s898781)"/>
+<circle cx="189" cy="246" r="17" fill="#E6F1FB" stroke="#185FA5" stroke-width="1.5"/>
+<text x="189" y="246" font-size="13" font-weight="500" fill="#0C447C">A</text>
+<circle cx="109" cy="290" r="17" fill="#E6F1FB" stroke="#185FA5" stroke-width="1.5"/>
+<text x="109" y="290" font-size="13" font-weight="500" fill="#0C447C">A</text>
+<circle cx="269" cy="290" r="17" fill="#E6F1FB" stroke="#185FA5" stroke-width="1.5"/>
+<text x="269" y="290" font-size="13" font-weight="500" fill="#0C447C">A</text>
+<circle cx="189" cy="334" r="17" fill="#E6F1FB" stroke="#185FA5" stroke-width="1.5"/>
+<text x="189" y="334" font-size="13" font-weight="500" fill="#0C447C">A</text>
+<circle cx="109" cy="378" r="17" fill="#E6F1FB" stroke="#185FA5" stroke-width="1.5"/>
+<text x="109" y="378" font-size="13" font-weight="500" fill="#0C447C">A</text>
+<rect x="366" y="206" width="330" height="220" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1"/>
+<text x="531" y="404" font-size="13" font-weight="500" fill="#2C2C2A">STM</text>
+<path d="M388 298 L674 298" fill="none" stroke="#534AB7" stroke-width="4" stroke-linecap="round"/>
+<path d="M422 298 C422 324 428 342 453 342" fill="none" stroke="#534AB7" stroke-width="4" stroke-linecap="round"/>
+<circle cx="460" cy="342" r="7" fill="#FFFFFF" stroke="#534AB7" stroke-width="3"/>
+<path d="M490 298 C490 324 496 342 521 342" fill="none" stroke="#534AB7" stroke-width="4" stroke-linecap="round"/>
+<circle cx="528" cy="342" r="7" fill="#FFFFFF" stroke="#534AB7" stroke-width="3"/>
+<path d="M558 298 C582 298 590 286 594 260" fill="none" stroke="#534AB7" stroke-width="4" stroke-linecap="round"/>
+<circle cx="595" cy="253" r="7" fill="#FFFFFF" stroke="#534AB7" stroke-width="3"/>
+<path d="M626 298 C626 324 632 342 657 342" fill="none" stroke="#534AB7" stroke-width="4" stroke-linecap="round"/>
+<circle cx="664" cy="342" r="7" fill="#FFFFFF" stroke="#534AB7" stroke-width="3"/>
+<circle cx="422" cy="298" r="7" fill="#FFFFFF" stroke="#534AB7" stroke-width="3"/>
+<circle cx="490" cy="298" r="7" fill="#FFFFFF" stroke="#534AB7" stroke-width="3"/>
+<circle cx="558" cy="298" r="7" fill="#FFFFFF" stroke="#534AB7" stroke-width="3"/>
+<circle cx="626" cy="298" r="7" fill="#FFFFFF" stroke="#534AB7" stroke-width="3"/>
+</svg>

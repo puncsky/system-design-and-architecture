@@ -1,0 +1,73 @@
+<svg width="100%" viewBox="0 0 760 536" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">大数据系统的 Lambda 架构</title>
+<desc id="d">新数据流（1）同时进入 Hadoop 上的批处理层（2）和 Storm 上的快速层（4）：批处理层用 MapReduce 对 HDFS 中的全部数据定期重算，得到预计算视图；快速层处理数据流并更新增量视图。服务层（3）保存由部分聚合组成的批处理视图以及实时视图，二者合并为 HBase 中的合并视图（5）。</desc>
+<defs><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="759" height="535" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<rect x="20" y="241" width="116" height="64" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="78" y="273" font-size="14" font-weight="500" fill="#2C2C2A">新数据流</text>
+<circle cx="24" cy="241" r="10" fill="#5F5E5A"/>
+<text x="24" y="241" font-size="11" font-weight="600" fill="#FFFFFF">1</text>
+<rect x="170" y="20" width="410" height="116" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<circle cx="192" cy="40" r="10" fill="#5F5E5A"/>
+<text x="192" y="40" font-size="11" font-weight="600" fill="#FFFFFF">2</text>
+<text x="210" y="40" font-size="13" font-weight="500" style="text-anchor:start" fill="#2C2C2A">批处理层</text>
+<text x="566" y="40" font-size="11" style="text-anchor:end" fill="#5F5E5A">Hadoop</text>
+<path d="M200 69 A60 9 0 0 1 320 69 L320 115 A60 9 0 0 1 200 115 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M200 69 A60 9 0 0 0 320 69" fill="none" stroke="#854F0B" stroke-width="1"/>
+<text x="260" y="88.7" font-size="14" font-weight="500" fill="#633806">全部数据</text>
+<text x="260" y="105.6" font-size="12" fill="#854F0B">(HDFS)</text>
+<rect x="396" y="64" width="150" height="56" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="471" y="84.2" font-size="13" font-weight="500" fill="#0C447C">预计算视图</text>
+<text x="471" y="100.5" font-size="12" fill="#185FA5">(MapReduce)</text>
+<path d="M320 92 L396 92" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="343" y="75.2" width="30" height="33.7" rx="4" fill="#FFFFFF"/>
+<text x="358" y="84.6" font-size="11" fill="#5F5E5A">批量</text>
+<text x="358" y="99.4" font-size="11" fill="#5F5E5A">重算</text>
+<rect x="170" y="152" width="410" height="226" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<circle cx="192" cy="172" r="10" fill="#5F5E5A"/>
+<text x="192" y="172" font-size="11" font-weight="600" fill="#FFFFFF">3</text>
+<text x="210" y="172" font-size="13" font-weight="500" style="text-anchor:start" fill="#2C2C2A">服务层</text>
+<rect x="186" y="186" width="378" height="84" rx="8" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="200" y="219.6" font-size="12" style="text-anchor:start" fill="#5F5E5A">批处理</text>
+<text x="200" y="236.4" font-size="12" style="text-anchor:start" fill="#5F5E5A">视图</text>
+<rect x="300" y="206" width="80" height="44" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="340" y="228" font-size="12" font-weight="500" fill="#633806">部分聚合</text>
+<rect x="388" y="206" width="80" height="44" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="428" y="228" font-size="12" font-weight="500" fill="#633806">部分聚合</text>
+<rect x="476" y="206" width="80" height="44" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="516" y="228" font-size="12" font-weight="500" fill="#633806">部分聚合</text>
+<rect x="186" y="280" width="378" height="82" rx="8" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="200" y="312.6" font-size="12" style="text-anchor:start" fill="#5F5E5A">实时</text>
+<text x="200" y="329.4" font-size="12" style="text-anchor:start" fill="#5F5E5A">视图</text>
+<rect x="406" y="301" width="130" height="40" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="471" y="321" font-size="13" font-weight="500" fill="#633806">实时数据</text>
+<rect x="170" y="396" width="410" height="116" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<circle cx="192" cy="416" r="10" fill="#5F5E5A"/>
+<text x="192" y="416" font-size="11" font-weight="600" fill="#FFFFFF">4</text>
+<text x="210" y="416" font-size="13" font-weight="500" style="text-anchor:start" fill="#2C2C2A">快速层</text>
+<text x="566" y="416" font-size="11" style="text-anchor:end" fill="#5F5E5A">Storm</text>
+<rect x="200" y="430" width="120" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<text x="260" y="458" font-size="13" font-weight="500" fill="#085041">处理流</text>
+<rect x="396" y="430" width="150" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+<text x="471" y="458" font-size="13" font-weight="500" fill="#085041">增量视图</text>
+<path d="M320 458 L396 458" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="343" y="441.1" width="30" height="33.7" rx="4" fill="#FFFFFF"/>
+<text x="358" y="450.6" font-size="11" fill="#5F5E5A">实时</text>
+<text x="358" y="465.4" font-size="11" fill="#5F5E5A">增量</text>
+<path d="M136 273 L153 273" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M153 273 L153 98 Q153 92 159 92 L200 92" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M153 273 L153 452 Q153 458 159 458 L200 458" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M471 120 L471 138 Q471 144 465 144 L346 144 Q340 144 340 150 L340 206" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M471 120 L471 138 Q471 144 465 144 L434 144 Q428 144 428 150 L428 206" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M471 120 L471 138 Q471 144 477 144 L510 144 Q516 144 516 150 L516 206" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M471 430 L471 341" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="660" y="243" width="84" height="64" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="702" y="267.8" font-size="13" font-weight="500" fill="#633806">合并视图</text>
+<text x="702" y="283.4" font-size="11" fill="#854F0B">(HBase)</text>
+<circle cx="664" cy="243" r="10" fill="#5F5E5A"/>
+<text x="664" y="243" font-size="11" font-weight="600" fill="#FFFFFF">5</text>
+<path d="M564 228 L598 228 Q604 228 604 234 L604 269 Q604 275 610 275 L660 275" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M564 321 L598 321 Q604 321 604 315 L604 281 Q604 275 610 275 L660 275" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="617" y="265.6" width="30" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="632" y="275" font-size="11" fill="#5F5E5A">合并</text>
+</svg>

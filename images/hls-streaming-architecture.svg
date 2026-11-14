@@ -1,0 +1,49 @@
+<svg width="100%" viewBox="0 0 720 516" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">HTTP Live Streaming architecture</title>
+<desc id="d">Audio/video inputs feed a media encoder on the server, which sends an MPEG-2 transport stream to a stream segmenter. The segmenter publishes an index file and a set of .ts media files on an origin web server in the distribution tier. The origin serves them over HTTP to clients such as desktops, laptops, tablets and phones.</desc>
+<defs><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="719" height="515" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<rect x="16" y="52" width="120" height="64" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="76" y="74.9" font-size="14" font-weight="500" fill="#2C2C2A">Audio/video</text>
+<text x="76" y="93.1" font-size="14" font-weight="500" fill="#2C2C2A">inputs</text>
+<rect x="176" y="20" width="392" height="124" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="188" y="36" font-size="12" style="text-anchor:start" fill="#5F5E5A">Server</text>
+<rect x="192" y="56" width="124" height="56" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="254" y="84" font-size="13" font-weight="500" fill="#0C447C">Media encoder</text>
+<rect x="412" y="56" width="140" height="56" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="482" y="84" font-size="13" font-weight="500" fill="#0C447C">Stream segmenter</text>
+<path d="M136 84 L192 84" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M316 84 L412 84" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<text x="364" y="98.3" font-size="11" fill="#5F5E5A">MPEG-2</text>
+<text x="364" y="113.7" font-size="11" fill="#5F5E5A">transport stream</text>
+<rect x="196" y="176" width="508" height="168" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="208" y="192" font-size="12" style="text-anchor:start" fill="#5F5E5A">Distribution</text>
+<rect x="212" y="204" width="330" height="124" rx="10" fill="#E6F1FB" fill-opacity="0.45" stroke="#185FA5" stroke-width="1"/>
+<text x="224" y="220" font-size="12" style="text-anchor:start" fill="#185FA5">Origin web server</text>
+<rect x="228" y="244" width="96" height="64" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="276" y="268.2" font-size="13" font-weight="500" fill="#633806">Index file</text>
+<text x="276" y="284.4" font-size="12" fill="#854F0B">.m3u8</text>
+<rect x="404" y="228" width="92" height="64" rx="6" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<rect x="396" y="236" width="92" height="64" rx="6" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<rect x="388" y="244" width="92" height="64" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="434" y="268.2" font-size="13" font-weight="500" fill="#633806">.ts</text>
+<text x="434" y="284.4" font-size="12" fill="#854F0B">media files</text>
+<path d="M324 276 L388 276" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path transform="translate(588 230)" d="M26 58 C10 58 4 44 12 34 C14 24 26 20 32 26 C34 8 58 2 68 18 C82 12 96 24 90 38 C100 46 94 58 80 58 Z" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1" stroke-linejoin="round"/>
+<text x="640" y="270" font-size="14" font-weight="500" fill="#2C2C2A">HTTP</text>
+<path d="M542 266 L596 266" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M482 112 L482 204" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="428" y="380" width="276" height="112" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="440" y="396" font-size="12" style="text-anchor:start" fill="#5F5E5A">Client</text>
+<rect x="450" y="420" width="64" height="42" rx="4" fill="#FFFFFF" stroke="#5F5E5A" stroke-width="1.25"/>
+<rect x="455" y="425" width="54" height="30" rx="2" fill="#F1EFE8" stroke="none"/>
+<path d="M482 462 L482 470 M470 470 L494 470" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-linecap="round"/>
+<rect x="540" y="430" width="46" height="32" rx="3" fill="#FFFFFF" stroke="#5F5E5A" stroke-width="1.25"/>
+<rect x="545" y="435" width="36" height="22" rx="1.5" fill="#F1EFE8" stroke="none"/>
+<rect x="534" y="464" width="58" height="6" rx="3" fill="#FFFFFF" stroke="#5F5E5A" stroke-width="1.25"/>
+<rect x="610" y="424" width="32" height="44" rx="5" fill="#FFFFFF" stroke="#5F5E5A" stroke-width="1.25"/>
+<rect x="615" y="429" width="22" height="30" rx="1.5" fill="#F1EFE8" stroke="none"/>
+<rect x="656" y="436" width="20" height="34" rx="4" fill="#FFFFFF" stroke="#5F5E5A" stroke-width="1.25"/>
+<rect x="659.5" y="441" width="13" height="21" rx="1" fill="#F1EFE8" stroke="none"/>
+<path d="M640 288 L640 380" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+</svg>

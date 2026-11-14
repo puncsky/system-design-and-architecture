@@ -45,7 +45,7 @@ O’Reilly的书《软件架构模式》由Mark Richards撰写，是对这五种
 
 [comment]: <> "https://www.draw.io/#G1ldM5O9Y62Upqg_t5rcTNHIRseP-7fqQT"
 
-![](https://res.cloudinary.com/dohtidfqh/image/upload/v1557614663/web-guiguio/Software_Architecture_101.png)
+![分层架构](../images/arch-patterns-layered.zh-CN.svg)
 
 示例
 
@@ -66,11 +66,11 @@ O’Reilly的书《软件架构模式》由Mark Richards撰写，是对这五种
 
 状态变化将向系统发出事件。所有组件通过事件相互通信。
 
-![](https://res.cloudinary.com/dohtidfqh/image/upload/v1557614663/web-guiguio/software-architecture-101-event-driven.png)
+![带中介的事件驱动架构](../images/arch-patterns-event-driven.zh-CN.svg)
 
 一个简单的项目可以结合中介、事件队列和通道。然后我们得到一个简化的架构：
 
-![](https://res.cloudinary.com/dohtidfqh/image/upload/v1557614663/web-guiguio/software-architecture-101-event-driven-simplified.png)
+![简化的事件驱动架构](../images/arch-patterns-event-driven-simple.zh-CN.svg)
 
 示例
 
@@ -81,7 +81,7 @@ O’Reilly的书《软件架构模式》由Mark Richards撰写，是对这五种
 
 软件的职责被划分为一个“核心”和多个“插件”。核心包含最基本的功能。插件彼此独立，并实现共享接口以实现不同的目标。
 
-![](https://res.cloudinary.com/dohtidfqh/image/upload/v1557614663/web-guiguio/software-architecture-101-micro-kernel.png)
+![微内核架构](../images/arch-patterns-micro-kernel.zh-CN.svg)
 
 示例
 
@@ -92,7 +92,7 @@ O’Reilly的书《软件架构模式》由Mark Richards撰写，是对这五种
 
 一个庞大的系统被解耦为多个微服务，每个微服务都是一个单独部署的单元，它们通过[RPCs](https://tianpan.co/notes/2016-02-13-crack-the-system-design-interview#21-communication)相互通信。
 
-![uber architecture](https://res.cloudinary.com/dohtidfqh/image/upload/v1546574738/web-guiguio/uber-architecture_2.jpg)
+![Uber 架构](../images/uber-architecture.zh-CN.svg)
 
 示例
 
@@ -103,7 +103,7 @@ O’Reilly的书《软件架构模式》由Mark Richards撰写，是对这五种
 
 该模式得名于“元组空间”，意为“分布式共享内存”。没有数据库或同步数据库访问，因此没有数据库瓶颈。所有处理单元在内存中共享复制的应用数据。这些处理单元可以弹性启动和关闭。
 
-![](https://res.cloudinary.com/dohtidfqh/image/upload/v1557614663/web-guiguio/software-architecture-101-space-based.png)
+![基于空间的架构](../images/arch-patterns-space-based.zh-CN.svg)
 
 示例：见[维基百科](https://en.wikipedia.org/wiki/Tuple_space#Example_usage)
 

@@ -16,7 +16,7 @@ references:
 
 Before TAO, use cache-aside pattern
 
-![Before TAO](https://puncsky.com/img/tao-before.png)
+![Before TAO: web server with memcache and MySQL holding the social graph](../images/tao-before.svg)
 
 Social graph data is stored in MySQL and cached in Memcached
 
@@ -61,8 +61,8 @@ To solve those problems, we have 3 goals:
 - Leader cache → coordinates writes to each object
 - Follower caches → serve reads but not writes. forward all writes to leader.
 
-![Facebook TAO Architecture](https://puncsky.com/img/tao-architecture.png)
+![Facebook TAO architecture: web servers, follower caches, leader cache and database in master and replica data centers](../images/tao-architecture.svg)
 
 Read failover
 
-![Facebook TAO Read Failover](https://puncsky.com/img/tao-read-failover.png)
+![Facebook TAO read failover paths when a follower, leader or database is unreachable](../images/tao-read-failover.svg)

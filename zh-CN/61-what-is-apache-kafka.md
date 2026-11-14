@@ -41,14 +41,16 @@ Kafka 使用零拷贝，CPU 不需要将数据从一个内存区域复制到另�
 没有零拷贝的情况下：
 
 <img
-src="/img/kafka-without-zero-copy.png"
+src="../images/kafka-without-zero-copy.zh-CN.svg"
+alt="没有零拷贝时的 Kafka 数据路径"
 style={{ width: "100%", maxWidth: 400 }}
 />
 
 使用零拷贝的情况下：
 
 <img
-src="/img/kafka-with-zero-copy.png"
+src="../images/kafka-with-zero-copy.zh-CN.svg"
+alt="使用零拷贝时的 Kafka 数据路径"
 style={{ width: "100%", maxWidth: 300 }}
 />
 
@@ -56,11 +58,11 @@ style={{ width: "100%", maxWidth: 300 }}
 
 从外部看，生产者写入代理，消费者从代理读取。
 
-<img src="/img/kafka-pub-sub.png" style={{ width: "100%", maxWidth: 300 }} />
+![生产者写入 Kafka 集群，消费者从集群读取](../images/kafka-pub-sub.zh-CN.svg)
 
 数据存储在主题中，并分割成多个分区，这些分区是复制的。
 
-![Kafka 集群概述](/img/kafka-cluster-overview.png)
+![Kafka 集群概述](../images/kafka-cluster-overview.zh-CN.svg)
 
 1. 生产者将消息发布到特定主题。
    - 首先写入内存缓冲区，然后刷新到磁盘。
@@ -78,8 +80,9 @@ style={{ width: "100%", maxWidth: 300 }}
 分区的存储布局是什么？O(1) 磁盘读取
 
 <img
-src="/img/kafka-partition-data-layout.png"
-style={{ width: "100%", maxWidth: 300 }}
+src="../images/kafka-partition-data-layout.zh-CN.svg"
+alt="Kafka 分区的数据布局：活跃分段列表与分段文件"
+style={{ width: "100%", maxWidth: 390 }}
 />
 
 ## 如何容错？

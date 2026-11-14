@@ -1,0 +1,28 @@
+<svg width="100%" viewBox="0 0 360 348" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">带登录会话的简单服务</title>
+<desc id="d">Web 应用（持有 cookie 或 token）和移动应用（持有 token）都调用同一个后端。后端把数据存放在数据库中，其中包含会话表和用户表；钥匙图标表示用于签名的密钥。</desc>
+<defs><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="359" height="347" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<rect x="30" y="24" width="140" height="52" rx="26" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="100" y="42.2" font-size="14" font-weight="500" fill="#2C2C2A">Web 应用</text>
+<text x="100" y="59.1" font-size="12" fill="#5F5E5A">cookie 或 token</text>
+<rect x="190" y="24" width="140" height="52" rx="26" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="260" y="42.2" font-size="14" font-weight="500" fill="#2C2C2A">移动应用</text>
+<text x="260" y="59.1" font-size="12" fill="#5F5E5A">token</text>
+<rect x="80" y="130" width="200" height="48" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="180" y="154" font-size="14" font-weight="500" fill="#0C447C">后端</text>
+<path d="M100 76 L100 98 Q100 104 106 104 L174 104 Q180 104 180 110 L180 130" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M260 76 L260 98 Q260 104 254 104 L180 104" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="20" y="224" width="320" height="100" rx="10" fill="#F7F6F3" stroke="#B4B2AA" stroke-width="1" stroke-dasharray="5 4"/>
+<path d="M180 178 L180 224" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<path d="M32 247 A46 9 0 0 1 124 247 L124 301 A46 9 0 0 1 32 301 Z" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<path d="M32 247 A46 9 0 0 0 124 247" fill="none" stroke="#854F0B" stroke-width="1"/>
+<text x="78" y="278.5" font-size="13" font-weight="500" fill="#633806">数据库</text>
+<rect x="134" y="238" width="92" height="72" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="180" y="274" font-size="13" font-weight="500" fill="#633806">会话表</text>
+<rect x="236" y="238" width="92" height="72" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="282" y="274" font-size="13" font-weight="500" fill="#633806">用户表</text>
+<circle cx="262" cy="192" r="5" fill="none" stroke="#993C1D" stroke-width="2"/>
+<path d="M267 192 H286 M280 192 V198 M286 192 V197" fill="none" stroke="#993C1D" stroke-width="2" stroke-linecap="round"/>
+<text x="274" y="212" font-size="11" fill="#993C1D">密钥</text>
+</svg>

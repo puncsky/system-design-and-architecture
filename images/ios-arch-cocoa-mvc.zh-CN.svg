@@ -1,0 +1,24 @@
+<svg width="100%" viewBox="0 0 760 278" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">理论上的 Cocoa MVC</title>
+<desc id="d">视图向控制器发送用户操作（虚线）。控制器同时更新模型和视图，模型通知控制器（虚线）。视图与模型之间没有直接联系，由控制器将两者解耦。</desc>
+<defs><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="759" height="277" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<rect x="295" y="36" width="170" height="64" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="380" y="68" font-size="14" font-weight="500" fill="#3C3489">控制器</text>
+<rect x="24" y="190" width="170" height="64" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="109" y="222" font-size="14" font-weight="500" fill="#0C447C">视图</text>
+<rect x="566" y="190" width="170" height="64" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="1"/>
+<text x="651" y="222" font-size="14" font-weight="500" fill="#633806">模型</text>
+<path d="M74 190 L74 58 Q74 52 80 52 L295 52" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#m898781)"/>
+<rect x="144.5" y="41.9" width="80" height="20.2" rx="4" fill="#FFFFFF"/>
+<text x="184.5" y="52" font-size="12" fill="#5F5E5A">发送用户操作</text>
+<path d="M465 68 L645 68 Q651 68 651 74 L651 190" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="542" y="57.9" width="32" height="20.2" rx="4" fill="#FFFFFF"/>
+<text x="558" y="68" font-size="12" fill="#5F5E5A">更新</text>
+<path d="M350 100 L350 200 Q350 206 344 206 L194 206" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="256" y="195.9" width="32" height="20.2" rx="4" fill="#FFFFFF"/>
+<text x="272" y="206" font-size="12" fill="#5F5E5A">更新</text>
+<path d="M566 206 L416 206 Q410 206 410 200 L410 100" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="5 4" marker-end="url(#m898781)"/>
+<rect x="472" y="195.9" width="32" height="20.2" rx="4" fill="#FFFFFF"/>
+<text x="488" y="206" font-size="12" fill="#5F5E5A">通知</text>
+</svg>

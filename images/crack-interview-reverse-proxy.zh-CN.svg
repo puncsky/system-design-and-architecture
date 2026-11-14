@@ -1,0 +1,28 @@
+<svg width="100%" viewBox="0 0 720 278" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">反向代理示例</title>
+<desc id="d">浏览器或客户端把所有 example.com/* 的请求发给反向代理，反向代理再把 example.com/blog 路由到 WordPress 服务器，把 example.com/api 路由到 Golang API 服务器，把 example.com/index.html 路由到 Node.js 服务器。</desc>
+<defs><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="719" height="277" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<text x="360" y="22" font-size="13" fill="#5F5E5A">反向代理示例</text>
+<rect x="24" y="122" width="124" height="64" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="86" y="144.9" font-size="14" font-weight="500" fill="#2C2C2A">浏览器 /</text>
+<text x="86" y="163.1" font-size="14" font-weight="500" fill="#2C2C2A">客户端</text>
+<rect x="196" y="120" width="140" height="68" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="266" y="146.2" font-size="14" font-weight="500" fill="#0C447C">反向代理</text>
+<text x="266" y="163.1" font-size="12" fill="#185FA5">example.com/*</text>
+<path d="M148 154 L196 154" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="396" y="54" width="140" height="52" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="466" y="80" font-size="14" font-weight="500" fill="#0C447C">WordPress</text>
+<path d="M336 154 L360 154 Q366 154 366 148 L366 86 Q366 80 372 80 L396 80" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<text x="552" y="80" font-size="12" style="text-anchor:start" fill="#5F5E5A">example.com/blog</text>
+<rect x="396" y="128" width="140" height="52" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="466" y="144.9" font-size="14" font-weight="500" fill="#0C447C">Golang API</text>
+<text x="466" y="163.1" font-size="14" font-weight="500" fill="#0C447C">服务器</text>
+<path d="M336 154 L396 154" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<text x="552" y="154" font-size="12" style="text-anchor:start" fill="#5F5E5A">example.com/api</text>
+<rect x="396" y="202" width="140" height="52" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="466" y="218.9" font-size="14" font-weight="500" fill="#0C447C">Node.js</text>
+<text x="466" y="237.1" font-size="14" font-weight="500" fill="#0C447C">服务器</text>
+<path d="M336 154 L360 154 Q366 154 366 160 L366 222 Q366 228 372 228 L396 228" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<text x="552" y="228" font-size="12" style="text-anchor:start" fill="#5F5E5A">example.com/index.html</text>
+</svg>

@@ -79,7 +79,7 @@ They are implemented in the following steps:
 
 It is impossible to predict all the things with the model, considering the super-large scale of all the contents. Therefore, we need recall strategies to focus on a representative subset of the data. Performance is critical here and timeout is 50ms.
 
-![recall strategy](https://res.cloudinary.com/dohtidfqh/image/upload/v1554489731/web-guiguio/recall-strategy_1.png)
+![recall strategy](../images/recommendation-recall-strategy.svg)
 
 Among all the recall strategies, we take the `InvertedIndex<Key, List<Article>> `.
 

@@ -30,7 +30,7 @@ references:
 
 <div style={{ display: "flex", flexDirection: "row" }}>
   <div style={{ width: "40%" }}>
-    <img src="https://res.cloudinary.com/dohtidfqh/image/upload/v1615424670/web-guiguio/5d771685-13c8-496c-88b7-4848ea83c25d.png" />
+    <img src="../images/authn-authz-simple-service.zh-CN.svg" alt="简单服务：Web 应用和移动应用调用同一个后端，后端在数据库中保存会话和用户" />
   </div>
   <div style={{ width: "60%" }}>
     <ul>
@@ -60,7 +60,7 @@ references:
 
 在微服务世界中，让我们抽取身份验证和授权服务的功能切片，并有一个身份和访问管理（IAM）团队在进行相关工作。
 
-![](https://res.cloudinary.com/dohtidfqh/image/upload/v1615538661/web-guiguio/0d601dac-78a6-4aca-9aec-7ea4ff487b06.png)
+![身份感知代理位于 OAuth2/OIDC 提供者、授权服务、身份提供者和其他服务之前](../images/authn-authz-identity-proxy.zh-CN.svg)
 
 - **身份感知代理** 是一个反向代理，允许公共端点或检查受保护端点的凭证。如果凭证未提供但被要求，则将用户重定向到身份提供者。例如：[k8s ingress controller](https://res.cloudinary.com/dohtidfqh/image/upload/v1615539051/web-guiguio/ingress-controller.jpg)、nginx、envoy、[Pomerium](https://www.pomerium.io/)、[ory.sh/oathkeeper](https://www.ory.sh/oathkeeper)等。
 - **身份提供者和管理者** 通过登录、忘记密码、MFA注册等工作流管理用户身份。例如：[ory.sh/kratos](https://www.ory.sh/kratos/)、[keycloak](https://www.keycloak.org/)
@@ -69,63 +69,7 @@ references:
 
 ### 一图看懂全貌
 
-```mermaid
-flowchart TB
-    subgraph Clients["客户端"]
-        SPA["Web SPA / MPA"]
-        Mobile["移动端 / 原生应用"]
-        M2M["后端 / M2M"]
-        Device["CLI / IoT / 智能电视"]
-    end
-
-    SPA --> IAP
-    Mobile --> IAP
-    M2M --> IAP
-    Device --> IAP
-
-    subgraph Edge["边缘"]
-        IAP["身份感知代理 / API 网关<br/>公共 vs 受保护端点<br/>k8s ingress · Envoy · Pomerium · Oathkeeper"]
-        Bloom["Bloom filter（进程内）<br/>快速判定『一定未被吊销』"]
-        Block[("Redis token blocklist<br/>jti / sid / userId · TTL = token 有效期")]
-        IAP -->|"吊销检查"| Bloom
-        Bloom -.->|"可能命中，回查确认"| Block
-    end
-
-    IAP -->|"无 / 无效凭证，重定向"| IDP
-    IAP -->|"有效令牌"| Mesh
-
-    subgraph IAM["IAM 团队 — 身份验证"]
-        IDP["身份提供者和管理者<br/>登录 · 忘记密码 · MFA 注册<br/>Kratos · Keycloak"]
-        OAuth["OAuth2 / OIDC 提供者<br/>access + refresh + ID token<br/>Hydra · Auth0 · Okta · Cognito"]
-        SAML["SAML 2.0<br/>企业 SSO / 联合身份<br/>ADFS · Okta · Keycloak · WorkOS"]
-        Methods["方式：密码 Argon2id ·<br/>MFA OTP/TOTP · Passkeys WebAuthn ·<br/>第三方 OAuth2 · 推送"]
-        IDP <--> OAuth
-        IDP <--> SAML
-        IDP --- Methods
-    end
-
-    IDP -->|"签发服务凭证"| IAP
-
-    subgraph Mesh["服务网格 — 服务间身份验证"]
-        S1["服务 A"]
-        mTLS["mTLS · SPIFFE/SPIRE SVID<br/>JWT 透传"]
-        S2["服务 B"]
-        S1 --- mTLS
-        mTLS --- S2
-    end
-
-    Mesh --> AuthZ
-
-    subgraph AuthZ["授权 — isAuthorized(subject, action, resource)"]
-        RBAC["RBAC<br/>角色"]
-        ABAC["PBAC / ABAC<br/>策略"]
-        ReBAC["ReBAC / Zanzibar<br/>关系图<br/>OpenFGA · SpiceDB · Oso"]
-    end
-
-    OAuth -. "令牌声明" .-> AuthZ
-
-    AuthZ --> Resource[("受保护资源<br/>+ 隐私：PII / PHI / PCI ·<br/>差分隐私 · DID")]
-```
+![微服务中身份验证、授权与身份管理全貌](../images/authn-authz-big-picture.zh-CN.svg)
 
 ## 身份验证
 
@@ -136,13 +80,13 @@ flowchart TB
 - 然而，现代应用程序通常处理复杂的工作流，如条件注册、多步骤登录、忘记密码等。
   这些工作流本质上是状态机中的状态转换图。
 
-<img src="https://res.cloudinary.com/dohtidfqh/image/upload/v1615543207/web-guiguio/kratos-sm.png" height="500px" />
+![Ory Kratos 设置和个人资料更新工作流状态图](../images/authn-authz-kratos-settings-flow.zh-CN.svg)
 
 _工作流：用户设置和个人资料更新_
 
 Ory.sh/Kratos作为示例架构
 
-![](https://res.cloudinary.com/dohtidfqh/image/upload/v1615456054/web-guiguio/bb375937-d58d-477e-bed4-3370b940b187.png)
+![Ory Kratos 示例架构：端口、模块依赖、工作流处理器和策略](../images/authn-authz-kratos-architecture.zh-CN.svg)
 
 ### 2. 第三方OAuth2
 
@@ -201,7 +145,7 @@ SAML 2.0 是更早期的基于 XML 的联合身份标准，在企业 / B2B SSO �
 
 3. 推送通知——被 Duo、Okta Verify 等应用采用
 
-<img height="600px" src="https://res.cloudinary.com/dohtidfqh/image/upload/v1615509173/web-guiguio/ec4e5fcf-9bb5-4129-a644-865ab8bdadbe.png"/>
+![Web 应用、服务器、推送服务、移动应用和消息队列之间的推送通知登录确认](../images/authn-authz-push-approval.zh-CN.svg)
 
 客户端如何订阅服务器的状态？短轮询、长轮询、WebSocket 或服务器推送事件。
 
@@ -245,7 +189,7 @@ SAML 2.0 是更早期的基于 XML 的联合身份标准，在企业 / B2B SSO �
 
 ### 1. 基于角色的访问控制（RBAC）
 
-![](https://www.ory.sh/keto/docs/assets/images/rbac-c92e14595b7a1f13c2e6bea6edb68673.png)
+![RBAC：主体拥有角色，角色被授予权限，权限作用于资源](../images/authn-authz-rbac-model.zh-CN.svg)
 
 ### 2. 基于策略的访问控制（PBAC / ABAC）
 
@@ -285,7 +229,7 @@ SAML 2.0 是更早期的基于 XML 的联合身份标准，在企业 / B2B SSO �
 
 差分隐私帮助分析师从包含个人信息的数据库中提取数据，但仍然保护个人隐私。
 
-![](https://res.cloudinary.com/dohtidfqh/image/upload/v1615501463/web-guiguio/3ee26c09-9541-4f97-a008-887bb02feb96.png)
+![差分隐私：分析师与数据库之间的隐私守卫只返回加噪数据](../images/authn-authz-differential-privacy.zh-CN.svg)
 
 ### 3. 去中心化身份
 

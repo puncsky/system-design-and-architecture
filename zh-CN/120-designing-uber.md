@@ -24,7 +24,7 @@ references:
 
 ## 架构
 
-![uber architecture](https://res.cloudinary.com/dohtidfqh/image/upload/v1546574738/web-guiguio/uber-architecture_2.jpg)
+![Uber 架构](../images/uber-architecture.zh-CN.svg)
 
 ## 为什么选择微服务？
 

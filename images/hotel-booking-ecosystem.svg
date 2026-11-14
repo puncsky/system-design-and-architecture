@@ -1,0 +1,42 @@
+<svg width="100%" viewBox="0 0 720 376" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">Hotel booking ecosystem</title>
+<desc id="d">From consumer to supplier: consumers arrive through Mobile, Search, Social network and Affiliate; OTA, Retail and Hotel Direct connect through a shared link to GDS, Aggregators and Wholesalers, which each connect to the supplier.</desc>
+<defs><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="719" height="375" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<rect x="24" y="40" width="92" height="312" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="70" y="196" font-size="14" font-weight="500" fill="#2C2C2A">Consumer</text>
+<rect x="604" y="40" width="92" height="312" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="1"/>
+<text x="650" y="196" font-size="14" font-weight="500" fill="#2C2C2A">Supplier</text>
+<rect x="140" y="40" width="120" height="60" rx="8" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="200" y="70" font-size="14" font-weight="500" fill="#2C2C2A">Mobile</text>
+<rect x="140" y="124" width="120" height="60" rx="8" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="200" y="154" font-size="14" font-weight="500" fill="#2C2C2A">Search</text>
+<rect x="140" y="208" width="120" height="60" rx="8" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="200" y="228.9" font-size="14" font-weight="500" fill="#2C2C2A">Social</text>
+<text x="200" y="247.1" font-size="14" font-weight="500" fill="#2C2C2A">network</text>
+<rect x="140" y="292" width="120" height="60" rx="8" fill="#FFFFFF" stroke="#B4B2AA" stroke-width="1"/>
+<text x="200" y="322" font-size="14" font-weight="500" fill="#2C2C2A">Affiliate</text>
+<rect x="296" y="82" width="120" height="60" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="356" y="112" font-size="14" font-weight="500" fill="#0C447C">OTA</text>
+<rect x="456" y="82" width="120" height="60" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<text x="516" y="112" font-size="14" font-weight="500" fill="#712B13">GDS</text>
+<path d="M416 112 L436 112" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M436 112 L456 112" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M576 112 L604 112" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="296" y="166" width="120" height="60" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="356" y="196" font-size="14" font-weight="500" fill="#0C447C">Retail</text>
+<rect x="456" y="166" width="120" height="60" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<text x="516" y="196" font-size="14" font-weight="500" fill="#712B13">Aggregators</text>
+<path d="M416 196 L436 196" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M436 196 L456 196" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M576 196 L604 196" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="296" y="250" width="120" height="60" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="356" y="270.9" font-size="14" font-weight="500" fill="#0C447C">Hotel</text>
+<text x="356" y="289.1" font-size="14" font-weight="500" fill="#0C447C">Direct</text>
+<rect x="456" y="250" width="120" height="60" rx="8" fill="#FAECE7" stroke="#993C1D" stroke-width="1"/>
+<text x="516" y="280" font-size="14" font-weight="500" fill="#712B13">Wholesalers</text>
+<path d="M416 280 L436 280" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M436 280 L456 280" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M576 280 L604 280" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M436 112 L436 280" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round"/>
+</svg>

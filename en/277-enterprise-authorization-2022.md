@@ -30,7 +30,7 @@ It's called relationship-based access control (==ReBAC==). Clients could build A
 
 Zanzibar Architecture
 
-![Zanzibar Architectecture](https://tp-misc.b-cdn.net/zanzibar-architecture.png "Zanzibar Architectecture")
+![Zanzibar architecture: aclserver cluster, Spanner, watchserver and Leopard indexing system](../images/authz-zanzibar-architecture.svg)
 
 Why is Zanzibar scalable?
 
@@ -47,7 +47,7 @@ Why is Zanzibar scalable?
 
 For enterprise developers in the context of microservices, how to use the managed solution of FGA?
 
-![How to use FGA?](https://tp-misc.b-cdn.net/FGA@2x.png "How to use FGA?")
+![How to use FGA: developers use the FGA dashboard, and microservices call the FGA wrapper service](../images/authz-fga-usage.svg)
 
 1. Go to the FGA dashboard to define the authorization model in DSL and relation tuples, and finally, add authorization assertions like automated tests (this is great!).
 2. Developers go back to their services and call the FGA wrapper's check endpoint
@@ -64,7 +64,8 @@ With Oso, you can:
 
 <img
 style={{ maxHeight: 500 }}
-src="https://tp-misc.b-cdn.net/osohq-architecture.png"
+src="../images/authz-oso-architecture.svg"
+alt="Oso Cloud architecture: a primary in a central region streams events to one replica per availability zone, and your apps call the replicas"
 />
 
 ## Ory Keto
@@ -75,7 +76,7 @@ src="https://tp-misc.b-cdn.net/osohq-architecture.png"
 
 [SpiceDB](https://github.com/authzed/spicedb) is an open-source database system for managing security-critical application permissions inspired by Google's Zanzibar paper.
 
-![](https://tp-misc.b-cdn.net/spicedb-architecture.png)
+![SpiceDB architecture: API services, dispatcher, graph engines and datastore](../images/authz-spicedb-architecture.svg)
 
 ## Aserto Topaz
 
@@ -85,7 +86,7 @@ It uses the [Open Policy Agent](https://www.openpolicyagent.org/) (OPA) as its d
 
 Authorization policies can leverage user attributes, group membership, application resources, and relationships between them. All data used for authorization is modeled and stored locally in an embedded database, so authorization decisions can be evaluated quickly and efficiently.
 
-![](https://tp-misc.b-cdn.net/topaz-architecture.png)
+![Topaz architecture: SDK, Authorizer, Directory, policy configuration and CLI](../images/authz-topaz-architecture.svg)
 
 ## Cloudentity
 
@@ -103,7 +104,8 @@ Permit.IO is a low-code AuthZ platform based on OPA and OPAL.
 
 <img
 style={{ maxHeight: 500 }}
-src="https://tp-misc.b-cdn.net/permit-io-architecture.svg"
+src="../images/authz-permit-architecture.svg"
+alt="Permit.io architecture: policy authoring, real-time policy updates to the PDP, and the App API Service checking each request before the backend and database"
 />
 
 ## Scaled Access

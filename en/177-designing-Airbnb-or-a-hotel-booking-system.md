@@ -26,7 +26,7 @@ references:
 
 ## Architecture
 
-![](https://res.cloudinary.com/dohtidfqh/image/upload/v1570439920/web-guiguio/hotel-booking-system_2.png)
+![Hotel booking system architecture](../images/hotel-booking-architecture.svg)
 
 ## Components
 
@@ -46,7 +46,7 @@ Suppliers provide their room details in the inventory. And users can search, get
 
 If it is a hotel booking system, then it will probably publish to Booking Channels like GDS, Aggregators, and Wholesalers.
 
-![Hotel Booking Ecosystem](https://res.cloudinary.com/dohtidfqh/image/upload/v1570439485/web-guiguio/scheme.png)
+![Hotel Booking Ecosystem](../images/hotel-booking-ecosystem.svg)
 
 To sync data across those places. We can
 

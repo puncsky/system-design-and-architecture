@@ -1,0 +1,33 @@
+<svg width="100%" viewBox="0 0 720 336" role="img" aria-labelledby="t d" xmlns="http://www.w3.org/2000/svg">
+<title id="t">服务器通过响应头向 Bandaid 上报利用率</title>
+<desc id="d">后端服务器在每个响应里带上 X-Bandaid-Utilization 头：0.35、0.40、0.30 分别送到第一个 Bandaid，最后一台服务器还把 0.30 发给第二个 Bandaid。每个 Bandaid 再把响应转发出去。</desc>
+<defs><marker id="m898781" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#898781" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC",sans-serif;dominant-baseline:central;text-anchor:middle}</style></defs>
+<rect x="0.5" y="0.5" width="719" height="335" rx="12" fill="#FFFFFF" stroke="#E4E2DA" stroke-width="1"/>
+<rect x="132" y="96" width="110" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="187" y="124" font-size="14" font-weight="500" fill="#3C3489">Bandaid</text>
+<rect x="132" y="256" width="110" height="56" rx="8" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+<text x="187" y="284" font-size="14" font-weight="500" fill="#3C3489">Bandaid</text>
+<rect x="590" y="22" width="100" height="44" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="640" y="44" font-size="14" font-weight="500" fill="#0C447C">服务器</text>
+<rect x="590" y="102" width="100" height="44" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="640" y="124" font-size="14" font-weight="500" fill="#0C447C">服务器</text>
+<rect x="590" y="236" width="100" height="64" rx="8" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+<text x="640" y="268" font-size="14" font-weight="500" fill="#0C447C">服务器</text>
+<text x="640" y="196" font-size="18" font-weight="500" fill="#5F5E5A">…</text>
+<path d="M590 44 L336 44 Q330 44 330 50 L330 102 Q330 108 324 108 L242 108" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="386.1" y="34.6" width="147.8" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="460" y="44" font-size="11" fill="#5F5E5A">X-Bandaid-Utilization: 0.35</text>
+<path d="M590 124 L242 124" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="342.1" y="114.6" width="147.8" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="416" y="124" font-size="11" fill="#5F5E5A">X-Bandaid-Utilization: 0.40</text>
+<path d="M590 252 L276 252 Q270 252 270 246 L270 146 Q270 140 264 140 L242 140" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="376.1" y="242.6" width="147.8" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="450" y="252" font-size="11" fill="#5F5E5A">X-Bandaid-Utilization: 0.30</text>
+<path d="M590 284 L242 284" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<rect x="342.1" y="274.6" width="147.8" height="18.9" rx="4" fill="#FFFFFF"/>
+<text x="416" y="284" font-size="11" fill="#5F5E5A">X-Bandaid-Utilization: 0.30</text>
+<path d="M132 124 L60 124" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<text x="24" y="108" font-size="12" style="text-anchor:start" fill="#444441">响应</text>
+<path d="M132 284 L60 284" fill="none" stroke="#898781" stroke-width="1.5" stroke-linejoin="round" marker-end="url(#m898781)"/>
+<text x="24" y="268" font-size="12" style="text-anchor:start" fill="#444441">响应</text>
+</svg>
